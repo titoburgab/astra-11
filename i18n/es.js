@@ -1,4 +1,4 @@
-/* ─── QIPUZ i18n — Spanish strings (Español) ──────────────────────────────
+/* ─── AITHORIS i18n — Spanish strings (Español) ───────────────────────────
  *
  * Target market: Latin America (B2B, enterprise). Tone: direct, professional,
  * native-level — not translated English. Idioms and CTAs adapted for the
@@ -8,15 +8,15 @@ window.i18nStrings = window.i18nStrings || {};
 window.i18nStrings.es = {
 
   meta: {
-    title: 'QIPUZ | Ingeniería de IA',
-    description: 'QIPUZ diseña agentes de IA, automatizaciones de procesos y sistemas inteligentes que ayudan a las organizaciones a simplificar la complejidad y tomar mejores decisiones.',
+    title: 'AITHORIS | Ingeniería de IA',
+    description: 'AITHORIS diseña agentes de IA, automatizaciones de procesos y sistemas inteligentes que ayudan a las organizaciones a simplificar la complejidad y tomar mejores decisiones.',
   },
 
   skip: { link: 'Ir al contenido' },
 
   nav: {
     services:  'Servicios',
-    whyQipuz:  'Por qué QIPUZ',
+    whyQipuz:  'Por qué AITHORIS',
     portfolio: 'Portafolio',
     contact:   'Contacto',
     cta:       'Agendar sesión',
@@ -101,7 +101,7 @@ window.i18nStrings.es = {
   },
 
   whyQipuz: {
-    eyebrow: 'Por qué QIPUZ',
+    eyebrow: 'Por qué AITHORIS',
     heading: 'Construidos para el vacío que otros dejan abierto.',
     body:    'Los proyectos de IA suelen fracasar de dos maneras: las agencias avanzan rápido pero dejan sistemas frágiles, o las consultoras avanzan con cuidado pero nunca entregan. Este es el estándar con el que nos medimos en cada proyecto, no solo en la propuesta.',
     table: {
@@ -129,21 +129,21 @@ window.i18nStrings.es = {
       submit:   'Agenda tu sesión inicial',
       sending:  'Enviando…',
       success:  '¡Listo! Te responderemos en un día hábil.',
-      error:    'Algo salió mal. Escríbenos directamente a hello@qipuz.com.',
-      emailAlt: '¿Prefieres email? Escríbenos a <a href="mailto:hello@qipuz.com" class="underline hover:text-signal">hello@qipuz.com</a>',
+      error:    'Algo salió mal. Escríbenos directamente a hello@aithoris.com.',
+      emailAlt: '¿Prefieres email? Escríbenos a <a href="mailto:hello@aithoris.com" class="underline hover:text-signal">hello@aithoris.com</a>',
     },
   },
 
   footer: {
     tagline:   'Inteligencia conectada.',
-    copyright: '© 2026 QIPUZ. Todos los derechos reservados.',
+    copyright: '© 2026 AITHORIS. Todos los derechos reservados.',
     label:     'Ingeniería de IA',
   },
 
   portfolio: {
     meta: {
-      title:       'QIPUZ | Portafolio',
-      description: 'Sistemas de automatización que QIPUZ ha construido: calificación de leads, generación de cotizaciones y facturas, producción de video, redacción de guiones y publicación en LinkedIn, cada uno a partir de un problema real que observamos.',
+      title:       'AITHORIS | Portafolio',
+      description: 'Sistemas de automatización que AITHORIS ha construido: calificación de leads, generación de cotizaciones y facturas, producción de video, redacción de guiones y publicación en LinkedIn, cada uno a partir de un problema real que observamos.',
     },
     hero: {
       eyebrow:  'Sistemas que hemos construido',

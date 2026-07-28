@@ -1,4 +1,4 @@
-/* ─── QIPUZ i18n — English strings ────────────────────────────────────────
+/* ─── AITHORIS i18n — English strings ─────────────────────────────────────
  *
  * HOW TO ADD A NEW PAGE:
  *   1. Add a new namespace object here (e.g. about: { headline: '…' })
@@ -9,15 +9,15 @@ window.i18nStrings = window.i18nStrings || {};
 window.i18nStrings.en = {
 
   meta: {
-    title: 'QIPUZ | AI Engineering Company',
-    description: 'QIPUZ engineers AI agents, workflow automations, and intelligent systems that help organizations simplify complexity and make better decisions.',
+    title: 'AITHORIS | AI Engineering Company',
+    description: 'AITHORIS engineers AI agents, workflow automations, and intelligent systems that help organizations simplify complexity and make better decisions.',
   },
 
   skip: { link: 'Skip to content' },
 
   nav: {
     services:  'Services',
-    whyQipuz:  'Why QIPUZ',
+    whyQipuz:  'Why AITHORIS',
     portfolio: 'Portfolio',
     contact:   'Contact',
     cta:       'Book a Session',
@@ -102,7 +102,7 @@ window.i18nStrings.en = {
   },
 
   whyQipuz: {
-    eyebrow: 'Why QIPUZ',
+    eyebrow: 'Why AITHORIS',
     heading: 'Built for the gap others leave open.',
     body:    'AI projects tend to fail in one of two ways: agencies move fast but leave fragile systems behind, or consultancies move carefully but never ship. Here\'s the standard we hold ourselves to instead: on every engagement, not just the pitch.',
     table: {
@@ -130,21 +130,21 @@ window.i18nStrings.en = {
       submit:   'Book a Discovery Session',
       sending:  'Sending…',
       success:  'Thanks! We\'ll reply within one business day.',
-      error:    'Something went wrong. Email us directly at hello@qipuz.com instead.',
-      emailAlt: 'Prefer email? Write to <a href="mailto:hello@qipuz.com" class="underline hover:text-signal">hello@qipuz.com</a>',
+      error:    'Something went wrong. Email us directly at hello@aithoris.com instead.',
+      emailAlt: 'Prefer email? Write to <a href="mailto:hello@aithoris.com" class="underline hover:text-signal">hello@aithoris.com</a>',
     },
   },
 
   footer: {
     tagline:   'Connecting Intelligence.',
-    copyright: '© 2026 QIPUZ. All rights reserved.',
+    copyright: '© 2026 AITHORIS. All rights reserved.',
     label:     'AI Engineering Company',
   },
 
   portfolio: {
     meta: {
-      title:       'QIPUZ | Portfolio',
-      description: 'Automation systems QIPUZ has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.',
+      title:       'AITHORIS | Portfolio',
+      description: 'Automation systems AITHORIS has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.',
     },
     hero: {
       eyebrow:  'Systems We\'ve Built',

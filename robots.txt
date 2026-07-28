@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qipuz.com/sitemap.xml
+Sitemap: https://aithoris.com/sitemap.xml

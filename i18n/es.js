@@ -129,8 +129,8 @@ window.i18nStrings.es = {
       submit:   'Agenda tu sesión inicial',
       sending:  'Enviando…',
       success:  '¡Listo! Te responderemos en un día hábil.',
-      error:    'Algo salió mal. Escríbenos directamente a hello@aithoris.com.',
-      emailAlt: '¿Prefieres email? Escríbenos a <a href="mailto:hello@aithoris.com" class="underline hover:text-signal">hello@aithoris.com</a>',
+      error:    'Algo salió mal. Escríbenos directamente a hello@aithoris.io.',
+      emailAlt: '¿Prefieres email? Escríbenos a <a href="mailto:hello@aithoris.io" class="underline hover:text-signal">hello@aithoris.io</a>',
     },
   },
 

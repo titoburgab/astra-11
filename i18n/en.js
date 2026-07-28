@@ -130,8 +130,8 @@ window.i18nStrings.en = {
       submit:   'Book a Discovery Session',
       sending:  'Sending…',
       success:  'Thanks! We\'ll reply within one business day.',
-      error:    'Something went wrong. Email us directly at hello@aithoris.com instead.',
-      emailAlt: 'Prefer email? Write to <a href="mailto:hello@aithoris.com" class="underline hover:text-signal">hello@aithoris.com</a>',
+      error:    'Something went wrong. Email us directly at hello@aithoris.io instead.',
+      emailAlt: 'Prefer email? Write to <a href="mailto:hello@aithoris.io" class="underline hover:text-signal">hello@aithoris.io</a>',
     },
   },
 

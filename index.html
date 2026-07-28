@@ -632,7 +632,7 @@
       </p>
 
       <div class="reveal mt-10 mx-auto max-w-[480px] text-left" style="transition-delay:200ms;">
-        <form id="contact-form" action="https://formsubmit.co/hello@aithoris.com" method="POST" novalidate>
+        <form id="contact-form" action="https://formsubmit.co/hello@aithoris.io" method="POST" novalidate>
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label for="cf-name" class="sr-only" data-i18n="contact.form.name">Name</label>
@@ -665,7 +665,7 @@
         <div id="cf-success" class="hidden text-center py-6" role="status">
           <p class="text-body-lg" style="color:#F2F2F4;" data-i18n="contact.form.success">Thanks! We'll reply within one business day.</p>
         </div>
-        <p class="mt-4 text-body-sm text-center" style="color:#8A8A95;" data-i18n-html="contact.form.emailAlt">Prefer email? Write to <a href="mailto:hello@aithoris.com" class="underline hover:text-signal">hello@aithoris.com</a></p>
+        <p class="mt-4 text-body-sm text-center" style="color:#8A8A95;" data-i18n-html="contact.form.emailAlt">Prefer email? Write to <a href="mailto:hello@aithoris.io" class="underline hover:text-signal">hello@aithoris.io</a></p>
       </div>
     </div>
   </section>
@@ -786,7 +786,7 @@
       btn.disabled = true;
       btn.textContent = window.i18n ? window.i18n.t('contact.form.sending') : 'Sending…';
 
-      fetch('https://formsubmit.co/ajax/hello@aithoris.com', {
+      fetch('https://formsubmit.co/ajax/hello@aithoris.io', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: new FormData(form),
@@ -801,7 +801,7 @@
           btn.textContent = btnLabel;
           error.textContent = window.i18n
             ? window.i18n.t('contact.form.error')
-            : 'Something went wrong. Email us directly at hello@aithoris.com instead.';
+            : 'Something went wrong. Email us directly at hello@aithoris.io instead.';
           error.classList.remove('hidden');
         });
     });

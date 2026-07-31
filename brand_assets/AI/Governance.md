@@ -2,7 +2,7 @@
 
 ## AI / Governance.md
 
-> *Trust in AI is earned through governance. This document defines the frameworks, standards, and processes that govern every AI system QIPUZ builds and deploys.*
+> *Trust in AI is earned through governance. This document defines the frameworks, standards, and processes that govern every AI system AITHORIS builds and deploys.*
 
 ---
 
@@ -12,7 +12,7 @@ An AI system without governance is a liability.
 
 Not because AI is inherently dangerous, but because any powerful system deployed without clear accountability, defined scope, and human oversight will eventually behave in ways its operators did not intend, cannot explain, and may not detect.
 
-QIPUZ governance exists to ensure that every system we build:
+AITHORIS governance exists to ensure that every system we build:
 - Does what it is supposed to do
 - Does not do what it is not supposed to do
 - Can be understood, audited, and corrected
@@ -60,7 +60,7 @@ Before any AI system is deployed in production, the following must be documented
 |---|---|
 | Internal tooling, low stakes | Project lead |
 | Client-facing, low stakes | Project lead + Technical lead |
-| Client-facing, high stakes | Project lead + Technical lead + QIPUZ principal |
+| Client-facing, high stakes | Project lead + Technical lead + AITHORIS principal |
 | Autonomous action with irreversible effects | Full governance review + client sign-off |
 
 **High-stakes** is defined as: any system whose outputs directly affect employment, compensation, legal status, medical decisions, financial transactions, or public-facing communications.
@@ -109,7 +109,7 @@ All deployed systems are monitored for:
 ### Transparency
 - Clients receive documentation of what the AI system does and how it makes decisions
 - Uncertainty and confidence levels are surfaced to end users where technically feasible
-- QIPUZ does not represent AI outputs as human-generated
+- AITHORIS does not represent AI outputs as human-generated
 
 ### Human Oversight
 - No autonomous AI action is irreversible without human confirmation
@@ -120,7 +120,7 @@ All deployed systems are monitored for:
 
 ## Client Governance Agreements
 
-For all client AI deployments, QIPUZ requires:
+For all client AI deployments, AITHORIS requires:
 
 1. **Signed AI Governance Agreement** — defining roles, responsibilities, and escalation procedures
 2. **Designated client AI owner** — a named individual responsible for oversight on the client side
@@ -129,9 +129,9 @@ For all client AI deployments, QIPUZ requires:
 
 ---
 
-## QIPUZ's Own AI Use
+## AITHORIS's Own AI Use
 
-QIPUZ uses AI internally for: code assistance, documentation drafting, research synthesis, and design iteration.
+AITHORIS uses AI internally for: code assistance, documentation drafting, research synthesis, and design iteration.
 
 All internal AI use is subject to the same principles that govern client systems:
 - No confidential client data is processed in external AI systems without client consent
@@ -144,4 +144,4 @@ All internal AI use is subject to the same principles that govern client systems
 
 ---
 
-© QIPUZ AI Repository — Governance.md v2.0
+© AITHORIS AI Repository — Governance.md v2.0

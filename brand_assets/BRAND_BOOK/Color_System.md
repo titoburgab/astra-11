@@ -2,7 +2,7 @@
 
 ## BRAND_BOOK / Color_System.md
 
-> *The QIPUZ color system is built on three primary values and an extended motion palette. Every color decision has a defined purpose and usage context.*
+> *The AITHORIS color system is built on three primary values and an extended motion palette. Every color decision has a defined purpose and usage context.*
 
 ---
 
@@ -26,7 +26,7 @@ These three colors form the complete primary palette for all static brand applic
 
 **Obsidian** is the primary dark background. Use for: dark-mode interfaces, hero sections, headers, premium presentations, physical brand applications on dark materials.
 
-**Ivory** is the primary light background. Use for: light-mode interfaces, documentation, body text backgrounds, print materials. Never substitute pure white (`#FFFFFF`) for Ivory in QIPUZ brand contexts.
+**Ivory** is the primary light background. Use for: light-mode interfaces, documentation, body text backgrounds, print materials. Never substitute pure white (`#FFFFFF`) for Ivory in AITHORIS brand contexts.
 
 **Signal Red** is the brand accent. Use for: the Origin Node in the logo, primary CTAs, key data highlights, active states in UI, and emphasis in motion sequences. Do not use Signal Red for body text.
 
@@ -93,7 +93,7 @@ For UI contexts requiring additional tonal range:
 
 Production-ready color tokens: `TOKENS/colors.json`
 
-CSS variable names follow the pattern `--qipuz-color-[name]`
+CSS variable names follow the pattern `--aithoris-color-[name]`
 
 See `DESIGN_SYSTEM/Colors.md` for component-level color application.
 
@@ -103,4 +103,4 @@ See `DESIGN_SYSTEM/Colors.md` for component-level color application.
 
 ---
 
-© QIPUZ Brand Book — Color_System.md v2.0
+© AITHORIS Brand Book — Color_System.md v2.0

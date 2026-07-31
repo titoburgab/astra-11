@@ -1,4 +1,4 @@
-# QIPUZ Foundation Repository
+# AITHORIS Foundation Repository
 
 **Version 2.0 — June 2026**
 
@@ -8,7 +8,7 @@
 
 ## What This Repository Is
 
-This repository is the operating system of QIPUZ — an AI engineering company that designs intelligent systems, AI agents, and workflow automations.
+This repository is the operating system of AITHORIS — an AI engineering company that designs intelligent systems, AI agents, and workflow automations.
 
 It is the single source of truth for every decision made about the company: brand, design, engineering, product, AI strategy, marketing, and governance.
 
@@ -19,7 +19,7 @@ Every document is written to be actionable, not aspirational.
 ## Repository Structure
 
 ```
-QIPUZ/
+AITHORIS/
 ├── FOUNDATION/          # Company identity, values, mission, vision
 ├── BRAND_BOOK/          # Visual identity, logo, color, typography, motion
 ├── DESIGN_SYSTEM/       # Components, tokens, layout, accessibility
@@ -49,14 +49,14 @@ QIPUZ/
 
 | Version | Date | Author | Summary |
 |---|---|---|---|
-| 1.0 | May 2026 | QIPUZ Founding Team | Initial foundation documents |
-| 2.0 | June 2026 | QIPUZ Founding Team | Full repository expansion |
+| 1.0 | May 2026 | AITHORIS Founding Team | Initial foundation documents |
+| 2.0 | June 2026 | AITHORIS Founding Team | Full repository expansion |
 
 ---
 
 ## Governance
 
-This repository is maintained by the QIPUZ founding team.
+This repository is maintained by the AITHORIS founding team.
 
 All changes to FOUNDATION documents require deliberate review.
 
@@ -66,4 +66,4 @@ See `FOUNDATION/Decision_Log.md` for the history of significant decisions.
 
 ---
 
-© QIPUZ — All rights reserved.
+© AITHORIS — All rights reserved.

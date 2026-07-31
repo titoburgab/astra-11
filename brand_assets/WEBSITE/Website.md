@@ -2,7 +2,7 @@
 
 ## WEBSITE / Website.md
 
-> *The QIPUZ website is the digital headquarters of the company. It must communicate engineering excellence, clarity, and trust in every interaction.*
+> *The AITHORIS website is the digital headquarters of the company. It must communicate engineering excellence, clarity, and trust in every interaction.*
 
 ---
 
@@ -28,9 +28,9 @@
 ## Information Architecture
 
 ```
-qipuz.com/
+aithoris.io/
 ├── /                       Home
-├── /about                  About QIPUZ
+├── /about                  About AITHORIS
 │   ├── /about/team         Team
 │   └── /about/philosophy   Engineering & Design Philosophy
 ├── /services               Services overview
@@ -105,7 +105,7 @@ See `BRAND_BOOK/Voice_Guide.md` and `WEBSITE/Copywriting.md` for detailed writin
 
 Every visitor should leave with one impression:
 
-> *QIPUZ builds AI systems with engineering discipline. They know what they are doing and they are worth talking to.*
+> *AITHORIS builds AI systems with engineering discipline. They know what they are doing and they are worth talking to.*
 
 ---
 
@@ -113,4 +113,4 @@ Every visitor should leave with one impression:
 
 ---
 
-© QIPUZ Website — Website.md v2.0
+© AITHORIS Website — Website.md v2.0

@@ -2,13 +2,13 @@
 
 ## BRAND_BOOK / Motion_Identity.md
 
-> *Motion at QIPUZ communicates intelligence in action — calm, intentional, and purposeful. Every animation has a reason.*
+> *Motion at AITHORIS communicates intelligence in action — calm, intentional, and purposeful. Every animation has a reason.*
 
 ---
 
 ## Motion Philosophy
 
-Motion is not decoration. At QIPUZ, every animation serves one of three purposes:
+Motion is not decoration. At AITHORIS, every animation serves one of three purposes:
 
 1. **Orientation** — Helping users understand where they are and what has changed
 2. **Feedback** — Confirming that a system has received input and is processing
@@ -24,7 +24,7 @@ Animation that does not serve one of these purposes should not exist.
 
 **Intentional** — Every motion element was placed deliberately. Nothing animates by default.
 
-**Smooth** — Transitions follow natural easing curves. Mechanical, linear animations are not QIPUZ.
+**Smooth** — Transitions follow natural easing curves. Mechanical, linear animations are not AITHORIS.
 
 **Functional** — Motion supports the user's task. It does not interrupt or delay.
 
@@ -99,7 +99,7 @@ child nodes: opacity 1 → 0, duration: 200ms, starts 100ms before line retracti
 
 **State 5: Essence**
 ```
-element: qipuz-logo
+element: aithoris-logo
 clip-path or stroke-dasharray: 0 → full
 origin: from origin-node coordinates
 duration: 600ms
@@ -114,7 +114,7 @@ Used in product interfaces to communicate active processing.
 
 The Origin Node pulses 2–3 times, then rests. If processing continues, pulse resumes after a 1-second pause.
 
-Do not use spinning indicators in QIPUZ interfaces. The pulse is the QIPUZ loading pattern.
+Do not use spinning indicators in AITHORIS interfaces. The pulse is the AITHORIS loading pattern.
 
 ---
 
@@ -132,7 +132,7 @@ Do not apply motion colors to static elements.
 
 ## Reduced Motion
 
-All QIPUZ animations must respect `prefers-reduced-motion`.
+All AITHORIS animations must respect `prefers-reduced-motion`.
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -146,7 +146,7 @@ All QIPUZ animations must respect `prefers-reduced-motion`.
 
 ## Animation Standards
 
-Professional, purposeful animation is encouraged across all QIPUZ digital experiences. Animation should elevate the brand and communicate intelligence in motion — not merely decorate.
+Professional, purposeful animation is encouraged across all AITHORIS digital experiences. Animation should elevate the brand and communicate intelligence in motion — not merely decorate.
 
 **Encouraged:**
 - Scroll-triggered section reveals using fade and translate combinations
@@ -179,4 +179,4 @@ Professional, purposeful animation is encouraged across all QIPUZ digital experi
 
 ---
 
-© QIPUZ Brand Book — Motion_Identity.md v2.0
+© AITHORIS Brand Book — Motion_Identity.md v2.0

@@ -10,13 +10,13 @@
 
 A prompt is an instruction set for an AI system. Like any instruction set, it can be written well or poorly — and the difference has direct consequences for system behavior, reliability, and safety.
 
-At QIPUZ, prompts are not written casually. They are engineered.
+At AITHORIS, prompts are not written casually. They are engineered.
 
 ---
 
 ## Prompt Layers
 
-Every QIPUZ agent system uses a layered prompt architecture:
+Every AITHORIS agent system uses a layered prompt architecture:
 
 ### Layer 1: System Prompt
 Defines the agent's identity, capabilities, constraints, and behavior guidelines.
@@ -138,9 +138,9 @@ Exceeding budget triggers context compression. Context compression strategy is d
 
 ---
 
-## QIPUZ System Prompt Template
+## AITHORIS System Prompt Template
 
-See `PROMPTS/System_Prompt.md` for the full QIPUZ system prompt template used in client-facing agent deployments.
+See `PROMPTS/System_Prompt.md` for the full AITHORIS system prompt template used in client-facing agent deployments.
 
 ---
 
@@ -148,4 +148,4 @@ See `PROMPTS/System_Prompt.md` for the full QIPUZ system prompt template used in
 
 ---
 
-© QIPUZ AI Repository — Prompt_Architecture.md v2.0
+© AITHORIS AI Repository — Prompt_Architecture.md v2.0

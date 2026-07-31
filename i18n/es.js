@@ -15,8 +15,9 @@ window.i18nStrings.es = {
   skip: { link: 'Ir al contenido' },
 
   nav: {
+    about:     'Nosotros',
     services:  'Servicios',
-    whyQipuz:  'Por qué AITHORIS',
+    whyAithoris:  'Por qué AITHORIS',
     portfolio: 'Portafolio',
     contact:   'Contacto',
     cta:       'Agendar sesión',
@@ -100,7 +101,7 @@ window.i18nStrings.es = {
     body:    'La mayoría de los pilotos de IA nunca llegan a producción.<br><span class="font-medium">Nosotros empezamos ahí.</span>',
   },
 
-  whyQipuz: {
+  whyAithoris: {
     eyebrow: 'Por qué AITHORIS',
     heading: 'Construidos para el vacío que otros dejan abierto.',
     body:    'Los proyectos de IA suelen fracasar de dos maneras: las agencias avanzan rápido pero dejan sistemas frágiles, o las consultoras avanzan con cuidado pero nunca entregan. Este es el estándar con el que nos medimos en cada proyecto, no solo en la propuesta.',
@@ -109,11 +110,11 @@ window.i18nStrings.es = {
         agencies:   'Agencias de IA',
         consulting: 'Grandes consultoras',
       },
-      row1: { label: 'Disciplina de ingeniería', agencies: 'Variable',             consulting: 'Aprobaciones en capas', qipuz: 'Rigurosa y documentada'    },
-      row2: { label: 'Velocidad a producción',   agencies: 'Rápido, frágil',       consulting: 'Lento, exhaustivo',     qipuz: 'Rápido y confiable'        },
-      row3: { label: 'Explicabilidad',           agencies: 'Raramente priorizada', consulting: 'Raramente entregada',   qipuz: 'Integrada al diseño'       },
-      row4: { label: 'Gobernanza',               agencies: 'Ausente',              consulting: 'Cargada de procesos',   qipuz: 'Calibrada al proyecto'     },
-      row5: { label: 'Calidad de diseño',        agencies: 'Genérica',             consulting: 'Estándar corporativo',  qipuz: 'Premium, con identidad propia' },
+      row1: { label: 'Disciplina de ingeniería', agencies: 'Variable',             consulting: 'Aprobaciones en capas', aithoris: 'Rigurosa y documentada'    },
+      row2: { label: 'Velocidad a producción',   agencies: 'Rápido, frágil',       consulting: 'Lento, exhaustivo',     aithoris: 'Rápido y confiable'        },
+      row3: { label: 'Explicabilidad',           agencies: 'Raramente priorizada', consulting: 'Raramente entregada',   aithoris: 'Integrada al diseño'       },
+      row4: { label: 'Gobernanza',               agencies: 'Ausente',              consulting: 'Cargada de procesos',   aithoris: 'Calibrada al proyecto'     },
+      row5: { label: 'Calidad de diseño',        agencies: 'Genérica',             consulting: 'Estándar corporativo',  aithoris: 'Premium, con identidad propia' },
     },
     footnote: 'Nuestro propio estándar operativo, no una auditoría de ninguna empresa en particular.',
   },
@@ -138,6 +139,73 @@ window.i18nStrings.es = {
     tagline:   'Inteligencia conectada.',
     copyright: '© 2026 AITHORIS. Todos los derechos reservados.',
     label:     'Ingeniería de IA',
+  },
+
+  about: {
+    meta: {
+      title:       'AITHORIS | Nosotros',
+      description: 'AITHORIS es un socio de ingeniería de IA y automatización inteligente enfocado en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
+    },
+    hero: {
+      eyebrow:  'Sobre AITHORIS',
+      headline: 'Ingeniería de inteligencia. Resultados de negocio.',
+      body:     'La tecnología por sí sola no transforma un negocio. La estrategia correcta, los sistemas correctos y la ejecución correcta sí lo hacen. En AITHORIS diseñamos soluciones de IA inteligentes que ayudan a las organizaciones a eliminar ineficiencias, automatizar trabajo repetitivo, reducir costos operativos y crear nuevas oportunidades de crecimiento. Cada solución que construimos está diseñada alrededor de un objetivo: ayudar a que tu negocio funcione mejor.',
+      closer:   'No implementamos IA porque esté de moda.<br><span class="font-medium text-ivory">Diseñamos sistemas inteligentes porque resuelven problemas reales de negocio.</span>',
+      cta:      'Construyamos Algo Más Inteligente',
+    },
+    whoWeAre: {
+      eyebrow: 'Quiénes Somos',
+      heading: 'Tu socio de ingeniería en IA para la transformación de tu negocio',
+      body1:   'AITHORIS es una empresa de ingeniería de IA y automatización inteligente enfocada en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
+      body2:   'Trabajamos con empresas que reconocen que la tecnología debería ser una ventaja, no otro problema más que gestionar.',
+      body3:   'En lugar de ofrecer herramientas de IA genéricas, nos tomamos el tiempo de entender cómo opera tu negocio, dónde existen oportunidades y cómo los sistemas inteligentes pueden generar mejoras medibles en toda tu organización.',
+      body4:   'Ya sea optimizando operaciones internas, mejorando la experiencia de tus clientes, acelerando la toma de decisiones o creando nuevas oportunidades de ingresos, cada solución que desarrollamos se construye alrededor de tu negocio, no de la última tendencia tecnológica.',
+      closer:  'Porque la verdadera innovación no se trata de sumar más software.<br><span class="font-medium text-ivory">Se trata de hacer el trabajo más simple, más rápido y más valioso.</span>',
+    },
+    whyWeExist: {
+      eyebrow:  'Por Qué Existimos',
+      heading:  'Las empresas no necesitan más tecnología.<br>Necesitan mejores sistemas.',
+      problems: 'Toda organización tiene ineficiencias ocultas.<br>Procesos manuales que desperdician tiempo valioso.<br>Información atrapada en sistemas desconectados.<br>Equipos haciendo trabajo repetitivo que podría automatizarse.<br>Oportunidades perdidas porque las decisiones críticas tardan demasiado.',
+      reframe:  'Estos desafíos no son problemas de tecnología.<br><span class="font-medium text-ivory">Son problemas de negocio.</span>',
+      body:     'Nuestra misión es diseñar sistemas inteligentes que eliminen esas barreras, permitiendo que las personas se concentren en lo que mejor saben hacer: crear valor, atender a los clientes y hacer crecer el negocio.',
+      closer:   'Cuando la tecnología funciona como debería, se vuelve casi invisible.<br>Tus equipos simplemente trabajan más rápido.<br>Tus clientes reciben mejores experiencias.<br>Tu negocio se vuelve más eficiente.',
+    },
+    different: {
+      eyebrow: 'Qué Hace Diferente a AITHORIS',
+      heading: 'Tres compromisos, en cada proyecto.',
+      body:    'Nada de esto es complicado. Solo es, de forma constante, poco común.',
+      card1: { title: 'Inteligencia Práctica',                     body: 'Construimos sistemas que resuelven el problema específico frente a nosotros, no IA de propósito general en busca de un caso de uso. Si no elimina trabajo, reduce costos o acelera una decisión, no lo construimos solo porque la tecnología existe.' },
+      card2: { title: 'Soluciones Construidas Para Ti',            body: 'Cada sistema se diseña según tus flujos de trabajo, datos y equipo actuales, no al revés. Tu negocio no debería cambiar su forma de operar para adaptarse a un software; el software se adapta a cómo tu negocio ya gana.' },
+      card3: { title: 'Acompañamiento Más Allá del Lanzamiento',   body: 'Seguimos siendo responsables después del lanzamiento: monitoreando, refinando y dando soporte a lo que construimos el tiempo que nos necesites. Tu negocio sigue evolucionando, así que el sistema también tiene que hacerlo. Eso no es un servicio adicional. Es el trabajo.' },
+    },
+    impact: {
+      eyebrow: 'El Impacto en el Negocio',
+      heading: 'Lo que cambia cuando el sistema es el correcto.',
+      item1: { title: 'Horas recuperadas',                         body: 'El trabajo repetitivo pasa de la agenda de tu equipo a la del sistema.' },
+      item2: { title: 'Menos errores',                             body: 'La lógica estructurada reemplaza la reintroducción manual de datos y las suposiciones.' },
+      item3: { title: 'Decisiones más rápidas',                    body: 'La información llega a la persona correcta antes de que pase el momento.' },
+      item4: { title: 'Calidad consistente',                       body: 'Cada resultado sigue el mismo estándar, siempre.' },
+      item5: { title: 'Menor costo operativo',                     body: 'La automatización absorbe el volumen, no una nueva contratación.' },
+      item6: { title: 'Capacidad escalable',                       body: 'Crecer no exige aumentar la plantilla al mismo ritmo.' },
+      item7: { title: 'Conocimiento institucional, preservado',    body: 'Lo que sabe una persona se convierte en lo que sabe el sistema.' },
+      item8: { title: 'Más tiempo para el criterio',               body: 'Tu equipo dedica su tiempo a decisiones, no a digitar datos.' },
+    },
+    industries: {
+      eyebrow: 'Industrias a las que Ayudamos',
+      heading: 'Construido para cómo trabajas, sea cual sea ese trabajo.',
+      body:    'Los problemas que resolvemos (leads sin calificar, datos desconectados, documentación manual, coordinación repetitiva) aparecen en cada industria. No nos especializamos en un sector. Nos especializamos en diseñar el sistema que tu operación realmente necesita.',
+    },
+    commitment: {
+      eyebrow:   'Nuestro Compromiso',
+      statement: 'Nos comprometemos con el resultado, no con el entregable.',
+      body:      'Un sistema que nadie usa no es un éxito. Medimos nuestro trabajo por lo que cambia en tu negocio, no por lo bien que luce en una demo.',
+    },
+    cta: {
+      heading:   '¿Listo para ver cómo se siente un sistema bien construido?',
+      body:      'Cuéntanos qué es lento, manual o inconsistente en tu operación. Te diremos con honestidad si la IA es la solución correcta, y cómo se vería realmente un sistema listo para producción.',
+      primary:   'Agenda una Sesión Inicial',
+      secondary: 'Explora Nuestras Soluciones',
+    },
   },
 
   portfolio: {

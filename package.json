@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/titoburgab/qipuz.git"
+    "url": "git+https://github.com/titoburgab/aithoris.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/titoburgab/qipuz/issues"
+    "url": "https://github.com/titoburgab/aithoris/issues"
   },
-  "homepage": "https://github.com/titoburgab/qipuz#readme",
+  "homepage": "https://github.com/titoburgab/aithoris#readme",
   "dependencies": {
     "puppeteer-core": "^25.3.0"
   }

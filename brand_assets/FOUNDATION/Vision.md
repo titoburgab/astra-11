@@ -14,13 +14,13 @@ Artificial intelligence is not a destination. It is infrastructure.
 
 The most successful organizations of the next decade will not be the ones that adopted AI the fastest. They will be the ones that integrated AI most intelligently — with clarity about what it can do, discipline about how it is governed, and commitment to making it work for the people inside the organization, not just around them.
 
-QIPUZ is building the engineering practice that makes that future possible.
+AITHORIS is building the engineering practice that makes that future possible.
 
 ---
 
 ## Our Long-Term Aspiration
 
-In ten years, QIPUZ will be recognized as the reference standard for AI engineering — not because of the scale of its operations, but because of the quality of its systems and the depth of trust its clients place in them.
+In ten years, AITHORIS will be recognized as the reference standard for AI engineering — not because of the scale of its operations, but because of the quality of its systems and the depth of trust its clients place in them.
 
 We aspire to build:
 
@@ -57,7 +57,7 @@ A visual and interaction language that communicates that AI can be beautiful, un
 - Global presence with clients across multiple industries and regions
 - Proprietary AI agent products with measurable market share
 - A published AI engineering methodology referenced by the field
-- A design system and component library used beyond QIPUZ itself
+- A design system and component library used beyond AITHORIS itself
 
 ---
 
@@ -76,7 +76,7 @@ Opportunities that fail these tests are outside the vision, regardless of their 
 
 ## The Legacy We Are Building
 
-QIPUZ is not being built to follow trends in AI.
+AITHORIS is not being built to follow trends in AI.
 
 It is being built to define how intelligent systems are designed, experienced, and trusted — and to leave behind a body of work that raises the standard for the entire field.
 
@@ -90,4 +90,4 @@ It is being built to define how intelligent systems are designed, experienced, a
 
 ---
 
-© QIPUZ Foundation Repository — Vision.md v2.0
+© AITHORIS Foundation Repository — Vision.md v2.0

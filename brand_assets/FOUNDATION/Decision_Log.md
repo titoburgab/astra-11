@@ -2,7 +2,7 @@
 
 ## FOUNDATION / Decision_Log.md
 
-> *Every significant decision that affects the direction of QIPUZ is recorded here. This log exists so that future team members can understand why things are the way they are — and so that we can learn from our own decisions over time.*
+> *Every significant decision that affects the direction of AITHORIS is recorded here. This log exists so that future team members can understand why things are the way they are — and so that we can learn from our own decisions over time.*
 
 ---
 
@@ -126,7 +126,7 @@ None
 **Owner:** Brand Director
 
 ### Decision
-The official QIPUZ tagline is **"Connecting Intelligence."**
+The official AITHORIS tagline is **"Connecting Intelligence."**
 
 ### Context
 The visual style guide presented "Connecting Intelligence." as the primary option with three alternatives: "Engineering Intelligent Systems," "AI That Works," and "Intelligence That Connects." No document in the v1.0 repository formally declared the tagline.
@@ -138,7 +138,7 @@ The visual style guide presented "Connecting Intelligence." as the primary optio
 4. **"Connecting Intelligence."** — Action-oriented. Brand is the actor. "Connecting" suggests relationships, networks, and systems. "Intelligence" is the what and the who. The period signals confidence and finality.
 
 ### Rationale
-"Connecting Intelligence." works at multiple levels: QIPUZ connects AI capabilities into organizational systems; it connects the intelligence already present in organizations into accessible, usable form; and the name QIPUZ itself evokes connection through its visual language (the Origin Node and its connections). The tagline and the visual identity reinforce each other.
+"Connecting Intelligence." works at multiple levels: AITHORIS connects AI capabilities into organizational systems; it connects the intelligence already present in organizations into accessible, usable form; and the name AITHORIS itself evokes connection through its visual language (the Origin Node and its connections). The tagline and the visual identity reinforce each other.
 
 ### Risks & Open Questions
 - Trademark availability should be confirmed before public launch
@@ -176,4 +176,4 @@ None
 
 ---
 
-© QIPUZ Foundation Repository — Decision_Log.md v2.0
+© AITHORIS Foundation Repository — Decision_Log.md v2.0

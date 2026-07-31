@@ -2,7 +2,7 @@
 
 ## MARKETING / Brand_Messaging.md
 
-> *Every message QIPUZ sends is part of the same argument. This document defines what that argument is, and how to make it at every level of specificity.*
+> *Every message AITHORIS sends is part of the same argument. This document defines what that argument is, and how to make it at every level of specificity.*
 
 ---
 
@@ -12,21 +12,21 @@ Organizations are not struggling because they lack AI tools.
 
 They are struggling because complexity compounds faster than people can manage it manually — and the tools they have been given require them to change how they work, rather than working around how they already work.
 
-QIPUZ engineers systems that absorb that complexity. Systems that are reliable enough to trust, explainable enough to understand, and designed well enough to actually use.
+AITHORIS engineers systems that absorb that complexity. Systems that are reliable enough to trust, explainable enough to understand, and designed well enough to actually use.
 
 ---
 
 ## Messaging Hierarchy
 
 ### Level 1: One Sentence
-> *QIPUZ engineers intelligent systems that help organizations simplify complexity and make better decisions.*
+> *AITHORIS engineers intelligent systems that help organizations simplify complexity and make better decisions.*
 
 Use when: introductions, bios, one-line descriptions, LinkedIn headlines.
 
 ---
 
 ### Level 2: Elevator Pitch (30 seconds)
-> *Most organizations know they need AI but struggle to deploy it reliably. QIPUZ is an AI engineering company — we build custom agents, workflow automations, and intelligent systems designed around how an organization actually works. Our clients automate the work that slows their teams down, and free up human judgment for the decisions that matter.*
+> *Most organizations know they need AI but struggle to deploy it reliably. AITHORIS is an AI engineering company — we build custom agents, workflow automations, and intelligent systems designed around how an organization actually works. Our clients automate the work that slows their teams down, and free up human judgment for the decisions that matter.*
 
 Use when: networking, conference introductions, verbal pitches.
 
@@ -35,7 +35,7 @@ Use when: networking, conference introductions, verbal pitches.
 ### Level 3: Value Proposition (Website Hero)
 > **Connecting Intelligence.**
 >
-> QIPUZ engineers AI agents, workflow automations, and intelligent systems that transform organizational complexity into operational clarity.
+> AITHORIS engineers AI agents, workflow automations, and intelligent systems that transform organizational complexity into operational clarity.
 >
 > *We build AI that works — reliably, transparently, and designed around your team.*
 
@@ -44,7 +44,7 @@ Use when: website homepage, presentation openers, executive summaries.
 ---
 
 ### Level 4: Full Positioning Statement
-> QIPUZ is an AI engineering company that designs intelligent systems for organizations that need more than off-the-shelf AI.
+> AITHORIS is an AI engineering company that designs intelligent systems for organizations that need more than off-the-shelf AI.
 >
 > We build custom AI agents, workflow automations, and knowledge systems — engineered from the ground up for reliability, explainability, and long-term maintainability.
 >
@@ -62,7 +62,7 @@ Use when: proposals, decks, partnership introductions, detailed marketing copy.
 **They care about:** ROI, competitive advantage, risk, strategic positioning.
 
 **Message:**
-> "AI is becoming infrastructure. The organizations that deploy it well — with reliable systems, proper governance, and real integration — will have a durable operational advantage. The ones that chase demos and tools without engineering discipline will spend the next five years managing technical debt. QIPUZ helps you build the right thing the first time."
+> "AI is becoming infrastructure. The organizations that deploy it well — with reliable systems, proper governance, and real integration — will have a durable operational advantage. The ones that chase demos and tools without engineering discipline will spend the next five years managing technical debt. AITHORIS helps you build the right thing the first time."
 
 ---
 
@@ -86,7 +86,7 @@ Use when: proposals, decks, partnership introductions, detailed marketing copy.
 **They care about:** Data handling, access controls, audit trails, compliance.
 
 **Message:**
-> "Every QIPUZ deployment comes with a governance agreement, a documented scope, audit logging, and defined human oversight procedures. We do not deploy AI systems without clear accountability structures on both sides."
+> "Every AITHORIS deployment comes with a governance agreement, a documented scope, audit logging, and defined human oversight procedures. We do not deploy AI systems without clear accountability structures on both sides."
 
 ---
 
@@ -114,4 +114,4 @@ Use when: proposals, decks, partnership introductions, detailed marketing copy.
 
 ---
 
-© QIPUZ Marketing — Brand_Messaging.md v2.0
+© AITHORIS Marketing — Brand_Messaging.md v2.0

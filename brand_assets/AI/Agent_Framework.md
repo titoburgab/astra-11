@@ -2,7 +2,7 @@
 
 ## AI / Agent_Framework.md
 
-> *An AI agent is only as reliable as its architecture. This document defines how QIPUZ designs, builds, and deploys autonomous agent systems.*
+> *An AI agent is only as reliable as its architecture. This document defines how AITHORIS designs, builds, and deploys autonomous agent systems.*
 
 ---
 
@@ -10,7 +10,7 @@
 
 An AI agent is a system that perceives inputs, reasons about them, and takes actions — repeatedly, across multiple steps — to achieve a defined goal.
 
-The word "agent" is overloaded in the current AI market. At QIPUZ, an agent is characterized by three properties:
+The word "agent" is overloaded in the current AI market. At AITHORIS, an agent is characterized by three properties:
 
 1. **Multi-step execution** — The system can plan and execute sequences of actions, not just single-step completions
 2. **Tool use** — The system can interact with external systems: databases, APIs, files, communication platforms
@@ -22,7 +22,7 @@ An agent is not a chatbot with tool access. It is an engineered system with defi
 
 ## Agent Architecture Pattern
 
-Every QIPUZ agent follows this architectural pattern:
+Every AITHORIS agent follows this architectural pattern:
 
 ```
 INPUT LAYER
@@ -92,7 +92,7 @@ All persistent memory requires explicit client authorization and data governance
 
 ## Tool Design Standards
 
-Tools built for QIPUZ agents follow these standards:
+Tools built for AITHORIS agents follow these standards:
 
 1. **Single responsibility** — Each tool does one thing. Composite operations use tool sequences, not composite tools.
 2. **Explicit error returns** — Tools return structured errors, never silent failures.
@@ -136,4 +136,4 @@ Key principles:
 
 ---
 
-© QIPUZ AI Repository — Agent_Framework.md v2.0
+© AITHORIS AI Repository — Agent_Framework.md v2.0

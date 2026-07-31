@@ -8,7 +8,7 @@
 
 ## Standard
 
-QIPUZ targets **WCAG 2.1 AA** as the minimum standard for all production interfaces.
+AITHORIS targets **WCAG 2.1 AA** as the minimum standard for all production interfaces.
 We target **WCAG 2.1 AAA** for primary content and critical user paths.
 
 ---
@@ -44,11 +44,11 @@ For all new color combinations, verify contrast at: https://webaim.org/resources
 All interactive elements must have a visible focus indicator.
 
 ```css
-/* QIPUZ focus standard */
+/* AITHORIS focus standard */
 :focus-visible {
-  outline: 2px solid var(--qipuz-color-signal-red);
+  outline: 2px solid var(--aithoris-color-signal-red);
   outline-offset: 2px;
-  border-radius: var(--qipuz-radius-sm);
+  border-radius: var(--aithoris-radius-sm);
 }
 ```
 
@@ -111,4 +111,4 @@ Before any production release:
 
 ---
 
-© QIPUZ Design System — Accessibility.md v2.0
+© AITHORIS Design System — Accessibility.md v2.0

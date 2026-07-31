@@ -2,7 +2,7 @@
 
 ## BRAND_BOOK / Typography.md
 
-> *Typography carries the personality of QIPUZ. The type system is precise, confident, and human — it communicates engineering rigor without coldness.*
+> *Typography carries the personality of AITHORIS. The type system is precise, confident, and human — it communicates engineering rigor without coldness.*
 
 ---
 
@@ -18,7 +18,7 @@ See `FOUNDATION/Decision_Log.md` — DECISION-002 for full rationale.
 **License:** Commercial license required. Obtain before production use.
 **Website:** klim.co.nz
 
-Söhne is a contemporary grotesque inspired by the pre-digital era of Swiss typography. It combines geometric precision with humanist warmth — exactly the balance QIPUZ requires. It is confident without being cold, technical without being sterile.
+Söhne is a contemporary grotesque inspired by the pre-digital era of Swiss typography. It combines geometric precision with humanist warmth — exactly the balance AITHORIS requires. It is confident without being cold, technical without being sterile.
 
 **Weights used:**
 - Söhne Light (300) — Large display text, editorial contexts
@@ -110,7 +110,7 @@ For environments where Söhne is not available:
 
 Production-ready typography tokens: `TOKENS/typography.json`
 
-CSS variable names follow the pattern `--qipuz-text-[token]`
+CSS variable names follow the pattern `--aithoris-text-[token]`
 
 ---
 
@@ -118,4 +118,4 @@ CSS variable names follow the pattern `--qipuz-text-[token]`
 
 ---
 
-© QIPUZ Brand Book — Typography.md v2.0
+© AITHORIS Brand Book — Typography.md v2.0

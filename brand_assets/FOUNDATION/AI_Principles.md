@@ -10,7 +10,7 @@
 
 ## Our Stance on AI
 
-QIPUZ is an AI engineering company. We build AI systems for a living. This means our relationship with AI is practical, not ideological — we work with its actual capabilities and limitations, not the capabilities it is claimed to have in marketing materials.
+AITHORIS is an AI engineering company. We build AI systems for a living. This means our relationship with AI is practical, not ideological — we work with its actual capabilities and limitations, not the capabilities it is claimed to have in marketing materials.
 
 These principles define how we think about AI: what it is for, how it should be built, what it should not do, and how it must be governed.
 
@@ -77,7 +77,7 @@ Deployed AI systems are monitored for performance drift, data drift, and behavio
 
 We take AI safety seriously as a practical engineering concern, not as an abstract philosophical position.
 
-For the AI systems QIPUZ builds:
+For the AI systems AITHORIS builds:
 
 - We define failure modes before deployment and design for graceful degradation
 - We implement rate limiting and scope constraints on all autonomous agents
@@ -89,7 +89,7 @@ For the AI systems QIPUZ builds:
 
 ## Governance Requirements
 
-All QIPUZ AI deployments must have:
+All AITHORIS AI deployments must have:
 
 1. A defined scope document: what the system does and does not do
 2. A human oversight interface or process
@@ -105,4 +105,4 @@ See `AI/Governance.md` for the full governance framework.
 
 ---
 
-© QIPUZ Foundation Repository — AI_Principles.md v2.0
+© AITHORIS Foundation Repository — AI_Principles.md v2.0

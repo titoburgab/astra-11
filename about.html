@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AITHORIS | About</title>
+<meta name="description" content="AITHORIS is an AI engineering and intelligent automation partner focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.">
+
+<!-- hreflang alternate links — hrefs populated at runtime by i18n.js -->
+<link rel="alternate" hreflang="en" href="">
+<link rel="alternate" hreflang="es" href="">
+<link rel="alternate" hreflang="x-default" href="">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 32'%3E%3Cpath d='M18 0L0 32H8L18 0Z' fill='%230D0D10'/%3E%3Cpath d='M18 0L28 32H36L18 0Z' fill='%230D0D10'/%3E%3Cpath d='M18 14L23 25H13L18 14Z' fill='%23D42020'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- i18n: load before render to avoid flash of wrong language -->
+<script src="/i18n/en.js"></script>
+<script src="/i18n/es.js"></script>
+<script>window.AITHORIS_PAGE = 'about';</script>
+<script src="/i18n/i18n.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ivory: { DEFAULT: '#F2F2F4', 80: '#2B2B30', 60: '#232328', 40: '#A6A6AE' },
+          obsidian: { DEFAULT: '#161616', 80: '#2A2A2A', 60: '#333333', 40: '#A6A6AE' },
+          signal: '#D42020',
+          crimsonDeep: '#7A0F0F',
+          crimsonDark: '#9B1515',
+          crimsonShadow: '#B81B1B',
+          crimsonBright: '#E04848',
+          crimsonSoft: '#EE7070',
+        },
+        fontFamily: {
+          display: ['"Outfit"', 'system-ui', '-apple-system', 'sans-serif'],
+          sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+          mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
+        },
+        fontSize: {
+          'display-xl': ['72px', { lineHeight: '1.05', letterSpacing: '-0.04em' }],
+          'display-lg': ['56px', { lineHeight: '1.1', letterSpacing: '-0.04em' }],
+          'display-md': ['40px', { lineHeight: '1.15', letterSpacing: '-0.03em' }],
+          'heading-lg': ['32px', { lineHeight: '1.2', letterSpacing: '-0.02em' }],
+          'heading-md': ['24px', { lineHeight: '1.3', letterSpacing: '-0.02em' }],
+          'heading-sm': ['20px', { lineHeight: '1.35', letterSpacing: '-0.01em' }],
+          'body-lg': ['18px', { lineHeight: '1.6' }],
+          'body-md': ['16px', { lineHeight: '1.65' }],
+          'body-sm': ['14px', { lineHeight: '1.6' }],
+          label: ['12px', { lineHeight: '1.4', letterSpacing: '0.08em' }],
+        },
+        maxWidth: { content: '1200px' },
+        borderRadius: { none: '0px', sm: '2px', DEFAULT: '3px', md: '3px', lg: '5px', xl: '5px', full: '9999px' },
+        transitionTimingFunction: {
+          standard: 'cubic-bezier(0.4,0,0.2,1)',
+          enter: 'cubic-bezier(0,0,0.3,1)',
+          exit: 'cubic-bezier(0.4,0,1,1)',
+          emphasis: 'cubic-bezier(0.4,0,0.2,1)',
+        },
+        transitionDuration: { instant: '80ms', fast: '150ms', base: '200ms', slow: '350ms' },
+      },
+    },
+  };
+</script>
+
+<style>
+  :root { color-scheme: dark; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  body { font-family: "Inter", system-ui, sans-serif; }
+
+  ::selection { background: #D42020; color: #F2F2F4; }
+
+  :focus-visible {
+    outline: 2px solid #D42020;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    background: #161616;
+    color: #F2F2F4;
+    padding: 12px 20px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+  }
+  .skip-link:focus { left: 16px; top: 16px; }
+
+  /* Depth bands — two flat tones strictly alternate section by section for rhythm, no gradients between them. */
+  .bg-warm-section { background: #242424; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
+
+  .shadow-card {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 8px 20px -8px rgba(0,0,0,0.5);
+  }
+  .shadow-card-hover {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.09), 0 4px 10px -2px rgba(212,32,32,0.10), 0 16px 36px -12px rgba(0,0,0,0.6);
+  }
+  #site-header.is-scrolled { box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 12px 24px -16px rgba(0,0,0,0.5); }
+
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Nav link underline */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -6px;
+    width: 100%; height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .nav-link:hover::after, .nav-link:focus-visible::after { transform: scaleX(1); }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    font-family: "Inter", sans-serif; font-weight: 500; font-size: 14px;
+    padding: 12px 24px; border-radius: 3px;
+    transition: transform 150ms cubic-bezier(0.4,0,0.2,1), box-shadow 200ms cubic-bezier(0.4,0,0.2,1), background-color 200ms cubic-bezier(0.4,0,0.2,1), color 200ms cubic-bezier(0.4,0,0.2,1), border-color 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary {
+    background: #D42020; color: #F2F2F4;
+    box-shadow: 0 8px 20px -6px rgba(212,32,32,0.45);
+  }
+  .btn-primary:hover { background: #B81B1B; box-shadow: 0 12px 26px -6px rgba(212,32,32,0.55); }
+  .btn-secondary {
+    background: transparent; color: #F2F2F4; border: 1px solid rgba(242,242,244,0.35);
+  }
+  .btn-secondary:hover { background: #F2F2F4; color: #161616; border-color: #F2F2F4; }
+  .btn-on-dark {
+    background: #D42020; color: #F2F2F4;
+    box-shadow: 0 8px 24px -6px rgba(212,32,32,0.5);
+  }
+  .btn-on-dark:hover { background: #E04848; box-shadow: 0 14px 32px -8px rgba(212,32,32,0.6); }
+
+  /* Reveal-on-scroll */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 700ms cubic-bezier(0,0,0.3,1), transform 700ms cubic-bezier(0,0,0.3,1); }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* Staggered reveal for the "What Makes Us Different" pillar cards */
+  .service-card:nth-child(1) { transition-delay: 0ms; }
+  .service-card:nth-child(2) { transition-delay: 80ms; }
+  .service-card:nth-child(3) { transition-delay: 160ms; }
+
+  /* Staggered reveal for the Business Impact checklist */
+  .impact-item:nth-child(1) { transition-delay: 0ms; }
+  .impact-item:nth-child(2) { transition-delay: 80ms; }
+  .impact-item:nth-child(3) { transition-delay: 160ms; }
+  .impact-item:nth-child(4) { transition-delay: 240ms; }
+  .impact-item:nth-child(n+5) { transition-delay: 240ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .service-card, .impact-item { transition-delay: 0ms; }
+  }
+
+  /* Header */
+  #site-header { transition: background-color 200ms cubic-bezier(0.4,0,0.2,1), border-color 200ms cubic-bezier(0.4,0,0.2,1), backdrop-filter 200ms; }
+  #site-header.is-scrolled { background-color: rgba(10,10,12,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.07); }
+
+  /* Language toggle */
+  .lang-btn {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    color: rgba(242,242,244,0.45);
+    border-radius: 2px;
+    padding: 3px 5px;
+    transition: color 150ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .lang-btn[aria-pressed="true"]  { color: #D42020; }
+  .lang-btn:hover                 { color: #F2F2F4; }
+  .lang-btn:focus-visible         { outline: 2px solid #D42020; outline-offset: 2px; }
+</style>
+</head>
+<body class="bg-obsidian text-ivory antialiased">
+
+<a href="#main" class="skip-link" data-i18n="skip.link">Skip to content</a>
+
+<!-- ============ HEADER / NAV ============ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50">
+  <nav class="mx-auto max-w-content px-5 md:px-10 lg:px-20 h-20 flex items-center justify-between" aria-label="Primary">
+    <a href="/index.html" class="flex items-center" aria-label="AITHORIS home">
+      <svg width="27" height="24" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M18 0L0 32H8L18 0Z" fill="#F2F2F4"/>
+        <path d="M18 0L28 32H36L18 0Z" fill="#F2F2F4"/>
+        <path d="M18 14L23 25H13L18 14Z" fill="#D42020"/>
+      </svg>
+      <span class="ml-2.5 font-display font-medium text-[19px] tracking-[-0.01em] text-ivory">AITHORIS</span>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-10 font-sans text-body-sm font-medium">
+      <a href="/about.html" class="nav-link" data-i18n="nav.about" aria-current="page">About</a>
+      <a href="/index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
+      <a href="/index.html#why-aithoris" class="nav-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+      <a href="/portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+    </div>
+
+    <div class="hidden lg:flex items-center gap-6">
+      <div role="group" data-i18n-aria-label="nav.lang" aria-label="Language" class="flex items-center gap-0.5">
+        <button data-lang-btn="en" aria-pressed="true" class="lang-btn">EN</button>
+        <span class="text-ivory-40/30 select-none font-mono text-[10px] px-0.5" aria-hidden="true">/</span>
+        <button data-lang-btn="es" aria-pressed="false" class="lang-btn">ES</button>
+      </div>
+      <a href="/index.html#contact" class="btn btn-primary" data-i18n="nav.cta">Book a Session</a>
+    </div>
+
+    <button id="menu-toggle" class="lg:hidden p-2 -mr-2" data-i18n-aria-label="nav.menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg id="menu-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg id="menu-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-20 z-40 bg-obsidian overflow-y-auto">
+    <div class="px-5 py-8 flex flex-col gap-6 font-sans text-heading-sm">
+      <a href="/about.html" class="mobile-link" data-i18n="nav.about" aria-current="page">About</a>
+      <a href="/index.html#services" class="mobile-link" data-i18n="nav.services">Services</a>
+      <a href="/index.html#why-aithoris" class="mobile-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+      <a href="/portfolio.html" class="mobile-link" data-i18n="nav.portfolio">Portfolio</a>
+      <div class="pt-4 border-t border-obsidian-80">
+        <div role="group" data-i18n-aria-label="nav.lang" aria-label="Language" class="flex items-center gap-2">
+          <button data-lang-btn="en" aria-pressed="true" class="lang-btn" style="font-size:14px; padding:5px 8px;">EN</button>
+          <span class="text-ivory-40/40 select-none font-mono" aria-hidden="true">·</span>
+          <button data-lang-btn="es" aria-pressed="false" class="lang-btn" style="font-size:14px; padding:5px 8px;">ES</button>
+        </div>
+      </div>
+      <a href="/index.html#contact" class="btn btn-primary w-full" data-i18n="nav.cta">Book a Session</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="grain relative overflow-hidden pt-40 pb-16 md:pt-48 md:pb-20">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(55% 50% at 82% 20%, rgba(212,32,32,0.09), transparent 70%), radial-gradient(40% 35% at 10% 90%, rgba(212,32,32,0.06), transparent 70%);"></div>
+
+    <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal max-w-[720px]">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.hero.eyebrow">About AITHORIS</span></p>
+        <h1 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="about.hero.headline">Engineering Intelligence. Delivering Business Results.</h1>
+        <p class="mt-5 max-w-[640px] text-body-lg" style="color:#C6C6CE;" data-i18n="about.hero.body">Technology alone doesn't transform a business. The right strategy, the right systems, and the right execution do. At AITHORIS, we design intelligent AI solutions that help organizations eliminate inefficiencies, automate repetitive work, reduce operational costs, and create new opportunities for growth. Every solution we build is engineered around one objective: helping your business perform better.</p>
+        <p class="mt-5 max-w-[640px] text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.hero.closer">We don't implement AI because it's trending.<br><span class="font-medium text-ivory">We engineer intelligent systems because they solve real business problems.</span></p>
+        <div class="mt-8">
+          <a href="/index.html#contact" class="btn btn-primary px-7 py-4 text-body-md" data-i18n="about.hero.cta">Let's Build Something Smarter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHO WE ARE / WHY WE EXIST / WHAT MAKES US DIFFERENT ============ -->
+  <section class="relative overflow-hidden bg-warm-section py-20 md:py-24 lg:py-28">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16">
+        <div class="reveal">
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.whoWeAre.eyebrow">Who We Are</span></p>
+          <h2 class="font-display font-light text-heading-lg text-ivory" data-i18n="about.whoWeAre.heading">Your AI Engineering Partner for Business Transformation</h2>
+          <p class="mt-5 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body1">AITHORIS is an AI engineering and intelligent automation company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.</p>
+          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body2">We work with companies that recognize technology should be an advantage, not another challenge to manage.</p>
+          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body3">Instead of offering generic AI tools, we take the time to understand how your business operates, where opportunities exist, and how intelligent systems can create measurable improvements across your organization.</p>
+          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body4">Whether it's streamlining internal operations, improving customer experiences, accelerating decision-making, or creating entirely new revenue opportunities, every solution we develop is built around your business, not around the latest technology trend.</p>
+          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whoWeAre.closer">Because real innovation isn't about adding more software.<br><span class="font-medium text-ivory">It's about making work simpler, faster, and more valuable.</span></p>
+        </div>
+        <div class="reveal" style="transition-delay:80ms;">
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.whyWeExist.eyebrow">Why We Exist</span></p>
+          <h2 class="font-display font-light text-heading-lg text-ivory" data-i18n-html="about.whyWeExist.heading">Businesses Don't Need More Technology.<br>They Need Better Systems.</h2>
+          <p class="mt-5 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whyWeExist.problems">Every organization has hidden inefficiencies.<br>Manual processes that waste valuable time.<br>Information trapped across disconnected systems.<br>Teams performing repetitive work that could be automated.<br>Opportunities lost because critical decisions take too long.</p>
+          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whyWeExist.reframe">These challenges aren't technology problems.<br><span class="font-medium text-ivory">They're business problems.</span></p>
+          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whyWeExist.body">Our mission is to engineer intelligent systems that remove those barriers, allowing people to focus on what they do best: creating value, serving customers, and growing the business.</p>
+          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whyWeExist.closer">When technology works the way it should, it becomes nearly invisible.<br>Your teams simply work faster.<br>Your customers receive better experiences.<br>Your business becomes more efficient.</p>
+        </div>
+      </div>
+
+      <div class="reveal mt-20 max-w-[640px]" style="transition-delay:160ms;">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.different.eyebrow">What Makes AITHORIS Different</span></p>
+        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="about.different.heading">Three commitments, on every engagement.</h2>
+        <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.different.body">None of this is complicated. It's just consistently rare.</p>
+      </div>
+
+      <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- 01 Practical Intelligence -->
+        <article class="reveal service-card bg-obsidian border border-obsidian-80 rounded-lg p-8 shadow-card">
+          <div class="flex items-start justify-between mb-8">
+            <svg class="w-8 h-8 text-ivory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="8"/>
+              <path d="M9 12.5l2 2 4-4.5"/>
+            </svg>
+            <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">01</span>
+          </div>
+          <h3 class="font-display text-heading-md font-medium text-ivory" data-i18n="about.different.card1.title">Practical Intelligence</h3>
+          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="about.different.card1.body">We build systems that solve the specific problem in front of us, not general-purpose AI in search of a use case. If it doesn't remove work, cut cost, or speed up a decision, we don't build it just because the technology exists.</p>
+        </article>
+
+        <!-- 02 Solutions Built Around You -->
+        <article class="reveal service-card bg-obsidian border border-obsidian-80 rounded-lg p-8 shadow-card">
+          <div class="flex items-start justify-between mb-8">
+            <svg class="w-8 h-8 text-ivory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="12" r="6"/>
+              <circle cx="15" cy="12" r="6"/>
+            </svg>
+            <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">02</span>
+          </div>
+          <h3 class="font-display text-heading-md font-medium text-ivory" data-i18n="about.different.card2.title">Solutions Built Around You</h3>
+          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="about.different.card2.body">Every system is designed around your existing workflows, data, and team, not the other way around. You shouldn't have to change how your business runs to fit a piece of software; the software fits how your business already wins.</p>
+        </article>
+
+        <!-- 03 Partnership Beyond Deployment -->
+        <article class="reveal service-card bg-obsidian border border-obsidian-80 rounded-lg p-8 shadow-card">
+          <div class="flex items-start justify-between mb-8">
+            <svg class="w-8 h-8 text-ivory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 15a3 3 0 1 1 0-6c2 0 3.5 2 5 3s3.5 3 5 3a3 3 0 1 0 0-6c-2 0-3.5 2-5 3s-3 3-5 3z"/>
+            </svg>
+            <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">03</span>
+          </div>
+          <h3 class="font-display text-heading-md font-medium text-ivory" data-i18n="about.different.card3.title">Partnership Beyond Deployment</h3>
+          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="about.different.card3.body">We stay accountable after launch: monitoring, refining, and supporting what we build for as long as you need us. Your business keeps evolving, so the system has to evolve with it. That's not an add-on service. It's the job.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE BUSINESS IMPACT ============ -->
+  <section class="py-20 md:py-24">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal max-w-[640px]">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.impact.eyebrow">The Business Impact</span></p>
+        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="about.impact.heading">What changes when the system is right.</h2>
+      </div>
+
+      <ul class="mt-14 grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item1.title">Hours back</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item1.body">Repetitive work moves from your team's calendar to the system's.</p></div>
+        </li>
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item2.title">Fewer errors</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item2.body">Structured logic replaces manual re-entry and guesswork.</p></div>
+        </li>
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item3.title">Faster decisions</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item3.body">Information reaches the right person before the moment passes.</p></div>
+        </li>
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item4.title">Consistent quality</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item4.body">Every output follows the same standard, every time.</p></div>
+        </li>
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item5.title">Lower operating cost</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item5.body">Automation absorbs the volume, not another hire.</p></div>
+        </li>
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item6.title">Scalable capacity</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item6.body">Growth doesn't require growing headcount at the same rate.</p></div>
+        </li>
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item7.title">Institutional knowledge, retained</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item7.body">What one person knows becomes what the system knows.</p></div>
+        </li>
+        <li class="reveal impact-item flex gap-4">
+          <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item8.title">Room for judgment work</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item8.body">Your team spends time on decisions, not data entry.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIES WE HELP ============ -->
+  <section class="bg-warm-section py-20 md:py-24">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal rounded-lg border border-obsidian-80 bg-obsidian shadow-card p-8 md:p-12 max-w-[760px] mx-auto text-center">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center justify-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.industries.eyebrow">Industries We Help</span></p>
+        <h2 class="font-display font-light text-heading-md md:text-heading-lg text-ivory" data-i18n="about.industries.heading">Built for how you work, whatever that work is.</h2>
+        <p class="mt-4 text-body-md max-w-[560px] mx-auto" style="color:#C6C6CE;" data-i18n="about.industries.body">The problems we solve, unqualified leads, disconnected data, manual documentation, repetitive coordination, show up in every industry. We don't specialize in a vertical. We specialize in engineering the system your operation actually needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR COMMITMENT ============ -->
+  <section class="py-20 md:py-24">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20 text-center">
+      <p class="reveal font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center justify-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.commitment.eyebrow">Our Commitment</span></p>
+      <p class="reveal mx-auto max-w-[720px] font-display font-light text-heading-lg md:text-display-md leading-[1.2] text-ivory" style="transition-delay:100ms;" data-i18n="about.commitment.statement">We commit to the outcome, not the output.</p>
+      <p class="reveal mt-6 mx-auto max-w-[560px] text-body-lg" style="color:#C6C6CE; transition-delay:200ms;" data-i18n="about.commitment.body">A system nobody uses isn't a success. We measure our work by what it changes in your business, not by how well it demos.</p>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="grain relative overflow-hidden bg-obsidian text-ivory py-24 md:py-32" style="background-color:#242424;">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 60% at 50% 50%, rgba(98,0,2,0.2), transparent 70%);"></div>
+
+    <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20 text-center">
+      <h2 class="reveal font-display font-light text-heading-lg md:text-display-md lg:text-display-lg" style="transition-delay:0ms;" data-i18n="about.cta.heading">Ready to see what a well-engineered system feels like?</h2>
+      <p class="reveal mt-6 max-w-[560px] mx-auto text-body-lg" style="color:#A8A8B2; transition-delay:100ms;" data-i18n="about.cta.body">Tell us what's slow, manual, or inconsistent in your operation. We'll tell you honestly whether AI is the right fix, and what production-grade would actually look like.</p>
+      <div class="reveal mt-10 flex flex-wrap justify-center gap-4" style="transition-delay:200ms;">
+        <a href="/index.html#contact" class="btn btn-on-dark px-8 py-4 text-body-md" data-i18n="about.cta.primary">Schedule a Discovery Call</a>
+        <a href="/index.html#services" class="btn btn-secondary px-8 py-4 text-body-md" data-i18n="about.cta.secondary">Explore Our Solutions</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-obsidian text-ivory border-t border-obsidian-60" style="background-color:#161616;">
+  <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20 py-16">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
+      <div>
+        <a href="/index.html" class="flex items-center" aria-label="AITHORIS home">
+          <svg width="26" height="23" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18 0L0 32H8L18 0Z" fill="#F2F2F4"/>
+            <path d="M18 0L28 32H36L18 0Z" fill="#F2F2F4"/>
+            <path d="M18 14L23 25H13L18 14Z" fill="#D42020"/>
+          </svg>
+          <span class="ml-2.5 font-display font-medium text-[19px] tracking-[-0.01em] text-ivory">AITHORIS</span>
+        </a>
+        <p class="mt-3 font-mono text-body-sm text-ivory/60 tracking-[0.04em] flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="footer.tagline">Connecting Intelligence.</span></p>
+      </div>
+
+      <nav aria-label="Footer" class="flex flex-wrap gap-x-10 gap-y-4 text-body-sm">
+        <a href="/about.html" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.about">About</a>
+        <a href="/index.html#services" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.services">Services</a>
+        <a href="/index.html#why-aithoris" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+        <a href="/portfolio.html" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="/index.html#contact" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="mt-14 pt-8 border-t border-obsidian-60 flex flex-col sm:flex-row justify-between gap-4 text-body-sm text-obsidian-40">
+      <p data-i18n="footer.copyright">© 2026 AITHORIS. All rights reserved.</p>
+      <p class="font-mono text-label uppercase tracking-[0.08em]" data-i18n="footer.label">AI Engineering Company</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  (function () {
+    var toggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('mobile-menu');
+    var iconOpen = document.getElementById('menu-icon-open');
+    var iconClose = document.getElementById('menu-icon-close');
+
+    function closeMenu() {
+      menu.classList.add('hidden');
+      toggle.setAttribute('aria-expanded', 'false');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+    function openMenu() {
+      menu.classList.remove('hidden');
+      toggle.setAttribute('aria-expanded', 'true');
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    toggle.addEventListener('click', function () {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      expanded ? closeMenu() : openMenu();
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+  })();
+
+  // Header scroll awareness
+  (function () {
+    var header = document.getElementById('site-header');
+    function onScroll() {
+      if (window.scrollY > 24) header.classList.add('is-scrolled');
+      else header.classList.remove('is-scrolled');
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+
+  // Scroll reveals — fire once, then stay visible.
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>

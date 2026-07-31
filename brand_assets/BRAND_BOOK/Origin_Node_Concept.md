@@ -2,19 +2,19 @@
 
 ## BRAND_BOOK / Origin_Node_Concept.md
 
-> *The Origin Node is the most distinctive and ownable element of the QIPUZ brand. This document gives it verbal form.*
+> *The Origin Node is the most distinctive and ownable element of the AITHORIS brand. This document gives it verbal form.*
 
 ---
 
 ## The Concept
 
-At the center of the QIPUZ logo is a point.
+At the center of the AITHORIS logo is a point.
 
 Not a decorative element. Not a graphic embellishment. A point that represents the origin of every intelligent system: a single, precise beginning from which connections emerge, networks form, and intelligence flows.
 
 This point is the **Origin Node**.
 
-The Origin Node is the visual expression of QIPUZ's core idea: intelligence does not emerge from accumulation. It emerges from connection. One precise point, connecting to another, and another — until a system exists that is greater than any of its parts.
+The Origin Node is the visual expression of AITHORIS's core idea: intelligence does not emerge from accumulation. It emerges from connection. One precise point, connecting to another, and another — until a system exists that is greater than any of its parts.
 
 ---
 
@@ -67,11 +67,11 @@ This represents synthesis: the intelligence gathered and condensed, the system r
 ---
 
 ### 5. Essence
-*The Q emerges.*
+*The mark emerges.*
 
-From the collapsed point, the QIPUZ logo forms — the geometric Q with the Origin Node at its center, now revealed as the organizing center of the entire symbol.
+From the collapsed point, the AITHORIS logo forms — the geometric A with the Origin Node at its center, now revealed as the organizing center of the entire symbol.
 
-This is the reveal: what appeared to be abstract motion is the intelligence encoded in the QIPUZ identity itself.
+This is the reveal: what appeared to be abstract motion is the intelligence encoded in the AITHORIS identity itself.
 
 **Motion:** Logo forms from Origin Node outward. Duration: 600ms. Easing: ease-out.
 
@@ -101,15 +101,15 @@ The Origin Node motion sequence is used in:
 
 ## Static Application
 
-In static contexts, the Origin Node is represented by the Signal Red dot within the Q symbol.
+In static contexts, the Origin Node is represented by the Signal Red triangle within the A symbol.
 
-Its presence in every QIPUZ logo application is a constant reminder that every system has a precise origin — and that connecting from that origin, intelligently, is what the company does.
+Its presence in every AITHORIS logo application is a constant reminder that every system has a precise origin — and that connecting from that origin, intelligently, is what the company does.
 
 ---
 
 ## What the Origin Node Communicates to Clients
 
-A client who understands the Origin Node concept understands the QIPUZ approach without needing to read a brochure:
+A client who understands the Origin Node concept understands the AITHORIS approach without needing to read a brochure:
 
 - There is a beginning to every intelligent system — a precise, clear starting point
 - From that starting point, connections are engineered, not discovered by accident
@@ -122,4 +122,4 @@ A client who understands the Origin Node concept understands the QIPUZ approach 
 
 ---
 
-© QIPUZ Brand Book — Origin_Node_Concept.md v2.0
+© AITHORIS Brand Book — Origin_Node_Concept.md v2.0

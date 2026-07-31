@@ -14,7 +14,7 @@ Every organization accumulates complexity over time.
 
 Processes that were designed for ten people break at one hundred. Knowledge that lives in individuals disappears when they leave. Decisions that should be data-driven are made on intuition because the data is inaccessible. Work that could be automated consumes the time and attention of people who were hired to think.
 
-QIPUZ bridges the gap between human expertise and artificial intelligence by building systems that address these problems directly — not with generic tools, but with solutions engineered for specific organizational realities.
+AITHORIS bridges the gap between human expertise and artificial intelligence by building systems that address these problems directly — not with generic tools, but with solutions engineered for specific organizational realities.
 
 ---
 
@@ -61,7 +61,7 @@ Quality is a standard, not a feature. Every line of code, every interface, every
 
 ## What Clients Gain
 
-Every QIPUZ engagement is designed to leave clients with:
+Every AITHORIS engagement is designed to leave clients with:
 
 - **Better systems** — infrastructure that works reliably and improves over time
 - **Smarter workflows** — processes that execute at machine speed with human-level judgment
@@ -81,4 +81,4 @@ Every QIPUZ engagement is designed to leave clients with:
 
 ---
 
-© QIPUZ Foundation Repository — Mission.md v2.0
+© AITHORIS Foundation Repository — Mission.md v2.0

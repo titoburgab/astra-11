@@ -16,8 +16,9 @@ window.i18nStrings.en = {
   skip: { link: 'Skip to content' },
 
   nav: {
+    about:     'About',
     services:  'Services',
-    whyQipuz:  'Why AITHORIS',
+    whyAithoris:  'Why AITHORIS',
     portfolio: 'Portfolio',
     contact:   'Contact',
     cta:       'Book a Session',
@@ -101,7 +102,7 @@ window.i18nStrings.en = {
     body:    'Most AI pilots never reach production.<br><span class="font-medium">We start there.</span>',
   },
 
-  whyQipuz: {
+  whyAithoris: {
     eyebrow: 'Why AITHORIS',
     heading: 'Built for the gap others leave open.',
     body:    'AI projects tend to fail in one of two ways: agencies move fast but leave fragile systems behind, or consultancies move carefully but never ship. Here\'s the standard we hold ourselves to instead: on every engagement, not just the pitch.',
@@ -110,11 +111,11 @@ window.i18nStrings.en = {
         agencies:   'AI Agencies',
         consulting: 'Large Consulting',
       },
-      row1: { label: 'Engineering discipline', agencies: 'Variable',          consulting: 'Layered approvals', qipuz: 'Rigorous, documented'  },
-      row2: { label: 'Speed to production',    agencies: 'Fast, fragile',     consulting: 'Slow, thorough',    qipuz: 'Fast, reliable'        },
-      row3: { label: 'Explainability',         agencies: 'Rarely prioritized',consulting: 'Rarely delivered',  qipuz: 'Engineered in'         },
-      row4: { label: 'Governance',             agencies: 'Absent',            consulting: 'Process-heavy',     qipuz: 'Right-sized'           },
-      row5: { label: 'Design quality',         agencies: 'Generic',           consulting: 'Enterprise standard',qipuz: 'Premium, branded'     },
+      row1: { label: 'Engineering discipline', agencies: 'Variable',          consulting: 'Layered approvals', aithoris: 'Rigorous, documented'  },
+      row2: { label: 'Speed to production',    agencies: 'Fast, fragile',     consulting: 'Slow, thorough',    aithoris: 'Fast, reliable'        },
+      row3: { label: 'Explainability',         agencies: 'Rarely prioritized',consulting: 'Rarely delivered',  aithoris: 'Engineered in'         },
+      row4: { label: 'Governance',             agencies: 'Absent',            consulting: 'Process-heavy',     aithoris: 'Right-sized'           },
+      row5: { label: 'Design quality',         agencies: 'Generic',           consulting: 'Enterprise standard',aithoris: 'Premium, branded'     },
     },
     footnote: 'Our own operating standard, not a scored audit of any specific firm.',
   },
@@ -139,6 +140,73 @@ window.i18nStrings.en = {
     tagline:   'Connecting Intelligence.',
     copyright: '© 2026 AITHORIS. All rights reserved.',
     label:     'AI Engineering Company',
+  },
+
+  about: {
+    meta: {
+      title:       'AITHORIS | About',
+      description: 'AITHORIS is an AI engineering and intelligent automation partner focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
+    },
+    hero: {
+      eyebrow:  'About AITHORIS',
+      headline: 'Engineering Intelligence. Delivering Business Results.',
+      body:     'Technology alone doesn\'t transform a business. The right strategy, the right systems, and the right execution do. At AITHORIS, we design intelligent AI solutions that help organizations eliminate inefficiencies, automate repetitive work, reduce operational costs, and create new opportunities for growth. Every solution we build is engineered around one objective: helping your business perform better.',
+      closer:   'We don\'t implement AI because it\'s trending.<br><span class="font-medium text-ivory">We engineer intelligent systems because they solve real business problems.</span>',
+      cta:      'Let\'s Build Something Smarter',
+    },
+    whoWeAre: {
+      eyebrow: 'Who We Are',
+      heading: 'Your AI Engineering Partner for Business Transformation',
+      body1:   'AITHORIS is an AI engineering and intelligent automation company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
+      body2:   'We work with companies that recognize technology should be an advantage, not another challenge to manage.',
+      body3:   'Instead of offering generic AI tools, we take the time to understand how your business operates, where opportunities exist, and how intelligent systems can create measurable improvements across your organization.',
+      body4:   'Whether it\'s streamlining internal operations, improving customer experiences, accelerating decision-making, or creating entirely new revenue opportunities, every solution we develop is built around your business, not around the latest technology trend.',
+      closer:  'Because real innovation isn\'t about adding more software.<br><span class="font-medium text-ivory">It\'s about making work simpler, faster, and more valuable.</span>',
+    },
+    whyWeExist: {
+      eyebrow:  'Why We Exist',
+      heading:  'Businesses Don\'t Need More Technology.<br>They Need Better Systems.',
+      problems: 'Every organization has hidden inefficiencies.<br>Manual processes that waste valuable time.<br>Information trapped across disconnected systems.<br>Teams performing repetitive work that could be automated.<br>Opportunities lost because critical decisions take too long.',
+      reframe:  'These challenges aren\'t technology problems.<br><span class="font-medium text-ivory">They\'re business problems.</span>',
+      body:     'Our mission is to engineer intelligent systems that remove those barriers, allowing people to focus on what they do best: creating value, serving customers, and growing the business.',
+      closer:   'When technology works the way it should, it becomes nearly invisible.<br>Your teams simply work faster.<br>Your customers receive better experiences.<br>Your business becomes more efficient.',
+    },
+    different: {
+      eyebrow: 'What Makes AITHORIS Different',
+      heading: 'Three commitments, on every engagement.',
+      body:    'None of this is complicated. It\'s just consistently rare.',
+      card1: { title: 'Practical Intelligence',            body: 'We build systems that solve the specific problem in front of us, not general-purpose AI in search of a use case. If it doesn\'t remove work, cut cost, or speed up a decision, we don\'t build it just because the technology exists.' },
+      card2: { title: 'Solutions Built Around You',        body: 'Every system is designed around your existing workflows, data, and team, not the other way around. You shouldn\'t have to change how your business runs to fit a piece of software; the software fits how your business already wins.' },
+      card3: { title: 'Partnership Beyond Deployment',     body: 'We stay accountable after launch: monitoring, refining, and supporting what we build for as long as you need us. Your business keeps evolving, so the system has to evolve with it. That\'s not an add-on service. It\'s the job.' },
+    },
+    impact: {
+      eyebrow: 'The Business Impact',
+      heading: 'What changes when the system is right.',
+      item1: { title: 'Hours back',                        body: 'Repetitive work moves from your team\'s calendar to the system\'s.' },
+      item2: { title: 'Fewer errors',                       body: 'Structured logic replaces manual re-entry and guesswork.' },
+      item3: { title: 'Faster decisions',                   body: 'Information reaches the right person before the moment passes.' },
+      item4: { title: 'Consistent quality',                 body: 'Every output follows the same standard, every time.' },
+      item5: { title: 'Lower operating cost',                body: 'Automation absorbs the volume, not another hire.' },
+      item6: { title: 'Scalable capacity',                  body: 'Growth doesn\'t require growing headcount at the same rate.' },
+      item7: { title: 'Institutional knowledge, retained',  body: 'What one person knows becomes what the system knows.' },
+      item8: { title: 'Room for judgment work',             body: 'Your team spends time on decisions, not data entry.' },
+    },
+    industries: {
+      eyebrow: 'Industries We Help',
+      heading: 'Built for how you work, whatever that work is.',
+      body:    'The problems we solve, unqualified leads, disconnected data, manual documentation, repetitive coordination, show up in every industry. We don\'t specialize in a vertical. We specialize in engineering the system your operation actually needs.',
+    },
+    commitment: {
+      eyebrow:   'Our Commitment',
+      statement: 'We commit to the outcome, not the output.',
+      body:      'A system nobody uses isn\'t a success. We measure our work by what it changes in your business, not by how well it demos.',
+    },
+    cta: {
+      heading:   'Ready to see what a well-engineered system feels like?',
+      body:      'Tell us what\'s slow, manual, or inconsistent in your operation. We\'ll tell you honestly whether AI is the right fix, and what production-grade would actually look like.',
+      primary:   'Schedule a Discovery Call',
+      secondary: 'Explore Our Solutions',
+    },
   },
 
   portfolio: {

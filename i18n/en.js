@@ -186,7 +186,7 @@ window.i18nStrings.en = {
       tito: {
         name:  'Tito Burga',
         title: 'Co-Founder — Design & AI Engineering',
-        bio1:  'Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S. — Telemundo, Univision, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group, where he serves today as Brand Director. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.',
+        bio1:  'Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S. — Telemundo, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group, where he serves today as Brand Director. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.',
         bio2:  'In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools AITHORIS engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.',
       },
       cesar: {

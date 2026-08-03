@@ -185,7 +185,7 @@ window.i18nStrings.es = {
       tito: {
         name:  'Tito Burga',
         title: 'Cofundador — Diseño e Ingeniería de IA',
-        bio1:  'Tito pasó 25 años dirigiendo creatividad y estrategia de marca dentro de algunas de las cadenas de televisión más grandes de Estados Unidos: Telemundo, Univision, CBS, Cox Media Group, Gray Television y Sinclair Broadcast Group, donde hoy es Director de Marca. Su trabajo ha ganado un Emmy, dos nominaciones adicionales al Emmy, un premio EMA y tres NBC Ovation Awards.',
+        bio1:  'Tito pasó 25 años dirigiendo creatividad y estrategia de marca dentro de algunas de las cadenas de televisión más grandes de Estados Unidos: Telemundo, CBS, Cox Media Group, Gray Television y Sinclair Broadcast Group, donde hoy es Director de Marca. Su trabajo ha ganado un Emmy, dos nominaciones adicionales al Emmy, un premio EMA y tres NBC Ovation Awards.',
         bio2:  'En 2022 se formó como diseñador UX y desarrollador front-end, y hoy construye con las mismas herramientas de IA que AITHORIS diseña para sus clientes. Dos décadas entendiendo cómo las audiencias y las organizaciones realmente consumen información, sumadas al dominio práctico de las herramientas que están rediseñando cómo se construye el trabajo: esa combinación es lo que aporta a cada proyecto.',
       },
       cesar: {

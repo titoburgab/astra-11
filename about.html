@@ -170,6 +170,10 @@
   .service-card:nth-child(2) { transition-delay: 80ms; }
   .service-card:nth-child(3) { transition-delay: 160ms; }
 
+  /* Staggered reveal for the Founders cards */
+  .founder-card:nth-child(1) { transition-delay: 0ms; }
+  .founder-card:nth-child(2) { transition-delay: 80ms; }
+
   /* Staggered reveal for the Business Impact checklist */
   .impact-item:nth-child(1) { transition-delay: 0ms; }
   .impact-item:nth-child(2) { transition-delay: 80ms; }
@@ -178,7 +182,7 @@
   .impact-item:nth-child(n+5) { transition-delay: 240ms; }
 
   @media (prefers-reduced-motion: reduce) {
-    .service-card, .impact-item { transition-delay: 0ms; }
+    .service-card, .impact-item, .founder-card { transition-delay: 0ms; }
   }
 
   /* Header */
@@ -410,6 +414,72 @@
       <p class="reveal font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center justify-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.commitment.eyebrow">Our Commitment</span></p>
       <p class="reveal mx-auto max-w-[720px] font-display font-light text-heading-lg md:text-display-md leading-[1.2] text-ivory" style="transition-delay:100ms;" data-i18n="about.commitment.statement">We commit to the outcome, not the output.</p>
       <p class="reveal mt-6 mx-auto max-w-[560px] text-body-lg" style="color:#C6C6CE; transition-delay:200ms;" data-i18n="about.commitment.body">A system nobody uses isn't a success. We measure our work by what it changes in your business, not by how well it demos.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOUNDERS ============ -->
+  <section id="founders" class="bg-warm-section py-20 md:py-24">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal max-w-[640px]">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.founders.eyebrow">Founders</span></p>
+        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="about.founders.heading">Two careers, one conclusion.</h2>
+        <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.founders.intro">AITHORIS wasn't founded by strategists guessing at technology, or engineers guessing at business. It was founded by two people who spent their careers on opposite sides of the same problem: the right decision, undone by a system nobody built to carry it.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-2 gap-6">
+        <!-- Tito Burga -->
+        <article class="reveal founder-card bg-obsidian border border-obsidian-80 rounded-lg p-8 shadow-card">
+          <div class="relative w-[252px] h-[252px] mx-auto shrink-0" aria-hidden="true">
+            <div class="absolute -inset-4 rounded-full blur-2xl pointer-events-none" style="background: radial-gradient(circle, rgba(200,200,205,0.28), transparent 70%);"></div>
+            <div class="relative w-full h-full overflow-hidden border-[1.5px] border-obsidian-40">
+              <img src="/brand_assets/assets/tbPicturev2-web.png" alt="" class="absolute inset-0 w-full h-full object-cover" style="object-position: center;" loading="lazy">
+              <span class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-signal"></span>
+            </div>
+          </div>
+          <h3 class="mt-6 font-display text-heading-md font-medium text-ivory" data-i18n="about.founders.tito.name">Tito Burga</h3>
+          <p class="mt-1 font-mono text-body-sm text-signal" data-i18n="about.founders.tito.title">Co-Founder — Design &amp; AI Engineering</p>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.tito.bio1">Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S. — Telemundo, Univision, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group, where he serves today as Brand Director. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.</p>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.tito.bio2">In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools AITHORIS engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.</p>
+        </article>
+
+        <!-- César Montoya -->
+        <article class="reveal founder-card bg-obsidian border border-obsidian-80 rounded-lg p-8 shadow-card">
+          <div class="relative w-[252px] h-[252px] mx-auto shrink-0" aria-hidden="true">
+            <div class="absolute -inset-4 rounded-full blur-2xl pointer-events-none" style="background: radial-gradient(circle, rgba(200,200,205,0.28), transparent 70%);"></div>
+            <div class="relative w-full h-full overflow-hidden border-[1.5px] border-obsidian-40">
+              <img src="/brand_assets/assets/cesar_headshot-web.png" alt="" class="absolute inset-0 w-full h-full object-cover grayscale" style="object-position: center top;" loading="lazy">
+              <span class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-signal"></span>
+            </div>
+          </div>
+          <h3 class="mt-6 font-display text-heading-md font-medium text-ivory" data-i18n="about.founders.cesar.name">César Montoya</h3>
+          <p class="mt-1 font-mono text-body-sm text-signal" data-i18n="about.founders.cesar.title">Co-Founder — Leadership &amp; Execution Strategy</p>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.cesar.bio1">César spent 20 years inside banking, finance, and human-resources leadership, including senior roles at Banco Wiese and Banco de Comercio, before founding Centro Internacional de Competencias, where he advises boards and executive teams across Latin America.</p>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.cesar.bio2">His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making — the same discipline AITHORIS now builds for clients at scale.</p>
+        </article>
+      </div>
+
+      <div class="reveal mt-16 grid md:grid-cols-2 gap-12 md:gap-16" style="transition-delay:120ms;">
+        <div>
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.founders.why.eyebrow">Why We Built AITHORIS</span></p>
+          <h3 class="font-display font-light text-heading-md text-ivory" data-i18n="about.founders.why.heading">The same problem, seen from two different rooms.</h3>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.why.body1">Tito spent 25 years watching broadcast organizations buy the right technology and still lose the story, because nobody engineered the system connecting the creative, the technology, and the team using it.</p>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.why.body2">César spent 20 years watching boards approve the right strategy and still lose the execution, because nobody engineered the leadership architecture required to carry it.</p>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.why.closer">AITHORIS exists because those are the same failure. Clients get both halves of the fix: a system built to work, and the organizational readiness to make it stick.</p>
+        </div>
+        <div>
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.founders.vision.eyebrow">Our Shared Thesis</span></p>
+          <h3 class="font-display font-light text-heading-md text-ivory" data-i18n="about.founders.vision.heading">Complexity doesn't disappear. It moves.</h3>
+          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.vision.body">We started AITHORIS on one belief: intelligence, human or artificial, only creates value when it's connected to a system built to hold it. Complexity doesn't disappear when an organization adopts AI. It moves, from the user's experience to the system's architecture, or from the strategy to the people executing it. Deciding where it goes, and engineering it well once it lands there, is the work.</p>
+        </div>
+      </div>
+
+      <div class="reveal mt-16 rounded-lg border border-obsidian-80 bg-obsidian shadow-card p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6" style="transition-delay:200ms;">
+        <div class="max-w-[480px]">
+          <p class="font-display text-heading-sm font-medium text-ivory" data-i18n="about.founders.cta.heading">This is who you'd be working with.</p>
+          <p class="mt-2 text-body-sm" style="color:#C6C6CE;" data-i18n="about.founders.cta.body">No account managers between you and the people making the decisions. Tell us what's slow, manual, or inconsistent in your operation, and you'll be talking to one of us.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-on-dark px-7 py-3.5 text-body-md shrink-0" data-i18n="about.founders.cta.primary">Talk to a Founder</a>
+      </div>
     </div>
   </section>
 

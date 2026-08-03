@@ -178,6 +178,40 @@ window.i18nStrings.es = {
       card2: { title: 'Soluciones Construidas Para Ti',            body: 'Cada sistema se diseña según tus flujos de trabajo, datos y equipo actuales, no al revés. Tu negocio no debería cambiar su forma de operar para adaptarse a un software; el software se adapta a cómo tu negocio ya gana.' },
       card3: { title: 'Acompañamiento Más Allá del Lanzamiento',   body: 'Seguimos siendo responsables después del lanzamiento: monitoreando, refinando y dando soporte a lo que construimos el tiempo que nos necesites. Tu negocio sigue evolucionando, así que el sistema también tiene que hacerlo. Eso no es un servicio adicional. Es el trabajo.' },
     },
+    founders: {
+      eyebrow: 'Fundadores',
+      heading: 'Dos trayectorias, una misma conclusión.',
+      intro:   'AITHORIS no lo fundaron estrategas adivinando de tecnología, ni ingenieros adivinando de negocios. Lo fundaron dos personas que pasaron su carrera en lados opuestos del mismo problema: la decisión correcta, socavada por un sistema que nadie construyó para sostenerla.',
+      tito: {
+        name:  'Tito Burga',
+        title: 'Cofundador — Diseño e Ingeniería de IA',
+        bio1:  'Tito pasó 25 años dirigiendo creatividad y estrategia de marca dentro de algunas de las cadenas de televisión más grandes de Estados Unidos: Telemundo, Univision, CBS, Cox Media Group, Gray Television y Sinclair Broadcast Group, donde hoy es Director de Marca. Su trabajo ha ganado un Emmy, dos nominaciones adicionales al Emmy, un premio EMA y tres NBC Ovation Awards.',
+        bio2:  'En 2022 se formó como diseñador UX y desarrollador front-end, y hoy construye con las mismas herramientas de IA que AITHORIS diseña para sus clientes. Dos décadas entendiendo cómo las audiencias y las organizaciones realmente consumen información, sumadas al dominio práctico de las herramientas que están rediseñando cómo se construye el trabajo: esa combinación es lo que aporta a cada proyecto.',
+      },
+      cesar: {
+        name:  'César Montoya',
+        title: 'Cofundador — Liderazgo y Estrategia de Ejecución',
+        bio1:  'César pasó 20 años en liderazgo de banca, finanzas y recursos humanos, incluyendo posiciones senior en Banco Wiese y Banco de Comercio, antes de fundar Centro Internacional de Competencias, desde donde asesora a directorios y equipos ejecutivos en América Latina.',
+        bio2:  'Su diagnóstico, perfeccionado en dos décadas viendo la estrategia enfrentarse a la realidad: las organizaciones rara vez fracasan por un mal plan. Fracasan porque la arquitectura de liderazgo responsable de ejecutarlo nunca fue diseñada para sostenerlo. Una de las prácticas que construyó a partir de esa tesis aplica IA directamente a la toma de decisiones ejecutivas, la misma disciplina que AITHORIS hoy construye para sus clientes a escala.',
+      },
+      why: {
+        eyebrow: 'Por Qué Construimos AITHORIS',
+        heading: 'El mismo problema, visto desde dos salas distintas.',
+        body1:   'Tito pasó 25 años viendo cómo organizaciones de medios compraban la tecnología correcta y aun así perdían la historia, porque nadie diseñaba el sistema que conectaba la creatividad, la tecnología y al equipo que la usaba.',
+        body2:   'César pasó 20 años viendo cómo los directorios aprobaban la estrategia correcta y aun así perdían la ejecución, porque nadie diseñaba la arquitectura de liderazgo necesaria para sostenerla.',
+        closer:  'AITHORIS existe porque ese es el mismo fracaso. Nuestros clientes reciben las dos mitades de la solución: un sistema construido para funcionar, y la preparación organizacional para que se sostenga.',
+      },
+      vision: {
+        eyebrow: 'Nuestra Tesis Compartida',
+        heading: 'La complejidad no desaparece. Se traslada.',
+        body:    'Fundamos AITHORIS sobre una sola convicción: la inteligencia, humana o artificial, solo crea valor cuando está conectada a un sistema diseñado para sostenerla. La complejidad no desaparece cuando una organización adopta IA. Se traslada: de la experiencia del usuario a la arquitectura del sistema, o de la estrategia a las personas que deben ejecutarla. Decidir hacia dónde se traslada, y diseñarla bien una vez que llega ahí, es el trabajo.',
+      },
+      cta: {
+        heading: 'Así es con quien trabajarás.',
+        body:    'Sin gestores de cuenta entre tú y quienes toman las decisiones. Cuéntanos qué es lento, manual o inconsistente en tu operación, y hablarás directamente con uno de nosotros.',
+        primary: 'Habla con un Fundador',
+      },
+    },
     impact: {
       eyebrow: 'El Impacto en el Negocio',
       heading: 'Lo que cambia cuando el sistema es el correcto.',

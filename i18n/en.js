@@ -179,6 +179,40 @@ window.i18nStrings.en = {
       card2: { title: 'Solutions Built Around You',        body: 'Every system is designed around your existing workflows, data, and team, not the other way around. You shouldn\'t have to change how your business runs to fit a piece of software; the software fits how your business already wins.' },
       card3: { title: 'Partnership Beyond Deployment',     body: 'We stay accountable after launch: monitoring, refining, and supporting what we build for as long as you need us. Your business keeps evolving, so the system has to evolve with it. That\'s not an add-on service. It\'s the job.' },
     },
+    founders: {
+      eyebrow: 'Founders',
+      heading: 'Two careers, one conclusion.',
+      intro:   'AITHORIS wasn\'t founded by strategists guessing at technology, or engineers guessing at business. It was founded by two people who spent their careers on opposite sides of the same problem: the right decision, undone by a system nobody built to carry it.',
+      tito: {
+        name:  'Tito Burga',
+        title: 'Co-Founder — Design & AI Engineering',
+        bio1:  'Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S. — Telemundo, Univision, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group, where he serves today as Brand Director. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.',
+        bio2:  'In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools AITHORIS engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.',
+      },
+      cesar: {
+        name:  'César Montoya',
+        title: 'Co-Founder — Leadership & Execution Strategy',
+        bio1:  'César spent 20 years inside banking, finance, and human-resources leadership, including senior roles at Banco Wiese and Banco de Comercio, before founding Centro Internacional de Competencias, where he advises boards and executive teams across Latin America.',
+        bio2:  'His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making — the same discipline AITHORIS now builds for clients at scale.',
+      },
+      why: {
+        eyebrow: 'Why We Built AITHORIS',
+        heading: 'The same problem, seen from two different rooms.',
+        body1:   'Tito spent 25 years watching broadcast organizations buy the right technology and still lose the story, because nobody engineered the system connecting the creative, the technology, and the team using it.',
+        body2:   'César spent 20 years watching boards approve the right strategy and still lose the execution, because nobody engineered the leadership architecture required to carry it.',
+        closer:  'AITHORIS exists because those are the same failure. Clients get both halves of the fix: a system built to work, and the organizational readiness to make it stick.',
+      },
+      vision: {
+        eyebrow: 'Our Shared Thesis',
+        heading: 'Complexity doesn\'t disappear. It moves.',
+        body:    'We started AITHORIS on one belief: intelligence, human or artificial, only creates value when it\'s connected to a system built to hold it. Complexity doesn\'t disappear when an organization adopts AI. It moves, from the user\'s experience to the system\'s architecture, or from the strategy to the people executing it. Deciding where it goes, and engineering it well once it lands there, is the work.',
+      },
+      cta: {
+        heading: 'This is who you\'d be working with.',
+        body:    'No account managers between you and the people making the decisions. Tell us what\'s slow, manual, or inconsistent in your operation, and you\'ll be talking to one of us.',
+        primary: 'Talk to a Founder',
+      },
+    },
     impact: {
       eyebrow: 'The Business Impact',
       heading: 'What changes when the system is right.',

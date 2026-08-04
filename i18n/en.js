@@ -185,15 +185,15 @@ window.i18nStrings.en = {
       intro:   'AITHORIS wasn\'t founded by strategists guessing at technology, or engineers guessing at business. It was founded by two people who spent their careers on opposite sides of the same problem: the right decision, undone by a system nobody built to carry it.',
       tito: {
         name:  'Tito Burga',
-        title: 'Co-Founder — Design & AI Engineering',
-        bio1:  'Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S. — Telemundo, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.',
+        title: 'Co-Founder, Design & AI Engineering',
+        bio1:  'Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S., including Telemundo, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.',
         bio2:  'In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools AITHORIS engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.',
       },
       cesar: {
         name:  'César Montoya',
-        title: 'Co-Founder — Leadership & Execution Strategy',
+        title: 'Co-Founder, Leadership & Execution Strategy',
         bio1:  'César spent 20 years inside banking, finance, and human-resources leadership, including senior roles at Banco Wiese and Banco de Comercio, before founding Centro Internacional de Competencias, where he advises boards and executive teams across Latin America.',
-        bio2:  'His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making — the same discipline AITHORIS now builds for clients at scale.',
+        bio2:  'His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making, the same discipline AITHORIS now builds for clients at scale.',
       },
       why: {
         eyebrow: 'Why We Built AITHORIS',

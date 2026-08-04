@@ -184,13 +184,13 @@ window.i18nStrings.es = {
       intro:   'AITHORIS no lo fundaron estrategas adivinando de tecnología, ni ingenieros adivinando de negocios. Lo fundaron dos personas que pasaron su carrera en lados opuestos del mismo problema: la decisión correcta, socavada por un sistema que nadie construyó para sostenerla.',
       tito: {
         name:  'Tito Burga',
-        title: 'Cofundador — Diseño e Ingeniería de IA',
+        title: 'Cofundador, Diseño e Ingeniería de IA',
         bio1:  'Tito pasó 25 años dirigiendo creatividad y estrategia de marca dentro de algunas de las cadenas de televisión más grandes de Estados Unidos: Telemundo, CBS, Cox Media Group, Gray Television y Sinclair Broadcast Group. Su trabajo ha ganado un Emmy, dos nominaciones adicionales al Emmy, un premio EMA y tres NBC Ovation Awards.',
         bio2:  'En 2022 se formó como diseñador UX y desarrollador front-end, y hoy construye con las mismas herramientas de IA que AITHORIS diseña para sus clientes. Dos décadas entendiendo cómo las audiencias y las organizaciones realmente consumen información, sumadas al dominio práctico de las herramientas que están rediseñando cómo se construye el trabajo: esa combinación es lo que aporta a cada proyecto.',
       },
       cesar: {
         name:  'César Montoya',
-        title: 'Cofundador — Liderazgo y Estrategia de Ejecución',
+        title: 'Cofundador, Liderazgo y Estrategia de Ejecución',
         bio1:  'César pasó 20 años en liderazgo de banca, finanzas y recursos humanos, incluyendo posiciones senior en Banco Wiese y Banco de Comercio, antes de fundar Centro Internacional de Competencias, desde donde asesora a directorios y equipos ejecutivos en América Latina.',
         bio2:  'Su diagnóstico, perfeccionado en dos décadas viendo la estrategia enfrentarse a la realidad: las organizaciones rara vez fracasan por un mal plan. Fracasan porque la arquitectura de liderazgo responsable de ejecutarlo nunca fue diseñada para sostenerlo. Una de las prácticas que construyó a partir de esa tesis aplica IA directamente a la toma de decisiones ejecutivas, la misma disciplina que AITHORIS hoy construye para sus clientes a escala.',
       },

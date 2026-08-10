@@ -1,30 +1,31 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$metadata": {
-    "name": "AITHORIS Typography Tokens",
-    "version": "2.0.0",
-    "updated": "2026-06-01",
+    "name": "ASTRA-11 Typography Tokens",
+    "version": "3.0.0",
+    "updated": "2026-08-10",
     "reference": "BRAND_BOOK/Typography.md"
   },
   "font": {
     "family": {
       "primary": {
-        "$value": "\"Söhne\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "$value": "\"Sora\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
         "$type": "fontFamily",
-        "$description": "Primary brand typeface. Requires commercial license from Klim Type Foundry."
+        "$description": "Primary brand typeface. Used for the wordmark, display headlines, and headings. Loaded via Google Fonts."
       },
       "secondary": {
         "$value": "\"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
         "$type": "fontFamily",
-        "$description": "Secondary typeface for UI, data, and dense functional contexts."
+        "$description": "Secondary typeface for body copy, UI, and dense functional contexts. Pairs with Sora without competing with it."
       },
       "mono": {
-        "$value": "\"IBM Plex Mono\", \"Fira Code\", \"Cascadia Code\", monospace",
+        "$value": "\"JetBrains Mono\", \"Fira Code\", \"Cascadia Code\", monospace",
         "$type": "fontFamily",
-        "$description": "Monospace typeface for code blocks and technical strings."
+        "$description": "Monospace typeface for code blocks, labels, and technical strings."
       }
     },
     "weight": {
+      "extralight": { "$value": 200, "$type": "fontWeight" },
       "light": { "$value": 300, "$type": "fontWeight" },
       "regular": { "$value": 400, "$type": "fontWeight" },
       "medium": { "$value": 500, "$type": "fontWeight" },
@@ -32,17 +33,17 @@
       "bold": { "$value": 700, "$type": "fontWeight" }
     },
     "size": {
-      "display-xl": { "$value": "72px", "$type": "fontSize", "$description": "Hero headlines — Söhne Light" },
-      "display-lg": { "$value": "56px", "$type": "fontSize", "$description": "Section headlines — Söhne Light" },
-      "display-md": { "$value": "40px", "$type": "fontSize", "$description": "Sub-section headers — Söhne Regular" },
-      "heading-lg": { "$value": "32px", "$type": "fontSize", "$description": "H1 — Söhne Medium" },
-      "heading-md": { "$value": "24px", "$type": "fontSize", "$description": "H2 — Söhne Medium" },
-      "heading-sm": { "$value": "20px", "$type": "fontSize", "$description": "H3 — Söhne Medium" },
-      "body-lg": { "$value": "18px", "$type": "fontSize", "$description": "Lead paragraph — Söhne Regular" },
-      "body-md": { "$value": "16px", "$type": "fontSize", "$description": "Default body text — Söhne Regular" },
+      "display-xl": { "$value": "72px", "$type": "fontSize", "$description": "Hero headlines — Sora Light" },
+      "display-lg": { "$value": "56px", "$type": "fontSize", "$description": "Section headlines — Sora Light" },
+      "display-md": { "$value": "40px", "$type": "fontSize", "$description": "Sub-section headers — Sora Regular" },
+      "heading-lg": { "$value": "32px", "$type": "fontSize", "$description": "H1 — Sora Medium" },
+      "heading-md": { "$value": "24px", "$type": "fontSize", "$description": "H2 — Sora Medium" },
+      "heading-sm": { "$value": "20px", "$type": "fontSize", "$description": "H3 — Sora Medium" },
+      "body-lg": { "$value": "18px", "$type": "fontSize", "$description": "Lead paragraph — Inter Regular" },
+      "body-md": { "$value": "16px", "$type": "fontSize", "$description": "Default body text — Inter Regular" },
       "body-sm": { "$value": "14px", "$type": "fontSize", "$description": "Secondary text, captions — Inter Regular" },
       "label": { "$value": "12px", "$type": "fontSize", "$description": "Labels, tags, metadata — Inter Medium" },
-      "code": { "$value": "14px", "$type": "fontSize", "$description": "Code blocks — IBM Plex Mono" }
+      "code": { "$value": "14px", "$type": "fontSize", "$description": "Code blocks — JetBrains Mono" }
     },
     "lineHeight": {
       "tight": { "$value": 1.05, "$type": "lineHeight", "$description": "Display XL" },
@@ -57,7 +58,8 @@
       "heading": { "$value": "-0.01em", "$type": "letterSpacing", "$description": "Heading sizes" },
       "body": { "$value": "0", "$type": "letterSpacing", "$description": "Body text" },
       "label": { "$value": "0.08em", "$type": "letterSpacing", "$description": "Labels" },
-      "caps": { "$value": "0.12em", "$type": "letterSpacing", "$description": "All-caps labels" }
+      "caps": { "$value": "0.12em", "$type": "letterSpacing", "$description": "All-caps labels" },
+      "wordmark": { "$value": "0.6em", "$type": "letterSpacing", "$description": "Logo lockup only — matches style guide tracking spec of 600" }
     }
   }
 }

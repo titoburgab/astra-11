@@ -1,4 +1,4 @@
-/* ─── AITHORIS i18n Engine ─────────────────────────────────────────────────
+/* ─── ASTRA-11 i18n Engine ─────────────────────────────────────────────────
  *
  * HOW TO ADD A NEW PAGE:
  *   1. Add your new key namespace to i18n/en.js and i18n/es.js
@@ -35,7 +35,7 @@
 
   var SUPPORTED    = ['en', 'es'];
   var DEFAULT_LANG = 'en';
-  var LS_KEY       = 'aithoris_lang';
+  var LS_KEY       = 'astra11_lang';
 
   // ── Resolve initial language (priority: URL > localStorage > navigator) ──
   function detectLang() {
@@ -75,14 +75,14 @@
   }
 
   // ── Resolve <title>/description, preferring a page-specific override ────
-  // Pages other than index.html can set window.AITHORIS_PAGE = 'pageName' (see
+  // Pages other than index.html can set window.ASTRA11_PAGE = 'pageName' (see
   // portfolio.html) so their <title>/meta description come from
   // `pageName.meta.title` / `pageName.meta.description` instead of the
   // global `meta.*` keys used on the homepage.
   function metaValue(field, lang) {
-    if (window.AITHORIS_PAGE) {
+    if (window.ASTRA11_PAGE) {
       var strings  = window.i18nStrings || {};
-      var pageKey  = window.AITHORIS_PAGE + '.meta.' + field;
+      var pageKey  = window.ASTRA11_PAGE + '.meta.' + field;
       var val = get(strings[lang] || {}, pageKey);
       if (val === undefined && lang !== DEFAULT_LANG) {
         val = get(strings[DEFAULT_LANG] || {}, pageKey);

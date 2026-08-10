@@ -2,13 +2,13 @@
 
 ## BRAND_BOOK / Voice_Guide.md
 
-> *The AITHORIS voice is the most consistent thing about us. Every word we publish is part of the same argument: that intelligent systems, built with precision and care, make organizations genuinely better.*
+> *The ASTRA-11 voice is the most consistent thing about us. Every word we publish is part of the same argument: that intelligent systems, built with precision and care, make organizations genuinely better.*
 
 ---
 
 ## Voice Character
 
-AITHORIS communicates with five qualities held in tension:
+ASTRA-11 communicates with five qualities held in tension:
 
 **Confident** — We know what we are doing and we say so directly. We do not hedge unnecessarily or qualify claims that do not require qualification.
 
@@ -18,14 +18,14 @@ AITHORIS communicates with five qualities held in tension:
 
 **Human** — We build for people. Our writing acknowledges that the people reading it have context, judgment, and their own intelligence. We do not condescend.
 
-**Clear** — The test for every sentence: would a capable professional with no prior knowledge of AITHORIS understand this on a single reading? If not, rewrite it.
+**Clear** — The test for every sentence: would a capable professional with no prior knowledge of ASTRA-11 understand this on a single reading? If not, rewrite it.
 
 ---
 
 ## Sentence Construction
 
 ### Use active voice
-The subject acts. The product works. AITHORIS builds. Passive constructions dilute accountability and obscure meaning.
+The subject acts. The product works. ASTRA-11 builds. Passive constructions dilute accountability and obscure meaning.
 
 | Avoid | Prefer |
 |---|---|
@@ -85,7 +85,7 @@ The last word of a sentence carries disproportionate weight. Avoid ending on pre
 
 ## Tone by Context
 
-The AITHORIS character is consistent. The register adjusts by context.
+The ASTRA-11 character is consistent. The register adjusts by context.
 
 ### Website (Homepage, Services)
 Register: confident, compelling, accessible.
@@ -131,10 +131,10 @@ A stronger point of view is acceptable here than in client-facing materials.
 
 ---
 
-## What Good AITHORIS Writing Sounds Like
+## What Good ASTRA-11 Writing Sounds Like
 
 **On the homepage:**
-> "AITHORIS engineers intelligent systems, AI agents, and workflow automations. We help organizations stop managing complexity and start operating through it."
+> "ASTRA-11 engineers intelligent systems, AI agents, and workflow automations. We help organizations stop managing complexity and start operating through it."
 
 **In a case study:**
 > "The client's onboarding process involved 14 manual steps across four departments. We automated 11 of them, reduced average onboarding time from 12 days to 3, and eliminated the category of errors that had caused the most escalations."
@@ -147,7 +147,7 @@ A stronger point of view is acceptable here than in client-facing materials.
 
 ---
 
-## What Poor AITHORIS Writing Sounds Like
+## What Poor ASTRA-11 Writing Sounds Like
 
 *Too vague:*
 > "We leverage AI to deliver synergistic solutions that empower your team to reach its full potential."
@@ -167,4 +167,4 @@ A stronger point of view is acceptable here than in client-facing materials.
 
 ---
 
-© AITHORIS Brand Book — Voice_Guide.md v2.0
+© ASTRA-11 Brand Book — Voice_Guide.md v2.0

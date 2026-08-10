@@ -10,9 +10,9 @@
 
 ## Foundational Stance
 
-AITHORIS is an engineering company. Every product we build, every system we deliver, every integration we design reflects our technical judgment.
+ASTRA-11 is an engineering company. Every product we build, every system we deliver, every integration we design reflects our technical judgment.
 
-Engineering principles govern how we make decisions when there are trade-offs: between speed and reliability, between features and maintainability, between novelty and trust. These principles are the answer to the question: "What does AITHORIS believe good engineering looks like?"
+Engineering principles govern how we make decisions when there are trade-offs: between speed and reliability, between features and maintainability, between novelty and trust. These principles are the answer to the question: "What does ASTRA-11 believe good engineering looks like?"
 
 ---
 
@@ -112,7 +112,7 @@ Performance and elegance matter. Correctness and reliability matter more.
 
 ## Technology Stance
 
-AITHORIS does not have a permanent technology stack. We select tools based on the requirements of each engagement.
+ASTRA-11 does not have a permanent technology stack. We select tools based on the requirements of each engagement.
 
 However, we hold these positions:
 
@@ -159,4 +159,4 @@ Follow Conventional Commits: `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `ch
 
 ---
 
-© AITHORIS Foundation Repository — Engineering_Principles.md v2.0
+© ASTRA-11 Foundation Repository — Engineering_Principles.md v2.0

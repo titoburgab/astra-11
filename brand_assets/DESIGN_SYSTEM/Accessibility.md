@@ -8,7 +8,7 @@
 
 ## Standard
 
-AITHORIS targets **WCAG 2.1 AA** as the minimum standard for all production interfaces.
+ASTRA-11 targets **WCAG 2.1 AA** as the minimum standard for all production interfaces.
 We target **WCAG 2.1 AAA** for primary content and critical user paths.
 
 ---
@@ -19,10 +19,10 @@ We target **WCAG 2.1 AAA** for primary content and critical user paths.
 |---|---|---|
 | Obsidian on Ivory | 18.7:1 | AAA ✓ |
 | Ivory on Obsidian | 18.7:1 | AAA ✓ |
-| Signal Red on Ivory | 4.6:1 | AA (large text) ✓ |
-| Signal Red on Obsidian | 4.1:1 | AA (large text) ✓ |
+| Signal on Ivory | 4.6:1 | AA (large text) ✓ |
+| Signal on Obsidian | 4.1:1 | AA (large text) ✓ |
 
-**Signal Red must not be used for body text** (below 18px regular or 14px bold). It does not meet AA for normal text on either primary background.
+**Signal must not be used for body text** (below 18px regular or 14px bold). It does not meet AA for normal text on either primary background.
 
 For all new color combinations, verify contrast at: https://webaim.org/resources/contrastchecker/
 
@@ -44,11 +44,11 @@ For all new color combinations, verify contrast at: https://webaim.org/resources
 All interactive elements must have a visible focus indicator.
 
 ```css
-/* AITHORIS focus standard */
+/* ASTRA-11 focus standard */
 :focus-visible {
-  outline: 2px solid var(--aithoris-color-signal-red);
+  outline: 2px solid var(--astra11-color-signal);
   outline-offset: 2px;
-  border-radius: var(--aithoris-radius-sm);
+  border-radius: var(--astra11-radius-sm);
 }
 ```
 
@@ -111,4 +111,4 @@ Before any production release:
 
 ---
 
-© AITHORIS Design System — Accessibility.md v2.0
+© ASTRA-11 Design System — Accessibility.md v2.0

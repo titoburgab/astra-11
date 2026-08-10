@@ -23,7 +23,7 @@ We build systems that think with people, not for them. Our products augment huma
 
 Quality is intentional. Every interaction, every interface, every line of documentation contributes to or erodes trust.
 
-Precision at AITHORIS means: clear communication that leaves no ambiguity, engineering that handles edge cases with the same care as the happy path, and design that has a reason for every choice.
+Precision at ASTRA-11 means: clear communication that leaves no ambiguity, engineering that handles edge cases with the same care as the happy path, and design that has a reason for every choice.
 
 **In practice:**
 - We write documentation that is accurate and maintained
@@ -127,4 +127,4 @@ If the answer to any question is no, the decision warrants reconsideration.
 
 ---
 
-© AITHORIS Foundation Repository — Core_Values.md v2.0
+© ASTRA-11 Foundation Repository — Core_Values.md v2.0

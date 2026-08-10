@@ -2,19 +2,19 @@
 
 ## BRAND_BOOK / Origin_Node_Concept.md
 
-> *The Origin Node is the most distinctive and ownable element of the AITHORIS brand. This document gives it verbal form.*
+> *The Origin Node is the most distinctive and ownable element of the ASTRA-11 brand. This document gives it verbal form.*
 
 ---
 
 ## The Concept
 
-At the center of the AITHORIS logo is a point.
+At the center of the ASTRA-11 logo is a point.
 
 Not a decorative element. Not a graphic embellishment. A point that represents the origin of every intelligent system: a single, precise beginning from which connections emerge, networks form, and intelligence flows.
 
 This point is the **Origin Node**.
 
-The Origin Node is the visual expression of AITHORIS's core idea: intelligence does not emerge from accumulation. It emerges from connection. One precise point, connecting to another, and another — until a system exists that is greater than any of its parts.
+The Origin Node is the visual expression of ASTRA-11's core idea: intelligence does not emerge from accumulation. It emerges from connection. One precise point, connecting to another, and another — until a system exists that is greater than any of its parts.
 
 ---
 
@@ -69,9 +69,9 @@ This represents synthesis: the intelligence gathered and condensed, the system r
 ### 5. Essence
 *The mark emerges.*
 
-From the collapsed point, the AITHORIS logo forms — the geometric A with the Origin Node at its center, now revealed as the organizing center of the entire symbol.
+From the collapsed point, the ASTRA-11 logo forms — the geometric A with the Origin Node at its center, now revealed as the organizing center of the entire symbol.
 
-This is the reveal: what appeared to be abstract motion is the intelligence encoded in the AITHORIS identity itself.
+This is the reveal: what appeared to be abstract motion is the intelligence encoded in the ASTRA-11 identity itself.
 
 **Motion:** Logo forms from Origin Node outward. Duration: 600ms. Easing: ease-out.
 
@@ -101,15 +101,15 @@ The Origin Node motion sequence is used in:
 
 ## Static Application
 
-In static contexts, the Origin Node is represented by the Signal Red triangle within the A symbol.
+In static contexts, the Origin Node is represented by the Signal triangle within the A symbol.
 
-Its presence in every AITHORIS logo application is a constant reminder that every system has a precise origin — and that connecting from that origin, intelligently, is what the company does.
+Its presence in every ASTRA-11 logo application is a constant reminder that every system has a precise origin — and that connecting from that origin, intelligently, is what the company does.
 
 ---
 
 ## What the Origin Node Communicates to Clients
 
-A client who understands the Origin Node concept understands the AITHORIS approach without needing to read a brochure:
+A client who understands the Origin Node concept understands the ASTRA-11 approach without needing to read a brochure:
 
 - There is a beginning to every intelligent system — a precise, clear starting point
 - From that starting point, connections are engineered, not discovered by accident
@@ -122,4 +122,4 @@ A client who understands the Origin Node concept understands the AITHORIS approa
 
 ---
 
-© AITHORIS Brand Book — Origin_Node_Concept.md v2.0
+© ASTRA-11 Brand Book — Origin_Node_Concept.md v2.0

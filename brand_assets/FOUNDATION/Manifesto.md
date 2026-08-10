@@ -10,7 +10,7 @@ Complexity is the default state of every organization.
 
 Data accumulates faster than understanding. Processes multiply faster than they are documented. Decisions are made on intuition when they should be made on evidence. People spend their intelligence on repetitive work when they should be spending it on the problems that matter.
 
-This is the problem AITHORIS was built to solve.
+This is the problem ASTRA-11 was built to solve.
 
 ---
 
@@ -40,7 +40,7 @@ They are being sold tools that require them to change how they work rather than 
 
 The result is not intelligence. The result is noise with a dashboard.
 
-AITHORIS exists to change that.
+ASTRA-11 exists to change that.
 
 ---
 
@@ -58,7 +58,7 @@ We do not build prototypes and call them products. We do not use hype to fill ga
 
 ## What We Are Building
 
-AITHORIS is building a company that demonstrates, through its own work, what world-class AI engineering looks like.
+ASTRA-11 is building a company that demonstrates, through its own work, what world-class AI engineering looks like.
 
 Every product we ship is evidence of our philosophy. Every system we design is a proof of concept for what is possible when AI is engineered with care. Every client relationship is a long-term commitment to making their organization more capable.
 
@@ -95,8 +95,8 @@ To ourselves: we will not compromise the standard.
 
 ---
 
-*AITHORIS was founded on the conviction that intelligent systems, built with precision and care, can make organizations genuinely better — and that this work is worth doing well.*
+*ASTRA-11 was founded on the conviction that intelligent systems, built with precision and care, can make organizations genuinely better — and that this work is worth doing well.*
 
 ---
 
-© AITHORIS Foundation Repository — Manifesto.md v2.0
+© ASTRA-11 Foundation Repository — Manifesto.md v2.0

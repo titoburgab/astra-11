@@ -10,7 +10,7 @@
 
 ## Our Stance on AI
 
-AITHORIS is an AI engineering company. We build AI systems for a living. This means our relationship with AI is practical, not ideological — we work with its actual capabilities and limitations, not the capabilities it is claimed to have in marketing materials.
+ASTRA-11 is an AI engineering company. We build AI systems for a living. This means our relationship with AI is practical, not ideological — we work with its actual capabilities and limitations, not the capabilities it is claimed to have in marketing materials.
 
 These principles define how we think about AI: what it is for, how it should be built, what it should not do, and how it must be governed.
 
@@ -77,7 +77,7 @@ Deployed AI systems are monitored for performance drift, data drift, and behavio
 
 We take AI safety seriously as a practical engineering concern, not as an abstract philosophical position.
 
-For the AI systems AITHORIS builds:
+For the AI systems ASTRA-11 builds:
 
 - We define failure modes before deployment and design for graceful degradation
 - We implement rate limiting and scope constraints on all autonomous agents
@@ -89,7 +89,7 @@ For the AI systems AITHORIS builds:
 
 ## Governance Requirements
 
-All AITHORIS AI deployments must have:
+All ASTRA-11 AI deployments must have:
 
 1. A defined scope document: what the system does and does not do
 2. A human oversight interface or process
@@ -105,4 +105,4 @@ See `AI/Governance.md` for the full governance framework.
 
 ---
 
-© AITHORIS Foundation Repository — AI_Principles.md v2.0
+© ASTRA-11 Foundation Repository — AI_Principles.md v2.0

@@ -1,4 +1,4 @@
-/* ─── AITHORIS i18n — Spanish strings (Español) ───────────────────────────
+/* ─── ASTRA-11 i18n — Spanish strings (Español) ───────────────────────────
  *
  * Target market: Latin America (B2B, enterprise). Tone: direct, professional,
  * native-level — not translated English. Idioms and CTAs adapted for the
@@ -8,8 +8,8 @@ window.i18nStrings = window.i18nStrings || {};
 window.i18nStrings.es = {
 
   meta: {
-    title: 'AITHORIS | Ingeniería de IA',
-    description: 'AITHORIS diseña agentes de IA, automatizaciones de procesos y sistemas inteligentes que ayudan a las organizaciones a simplificar la complejidad y tomar mejores decisiones.',
+    title: 'ASTRA-11 | Ingeniería de IA',
+    description: 'ASTRA-11 diseña agentes de IA, automatizaciones de procesos y sistemas inteligentes que ayudan a las organizaciones a simplificar la complejidad y tomar mejores decisiones.',
   },
 
   skip: { link: 'Ir al contenido' },
@@ -17,7 +17,7 @@ window.i18nStrings.es = {
   nav: {
     about:     'Nosotros',
     services:  'Servicios',
-    whyAithoris:  'Por qué AITHORIS',
+    whyAstra11:  'Por qué ASTRA-11',
     portfolio: 'Portafolio',
     contact:   'Contacto',
     cta:       'Agendar sesión',
@@ -101,8 +101,8 @@ window.i18nStrings.es = {
     body:    'La mayoría de los pilotos de IA nunca llegan a producción.<br><span class="font-medium">Nosotros empezamos ahí.</span>',
   },
 
-  whyAithoris: {
-    eyebrow: 'Por qué AITHORIS',
+  whyAstra11: {
+    eyebrow: 'Por qué ASTRA-11',
     heading: 'Construidos para el vacío que otros dejan abierto.',
     body:    'Los proyectos de IA suelen fracasar de dos maneras: las agencias avanzan rápido pero dejan sistemas frágiles, o las consultoras avanzan con cuidado pero nunca entregan. Este es el estándar con el que nos medimos en cada proyecto, no solo en la propuesta.',
     table: {
@@ -110,11 +110,11 @@ window.i18nStrings.es = {
         agencies:   'Agencias de IA',
         consulting: 'Grandes consultoras',
       },
-      row1: { label: 'Disciplina de ingeniería', agencies: 'Variable',             consulting: 'Aprobaciones en capas', aithoris: 'Rigurosa y documentada'    },
-      row2: { label: 'Velocidad a producción',   agencies: 'Rápido, frágil',       consulting: 'Lento, exhaustivo',     aithoris: 'Rápido y confiable'        },
-      row3: { label: 'Explicabilidad',           agencies: 'Raramente priorizada', consulting: 'Raramente entregada',   aithoris: 'Integrada al diseño'       },
-      row4: { label: 'Gobernanza',               agencies: 'Ausente',              consulting: 'Cargada de procesos',   aithoris: 'Calibrada al proyecto'     },
-      row5: { label: 'Calidad de diseño',        agencies: 'Genérica',             consulting: 'Estándar corporativo',  aithoris: 'Premium, con identidad propia' },
+      row1: { label: 'Disciplina de ingeniería', agencies: 'Variable',             consulting: 'Aprobaciones en capas', astra11: 'Rigurosa y documentada'    },
+      row2: { label: 'Velocidad a producción',   agencies: 'Rápido, frágil',       consulting: 'Lento, exhaustivo',     astra11: 'Rápido y confiable'        },
+      row3: { label: 'Explicabilidad',           agencies: 'Raramente priorizada', consulting: 'Raramente entregada',   astra11: 'Integrada al diseño'       },
+      row4: { label: 'Gobernanza',               agencies: 'Ausente',              consulting: 'Cargada de procesos',   astra11: 'Calibrada al proyecto'     },
+      row5: { label: 'Calidad de diseño',        agencies: 'Genérica',             consulting: 'Estándar corporativo',  astra11: 'Premium, con identidad propia' },
     },
     footnote: 'Nuestro propio estándar operativo, no una auditoría de ninguna empresa en particular.',
   },
@@ -130,33 +130,33 @@ window.i18nStrings.es = {
       submit:   'Agenda tu sesión inicial',
       sending:  'Enviando…',
       success:  '¡Listo! Te responderemos en un día hábil.',
-      error:    'Algo salió mal. Escríbenos directamente a hello@aithoris.io.',
-      emailAlt: '¿Prefieres email? Escríbenos a <a href="mailto:hello@aithoris.io" class="underline hover:text-signal">hello@aithoris.io</a>',
+      error:    'Algo salió mal. Escríbenos directamente a hello@astra-11.com.',
+      emailAlt: '¿Prefieres email? Escríbenos a <a href="mailto:hello@astra-11.com" class="underline hover:text-signal">hello@astra-11.com</a>',
     },
   },
 
   footer: {
     tagline:   'Inteligencia conectada.',
-    copyright: '© 2026 AITHORIS. Todos los derechos reservados.',
+    copyright: '© 2026 ASTRA-11. Todos los derechos reservados.',
     label:     'Ingeniería de IA',
   },
 
   about: {
     meta: {
-      title:       'AITHORIS | Nosotros',
-      description: 'AITHORIS es un socio de ingeniería de IA y automatización inteligente enfocado en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
+      title:       'ASTRA-11 | Nosotros',
+      description: 'ASTRA-11 es un socio de ingeniería de IA y automatización inteligente enfocado en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
     },
     hero: {
-      eyebrow:  'Sobre AITHORIS',
+      eyebrow:  'Sobre ASTRA-11',
       headline: 'Ingeniería de inteligencia. Resultados de negocio.',
-      body:     'La tecnología por sí sola no transforma un negocio. La estrategia correcta, los sistemas correctos y la ejecución correcta sí lo hacen. En AITHORIS diseñamos soluciones de IA inteligentes que ayudan a las organizaciones a eliminar ineficiencias, automatizar trabajo repetitivo, reducir costos operativos y crear nuevas oportunidades de crecimiento. Cada solución que construimos está diseñada alrededor de un objetivo: ayudar a que tu negocio funcione mejor.',
+      body:     'La tecnología por sí sola no transforma un negocio. La estrategia correcta, los sistemas correctos y la ejecución correcta sí lo hacen. En ASTRA-11 diseñamos soluciones de IA inteligentes que ayudan a las organizaciones a eliminar ineficiencias, automatizar trabajo repetitivo, reducir costos operativos y crear nuevas oportunidades de crecimiento. Cada solución que construimos está diseñada alrededor de un objetivo: ayudar a que tu negocio funcione mejor.',
       closer:   'No implementamos IA porque esté de moda.<br><span class="font-medium text-ivory">Diseñamos sistemas inteligentes porque resuelven problemas reales de negocio.</span>',
       cta:      'Construyamos Algo Más Inteligente',
     },
     whoWeAre: {
       eyebrow: 'Quiénes Somos',
       heading: 'Tu socio de ingeniería en IA para la transformación de tu negocio',
-      body1:   'AITHORIS es una empresa de ingeniería de IA y automatización inteligente enfocada en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
+      body1:   'ASTRA-11 es una empresa de ingeniería de IA y automatización inteligente enfocada en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
       body2:   'Trabajamos con empresas que reconocen que la tecnología debería ser una ventaja, no otro problema más que gestionar.',
       body3:   'En lugar de ofrecer herramientas de IA genéricas, nos tomamos el tiempo de entender cómo opera tu negocio, dónde existen oportunidades y cómo los sistemas inteligentes pueden generar mejoras medibles en toda tu organización.',
       body4:   'Ya sea optimizando operaciones internas, mejorando la experiencia de tus clientes, acelerando la toma de decisiones o creando nuevas oportunidades de ingresos, cada solución que desarrollamos se construye alrededor de tu negocio, no de la última tendencia tecnológica.',
@@ -171,7 +171,7 @@ window.i18nStrings.es = {
       closer:   'Cuando la tecnología funciona como debería, se vuelve casi invisible.<br>Tus equipos simplemente trabajan más rápido.<br>Tus clientes reciben mejores experiencias.<br>Tu negocio se vuelve más eficiente.',
     },
     different: {
-      eyebrow: 'Qué Hace Diferente a AITHORIS',
+      eyebrow: 'Qué Hace Diferente a ASTRA-11',
       heading: 'Tres compromisos, en cada proyecto.',
       body:    'Nada de esto es complicado. Solo es, de forma constante, poco común.',
       card1: { title: 'Inteligencia Práctica',                     body: 'Construimos sistemas que resuelven el problema específico frente a nosotros, no IA de propósito general en busca de un caso de uso. Si no elimina trabajo, reduce costos o acelera una decisión, no lo construimos solo porque la tecnología existe.' },
@@ -181,30 +181,30 @@ window.i18nStrings.es = {
     founders: {
       eyebrow: 'Fundadores',
       heading: 'Dos trayectorias, una misma conclusión.',
-      intro:   'AITHORIS no lo fundaron estrategas adivinando de tecnología, ni ingenieros adivinando de negocios. Lo fundaron dos personas que pasaron su carrera en lados opuestos del mismo problema: la decisión correcta, socavada por un sistema que nadie construyó para sostenerla.',
+      intro:   'ASTRA-11 no lo fundaron estrategas adivinando de tecnología, ni ingenieros adivinando de negocios. Lo fundaron dos personas que pasaron su carrera en lados opuestos del mismo problema: la decisión correcta, socavada por un sistema que nadie construyó para sostenerla.',
       tito: {
         name:  'Tito Burga',
         title: 'Cofundador, Diseño e Ingeniería de IA',
         bio1:  'Tito pasó 25 años dirigiendo creatividad y estrategia de marca dentro de algunas de las cadenas de televisión más grandes de Estados Unidos: Telemundo, CBS, Cox Media Group, Gray Television y Sinclair Broadcast Group. Su trabajo ha ganado un Emmy, dos nominaciones adicionales al Emmy, un premio EMA y tres NBC Ovation Awards.',
-        bio2:  'En 2022 se formó como diseñador UX y desarrollador front-end, y hoy construye con las mismas herramientas de IA que AITHORIS diseña para sus clientes. Dos décadas entendiendo cómo las audiencias y las organizaciones realmente consumen información, sumadas al dominio práctico de las herramientas que están rediseñando cómo se construye el trabajo: esa combinación es lo que aporta a cada proyecto.',
+        bio2:  'En 2022 se formó como diseñador UX y desarrollador front-end, y hoy construye con las mismas herramientas de IA que ASTRA-11 diseña para sus clientes. Dos décadas entendiendo cómo las audiencias y las organizaciones realmente consumen información, sumadas al dominio práctico de las herramientas que están rediseñando cómo se construye el trabajo: esa combinación es lo que aporta a cada proyecto.',
       },
       cesar: {
         name:  'César Montoya',
         title: 'Cofundador, Liderazgo y Estrategia de Ejecución',
         bio1:  'César pasó 20 años en liderazgo de banca, finanzas y recursos humanos, incluyendo posiciones senior en Banco Wiese y Banco de Comercio, antes de fundar Centro Internacional de Competencias, desde donde asesora a directorios y equipos ejecutivos en América Latina.',
-        bio2:  'Su diagnóstico, perfeccionado en dos décadas viendo la estrategia enfrentarse a la realidad: las organizaciones rara vez fracasan por un mal plan. Fracasan porque la arquitectura de liderazgo responsable de ejecutarlo nunca fue diseñada para sostenerlo. Una de las prácticas que construyó a partir de esa tesis aplica IA directamente a la toma de decisiones ejecutivas, la misma disciplina que AITHORIS hoy construye para sus clientes a escala.',
+        bio2:  'Su diagnóstico, perfeccionado en dos décadas viendo la estrategia enfrentarse a la realidad: las organizaciones rara vez fracasan por un mal plan. Fracasan porque la arquitectura de liderazgo responsable de ejecutarlo nunca fue diseñada para sostenerlo. Una de las prácticas que construyó a partir de esa tesis aplica IA directamente a la toma de decisiones ejecutivas, la misma disciplina que ASTRA-11 hoy construye para sus clientes a escala.',
       },
       why: {
-        eyebrow: 'Por Qué Construimos AITHORIS',
+        eyebrow: 'Por Qué Construimos ASTRA-11',
         heading: 'El mismo problema, visto desde dos salas distintas.',
         body1:   'Tito pasó 25 años viendo cómo organizaciones de medios compraban la tecnología correcta y aun así perdían la historia, porque nadie diseñaba el sistema que conectaba la creatividad, la tecnología y al equipo que la usaba.',
         body2:   'César pasó 20 años viendo cómo los directorios aprobaban la estrategia correcta y aun así perdían la ejecución, porque nadie diseñaba la arquitectura de liderazgo necesaria para sostenerla.',
-        closer:  'AITHORIS existe porque ese es el mismo fracaso. Nuestros clientes reciben las dos mitades de la solución: un sistema construido para funcionar, y la preparación organizacional para que se sostenga.',
+        closer:  'ASTRA-11 existe porque ese es el mismo fracaso. Nuestros clientes reciben las dos mitades de la solución: un sistema construido para funcionar, y la preparación organizacional para que se sostenga.',
       },
       vision: {
         eyebrow: 'Nuestra Tesis Compartida',
         heading: 'La complejidad no desaparece. Se traslada.',
-        body:    'Fundamos AITHORIS sobre una sola convicción: la inteligencia, humana o artificial, solo crea valor cuando está conectada a un sistema diseñado para sostenerla. La complejidad no desaparece cuando una organización adopta IA. Se traslada: de la experiencia del usuario a la arquitectura del sistema, o de la estrategia a las personas que deben ejecutarla. Decidir hacia dónde se traslada, y diseñarla bien una vez que llega ahí, es el trabajo.',
+        body:    'Fundamos ASTRA-11 sobre una sola convicción: la inteligencia, humana o artificial, solo crea valor cuando está conectada a un sistema diseñado para sostenerla. La complejidad no desaparece cuando una organización adopta IA. Se traslada: de la experiencia del usuario a la arquitectura del sistema, o de la estrategia a las personas que deben ejecutarla. Decidir hacia dónde se traslada, y diseñarla bien una vez que llega ahí, es el trabajo.',
       },
       cta: {
         heading: 'Así es con quien trabajarás.',
@@ -244,8 +244,8 @@ window.i18nStrings.es = {
 
   portfolio: {
     meta: {
-      title:       'AITHORIS | Portafolio',
-      description: 'Sistemas de automatización que AITHORIS ha construido: calificación de leads, generación de cotizaciones y facturas, producción de video, redacción de guiones y publicación en LinkedIn, cada uno a partir de un problema real que observamos.',
+      title:       'ASTRA-11 | Portafolio',
+      description: 'Sistemas de automatización que ASTRA-11 ha construido: calificación de leads, generación de cotizaciones y facturas, producción de video, redacción de guiones y publicación en LinkedIn, cada uno a partir de un problema real que observamos.',
     },
     hero: {
       eyebrow:  'Sistemas que hemos construido',

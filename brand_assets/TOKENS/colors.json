@@ -1,116 +1,94 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$metadata": {
-    "name": "AITHORIS Color Tokens",
-    "version": "2.0.0",
-    "updated": "2026-06-01",
+    "name": "ASTRA-11 Color Tokens",
+    "version": "3.0.0",
+    "updated": "2026-08-10",
     "reference": "BRAND_BOOK/Color_System.md"
   },
   "color": {
     "primary": {
-      "obsidian": {
-        "$value": "#0A0A0A",
+      "navy": {
+        "$value": "#0A0F1C",
         "$type": "color",
-        "$description": "Primary dark background and text on light backgrounds. RGB: 10, 10, 10."
+        "$description": "Primary dark background and text on light backgrounds. RGB: 10, 15, 28."
       },
-      "ivory": {
-        "$value": "#F5F5F2",
+      "white": {
+        "$value": "#FFFFFF",
         "$type": "color",
-        "$description": "Primary light background and text on dark backgrounds. Official value — do not substitute #FFFFFF. See Decision_Log DECISION-001."
-      },
-      "signal-red": {
-        "$value": "#FF3B30",
-        "$type": "color",
-        "$description": "Brand accent. Origin Node, CTAs, active states. Do not use for body text below 24px."
-      }
-    },
-    "motion": {
-      "copper": {
-        "$value": "#FF7A00",
-        "$type": "color",
-        "$description": "Motion palette only. Warm energy, mid-range data emphasis."
-      },
-      "amber": {
-        "$value": "#FFB800",
-        "$type": "color",
-        "$description": "Motion palette only. Transition, connection-in-progress states."
+        "$description": "Primary light background and text on dark backgrounds."
       },
       "orange": {
-        "$value": "#FF4000",
+        "$value": "#FF5100",
         "$type": "color",
-        "$description": "Motion palette only. High energy, directional flow."
-      },
-      "gold": {
-        "$value": "#FFD166",
-        "$type": "color",
-        "$description": "Motion palette only. Resolution, completion states."
-      },
-      "plasma": {
-        "$value": "#FF2D55",
-        "$type": "color",
-        "$description": "Motion palette only. Bridge between Signal Red and warm motion palette. See Decision_Log DECISION-004."
+        "$description": "Brand accent. Logo underline, CTAs, active states. Do not use for body text below 24px."
       }
     },
     "neutral": {
-      "obsidian-80": {
-        "$value": "#1A1A1A",
+      "gray": {
+        "$value": "#A7ACB3",
         "$type": "color",
-        "$description": "Card backgrounds in dark mode."
+        "$description": "Muted/secondary text on dark backgrounds."
       },
-      "obsidian-60": {
-        "$value": "#2A2A2A",
+      "navy-elevated": {
+        "$value": "#121A2C",
+        "$type": "color",
+        "$description": "Card and panel backgrounds in dark mode."
+      },
+      "navy-border": {
+        "$value": "#1F2A40",
         "$type": "color",
         "$description": "Borders and dividers in dark mode."
       },
-      "obsidian-40": {
-        "$value": "#555555",
-        "$type": "color",
-        "$description": "Subdued text, placeholders."
-      },
-      "ivory-80": {
-        "$value": "#E8E8E5",
+      "gray-soft": {
+        "$value": "#D7DAE0",
         "$type": "color",
         "$description": "Borders and dividers in light mode."
       },
-      "ivory-60": {
-        "$value": "#DDDDD9",
+      "orange-dark": {
+        "$value": "#CC4100",
         "$type": "color",
-        "$description": "Subtle section backgrounds within light contexts."
+        "$description": "Pressed/hover state for orange on light backgrounds."
+      },
+      "orange-bright": {
+        "$value": "#FF7A33",
+        "$type": "color",
+        "$description": "Hover state for orange accents on dark backgrounds."
       }
     },
     "semantic": {
       "background-primary-dark": {
-        "$value": "{color.primary.obsidian}",
+        "$value": "{color.primary.navy}",
         "$type": "color",
         "$description": "Primary dark background."
       },
       "background-primary-light": {
-        "$value": "{color.primary.ivory}",
+        "$value": "{color.primary.white}",
         "$type": "color",
         "$description": "Primary light background."
       },
       "text-primary-on-dark": {
-        "$value": "{color.primary.ivory}",
+        "$value": "{color.primary.white}",
         "$type": "color",
         "$description": "Primary text on dark backgrounds."
       },
       "text-primary-on-light": {
-        "$value": "{color.primary.obsidian}",
+        "$value": "{color.primary.navy}",
         "$type": "color",
         "$description": "Primary text on light backgrounds."
       },
       "accent": {
-        "$value": "{color.primary.signal-red}",
+        "$value": "{color.primary.orange}",
         "$type": "color",
         "$description": "Brand accent. Use for CTAs, highlights, active states."
       },
       "border-dark": {
-        "$value": "{color.neutral.obsidian-60}",
+        "$value": "{color.neutral.navy-border}",
         "$type": "color",
         "$description": "Border color for dark-mode components."
       },
       "border-light": {
-        "$value": "{color.neutral.ivory-80}",
+        "$value": "{color.neutral.gray-soft}",
         "$type": "color",
         "$description": "Border color for light-mode components."
       }

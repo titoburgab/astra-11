@@ -2,13 +2,13 @@
 
 ## BRAND_BOOK / Motion_Identity.md
 
-> *Motion at AITHORIS communicates intelligence in action — calm, intentional, and purposeful. Every animation has a reason.*
+> *Motion at ASTRA-11 communicates intelligence in action — calm, intentional, and purposeful. Every animation has a reason.*
 
 ---
 
 ## Motion Philosophy
 
-Motion is not decoration. At AITHORIS, every animation serves one of three purposes:
+Motion is not decoration. At ASTRA-11, every animation serves one of three purposes:
 
 1. **Orientation** — Helping users understand where they are and what has changed
 2. **Feedback** — Confirming that a system has received input and is processing
@@ -24,7 +24,7 @@ Animation that does not serve one of these purposes should not exist.
 
 **Intentional** — Every motion element was placed deliberately. Nothing animates by default.
 
-**Smooth** — Transitions follow natural easing curves. Mechanical, linear animations are not AITHORIS.
+**Smooth** — Transitions follow natural easing curves. Mechanical, linear animations are not ASTRA-11.
 
 **Functional** — Motion supports the user's task. It does not interrupt or delay.
 
@@ -99,7 +99,7 @@ child nodes: opacity 1 → 0, duration: 200ms, starts 100ms before line retracti
 
 **State 5: Essence**
 ```
-element: aithoris-logo
+element: astra11-logo
 clip-path or stroke-dasharray: 0 → full
 origin: from origin-node coordinates
 duration: 600ms
@@ -114,16 +114,16 @@ Used in product interfaces to communicate active processing.
 
 The Origin Node pulses 2–3 times, then rests. If processing continues, pulse resumes after a 1-second pause.
 
-Do not use spinning indicators in AITHORIS interfaces. The pulse is the AITHORIS loading pattern.
+Do not use spinning indicators in ASTRA-11 interfaces. The pulse is the ASTRA-11 loading pattern.
 
 ---
 
 ## Motion Colors in Animation
 
-The motion palette (Copper, Amber, Orange, Gold, Plasma) animates through the Origin Node sequences in this order:
+The motion palette (Copper, Amber, Ember, Gold, Plasma) animates through the Origin Node sequences in this order:
 
-**Activation sequence:** Signal Red → Plasma → Orange
-**Progress sequence:** Orange → Amber → Copper
+**Activation sequence:** Orange (primary accent) → Plasma → Ember
+**Progress sequence:** Ember → Amber → Copper
 **Resolution sequence:** Copper → Gold
 
 Do not apply motion colors to static elements.
@@ -132,7 +132,7 @@ Do not apply motion colors to static elements.
 
 ## Reduced Motion
 
-All AITHORIS animations must respect `prefers-reduced-motion`.
+All ASTRA-11 animations must respect `prefers-reduced-motion`.
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -146,7 +146,7 @@ All AITHORIS animations must respect `prefers-reduced-motion`.
 
 ## Animation Standards
 
-Professional, purposeful animation is encouraged across all AITHORIS digital experiences. Animation should elevate the brand and communicate intelligence in motion — not merely decorate.
+Professional, purposeful animation is encouraged across all ASTRA-11 digital experiences. Animation should elevate the brand and communicate intelligence in motion — not merely decorate.
 
 **Encouraged:**
 - Scroll-triggered section reveals using fade and translate combinations
@@ -179,4 +179,4 @@ Professional, purposeful animation is encouraged across all AITHORIS digital exp
 
 ---
 
-© AITHORIS Brand Book — Motion_Identity.md v2.0
+© ASTRA-11 Brand Book — Motion_Identity.md v2.0

@@ -2,7 +2,7 @@
 
 ## WEBSITE / Website.md
 
-> *The AITHORIS website is the digital headquarters of the company. It must communicate engineering excellence, clarity, and trust in every interaction.*
+> *The ASTRA-11 website is the digital headquarters of the company. It must communicate engineering excellence, clarity, and trust in every interaction.*
 
 ---
 
@@ -28,9 +28,9 @@
 ## Information Architecture
 
 ```
-aithoris.io/
+astra-11.com/
 ├── /                       Home
-├── /about                  About AITHORIS
+├── /about                  About ASTRA-11
 │   ├── /about/team         Team
 │   └── /about/philosophy   Engineering & Design Philosophy
 ├── /services               Services overview
@@ -54,7 +54,7 @@ aithoris.io/
 
 **Minimal interface** — Every element has a purpose. No decorative complexity.
 
-**Typography-led** — Söhne headlines carry the brand personality. White space creates authority.
+**Typography-led** — Sora headlines carry the brand personality. White space creates authority.
 
 **Purposeful motion** — The Origin Node concept appears in transitions and loading states. Motion communicates the brand without interrupting the experience.
 
@@ -105,7 +105,7 @@ See `BRAND_BOOK/Voice_Guide.md` and `WEBSITE/Copywriting.md` for detailed writin
 
 Every visitor should leave with one impression:
 
-> *AITHORIS builds AI systems with engineering discipline. They know what they are doing and they are worth talking to.*
+> *ASTRA-11 builds AI systems with engineering discipline. They know what they are doing and they are worth talking to.*
 
 ---
 
@@ -113,4 +113,4 @@ Every visitor should leave with one impression:
 
 ---
 
-© AITHORIS Website — Website.md v2.0
+© ASTRA-11 Website — Website.md v2.0

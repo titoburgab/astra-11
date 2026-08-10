@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AITHORIS | About</title>
-<meta name="description" content="AITHORIS is an AI engineering and intelligent automation partner focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.">
+<title>ASTRA-11 | About</title>
+<meta name="description" content="ASTRA-11 is an AI engineering and intelligent automation partner focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.">
 
 <!-- hreflang alternate links — hrefs populated at runtime by i18n.js -->
 <link rel="alternate" hreflang="en" href="">
 <link rel="alternate" hreflang="es" href="">
 <link rel="alternate" hreflang="x-default" href="">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 32'%3E%3Cpath d='M18 0L0 32H8L18 0Z' fill='%230D0D10'/%3E%3Cpath d='M18 0L28 32H36L18 0Z' fill='%230D0D10'/%3E%3Cpath d='M18 14L23 25H13L18 14Z' fill='%23D42020'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230A0F1C'/%3E%3Cpath d='M20 72L50 22L80 72' fill='none' stroke='%23FFFFFF' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='42' y='80' width='16' height='5' rx='2.5' fill='%23FF5100'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- i18n: load before render to avoid flash of wrong language -->
 <script src="/i18n/en.js"></script>
 <script src="/i18n/es.js"></script>
-<script>window.AITHORIS_PAGE = 'about';</script>
+<script>window.ASTRA11_PAGE = 'about';</script>
 <script src="/i18n/i18n.js"></script>
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -28,17 +28,17 @@
     theme: {
       extend: {
         colors: {
-          ivory: { DEFAULT: '#F2F2F4', 80: '#2B2B30', 60: '#232328', 40: '#A6A6AE' },
-          obsidian: { DEFAULT: '#161616', 80: '#2A2A2A', 60: '#333333', 40: '#A6A6AE' },
-          signal: '#D42020',
-          crimsonDeep: '#7A0F0F',
-          crimsonDark: '#9B1515',
-          crimsonShadow: '#B81B1B',
-          crimsonBright: '#E04848',
-          crimsonSoft: '#EE7070',
+          ivory: { DEFAULT: '#FFFFFF', 80: '#141D30', 60: '#0F1626', 40: '#A7ACB3' },
+          obsidian: { DEFAULT: '#0A0F1C', 80: '#1B2740', 60: '#24314D', 40: '#A7ACB3' },
+          signal: '#FF5100',
+          emberDeep: '#7A2800',
+          emberDark: '#993200',
+          emberShadow: '#CC4100',
+          emberBright: '#FF7A33',
+          emberSoft: '#FFA366',
         },
         fontFamily: {
-          display: ['"Outfit"', 'system-ui', '-apple-system', 'sans-serif'],
+          display: ['"Sora"', 'system-ui', '-apple-system', 'sans-serif'],
           sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
           mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
         },
@@ -78,10 +78,10 @@
 
   body { font-family: "Inter", system-ui, sans-serif; }
 
-  ::selection { background: #D42020; color: #F2F2F4; }
+  ::selection { background: #FF5100; color: #FFFFFF; }
 
   :focus-visible {
-    outline: 2px solid #D42020;
+    outline: 2px solid #FF5100;
     outline-offset: 2px;
     border-radius: 2px;
   }
@@ -91,8 +91,8 @@
     left: -9999px;
     top: 0;
     z-index: 100;
-    background: #161616;
-    color: #F2F2F4;
+    background: #0A0F1C;
+    color: #FFFFFF;
     padding: 12px 20px;
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
@@ -100,13 +100,13 @@
   .skip-link:focus { left: 16px; top: 16px; }
 
   /* Depth bands — two flat tones strictly alternate section by section for rhythm, no gradients between them. */
-  .bg-warm-section { background: #242424; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .bg-warm-section { background: #121A2C; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
 
   .shadow-card {
     box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 8px 20px -8px rgba(0,0,0,0.5);
   }
   .shadow-card-hover {
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.09), 0 4px 10px -2px rgba(212,32,32,0.10), 0 16px 36px -12px rgba(0,0,0,0.6);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.09), 0 4px 10px -2px rgba(255,81,0,0.10), 0 16px 36px -12px rgba(0,0,0,0.6);
   }
   #site-header.is-scrolled { box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 12px 24px -16px rgba(0,0,0,0.5); }
 
@@ -144,19 +144,19 @@
   }
   .btn:active { transform: scale(0.97); }
   .btn-primary {
-    background: #D42020; color: #F2F2F4;
-    box-shadow: 0 8px 20px -6px rgba(212,32,32,0.45);
+    background: #FF5100; color: #FFFFFF;
+    box-shadow: 0 8px 20px -6px rgba(255,81,0,0.45);
   }
-  .btn-primary:hover { background: #B81B1B; box-shadow: 0 12px 26px -6px rgba(212,32,32,0.55); }
+  .btn-primary:hover { background: #CC4100; box-shadow: 0 12px 26px -6px rgba(255,81,0,0.55); }
   .btn-secondary {
-    background: transparent; color: #F2F2F4; border: 1px solid rgba(242,242,244,0.35);
+    background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.35);
   }
-  .btn-secondary:hover { background: #F2F2F4; color: #161616; border-color: #F2F2F4; }
+  .btn-secondary:hover { background: #FFFFFF; color: #0A0F1C; border-color: #FFFFFF; }
   .btn-on-dark {
-    background: #D42020; color: #F2F2F4;
-    box-shadow: 0 8px 24px -6px rgba(212,32,32,0.5);
+    background: #FF5100; color: #FFFFFF;
+    box-shadow: 0 8px 24px -6px rgba(255,81,0,0.5);
   }
-  .btn-on-dark:hover { background: #E04848; box-shadow: 0 14px 32px -8px rgba(212,32,32,0.6); }
+  .btn-on-dark:hover { background: #FF7A33; box-shadow: 0 14px 32px -8px rgba(255,81,0,0.6); }
 
   /* Reveal-on-scroll */
   .reveal { opacity: 0; transform: translateY(16px); transition: opacity 700ms cubic-bezier(0,0,0.3,1), transform 700ms cubic-bezier(0,0,0.3,1); }
@@ -187,7 +187,7 @@
 
   /* Header */
   #site-header { transition: background-color 200ms cubic-bezier(0.4,0,0.2,1), border-color 200ms cubic-bezier(0.4,0,0.2,1), backdrop-filter 200ms; }
-  #site-header.is-scrolled { background-color: rgba(10,10,12,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.07); }
+  #site-header.is-scrolled { background-color: rgba(10,15,28,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.07); }
 
   /* Language toggle */
   .lang-btn {
@@ -196,14 +196,14 @@
     font-weight: 500;
     letter-spacing: 0.1em;
     line-height: 1;
-    color: rgba(242,242,244,0.45);
+    color: rgba(255,255,255,0.45);
     border-radius: 2px;
     padding: 3px 5px;
     transition: color 150ms cubic-bezier(0.4,0,0.2,1);
   }
-  .lang-btn[aria-pressed="true"]  { color: #D42020; }
-  .lang-btn:hover                 { color: #F2F2F4; }
-  .lang-btn:focus-visible         { outline: 2px solid #D42020; outline-offset: 2px; }
+  .lang-btn[aria-pressed="true"]  { color: #FF5100; }
+  .lang-btn:hover                 { color: #FFFFFF; }
+  .lang-btn:focus-visible         { outline: 2px solid #FF5100; outline-offset: 2px; }
 </style>
 </head>
 <body class="bg-obsidian text-ivory antialiased">
@@ -213,19 +213,14 @@
 <!-- ============ HEADER / NAV ============ -->
 <header id="site-header" class="fixed top-0 inset-x-0 z-50">
   <nav class="mx-auto max-w-content px-5 md:px-10 lg:px-20 h-20 flex items-center justify-between" aria-label="Primary">
-    <a href="/index.html" class="flex items-center" aria-label="AITHORIS home">
-      <svg width="27" height="24" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M18 0L0 32H8L18 0Z" fill="#F2F2F4"/>
-        <path d="M18 0L28 32H36L18 0Z" fill="#F2F2F4"/>
-        <path d="M18 14L23 25H13L18 14Z" fill="#D42020"/>
-      </svg>
-      <span class="ml-2.5 font-display font-medium text-[19px] tracking-[-0.01em] text-ivory">AITHORIS</span>
+    <a href="/index.html" class="flex items-center" aria-label="ASTRA-11 home">
+      <img src="/brand_assets/assets/ASTRA-11_Logo.svg" alt="ASTRA-11" class="h-[22px] md:h-[29px] w-auto">
     </a>
 
     <div class="hidden lg:flex items-center gap-10 font-sans text-body-sm font-medium">
       <a href="/about.html" class="nav-link" data-i18n="nav.about" aria-current="page">About</a>
       <a href="/index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
-      <a href="/index.html#why-aithoris" class="nav-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+      <a href="/index.html#why-astra11" class="nav-link" data-i18n="nav.whyAstra11">Why ASTRA-11</a>
       <a href="/portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
     </div>
 
@@ -248,7 +243,7 @@
     <div class="px-5 py-8 flex flex-col gap-6 font-sans text-heading-sm">
       <a href="/about.html" class="mobile-link" data-i18n="nav.about" aria-current="page">About</a>
       <a href="/index.html#services" class="mobile-link" data-i18n="nav.services">Services</a>
-      <a href="/index.html#why-aithoris" class="mobile-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+      <a href="/index.html#why-astra11" class="mobile-link" data-i18n="nav.whyAstra11">Why ASTRA-11</a>
       <a href="/portfolio.html" class="mobile-link" data-i18n="nav.portfolio">Portfolio</a>
       <div class="pt-4 border-t border-obsidian-80">
         <div role="group" data-i18n-aria-label="nav.lang" aria-label="Language" class="flex items-center gap-2">
@@ -266,14 +261,14 @@
 
   <!-- ============ HERO ============ -->
   <section class="grain relative overflow-hidden pt-40 pb-16 md:pt-48 md:pb-20">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(55% 50% at 82% 20%, rgba(212,32,32,0.09), transparent 70%), radial-gradient(40% 35% at 10% 90%, rgba(212,32,32,0.06), transparent 70%);"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(55% 50% at 82% 20%, rgba(255,81,0,0.09), transparent 70%), radial-gradient(40% 35% at 10% 90%, rgba(255,81,0,0.06), transparent 70%);"></div>
 
     <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20">
       <div class="reveal max-w-[720px]">
-        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.hero.eyebrow">About AITHORIS</span></p>
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.hero.eyebrow">About ASTRA-11</span></p>
         <h1 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="about.hero.headline">Engineering Intelligence. Delivering Business Results.</h1>
-        <p class="mt-5 max-w-[640px] text-body-lg" style="color:#C6C6CE;" data-i18n="about.hero.body">Technology alone doesn't transform a business. The right strategy, the right systems, and the right execution do. At AITHORIS, we design intelligent AI solutions that help organizations eliminate inefficiencies, automate repetitive work, reduce operational costs, and create new opportunities for growth. Every solution we build is engineered around one objective: helping your business perform better.</p>
-        <p class="mt-5 max-w-[640px] text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.hero.closer">We don't implement AI because it's trending.<br><span class="font-medium text-ivory">We engineer intelligent systems because they solve real business problems.</span></p>
+        <p class="mt-5 max-w-[640px] text-body-lg" style="color:#C3C8D1;" data-i18n="about.hero.body">Technology alone doesn't transform a business. The right strategy, the right systems, and the right execution do. At ASTRA-11, we design intelligent AI solutions that help organizations eliminate inefficiencies, automate repetitive work, reduce operational costs, and create new opportunities for growth. Every solution we build is engineered around one objective: helping your business perform better.</p>
+        <p class="mt-5 max-w-[640px] text-body-lg" style="color:#C3C8D1;" data-i18n-html="about.hero.closer">We don't implement AI because it's trending.<br><span class="font-medium text-ivory">We engineer intelligent systems because they solve real business problems.</span></p>
         <div class="mt-8">
           <a href="/index.html#contact" class="btn btn-primary px-7 py-4 text-body-md" data-i18n="about.hero.cta">Let's Build Something Smarter</a>
         </div>
@@ -288,26 +283,26 @@
         <div class="reveal">
           <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.whoWeAre.eyebrow">Who We Are</span></p>
           <h2 class="font-display font-light text-heading-lg text-ivory" data-i18n="about.whoWeAre.heading">Your AI Engineering Partner for Business Transformation</h2>
-          <p class="mt-5 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body1">AITHORIS is an AI engineering and intelligent automation company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.</p>
-          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body2">We work with companies that recognize technology should be an advantage, not another challenge to manage.</p>
-          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body3">Instead of offering generic AI tools, we take the time to understand how your business operates, where opportunities exist, and how intelligent systems can create measurable improvements across your organization.</p>
-          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whoWeAre.body4">Whether it's streamlining internal operations, improving customer experiences, accelerating decision-making, or creating entirely new revenue opportunities, every solution we develop is built around your business, not around the latest technology trend.</p>
-          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whoWeAre.closer">Because real innovation isn't about adding more software.<br><span class="font-medium text-ivory">It's about making work simpler, faster, and more valuable.</span></p>
+          <p class="mt-5 text-body-lg" style="color:#C3C8D1;" data-i18n="about.whoWeAre.body1">ASTRA-11 is an AI engineering and intelligent automation company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.</p>
+          <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n="about.whoWeAre.body2">We work with companies that recognize technology should be an advantage, not another challenge to manage.</p>
+          <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n="about.whoWeAre.body3">Instead of offering generic AI tools, we take the time to understand how your business operates, where opportunities exist, and how intelligent systems can create measurable improvements across your organization.</p>
+          <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n="about.whoWeAre.body4">Whether it's streamlining internal operations, improving customer experiences, accelerating decision-making, or creating entirely new revenue opportunities, every solution we develop is built around your business, not around the latest technology trend.</p>
+          <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n-html="about.whoWeAre.closer">Because real innovation isn't about adding more software.<br><span class="font-medium text-ivory">It's about making work simpler, faster, and more valuable.</span></p>
         </div>
         <div class="reveal" style="transition-delay:80ms;">
           <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.whyWeExist.eyebrow">Why We Exist</span></p>
           <h2 class="font-display font-light text-heading-lg text-ivory" data-i18n-html="about.whyWeExist.heading">Businesses Don't Need More Technology.<br>They Need Better Systems.</h2>
-          <p class="mt-5 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whyWeExist.problems">Every organization has hidden inefficiencies.<br>Manual processes that waste valuable time.<br>Information trapped across disconnected systems.<br>Teams performing repetitive work that could be automated.<br>Opportunities lost because critical decisions take too long.</p>
-          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whyWeExist.reframe">These challenges aren't technology problems.<br><span class="font-medium text-ivory">They're business problems.</span></p>
-          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.whyWeExist.body">Our mission is to engineer intelligent systems that remove those barriers, allowing people to focus on what they do best: creating value, serving customers, and growing the business.</p>
-          <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n-html="about.whyWeExist.closer">When technology works the way it should, it becomes nearly invisible.<br>Your teams simply work faster.<br>Your customers receive better experiences.<br>Your business becomes more efficient.</p>
+          <p class="mt-5 text-body-lg" style="color:#C3C8D1;" data-i18n-html="about.whyWeExist.problems">Every organization has hidden inefficiencies.<br>Manual processes that waste valuable time.<br>Information trapped across disconnected systems.<br>Teams performing repetitive work that could be automated.<br>Opportunities lost because critical decisions take too long.</p>
+          <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n-html="about.whyWeExist.reframe">These challenges aren't technology problems.<br><span class="font-medium text-ivory">They're business problems.</span></p>
+          <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n="about.whyWeExist.body">Our mission is to engineer intelligent systems that remove those barriers, allowing people to focus on what they do best: creating value, serving customers, and growing the business.</p>
+          <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n-html="about.whyWeExist.closer">When technology works the way it should, it becomes nearly invisible.<br>Your teams simply work faster.<br>Your customers receive better experiences.<br>Your business becomes more efficient.</p>
         </div>
       </div>
 
       <div class="reveal mt-20 max-w-[640px]" style="transition-delay:160ms;">
-        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.different.eyebrow">What Makes AITHORIS Different</span></p>
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.different.eyebrow">What Makes ASTRA-11 Different</span></p>
         <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="about.different.heading">Three commitments, on every engagement.</h2>
-        <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.different.body">None of this is complicated. It's just consistently rare.</p>
+        <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n="about.different.body">None of this is complicated. It's just consistently rare.</p>
       </div>
 
       <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -321,7 +316,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">01</span>
           </div>
           <h3 class="font-display text-heading-md font-medium text-ivory" data-i18n="about.different.card1.title">Practical Intelligence</h3>
-          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="about.different.card1.body">We build systems that solve the specific problem in front of us, not general-purpose AI in search of a use case. If it doesn't remove work, cut cost, or speed up a decision, we don't build it just because the technology exists.</p>
+          <p class="mt-3 text-body-md" style="color:#C3C8D1;" data-i18n="about.different.card1.body">We build systems that solve the specific problem in front of us, not general-purpose AI in search of a use case. If it doesn't remove work, cut cost, or speed up a decision, we don't build it just because the technology exists.</p>
         </article>
 
         <!-- 02 Solutions Built Around You -->
@@ -334,7 +329,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">02</span>
           </div>
           <h3 class="font-display text-heading-md font-medium text-ivory" data-i18n="about.different.card2.title">Solutions Built Around You</h3>
-          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="about.different.card2.body">Every system is designed around your existing workflows, data, and team, not the other way around. You shouldn't have to change how your business runs to fit a piece of software; the software fits how your business already wins.</p>
+          <p class="mt-3 text-body-md" style="color:#C3C8D1;" data-i18n="about.different.card2.body">Every system is designed around your existing workflows, data, and team, not the other way around. You shouldn't have to change how your business runs to fit a piece of software; the software fits how your business already wins.</p>
         </article>
 
         <!-- 03 Partnership Beyond Deployment -->
@@ -346,7 +341,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">03</span>
           </div>
           <h3 class="font-display text-heading-md font-medium text-ivory" data-i18n="about.different.card3.title">Partnership Beyond Deployment</h3>
-          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="about.different.card3.body">We stay accountable after launch: monitoring, refining, and supporting what we build for as long as you need us. Your business keeps evolving, so the system has to evolve with it. That's not an add-on service. It's the job.</p>
+          <p class="mt-3 text-body-md" style="color:#C3C8D1;" data-i18n="about.different.card3.body">We stay accountable after launch: monitoring, refining, and supporting what we build for as long as you need us. Your business keeps evolving, so the system has to evolve with it. That's not an add-on service. It's the job.</p>
         </article>
       </div>
     </div>
@@ -363,35 +358,35 @@
       <ul class="mt-14 grid sm:grid-cols-2 gap-x-10 gap-y-8">
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item1.title">Hours back</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item1.body">Repetitive work moves from your team's calendar to the system's.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item1.title">Hours back</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item1.body">Repetitive work moves from your team's calendar to the system's.</p></div>
         </li>
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item2.title">Fewer errors</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item2.body">Structured logic replaces manual re-entry and guesswork.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item2.title">Fewer errors</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item2.body">Structured logic replaces manual re-entry and guesswork.</p></div>
         </li>
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item3.title">Faster decisions</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item3.body">Information reaches the right person before the moment passes.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item3.title">Faster decisions</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item3.body">Information reaches the right person before the moment passes.</p></div>
         </li>
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item4.title">Consistent quality</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item4.body">Every output follows the same standard, every time.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item4.title">Consistent quality</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item4.body">Every output follows the same standard, every time.</p></div>
         </li>
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item5.title">Lower operating cost</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item5.body">Automation absorbs the volume, not another hire.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item5.title">Lower operating cost</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item5.body">Automation absorbs the volume, not another hire.</p></div>
         </li>
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item6.title">Scalable capacity</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item6.body">Growth doesn't require growing headcount at the same rate.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item6.title">Scalable capacity</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item6.body">Growth doesn't require growing headcount at the same rate.</p></div>
         </li>
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item7.title">Institutional knowledge, retained</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item7.body">What one person knows becomes what the system knows.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item7.title">Institutional knowledge, retained</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item7.body">What one person knows becomes what the system knows.</p></div>
         </li>
         <li class="reveal impact-item flex gap-4">
           <svg class="w-5 h-5 shrink-0 text-signal mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item8.title">Room for judgment work</p><p class="mt-1 text-body-sm" style="color:#C6C6CE;" data-i18n="about.impact.item8.body">Your team spends time on decisions, not data entry.</p></div>
+          <div><p class="font-sans text-body-md font-medium text-ivory" data-i18n="about.impact.item8.title">Room for judgment work</p><p class="mt-1 text-body-sm" style="color:#C3C8D1;" data-i18n="about.impact.item8.body">Your team spends time on decisions, not data entry.</p></div>
         </li>
       </ul>
     </div>
@@ -403,7 +398,7 @@
       <div class="reveal rounded-lg border border-obsidian-80 bg-obsidian shadow-card p-8 md:p-12 max-w-[760px] mx-auto text-center">
         <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center justify-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.industries.eyebrow">Industries We Help</span></p>
         <h2 class="font-display font-light text-heading-md md:text-heading-lg text-ivory" data-i18n="about.industries.heading">Built for how you work, whatever that work is.</h2>
-        <p class="mt-4 text-body-md max-w-[560px] mx-auto" style="color:#C6C6CE;" data-i18n="about.industries.body">The problems we solve, unqualified leads, disconnected data, manual documentation, repetitive coordination, show up in every industry. We don't specialize in a vertical. We specialize in engineering the system your operation actually needs.</p>
+        <p class="mt-4 text-body-md max-w-[560px] mx-auto" style="color:#C3C8D1;" data-i18n="about.industries.body">The problems we solve, unqualified leads, disconnected data, manual documentation, repetitive coordination, show up in every industry. We don't specialize in a vertical. We specialize in engineering the system your operation actually needs.</p>
       </div>
     </div>
   </section>
@@ -413,7 +408,7 @@
     <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20 text-center">
       <p class="reveal font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center justify-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.commitment.eyebrow">Our Commitment</span></p>
       <p class="reveal mx-auto max-w-[720px] font-display font-light text-heading-lg md:text-display-md leading-[1.2] text-ivory" style="transition-delay:100ms;" data-i18n="about.commitment.statement">We commit to the outcome, not the output.</p>
-      <p class="reveal mt-6 mx-auto max-w-[560px] text-body-lg" style="color:#C6C6CE; transition-delay:200ms;" data-i18n="about.commitment.body">A system nobody uses isn't a success. We measure our work by what it changes in your business, not by how well it demos.</p>
+      <p class="reveal mt-6 mx-auto max-w-[560px] text-body-lg" style="color:#C3C8D1; transition-delay:200ms;" data-i18n="about.commitment.body">A system nobody uses isn't a success. We measure our work by what it changes in your business, not by how well it demos.</p>
     </div>
   </section>
 
@@ -423,7 +418,7 @@
       <div class="reveal max-w-[640px]">
         <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.founders.eyebrow">Founders</span></p>
         <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="about.founders.heading">Two careers, one conclusion.</h2>
-        <p class="mt-4 text-body-lg" style="color:#C6C6CE;" data-i18n="about.founders.intro">AITHORIS wasn't founded by strategists guessing at technology, or engineers guessing at business. It was founded by two people who spent their careers on opposite sides of the same problem: the right decision, undone by a system nobody built to carry it.</p>
+        <p class="mt-4 text-body-lg" style="color:#C3C8D1;" data-i18n="about.founders.intro">ASTRA-11 wasn't founded by strategists guessing at technology, or engineers guessing at business. It was founded by two people who spent their careers on opposite sides of the same problem: the right decision, undone by a system nobody built to carry it.</p>
       </div>
 
       <div class="mt-14 grid md:grid-cols-2 gap-6">
@@ -438,8 +433,8 @@
           </div>
           <h3 class="mt-6 font-display text-heading-md font-medium text-ivory" data-i18n="about.founders.tito.name">Tito Burga</h3>
           <p class="mt-1 font-mono text-body-sm text-signal" data-i18n="about.founders.tito.title">Co-Founder, Design &amp; AI Engineering</p>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.tito.bio1">Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S., including Telemundo, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.</p>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.tito.bio2">In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools AITHORIS engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.tito.bio1">Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S., including Telemundo, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.tito.bio2">In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools ASTRA-11 engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.</p>
         </article>
 
         <!-- César Montoya -->
@@ -453,30 +448,30 @@
           </div>
           <h3 class="mt-6 font-display text-heading-md font-medium text-ivory" data-i18n="about.founders.cesar.name">César Montoya</h3>
           <p class="mt-1 font-mono text-body-sm text-signal" data-i18n="about.founders.cesar.title">Co-Founder, Leadership &amp; Execution Strategy</p>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.cesar.bio1">César spent 20 years inside banking, finance, and human-resources leadership, including senior roles at Banco Wiese and Banco de Comercio, before founding Centro Internacional de Competencias, where he advises boards and executive teams across Latin America.</p>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.cesar.bio2">His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making, the same discipline AITHORIS now builds for clients at scale.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.cesar.bio1">César spent 20 years inside banking, finance, and human-resources leadership, including senior roles at Banco Wiese and Banco de Comercio, before founding Centro Internacional de Competencias, where he advises boards and executive teams across Latin America.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.cesar.bio2">His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making, the same discipline ASTRA-11 now builds for clients at scale.</p>
         </article>
       </div>
 
       <div class="reveal mt-16 grid md:grid-cols-2 gap-12 md:gap-16" style="transition-delay:120ms;">
         <div>
-          <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.founders.why.eyebrow">Why We Built AITHORIS</span></p>
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.founders.why.eyebrow">Why We Built ASTRA-11</span></p>
           <h3 class="font-display font-light text-heading-md text-ivory" data-i18n="about.founders.why.heading">The same problem, seen from two different rooms.</h3>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.why.body1">Tito spent 25 years watching broadcast organizations buy the right technology and still lose the story, because nobody engineered the system connecting the creative, the technology, and the team using it.</p>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.why.body2">César spent 20 years watching boards approve the right strategy and still lose the execution, because nobody engineered the leadership architecture required to carry it.</p>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.why.closer">AITHORIS exists because those are the same failure. Clients get both halves of the fix: a system built to work, and the organizational readiness to make it stick.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.why.body1">Tito spent 25 years watching broadcast organizations buy the right technology and still lose the story, because nobody engineered the system connecting the creative, the technology, and the team using it.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.why.body2">César spent 20 years watching boards approve the right strategy and still lose the execution, because nobody engineered the leadership architecture required to carry it.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.why.closer">ASTRA-11 exists because those are the same failure. Clients get both halves of the fix: a system built to work, and the organizational readiness to make it stick.</p>
         </div>
         <div>
           <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="about.founders.vision.eyebrow">Our Shared Thesis</span></p>
           <h3 class="font-display font-light text-heading-md text-ivory" data-i18n="about.founders.vision.heading">Complexity doesn't disappear. It moves.</h3>
-          <p class="mt-4 text-body-md" style="color:#C6C6CE;" data-i18n="about.founders.vision.body">We started AITHORIS on one belief: intelligence, human or artificial, only creates value when it's connected to a system built to hold it. Complexity doesn't disappear when an organization adopts AI. It moves, from the user's experience to the system's architecture, or from the strategy to the people executing it. Deciding where it goes, and engineering it well once it lands there, is the work.</p>
+          <p class="mt-4 text-body-md" style="color:#C3C8D1;" data-i18n="about.founders.vision.body">We started ASTRA-11 on one belief: intelligence, human or artificial, only creates value when it's connected to a system built to hold it. Complexity doesn't disappear when an organization adopts AI. It moves, from the user's experience to the system's architecture, or from the strategy to the people executing it. Deciding where it goes, and engineering it well once it lands there, is the work.</p>
         </div>
       </div>
 
       <div class="reveal mt-16 rounded-lg border border-obsidian-80 bg-obsidian shadow-card p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6" style="transition-delay:200ms;">
         <div class="max-w-[480px]">
           <p class="font-display text-heading-sm font-medium text-ivory" data-i18n="about.founders.cta.heading">This is who you'd be working with.</p>
-          <p class="mt-2 text-body-sm" style="color:#C6C6CE;" data-i18n="about.founders.cta.body">No account managers between you and the people making the decisions. Tell us what's slow, manual, or inconsistent in your operation, and you'll be talking to one of us.</p>
+          <p class="mt-2 text-body-sm" style="color:#C3C8D1;" data-i18n="about.founders.cta.body">No account managers between you and the people making the decisions. Tell us what's slow, manual, or inconsistent in your operation, and you'll be talking to one of us.</p>
         </div>
         <a href="/index.html#contact" class="btn btn-on-dark px-7 py-3.5 text-body-md shrink-0" data-i18n="about.founders.cta.primary">Talk to a Founder</a>
       </div>
@@ -484,12 +479,12 @@
   </section>
 
   <!-- ============ FINAL CTA ============ -->
-  <section class="grain relative overflow-hidden bg-obsidian text-ivory py-24 md:py-32" style="background-color:#242424;">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 60% at 50% 50%, rgba(98,0,2,0.2), transparent 70%);"></div>
+  <section class="grain relative overflow-hidden bg-obsidian text-ivory py-24 md:py-32" style="background-color:#121A2C;">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 60% at 50% 50%, rgba(255,81,0,0.2), transparent 70%);"></div>
 
     <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20 text-center">
       <h2 class="reveal font-display font-light text-heading-lg md:text-display-md lg:text-display-lg" style="transition-delay:0ms;" data-i18n="about.cta.heading">Ready to see what a well-engineered system feels like?</h2>
-      <p class="reveal mt-6 max-w-[560px] mx-auto text-body-lg" style="color:#A8A8B2; transition-delay:100ms;" data-i18n="about.cta.body">Tell us what's slow, manual, or inconsistent in your operation. We'll tell you honestly whether AI is the right fix, and what production-grade would actually look like.</p>
+      <p class="reveal mt-6 max-w-[560px] mx-auto text-body-lg" style="color:#A7ACB3; transition-delay:100ms;" data-i18n="about.cta.body">Tell us what's slow, manual, or inconsistent in your operation. We'll tell you honestly whether AI is the right fix, and what production-grade would actually look like.</p>
       <div class="reveal mt-10 flex flex-wrap justify-center gap-4" style="transition-delay:200ms;">
         <a href="/index.html#contact" class="btn btn-on-dark px-8 py-4 text-body-md" data-i18n="about.cta.primary">Schedule a Discovery Call</a>
         <a href="/index.html#services" class="btn btn-secondary px-8 py-4 text-body-md" data-i18n="about.cta.secondary">Explore Our Solutions</a>
@@ -500,33 +495,27 @@
 </main>
 
 <!-- ============ FOOTER ============ -->
-<footer class="bg-obsidian text-ivory border-t border-obsidian-60" style="background-color:#161616;">
+<footer class="bg-obsidian text-ivory border-t border-obsidian-60" style="background-color:#0A0F1C;">
   <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20 py-16">
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
       <div>
-        <a href="/index.html" class="flex items-center" aria-label="AITHORIS home">
-          <svg width="26" height="23" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M18 0L0 32H8L18 0Z" fill="#F2F2F4"/>
-            <path d="M18 0L28 32H36L18 0Z" fill="#F2F2F4"/>
-            <path d="M18 14L23 25H13L18 14Z" fill="#D42020"/>
-          </svg>
-          <span class="ml-2.5 font-display font-medium text-[19px] tracking-[-0.01em] text-ivory">AITHORIS</span>
+        <a href="/index.html" class="flex items-center" aria-label="ASTRA-11 home">
+          <img src="/brand_assets/assets/ASTRA-11_Logo_Full.svg" alt="ASTRA-11 — AI Engineering Agency" class="h-16 w-auto">
         </a>
-        <p class="mt-3 font-mono text-body-sm text-ivory/60 tracking-[0.04em] flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="footer.tagline">Connecting Intelligence.</span></p>
       </div>
 
       <nav aria-label="Footer" class="flex flex-wrap gap-x-10 gap-y-4 text-body-sm">
         <a href="/about.html" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.about">About</a>
         <a href="/index.html#services" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.services">Services</a>
-        <a href="/index.html#why-aithoris" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+        <a href="/index.html#why-astra11" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.whyAstra11">Why ASTRA-11</a>
         <a href="/portfolio.html" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.portfolio">Portfolio</a>
         <a href="/index.html#contact" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
 
     <div class="mt-14 pt-8 border-t border-obsidian-60 flex flex-col sm:flex-row justify-between gap-4 text-body-sm text-obsidian-40">
-      <p data-i18n="footer.copyright">© 2026 AITHORIS. All rights reserved.</p>
-      <p class="font-mono text-label uppercase tracking-[0.08em]" data-i18n="footer.label">AI Engineering Company</p>
+      <p data-i18n="footer.copyright">© 2026 ASTRA-11. All rights reserved.</p>
+      <p class="font-mono text-label uppercase tracking-[0.08em]" data-i18n="footer.label">AI Engineering Agency</p>
     </div>
   </div>
 </footer>

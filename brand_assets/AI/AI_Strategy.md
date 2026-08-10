@@ -2,13 +2,13 @@
 
 ## AI / AI_Strategy.md
 
-> *AITHORIS's AI strategy is built on a single conviction: that AI creates lasting value only when it is engineered with the same rigor as any other critical system.*
+> *ASTRA-11's AI strategy is built on a single conviction: that AI creates lasting value only when it is engineered with the same rigor as any other critical system.*
 
 ---
 
 ## Strategic Position
 
-AITHORIS occupies a specific and intentional position in the AI market:
+ASTRA-11 occupies a specific and intentional position in the AI market:
 
 **We are not an AI tool company.** We do not build generic AI applications that organizations slot into their workflows.
 
@@ -28,7 +28,7 @@ Most organizations want AI but lack the capability to deploy it well. They have:
 - Teams that are capable of using AI-augmented tools but have never been given the right ones
 - Leadership that is sold on AI's potential but skeptical of its reliability
 
-AITHORIS exists in this gap — between the promise of AI and the reality of deploying it in organizations where people, processes, and data are all imperfect.
+ASTRA-11 exists in this gap — between the promise of AI and the reality of deploying it in organizations where people, processes, and data are all imperfect.
 
 ---
 
@@ -68,7 +68,7 @@ AITHORIS exists in this gap — between the promise of AI and the reality of dep
 
 ## Technology Approach
 
-AITHORIS is model-agnostic. We select AI components based on the requirements of the specific engagement.
+ASTRA-11 is model-agnostic. We select AI components based on the requirements of the specific engagement.
 
 **Current capable models we work with:**
 - OpenAI GPT-4 family (general-purpose language tasks)
@@ -103,7 +103,7 @@ Custom development is justified when: the problem is specific enough that off-th
 
 ## Competitive Differentiation
 
-| What others offer | What AITHORIS offers |
+| What others offer | What ASTRA-11 offers |
 |---|---|
 | AI tools and platforms | AI engineering and system design |
 | Demos and prototypes | Production-ready, documented systems |
@@ -118,4 +118,4 @@ Custom development is justified when: the problem is specific enough that off-th
 
 ---
 
-© AITHORIS AI Repository — AI_Strategy.md v2.0
+© ASTRA-11 AI Repository — AI_Strategy.md v2.0

@@ -10,13 +10,13 @@
 
 A prompt is an instruction set for an AI system. Like any instruction set, it can be written well or poorly — and the difference has direct consequences for system behavior, reliability, and safety.
 
-At AITHORIS, prompts are not written casually. They are engineered.
+At ASTRA-11, prompts are not written casually. They are engineered.
 
 ---
 
 ## Prompt Layers
 
-Every AITHORIS agent system uses a layered prompt architecture:
+Every ASTRA-11 agent system uses a layered prompt architecture:
 
 ### Layer 1: System Prompt
 Defines the agent's identity, capabilities, constraints, and behavior guidelines.
@@ -138,9 +138,9 @@ Exceeding budget triggers context compression. Context compression strategy is d
 
 ---
 
-## AITHORIS System Prompt Template
+## ASTRA-11 System Prompt Template
 
-See `PROMPTS/System_Prompt.md` for the full AITHORIS system prompt template used in client-facing agent deployments.
+See `PROMPTS/System_Prompt.md` for the full ASTRA-11 system prompt template used in client-facing agent deployments.
 
 ---
 
@@ -148,4 +148,4 @@ See `PROMPTS/System_Prompt.md` for the full AITHORIS system prompt template used
 
 ---
 
-© AITHORIS AI Repository — Prompt_Architecture.md v2.0
+© ASTRA-11 AI Repository — Prompt_Architecture.md v2.0

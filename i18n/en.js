@@ -1,4 +1,4 @@
-/* ─── AITHORIS i18n — English strings ─────────────────────────────────────
+/* ─── ASTRA-11 i18n — English strings ─────────────────────────────────────
  *
  * HOW TO ADD A NEW PAGE:
  *   1. Add a new namespace object here (e.g. about: { headline: '…' })
@@ -9,8 +9,8 @@ window.i18nStrings = window.i18nStrings || {};
 window.i18nStrings.en = {
 
   meta: {
-    title: 'AITHORIS | AI Engineering Company',
-    description: 'AITHORIS engineers AI agents, workflow automations, and intelligent systems that help organizations simplify complexity and make better decisions.',
+    title: 'ASTRA-11 | AI Engineering Company',
+    description: 'ASTRA-11 engineers AI agents, workflow automations, and intelligent systems that help organizations simplify complexity and make better decisions.',
   },
 
   skip: { link: 'Skip to content' },
@@ -18,7 +18,7 @@ window.i18nStrings.en = {
   nav: {
     about:     'About',
     services:  'Services',
-    whyAithoris:  'Why AITHORIS',
+    whyAstra11:  'Why ASTRA-11',
     portfolio: 'Portfolio',
     contact:   'Contact',
     cta:       'Book a Session',
@@ -102,8 +102,8 @@ window.i18nStrings.en = {
     body:    'Most AI pilots never reach production.<br><span class="font-medium">We start there.</span>',
   },
 
-  whyAithoris: {
-    eyebrow: 'Why AITHORIS',
+  whyAstra11: {
+    eyebrow: 'Why ASTRA-11',
     heading: 'Built for the gap others leave open.',
     body:    'AI projects tend to fail in one of two ways: agencies move fast but leave fragile systems behind, or consultancies move carefully but never ship. Here\'s the standard we hold ourselves to instead: on every engagement, not just the pitch.',
     table: {
@@ -111,11 +111,11 @@ window.i18nStrings.en = {
         agencies:   'AI Agencies',
         consulting: 'Large Consulting',
       },
-      row1: { label: 'Engineering discipline', agencies: 'Variable',          consulting: 'Layered approvals', aithoris: 'Rigorous, documented'  },
-      row2: { label: 'Speed to production',    agencies: 'Fast, fragile',     consulting: 'Slow, thorough',    aithoris: 'Fast, reliable'        },
-      row3: { label: 'Explainability',         agencies: 'Rarely prioritized',consulting: 'Rarely delivered',  aithoris: 'Engineered in'         },
-      row4: { label: 'Governance',             agencies: 'Absent',            consulting: 'Process-heavy',     aithoris: 'Right-sized'           },
-      row5: { label: 'Design quality',         agencies: 'Generic',           consulting: 'Enterprise standard',aithoris: 'Premium, branded'     },
+      row1: { label: 'Engineering discipline', agencies: 'Variable',          consulting: 'Layered approvals', astra11: 'Rigorous, documented'  },
+      row2: { label: 'Speed to production',    agencies: 'Fast, fragile',     consulting: 'Slow, thorough',    astra11: 'Fast, reliable'        },
+      row3: { label: 'Explainability',         agencies: 'Rarely prioritized',consulting: 'Rarely delivered',  astra11: 'Engineered in'         },
+      row4: { label: 'Governance',             agencies: 'Absent',            consulting: 'Process-heavy',     astra11: 'Right-sized'           },
+      row5: { label: 'Design quality',         agencies: 'Generic',           consulting: 'Enterprise standard',astra11: 'Premium, branded'     },
     },
     footnote: 'Our own operating standard, not a scored audit of any specific firm.',
   },
@@ -131,33 +131,33 @@ window.i18nStrings.en = {
       submit:   'Book a Discovery Session',
       sending:  'Sending…',
       success:  'Thanks! We\'ll reply within one business day.',
-      error:    'Something went wrong. Email us directly at hello@aithoris.io instead.',
-      emailAlt: 'Prefer email? Write to <a href="mailto:hello@aithoris.io" class="underline hover:text-signal">hello@aithoris.io</a>',
+      error:    'Something went wrong. Email us directly at hello@astra-11.com instead.',
+      emailAlt: 'Prefer email? Write to <a href="mailto:hello@astra-11.com" class="underline hover:text-signal">hello@astra-11.com</a>',
     },
   },
 
   footer: {
     tagline:   'Connecting Intelligence.',
-    copyright: '© 2026 AITHORIS. All rights reserved.',
-    label:     'AI Engineering Company',
+    copyright: '© 2026 ASTRA-11. All rights reserved.',
+    label:     'AI Engineering Agency',
   },
 
   about: {
     meta: {
-      title:       'AITHORIS | About',
-      description: 'AITHORIS is an AI engineering and intelligent automation partner focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
+      title:       'ASTRA-11 | About',
+      description: 'ASTRA-11 is an AI engineering and intelligent automation partner focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
     },
     hero: {
-      eyebrow:  'About AITHORIS',
+      eyebrow:  'About ASTRA-11',
       headline: 'Engineering Intelligence. Delivering Business Results.',
-      body:     'Technology alone doesn\'t transform a business. The right strategy, the right systems, and the right execution do. At AITHORIS, we design intelligent AI solutions that help organizations eliminate inefficiencies, automate repetitive work, reduce operational costs, and create new opportunities for growth. Every solution we build is engineered around one objective: helping your business perform better.',
+      body:     'Technology alone doesn\'t transform a business. The right strategy, the right systems, and the right execution do. At ASTRA-11, we design intelligent AI solutions that help organizations eliminate inefficiencies, automate repetitive work, reduce operational costs, and create new opportunities for growth. Every solution we build is engineered around one objective: helping your business perform better.',
       closer:   'We don\'t implement AI because it\'s trending.<br><span class="font-medium text-ivory">We engineer intelligent systems because they solve real business problems.</span>',
       cta:      'Let\'s Build Something Smarter',
     },
     whoWeAre: {
       eyebrow: 'Who We Are',
       heading: 'Your AI Engineering Partner for Business Transformation',
-      body1:   'AITHORIS is an AI engineering and intelligent automation company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
+      body1:   'ASTRA-11 is an AI engineering and intelligent automation company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
       body2:   'We work with companies that recognize technology should be an advantage, not another challenge to manage.',
       body3:   'Instead of offering generic AI tools, we take the time to understand how your business operates, where opportunities exist, and how intelligent systems can create measurable improvements across your organization.',
       body4:   'Whether it\'s streamlining internal operations, improving customer experiences, accelerating decision-making, or creating entirely new revenue opportunities, every solution we develop is built around your business, not around the latest technology trend.',
@@ -172,7 +172,7 @@ window.i18nStrings.en = {
       closer:   'When technology works the way it should, it becomes nearly invisible.<br>Your teams simply work faster.<br>Your customers receive better experiences.<br>Your business becomes more efficient.',
     },
     different: {
-      eyebrow: 'What Makes AITHORIS Different',
+      eyebrow: 'What Makes ASTRA-11 Different',
       heading: 'Three commitments, on every engagement.',
       body:    'None of this is complicated. It\'s just consistently rare.',
       card1: { title: 'Practical Intelligence',            body: 'We build systems that solve the specific problem in front of us, not general-purpose AI in search of a use case. If it doesn\'t remove work, cut cost, or speed up a decision, we don\'t build it just because the technology exists.' },
@@ -182,30 +182,30 @@ window.i18nStrings.en = {
     founders: {
       eyebrow: 'Founders',
       heading: 'Two careers, one conclusion.',
-      intro:   'AITHORIS wasn\'t founded by strategists guessing at technology, or engineers guessing at business. It was founded by two people who spent their careers on opposite sides of the same problem: the right decision, undone by a system nobody built to carry it.',
+      intro:   'ASTRA-11 wasn\'t founded by strategists guessing at technology, or engineers guessing at business. It was founded by two people who spent their careers on opposite sides of the same problem: the right decision, undone by a system nobody built to carry it.',
       tito: {
         name:  'Tito Burga',
         title: 'Co-Founder, Design & AI Engineering',
         bio1:  'Tito spent 25 years directing creative and brand strategy inside some of the largest broadcast networks in the U.S., including Telemundo, CBS, Cox Media Group, Gray Television, and Sinclair Broadcast Group. His work has earned an Emmy win, two additional Emmy nominations, an EMA award, and three NBC Ovation Awards.',
-        bio2:  'In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools AITHORIS engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.',
+        bio2:  'In 2022, he retrained as a UX designer and front-end developer, and now builds with the same AI tools ASTRA-11 engineers for clients. Two decades of understanding how audiences and organizations actually consume information, paired with hands-on fluency in the tools reshaping how work gets built: that combination is what he brings to every engagement.',
       },
       cesar: {
         name:  'César Montoya',
         title: 'Co-Founder, Leadership & Execution Strategy',
         bio1:  'César spent 20 years inside banking, finance, and human-resources leadership, including senior roles at Banco Wiese and Banco de Comercio, before founding Centro Internacional de Competencias, where he advises boards and executive teams across Latin America.',
-        bio2:  'His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making, the same discipline AITHORIS now builds for clients at scale.',
+        bio2:  'His diagnosis, refined over two decades of watching strategy meet reality: organizations rarely fail from a bad plan. They fail because the leadership architecture responsible for executing it was never designed to hold it. One of the practices he built around that thesis applies AI directly to executive decision-making, the same discipline ASTRA-11 now builds for clients at scale.',
       },
       why: {
-        eyebrow: 'Why We Built AITHORIS',
+        eyebrow: 'Why We Built ASTRA-11',
         heading: 'The same problem, seen from two different rooms.',
         body1:   'Tito spent 25 years watching broadcast organizations buy the right technology and still lose the story, because nobody engineered the system connecting the creative, the technology, and the team using it.',
         body2:   'César spent 20 years watching boards approve the right strategy and still lose the execution, because nobody engineered the leadership architecture required to carry it.',
-        closer:  'AITHORIS exists because those are the same failure. Clients get both halves of the fix: a system built to work, and the organizational readiness to make it stick.',
+        closer:  'ASTRA-11 exists because those are the same failure. Clients get both halves of the fix: a system built to work, and the organizational readiness to make it stick.',
       },
       vision: {
         eyebrow: 'Our Shared Thesis',
         heading: 'Complexity doesn\'t disappear. It moves.',
-        body:    'We started AITHORIS on one belief: intelligence, human or artificial, only creates value when it\'s connected to a system built to hold it. Complexity doesn\'t disappear when an organization adopts AI. It moves, from the user\'s experience to the system\'s architecture, or from the strategy to the people executing it. Deciding where it goes, and engineering it well once it lands there, is the work.',
+        body:    'We started ASTRA-11 on one belief: intelligence, human or artificial, only creates value when it\'s connected to a system built to hold it. Complexity doesn\'t disappear when an organization adopts AI. It moves, from the user\'s experience to the system\'s architecture, or from the strategy to the people executing it. Deciding where it goes, and engineering it well once it lands there, is the work.',
       },
       cta: {
         heading: 'This is who you\'d be working with.',
@@ -245,8 +245,8 @@ window.i18nStrings.en = {
 
   portfolio: {
     meta: {
-      title:       'AITHORIS | Portfolio',
-      description: 'Automation systems AITHORIS has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.',
+      title:       'ASTRA-11 | Portfolio',
+      description: 'Automation systems ASTRA-11 has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.',
     },
     hero: {
       eyebrow:  'Systems We\'ve Built',

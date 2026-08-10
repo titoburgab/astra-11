@@ -2,7 +2,7 @@
 
 ## FOUNDATION / Decision_Log.md
 
-> *Every significant decision that affects the direction of AITHORIS is recorded here. This log exists so that future team members can understand why things are the way they are — and so that we can learn from our own decisions over time.*
+> *Every significant decision that affects the direction of ASTRA-11 is recorded here. This log exists so that future team members can understand why things are the way they are — and so that we can learn from our own decisions over time.*
 
 ---
 
@@ -64,7 +64,7 @@
 
 **Date:** 2026-06-01
 **Category:** Design
-**Status:** Active
+**Status:** Superseded by DECISION-005
 **Owner:** Creative Director
 
 ### Decision
@@ -92,7 +92,7 @@ None
 
 **Date:** 2026-06-01
 **Category:** Design
-**Status:** Active
+**Status:** Superseded by DECISION-005
 **Owner:** Creative Director
 
 ### Decision
@@ -126,7 +126,7 @@ None
 **Owner:** Brand Director
 
 ### Decision
-The official AITHORIS tagline is **"Connecting Intelligence."**
+The official ASTRA-11 tagline is **"Connecting Intelligence."**
 
 ### Context
 The visual style guide presented "Connecting Intelligence." as the primary option with three alternatives: "Engineering Intelligent Systems," "AI That Works," and "Intelligence That Connects." No document in the v1.0 repository formally declared the tagline.
@@ -138,7 +138,7 @@ The visual style guide presented "Connecting Intelligence." as the primary optio
 4. **"Connecting Intelligence."** — Action-oriented. Brand is the actor. "Connecting" suggests relationships, networks, and systems. "Intelligence" is the what and the who. The period signals confidence and finality.
 
 ### Rationale
-"Connecting Intelligence." works at multiple levels: AITHORIS connects AI capabilities into organizational systems; it connects the intelligence already present in organizations into accessible, usable form; and the name AITHORIS itself evokes connection through its visual language (the Origin Node and its connections). The tagline and the visual identity reinforce each other.
+"Connecting Intelligence." works at multiple levels: ASTRA-11 connects AI capabilities into organizational systems; it connects the intelligence already present in organizations into accessible, usable form; and the name ASTRA-11 itself evokes connection through its visual language (the Origin Node and its connections). The tagline and the visual identity reinforce each other.
 
 ### Risks & Open Questions
 - Trademark availability should be confirmed before public launch
@@ -172,8 +172,33 @@ None
 
 ---
 
+## [DECISION-005] — Company Rebrand to ASTRA-11
+
+**Date:** 2026-08-10
+**Category:** Brand
+**Status:** Active
+**Owner:** Brand Director
+
+### Decision
+The company is renamed to **ASTRA-11**, with a new logo/visual mark and a new primary color and typography system: Navy `#0A0F1C` / White `#FFFFFF` / Orange `#FF5100` (replacing the previous dark/light/accent palette), and Sora as the primary typeface (replacing the previous primary typeface), paired with Inter as before. Positioning, services, messaging, brand voice, page structure, and business model are unchanged — this is a name and visual-identity change only.
+
+### Context
+A brand marketing study identified problems with the previous company name around pronunciation, spelling, memorability, and ease of communication. The rebrand addresses those findings without revisiting the underlying strategy.
+
+### Rationale
+ASTRA-11 resolves the pronunciation and spelling issues identified in the study while preserving the engineering-led positioning the brand had already established. The new color and type system was adopted alongside the name change so the visual identity and the new name launch together as one coherent update, rather than pairing a new name with a stale visual system.
+
+### Risks & Open Questions
+- Domain migration to `astra-11.com` (from the previous domains) requires DNS/hosting changes and re-verification of the contact form's email delivery — tracked outside this repository
+- Trademark availability for "ASTRA-11" should be confirmed before public launch
+
+### Supersedes
+DECISION-001, DECISION-002
+
+---
+
 *New entries should be appended to this log, never deleted.*
 
 ---
 
-© AITHORIS Foundation Repository — Decision_Log.md v2.0
+© ASTRA-11 Foundation Repository — Decision_Log.md v2.0

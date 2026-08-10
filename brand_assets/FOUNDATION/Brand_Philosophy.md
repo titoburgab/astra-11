@@ -8,7 +8,7 @@
 
 **Simplicity is the successful organization of complexity.**
 
-This sentence is the philosophical foundation of AITHORIS. It is not a tagline. It is the operating principle behind every product we build, every interface we design, and every system we engineer.
+This sentence is the philosophical foundation of ASTRA-11. It is not a tagline. It is the operating principle behind every product we build, every interface we design, and every system we engineer.
 
 Complexity does not disappear when you build intelligent systems. It migrates — from the user's experience to the system's architecture. Our job is to manage that migration with precision: to absorb complexity behind well-designed interfaces, reliable automations, and clear processes so that the people who use our systems experience capability without confusion.
 
@@ -24,7 +24,7 @@ Technology fails organizations for a predictable set of reasons:
 - It requires users to change more than the technology does
 - It cannot be explained, so it cannot be trusted
 
-Every AITHORIS product is designed to fail at none of these.
+Every ASTRA-11 product is designed to fail at none of these.
 
 ---
 
@@ -77,7 +77,7 @@ It amplifies the capability of people who know how to use it. It amplifies the q
 
 It also amplifies poor decisions, unclear processes, and fragile systems.
 
-AITHORIS develops AI solutions that:
+ASTRA-11 develops AI solutions that:
 
 - Augment human capability without replacing human judgment
 - Automate work that is repetitive, not work that requires wisdom
@@ -117,4 +117,4 @@ If the answer to any of these questions is no, it should be reconsidered before 
 
 ---
 
-© AITHORIS Foundation Repository — Brand_Philosophy.md v2.0
+© ASTRA-11 Foundation Repository — Brand_Philosophy.md v2.0

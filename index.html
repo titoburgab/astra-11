@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AITHORIS | AI Engineering Company</title>
-<meta name="description" content="AITHORIS engineers AI agents, workflow automations, and intelligent systems that help organizations simplify complexity and make better decisions.">
+<title>ASTRA-11 | AI Engineering Company</title>
+<meta name="description" content="ASTRA-11 engineers AI agents, workflow automations, and intelligent systems that help organizations simplify complexity and make better decisions.">
 
 <!-- hreflang alternate links — hrefs populated at runtime by i18n.js -->
 <link rel="alternate" hreflang="en" href="">
 <link rel="alternate" hreflang="es" href="">
 <link rel="alternate" hreflang="x-default" href="">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 32'%3E%3Cpath d='M18 0L0 32H8L18 0Z' fill='%230D0D10'/%3E%3Cpath d='M18 0L28 32H36L18 0Z' fill='%230D0D10'/%3E%3Cpath d='M18 14L23 25H13L18 14Z' fill='%23D42020'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230A0F1C'/%3E%3Cpath d='M20 72L50 22L80 72' fill='none' stroke='%23FFFFFF' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='42' y='80' width='16' height='5' rx='2.5' fill='%23FF5100'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- i18n: load before render to avoid flash of wrong language -->
 <script src="/i18n/en.js"></script>
@@ -27,17 +27,17 @@
     theme: {
       extend: {
         colors: {
-          ivory: { DEFAULT: '#F2F2F4', 80: '#2B2B30', 60: '#232328', 40: '#A6A6AE' },
-          obsidian: { DEFAULT: '#161616', 80: '#2A2A2A', 60: '#333333', 40: '#A6A6AE' },
-          signal: '#D42020',
-          crimsonDeep: '#7A0F0F',
-          crimsonDark: '#9B1515',
-          crimsonShadow: '#B81B1B',
-          crimsonBright: '#E04848',
-          crimsonSoft: '#EE7070',
+          ivory: { DEFAULT: '#FFFFFF', 80: '#141D30', 60: '#0F1626', 40: '#A7ACB3' },
+          obsidian: { DEFAULT: '#0A0F1C', 80: '#1B2740', 60: '#24314D', 40: '#A7ACB3' },
+          signal: '#FF5100',
+          emberDeep: '#7A2800',
+          emberDark: '#993200',
+          emberShadow: '#CC4100',
+          emberBright: '#FF7A33',
+          emberSoft: '#FFA366',
         },
         fontFamily: {
-          display: ['"Outfit"', 'system-ui', '-apple-system', 'sans-serif'],
+          display: ['"Sora"', 'system-ui', '-apple-system', 'sans-serif'],
           sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
           mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
         },
@@ -77,10 +77,10 @@
 
   body { font-family: "Inter", system-ui, sans-serif; }
 
-  ::selection { background: #D42020; color: #F2F2F4; }
+  ::selection { background: #FF5100; color: #FFFFFF; }
 
   :focus-visible {
-    outline: 2px solid #D42020;
+    outline: 2px solid #FF5100;
     outline-offset: 2px;
     border-radius: 2px;
   }
@@ -90,8 +90,8 @@
     left: -9999px;
     top: 0;
     z-index: 100;
-    background: #161616;
-    color: #F2F2F4;
+    background: #0A0F1C;
+    color: #FFFFFF;
     padding: 12px 20px;
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
@@ -108,13 +108,13 @@
     box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 8px 20px -8px rgba(0,0,0,0.5);
   }
   .shadow-card-hover {
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.09), 0 4px 10px -2px rgba(212,32,32,0.10), 0 16px 36px -12px rgba(0,0,0,0.6);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.09), 0 4px 10px -2px rgba(255,81,0,0.10), 0 16px 36px -12px rgba(0,0,0,0.6);
   }
   .shadow-elevated {
     box-shadow: 0 24px 48px -16px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
   }
   .shadow-floating {
-    box-shadow: 0 0 0 1px rgba(212,32,32,0.18), 0 4px 16px -4px rgba(212,32,32,0.14), 0 24px 48px -16px rgba(0,0,0,0.65);
+    box-shadow: 0 0 0 1px rgba(255,81,0,0.18), 0 4px 16px -4px rgba(255,81,0,0.14), 0 24px 48px -16px rgba(0,0,0,0.65);
   }
   #site-header.is-scrolled { box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 12px 24px -16px rgba(0,0,0,0.5); }
 
@@ -152,39 +152,39 @@
   }
   .btn:active { transform: scale(0.97); }
   .btn-primary {
-    background: #D42020; color: #F2F2F4;
-    box-shadow: 0 8px 20px -6px rgba(212,32,32,0.45);
+    background: #FF5100; color: #FFFFFF;
+    box-shadow: 0 8px 20px -6px rgba(255,81,0,0.45);
   }
-  .btn-primary:hover { background: #B81B1B; box-shadow: 0 12px 26px -6px rgba(212,32,32,0.55); }
+  .btn-primary:hover { background: #CC4100; box-shadow: 0 12px 26px -6px rgba(255,81,0,0.55); }
   .btn-secondary {
-    background: transparent; color: #F2F2F4; border: 1px solid rgba(242,242,244,0.35);
+    background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.35);
   }
-  .btn-secondary:hover { background: #F2F2F4; color: #161616; border-color: #F2F2F4; }
+  .btn-secondary:hover { background: #FFFFFF; color: #0A0F1C; border-color: #FFFFFF; }
   .btn-secondary-inverse {
-    background: transparent; color: #F2F2F4; border: 1px solid rgba(242,242,244,0.35);
+    background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.35);
   }
-  .btn-secondary-inverse:hover { background: #F2F2F4; color: #161616; border-color: #F2F2F4; }
+  .btn-secondary-inverse:hover { background: #FFFFFF; color: #0A0F1C; border-color: #FFFFFF; }
   .btn-on-dark {
-    background: #D42020; color: #F2F2F4;
-    box-shadow: 0 8px 24px -6px rgba(212,32,32,0.5);
+    background: #FF5100; color: #FFFFFF;
+    box-shadow: 0 8px 24px -6px rgba(255,81,0,0.5);
   }
-  .btn-on-dark:hover { background: #E04848; box-shadow: 0 14px 32px -8px rgba(212,32,32,0.6); }
+  .btn-on-dark:hover { background: #FF7A33; box-shadow: 0 14px 32px -8px rgba(255,81,0,0.6); }
 
   /* Contact form (dark CTA section) */
   .contact-input {
     width: 100%;
-    background: rgba(242,242,244,0.06);
-    border: 1px solid rgba(242,242,244,0.2);
-    color: #F2F2F4;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #FFFFFF;
     border-radius: 3px;
     padding: 12px 16px;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     transition: border-color 200ms cubic-bezier(0.4,0,0.2,1), background-color 200ms cubic-bezier(0.4,0,0.2,1);
   }
-  .contact-input::placeholder { color: rgba(242,242,244,0.45); }
-  .contact-input:hover { border-color: rgba(242,242,244,0.32); }
-  .contact-input:focus { outline: none; border-color: rgba(212,32,32,0.6); background: rgba(242,242,244,0.1); }
+  .contact-input::placeholder { color: rgba(255,255,255,0.45); }
+  .contact-input:hover { border-color: rgba(255,255,255,0.32); }
+  .contact-input:focus { outline: none; border-color: rgba(255,81,0,0.6); background: rgba(255,255,255,0.1); }
   textarea.contact-input { resize: vertical; min-height: 96px; }
 
   /* Service cards */
@@ -193,12 +193,12 @@
   }
   .service-card:hover { transform: translateY(-4px); }
   .service-icon { transition: color 200ms cubic-bezier(0.4,0,0.2,1); }
-  .service-card:hover .service-icon { color: #D42020; }
+  .service-card:hover .service-icon { color: #FF5100; }
   .service-title { transition: color 200ms cubic-bezier(0.4,0,0.2,1); }
-  .service-card:hover .service-title { color: #D42020; }
+  .service-card:hover .service-title { color: #FF5100; }
 
   .step-title { transition: color 200ms cubic-bezier(0.4,0,0.2,1); }
-  .step-card:hover .step-title { color: #D42020; }
+  .step-card:hover .step-title { color: #FF5100; }
 
   /* Reveal-on-scroll */
   .reveal { opacity: 0; transform: translateY(16px); transition: opacity 700ms cubic-bezier(0,0,0.3,1), transform 700ms cubic-bezier(0,0,0.3,1); }
@@ -226,7 +226,7 @@
 
   /* Header */
   #site-header { transition: background-color 200ms cubic-bezier(0.4,0,0.2,1), border-color 200ms cubic-bezier(0.4,0,0.2,1), backdrop-filter 200ms; }
-  #site-header.is-scrolled { background-color: rgba(10,10,12,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.07); }
+  #site-header.is-scrolled { background-color: rgba(10,15,28,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.07); }
 
   /* Language toggle */
   .lang-btn {
@@ -235,64 +235,34 @@
     font-weight: 500;
     letter-spacing: 0.1em;
     line-height: 1;
-    color: rgba(242,242,244,0.45);
+    color: rgba(255,255,255,0.45);
     border-radius: 2px;
     padding: 3px 5px;
     transition: color 150ms cubic-bezier(0.4,0,0.2,1);
   }
-  .lang-btn[aria-pressed="true"]  { color: #D42020; }
-  .lang-btn:hover                 { color: #F2F2F4; }
-  .lang-btn:focus-visible         { outline: 2px solid #D42020; outline-offset: 2px; }
+  .lang-btn[aria-pressed="true"]  { color: #FF5100; }
+  .lang-btn:hover                 { color: #FFFFFF; }
+  .lang-btn:focus-visible         { outline: 2px solid #FF5100; outline-offset: 2px; }
 
   table.compare th, table.compare td { white-space: nowrap; }
 
   /* Depth bands — two flat tones (Void, Card) strictly alternate section by section for rhythm, no gradients between them. */
-  .bg-surface { background: #242424; }
-  .bg-card { background: #242424; }
-  .bg-warm-strip { background: #242424; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .bg-warm-section { background: #242424; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .bg-surface { background: #121A2C; }
+  .bg-card { background: #121A2C; }
+  .bg-warm-strip { background: #121A2C; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .bg-warm-section { background: #121A2C; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
 
   /* Hero vignette — edges recede to Void, center stays lit, echoing a photo fade without a photo */
   .hero-vignette {
     background:
       radial-gradient(120% 90% at 50% 35%, transparent 45%, rgba(0,0,0,0.55) 100%),
-      linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 18%, rgba(0,0,0,0) 70%, rgba(22,22,22,0.9) 100%);
+      linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 18%, rgba(0,0,0,0) 70%, rgba(10,15,28,0.9) 100%);
   }
 
-  /* Origin Node — ambient pulse behind the hero mark. Rings radiate
-     from the logo's own visual center (50% 50% of its flex-centered box). */
-  .origin-glow { animation: origin-glow-pulse 4s cubic-bezier(0.4,0,0.2,1) infinite; }
-  @keyframes origin-glow-pulse {
-    0%, 100% { opacity: 0.16; }
-    50% { opacity: 0.28; }
-  }
-
-  .origin-ring {
-    position: absolute;
-    left: 50%; top: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0.6);
-    opacity: 0;
-    animation: origin-ring-expand 4s cubic-bezier(0.4,0,0.2,1) infinite;
-  }
-  .origin-ring--1 { width: 120px; height: 120px; border: 1px solid rgba(212,32,32,0.5); animation-delay: 0s; }
-  .origin-ring--2 { width: 220px; height: 220px; border: 1px solid rgba(224,72,72,0.4); animation-delay: 1.3s; }
-  .origin-ring--3 { width: 340px; height: 340px; border: 1px solid rgba(238,112,112,0.3); animation-delay: 2.6s; }
-  @keyframes origin-ring-expand {
-    0% { transform: translate(-50%, -50%) scale(0.6); opacity: 0.6; }
-    70% { opacity: 0.12; }
-    100% { transform: translate(-50%, -50%) scale(1.35); opacity: 0; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .origin-glow { animation: none; opacity: 0.16; }
-    .origin-ring { animation: none; opacity: 0.18; transform: translate(-50%, -50%) scale(1); }
-  }
-
-  /* Floating column — the featured AITHORIS comparison, lifted a level above the plain-text columns */
-  table.compare .col-floating { background: rgba(212,32,32,0.06); box-shadow: inset 1px 0 0 rgba(212,32,32,0.18), inset -1px 0 0 rgba(212,32,32,0.18); }
-  table.compare thead .col-floating { box-shadow: inset 1px 0 0 rgba(212,32,32,0.18), inset -1px 0 0 rgba(212,32,32,0.18), inset 0 1px 0 rgba(212,32,32,0.18); }
-  table.compare tbody tr:last-child .col-floating { box-shadow: inset 1px 0 0 rgba(212,32,32,0.18), inset -1px 0 0 rgba(212,32,32,0.18), inset 0 -1px 0 rgba(212,32,32,0.18); }
+  /* Floating column — the featured ASTRA-11 comparison, lifted a level above the plain-text columns */
+  table.compare .col-floating { background: rgba(255,81,0,0.06); box-shadow: inset 1px 0 0 rgba(255,81,0,0.18), inset -1px 0 0 rgba(255,81,0,0.18); }
+  table.compare thead .col-floating { box-shadow: inset 1px 0 0 rgba(255,81,0,0.18), inset -1px 0 0 rgba(255,81,0,0.18), inset 0 1px 0 rgba(255,81,0,0.18); }
+  table.compare tbody tr:last-child .col-floating { box-shadow: inset 1px 0 0 rgba(255,81,0,0.18), inset -1px 0 0 rgba(255,81,0,0.18), inset 0 -1px 0 rgba(255,81,0,0.18); }
 </style>
 </head>
 <body class="bg-obsidian text-ivory antialiased">
@@ -302,19 +272,14 @@
 <!-- ============ HEADER / NAV ============ -->
 <header id="site-header" class="fixed top-0 inset-x-0 z-50">
   <nav class="mx-auto max-w-content px-5 md:px-10 lg:px-20 h-20 flex items-center justify-between" aria-label="Primary">
-    <a href="#main" class="flex items-center" aria-label="AITHORIS home">
-      <svg width="27" height="24" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M18 0L0 32H8L18 0Z" fill="#F2F2F4"/>
-        <path d="M18 0L28 32H36L18 0Z" fill="#F2F2F4"/>
-        <path d="M18 14L23 25H13L18 14Z" fill="#D42020"/>
-      </svg>
-      <span class="ml-2.5 font-display font-medium text-[19px] tracking-[-0.01em] text-ivory">AITHORIS</span>
+    <a href="#main" class="flex items-center" aria-label="ASTRA-11 home">
+      <img src="/brand_assets/assets/ASTRA-11_Logo.svg" alt="ASTRA-11" class="h-[22px] md:h-[29px] w-auto">
     </a>
 
     <div class="hidden lg:flex items-center gap-10 font-sans text-body-sm font-medium">
       <a href="/about.html" class="nav-link" data-i18n="nav.about">About</a>
       <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
-      <a href="#why-aithoris" class="nav-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+      <a href="#why-astra11" class="nav-link" data-i18n="nav.whyAstra11">Why ASTRA-11</a>
       <a href="/portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
     </div>
 
@@ -337,7 +302,7 @@
     <div class="px-5 py-8 flex flex-col gap-6 font-sans text-heading-sm">
       <a href="/about.html" class="mobile-link" data-i18n="nav.about">About</a>
       <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
-      <a href="#why-aithoris" class="mobile-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+      <a href="#why-astra11" class="mobile-link" data-i18n="nav.whyAstra11">Why ASTRA-11</a>
       <a href="/portfolio.html" class="mobile-link" data-i18n="nav.portfolio">Portfolio</a>
       <div class="pt-4 border-t border-obsidian-80">
         <div role="group" data-i18n-aria-label="nav.lang" aria-label="Language" class="flex items-center gap-2">
@@ -355,40 +320,23 @@
 
   <!-- ============ HERO ============ -->
   <section class="grain relative overflow-hidden min-h-screen flex items-center pt-24 pb-12 md:pt-28 md:pb-16 lg:pt-[88px] lg:pb-10">
+    <div id="hero-threads" aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-[80%]"></div>
     <div aria-hidden="true" class="hero-vignette pointer-events-none absolute inset-0"></div>
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(60% 50% at 78% 38%, rgba(212,32,32,0.10), transparent 70%), radial-gradient(40% 35% at 15% 85%, rgba(212,32,32,0.06), transparent 70%);"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(60% 50% at 78% 38%, rgba(255,81,0,0.10), transparent 70%), radial-gradient(40% 35% at 15% 85%, rgba(255,81,0,0.06), transparent 70%);"></div>
 
-    <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20 w-full grid lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-6">
+    <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20 w-full">
+      <div class="max-w-[720px]">
         <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Connecting Intelligence</span></p>
         <h1 class="font-display font-light text-heading-lg md:text-display-md lg:text-[56px] lg:leading-[1.05] lg:tracking-[-0.02em] text-ivory" data-i18n-html="hero.headline">
           Most organizations don't have an <span class="font-bold text-signal">AI</span> problem.<br>
           They have a complexity problem.
         </h1>
-        <p class="mt-5 max-w-[520px] text-body-lg text-ivory-40 leading-[1.7]" style="color:#C6C6CE;" data-i18n="hero.body">
+        <p class="mt-5 max-w-[520px] text-body-lg text-ivory-40 leading-[1.7]" style="color:#C3C8D1;" data-i18n="hero.body">
           AI is how the problem gets solved and how that solution turns into revenue, engineered as agents, workflow automations, and intelligent systems built around how your organization actually works.
         </p>
         <div class="mt-5 flex flex-wrap items-center gap-4">
           <a href="#contact" class="btn btn-primary px-7 py-4 text-body-md" data-i18n="hero.ctaPrimary">Book a Discovery Session</a>
           <a href="/portfolio.html" class="btn btn-secondary px-7 py-4 text-body-md" data-i18n="hero.ctaSecondary">See Our Work</a>
-        </div>
-      </div>
-
-      <div class="lg:col-span-6 relative" aria-hidden="true">
-        <div class="relative mx-auto max-w-[640px]">
-        <div class="relative mx-auto flex items-center justify-center" style="aspect-ratio:1000/620;">
-          <div class="absolute inset-0 -z-10 origin-glow" style="background: radial-gradient(48% 48% at 50% 50%, rgba(212,32,32,0.16), transparent 72%);"></div>
-          <div class="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
-            <div class="origin-ring origin-ring--1"></div>
-            <div class="origin-ring origin-ring--2"></div>
-            <div class="origin-ring origin-ring--3"></div>
-          </div>
-          <svg width="220" height="196" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="opacity:0.92;">
-            <path d="M18 0L0 32H8L18 0Z" fill="#F2F2F4"/>
-            <path d="M18 0L28 32H36L18 0Z" fill="#F2F2F4"/>
-            <path d="M18 14L23 25H13L18 14Z" fill="#D42020"/>
-          </svg>
-        </div>
         </div>
       </div>
     </div>
@@ -415,7 +363,7 @@
 
   <!-- ============ SERVICES ============ -->
   <section id="services" class="relative overflow-hidden py-20 md:py-24 lg:py-32">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 40% at 85% 10%, rgba(212,32,32,0.045), transparent 70%);"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 40% at 85% 10%, rgba(255,81,0,0.045), transparent 70%);"></div>
     <div class="relative mx-auto max-w-content px-5 md:px-10 lg:px-20">
       <div class="reveal max-w-[640px]">
         <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="services.eyebrow">What We Build</span></p>
@@ -435,7 +383,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">01</span>
           </div>
           <h3 class="service-title font-display text-heading-md font-medium text-ivory" data-i18n="services.card1.title">AI Agents</h3>
-          <p class="mt-3 text-body-md text-ivory-40" style="color:#C6C6CE;" data-i18n="services.card1.body">Autonomous systems that execute complex, multi-step workflows: researching, analyzing, deciding, and acting within defined parameters and oversight frameworks.</p>
+          <p class="mt-3 text-body-md text-ivory-40" style="color:#C3C8D1;" data-i18n="services.card1.body">Autonomous systems that execute complex, multi-step workflows: researching, analyzing, deciding, and acting within defined parameters and oversight frameworks.</p>
         </article>
 
         <!-- 02 Workflow Automation -->
@@ -451,7 +399,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">02</span>
           </div>
           <h3 class="service-title font-display text-heading-md font-medium text-ivory" data-i18n="services.card2.title">Workflow Automation</h3>
-          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="services.card2.body">End-to-end automation of repetitive, rule-based processes: connecting data sources, applications, and teams into coherent operational systems.</p>
+          <p class="mt-3 text-body-md" style="color:#C3C8D1;" data-i18n="services.card2.body">End-to-end automation of repetitive, rule-based processes: connecting data sources, applications, and teams into coherent operational systems.</p>
         </article>
 
         <!-- 03 Knowledge Systems -->
@@ -465,7 +413,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">03</span>
           </div>
           <h3 class="service-title font-display text-heading-md font-medium text-ivory" data-i18n="services.card3.title">Knowledge Systems</h3>
-          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="services.card3.body">Structured repositories that capture, organize, and surface organizational intelligence: making expertise accessible regardless of who is in the room.</p>
+          <p class="mt-3 text-body-md" style="color:#C3C8D1;" data-i18n="services.card3.body">Structured repositories that capture, organize, and surface organizational intelligence: making expertise accessible regardless of who is in the room.</p>
         </article>
 
         <!-- 04 AI Consulting -->
@@ -480,7 +428,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">04</span>
           </div>
           <h3 class="service-title font-display text-heading-md font-medium text-ivory" data-i18n="services.card4.title">AI Consulting</h3>
-          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="services.card4.body">Strategic guidance for organizations navigating AI adoption: covering architecture, governance, vendor selection, team readiness, and long-term planning.</p>
+          <p class="mt-3 text-body-md" style="color:#C3C8D1;" data-i18n="services.card4.body">Strategic guidance for organizations navigating AI adoption: covering architecture, governance, vendor selection, team readiness, and long-term planning.</p>
         </article>
 
         <!-- 05 Custom AI Development -->
@@ -494,7 +442,7 @@
             <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">05</span>
           </div>
           <h3 class="service-title font-display text-heading-md font-medium text-ivory" data-i18n="services.card5.title">Custom AI Development</h3>
-          <p class="mt-3 text-body-md" style="color:#C6C6CE;" data-i18n="services.card5.body">Purpose-built AI integrations designed around specific business problems, not pre-packaged products forced into contexts they were not designed for.</p>
+          <p class="mt-3 text-body-md" style="color:#C3C8D1;" data-i18n="services.card5.body">Purpose-built AI integrations designed around specific business problems, not pre-packaged products forced into contexts they were not designed for.</p>
         </article>
       </div>
     </div>
@@ -502,7 +450,7 @@
 
   <!-- ============ HOW WE WORK ============ -->
   <section class="relative overflow-hidden py-20 md:py-24 lg:py-32 bg-warm-section">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(40% 45% at 6% 96%, rgba(212,32,32,0.08), transparent 70%);"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(40% 45% at 6% 96%, rgba(255,81,0,0.08), transparent 70%);"></div>
     <div class="relative mx-auto max-w-content px-5 md:px-10 lg:px-20">
       <div class="reveal max-w-[640px]">
         <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="howWeWork.eyebrow">How We Work</span></p>
@@ -513,22 +461,22 @@
         <div class="reveal step-card border-t-2 border-signal pt-6">
           <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">01</span>
           <h3 class="step-title mt-4 font-display text-heading-sm font-medium text-ivory" data-i18n="howWeWork.step1.title">Discover</h3>
-          <p class="mt-3 text-body-sm" style="color:#C6C6CE;" data-i18n="howWeWork.step1.body">Every engagement starts with the real business problem, not the technology. We map what's broken before we decide what to build.</p>
+          <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="howWeWork.step1.body">Every engagement starts with the real business problem, not the technology. We map what's broken before we decide what to build.</p>
         </div>
         <div class="reveal step-card border-t-2 border-signal pt-6">
           <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">02</span>
           <h3 class="step-title mt-4 font-display text-heading-sm font-medium text-ivory" data-i18n="howWeWork.step2.title">Design</h3>
-          <p class="mt-3 text-body-sm" style="color:#C6C6CE;" data-i18n="howWeWork.step2.body">AI adapts to how your team already works. We design around existing workflows, not around the limitations of a model.</p>
+          <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="howWeWork.step2.body">AI adapts to how your team already works. We design around existing workflows, not around the limitations of a model.</p>
         </div>
         <div class="reveal step-card border-t-2 border-signal pt-6">
           <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">03</span>
           <h3 class="step-title mt-4 font-display text-heading-sm font-medium text-ivory" data-i18n="howWeWork.step3.title">Engineer</h3>
-          <p class="mt-3 text-body-sm" style="color:#C6C6CE;" data-i18n="howWeWork.step3.body">Every system we ship is transparent in its operation, explainable in its decisions, and built to scale with modular, documented architecture.</p>
+          <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="howWeWork.step3.body">Every system we ship is transparent in its operation, explainable in its decisions, and built to scale with modular, documented architecture.</p>
         </div>
         <div class="reveal step-card border-t-2 border-signal pt-6">
           <span class="font-display text-3xl font-bold leading-none text-signal/25" aria-hidden="true">04</span>
           <h3 class="step-title mt-4 font-display text-heading-sm font-medium text-ivory" data-i18n="howWeWork.step4.title">Refine</h3>
-          <p class="mt-3 text-body-sm" style="color:#C6C6CE;" data-i18n="howWeWork.step4.body">Quality doesn't end at launch. We hold every system to the same standard of care after deployment as we did on day one.</p>
+          <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="howWeWork.step4.body">Quality doesn't end at launch. We hold every system to the same standard of care after deployment as we did on day one.</p>
         </div>
       </div>
     </div>
@@ -541,7 +489,7 @@
         <div class="md:col-span-8">
           <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="founding.eyebrow">Select Founding Partners</span></p>
           <h2 class="font-display font-light text-heading-md md:text-heading-lg text-ivory" data-i18n="founding.heading">We build AI systems that move businesses forward.</h2>
-          <p class="mt-4 text-body-md max-w-[620px]" style="color:#C6C6CE;" data-i18n="founding.body">Technology alone doesn't solve problems. Well-engineered systems do. We design AI that streamlines operations, connects knowledge, and automates complex workflows with precision, working alongside your team from strategy through implementation. Every engagement gets direct senior-level attention and an uncompromising focus on quality.</p>
+          <p class="mt-4 text-body-md max-w-[620px]" style="color:#C3C8D1;" data-i18n="founding.body">Technology alone doesn't solve problems. Well-engineered systems do. We design AI that streamlines operations, connects knowledge, and automates complex workflows with precision, working alongside your team from strategy through implementation. Every engagement gets direct senior-level attention and an uncompromising focus on quality.</p>
         </div>
         <div class="md:col-span-4 md:text-right">
           <a href="#contact" class="btn btn-secondary px-7 py-4 text-body-md" data-i18n="founding.cta">Start a Conversation</a>
@@ -551,7 +499,7 @@
   </section>
 
   <!-- ============ STATEMENT ============ -->
-  <section class="grain relative overflow-hidden bg-obsidian text-ivory py-20 md:py-24" style="background-color:#242424;">
+  <section class="grain relative overflow-hidden bg-obsidian text-ivory py-20 md:py-24" style="background-color:#121A2C;">
     <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20 text-center">
       <p class="reveal font-mono text-label uppercase tracking-[0.12em] text-ivory/60 mb-6 flex items-center justify-center gap-2" style="transition-delay:0ms;"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="statement.eyebrow">Engineered for Production</span></p>
       <p class="reveal mx-auto max-w-[760px] font-display font-light text-heading-lg md:text-display-md lg:text-display-lg leading-[1.2] text-ivory" style="transition-delay:100ms;" data-i18n-html="statement.body">
@@ -561,13 +509,13 @@
     </div>
   </section>
 
-  <!-- ============ WHY AITHORIS ============ -->
-  <section id="why-aithoris" class="py-20 md:py-24 lg:py-32">
+  <!-- ============ WHY ASTRA-11 ============ -->
+  <section id="why-astra11" class="py-20 md:py-24 lg:py-32">
     <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
       <div class="reveal max-w-[680px]">
-        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="whyAithoris.eyebrow">Why AITHORIS</span></p>
-        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="whyAithoris.heading">Built for the gap others leave open.</h2>
-        <p class="mt-6 text-body-lg" style="color:#C6C6CE;" data-i18n="whyAithoris.body">AI projects tend to fail in one of two ways: agencies move fast but leave fragile systems behind, or consultancies move carefully but never ship. Here's the standard we hold ourselves to instead: on every engagement, not just the pitch.</p>
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="whyAstra11.eyebrow">Why ASTRA-11</span></p>
+        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="whyAstra11.heading">Built for the gap others leave open.</h2>
+        <p class="mt-6 text-body-lg" style="color:#C3C8D1;" data-i18n="whyAstra11.body">AI projects tend to fail in one of two ways: agencies move fast but leave fragile systems behind, or consultancies move carefully but never ship. Here's the standard we hold ourselves to instead: on every engagement, not just the pitch.</p>
       </div>
 
       <div class="reveal mt-14 overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0">
@@ -575,66 +523,67 @@
           <thead>
             <tr class="border-b border-obsidian-80">
               <th scope="col" class="py-4 pr-6 font-mono text-label uppercase tracking-[0.08em] text-ivory-40">&nbsp;</th>
-              <th scope="col" class="py-4 pr-6 font-sans text-body-sm font-medium text-ivory-40" data-i18n="whyAithoris.table.col.agencies">AI Agencies</th>
-              <th scope="col" class="py-4 pr-6 font-sans text-body-sm font-medium text-ivory-40" data-i18n="whyAithoris.table.col.consulting">Large Consulting</th>
+              <th scope="col" class="py-4 pr-6 font-sans text-body-sm font-medium text-ivory-40" data-i18n="whyAstra11.table.col.agencies">AI Agencies</th>
+              <th scope="col" class="py-4 pr-6 font-sans text-body-sm font-medium text-ivory-40" data-i18n="whyAstra11.table.col.consulting">Large Consulting</th>
               <th scope="col" class="col-floating rounded-t-lg py-4 px-6 font-display text-heading-md font-medium text-signal">
-                AITHORIS
+                ASTRA-11
               </th>
             </tr>
           </thead>
           <tbody class="font-sans text-body-sm">
             <tr class="border-b border-obsidian-80">
-              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAithoris.table.row1.label">Engineering discipline</th>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row1.agencies">Variable</td>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row1.consulting">Layered approvals</td>
-              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAithoris.table.row1.aithoris">Rigorous, documented</td>
+              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAstra11.table.row1.label">Engineering discipline</th>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row1.agencies">Variable</td>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row1.consulting">Layered approvals</td>
+              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAstra11.table.row1.astra11">Rigorous, documented</td>
             </tr>
             <tr class="border-b border-obsidian-80">
-              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAithoris.table.row2.label">Speed to production</th>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row2.agencies">Fast, fragile</td>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row2.consulting">Slow, thorough</td>
-              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAithoris.table.row2.aithoris">Fast, reliable</td>
+              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAstra11.table.row2.label">Speed to production</th>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row2.agencies">Fast, fragile</td>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row2.consulting">Slow, thorough</td>
+              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAstra11.table.row2.astra11">Fast, reliable</td>
             </tr>
             <tr class="border-b border-obsidian-80">
-              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAithoris.table.row3.label">Explainability</th>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row3.agencies">Rarely prioritized</td>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row3.consulting">Rarely delivered</td>
-              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAithoris.table.row3.aithoris">Engineered in</td>
+              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAstra11.table.row3.label">Explainability</th>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row3.agencies">Rarely prioritized</td>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row3.consulting">Rarely delivered</td>
+              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAstra11.table.row3.astra11">Engineered in</td>
             </tr>
             <tr class="border-b border-obsidian-80">
-              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAithoris.table.row4.label">Governance</th>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row4.agencies">Absent</td>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row4.consulting">Process-heavy</td>
-              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAithoris.table.row4.aithoris">Right-sized</td>
+              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAstra11.table.row4.label">Governance</th>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row4.agencies">Absent</td>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row4.consulting">Process-heavy</td>
+              <td class="col-floating py-5 px-6 font-medium text-ivory" data-i18n="whyAstra11.table.row4.astra11">Right-sized</td>
             </tr>
             <tr>
-              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAithoris.table.row5.label">Design quality</th>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row5.agencies">Generic</td>
-              <td class="py-5 pr-6" style="color:#C6C6CE;" data-i18n="whyAithoris.table.row5.consulting">Enterprise standard</td>
-              <td class="col-floating rounded-b-lg py-5 px-6 font-medium text-ivory" data-i18n="whyAithoris.table.row5.aithoris">Premium, branded</td>
+              <th scope="row" class="py-5 pr-6 font-medium text-ivory" data-i18n="whyAstra11.table.row5.label">Design quality</th>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row5.agencies">Generic</td>
+              <td class="py-5 pr-6" style="color:#C3C8D1;" data-i18n="whyAstra11.table.row5.consulting">Enterprise standard</td>
+              <td class="col-floating rounded-b-lg py-5 px-6 font-medium text-ivory" data-i18n="whyAstra11.table.row5.astra11">Premium, branded</td>
             </tr>
           </tbody>
         </table>
-        <p class="mt-4 font-mono text-label text-ivory-40" data-i18n="whyAithoris.footnote">Our own operating standard, not a scored audit of any specific firm.</p>
+        <p class="mt-4 font-mono text-label text-ivory-40" data-i18n="whyAstra11.footnote">Our own operating standard, not a scored audit of any specific firm.</p>
       </div>
     </div>
   </section>
 
   <!-- ============ CTA ============ -->
-  <section id="contact" class="grain relative overflow-hidden bg-obsidian text-ivory py-24 md:py-32" style="background-color:#242424;">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 60% at 50% 50%, rgba(98,0,2,0.2), transparent 70%);"></div>
+  <section id="contact" class="grain relative overflow-hidden bg-obsidian text-ivory py-24 md:py-32" style="background-color:#121A2C;">
+    <div id="cta-threads" aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-[40%]"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 60% at 50% 50%, rgba(255,81,0,0.2), transparent 70%);"></div>
 
     <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20 text-center">
 
       <h2 class="reveal font-display font-light text-heading-lg md:text-display-md lg:text-display-lg" style="transition-delay:0ms;" data-i18n-html="contact.heading">
         Stop managing complexity.<br>Start operating through it.
       </h2>
-      <p class="reveal mt-6 max-w-[560px] mx-auto text-body-lg" style="color:#A8A8B2; transition-delay:100ms;" data-i18n="contact.body">
+      <p class="reveal mt-6 max-w-[560px] mx-auto text-body-lg" style="color:#A7ACB3; transition-delay:100ms;" data-i18n="contact.body">
         Tell us about your workflows. We'll assess what's worth automating, map the highest-value opportunities, and tell you honestly whether AI is the right tool, before we build anything.
       </p>
 
       <div class="reveal mt-10 mx-auto max-w-[480px] text-left" style="transition-delay:200ms;">
-        <form id="contact-form" action="https://formsubmit.co/hello@aithoris.io" method="POST" novalidate>
+        <form id="contact-form" action="https://formsubmit.co/hello@astra-11.com" method="POST" novalidate>
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label for="cf-name" class="sr-only" data-i18n="contact.form.name">Name</label>
@@ -655,19 +604,19 @@
           </div>
 
           <input type="text" name="_honey" style="position:absolute; left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <input type="hidden" name="_subject" value="New Discovery Session Request | AITHORIS site">
+          <input type="hidden" name="_subject" value="New Discovery Session Request | ASTRA-11 site">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
 
           <div class="mt-5 text-center">
             <button type="submit" class="btn btn-on-dark w-full sm:w-auto px-8 py-4 text-body-md" data-i18n="contact.form.submit">Book a Discovery Session</button>
           </div>
-          <p id="cf-error" class="mt-3 text-body-sm text-center hidden" style="color:#EE7070;" role="alert"></p>
+          <p id="cf-error" class="mt-3 text-body-sm text-center hidden" style="color:#FFA366;" role="alert"></p>
         </form>
         <div id="cf-success" class="hidden text-center py-6" role="status">
-          <p class="text-body-lg" style="color:#F2F2F4;" data-i18n="contact.form.success">Thanks! We'll reply within one business day.</p>
+          <p class="text-body-lg" style="color:#FFFFFF;" data-i18n="contact.form.success">Thanks! We'll reply within one business day.</p>
         </div>
-        <p class="mt-4 text-body-sm text-center" style="color:#8A8A95;" data-i18n-html="contact.form.emailAlt">Prefer email? Write to <a href="mailto:hello@aithoris.io" class="underline hover:text-signal">hello@aithoris.io</a></p>
+        <p class="mt-4 text-body-sm text-center" style="color:#8B92A0;" data-i18n-html="contact.form.emailAlt">Prefer email? Write to <a href="mailto:hello@astra-11.com" class="underline hover:text-signal">hello@astra-11.com</a></p>
       </div>
     </div>
   </section>
@@ -675,37 +624,32 @@
 </main>
 
 <!-- ============ FOOTER ============ -->
-<footer class="bg-obsidian text-ivory border-t border-obsidian-60" style="background-color:#161616;">
+<footer class="bg-obsidian text-ivory border-t border-obsidian-60" style="background-color:#0A0F1C;">
   <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20 py-16">
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
       <div>
-        <a href="#main" class="flex items-center" aria-label="AITHORIS home">
-          <svg width="26" height="23" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M18 0L0 32H8L18 0Z" fill="#F2F2F4"/>
-            <path d="M18 0L28 32H36L18 0Z" fill="#F2F2F4"/>
-            <path d="M18 14L23 25H13L18 14Z" fill="#D42020"/>
-          </svg>
-          <span class="ml-2.5 font-display font-medium text-[19px] tracking-[-0.01em] text-ivory">AITHORIS</span>
+        <a href="#main" class="flex items-center" aria-label="ASTRA-11 home">
+          <img src="/brand_assets/assets/ASTRA-11_Logo_Full.svg" alt="ASTRA-11 — AI Engineering Agency" class="h-16 w-auto">
         </a>
-        <p class="mt-3 font-mono text-body-sm text-ivory/60 tracking-[0.04em] flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="footer.tagline">Connecting Intelligence.</span></p>
       </div>
 
       <nav aria-label="Footer" class="flex flex-wrap gap-x-10 gap-y-4 text-body-sm">
         <a href="/about.html" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.about">About</a>
         <a href="#services" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.services">Services</a>
-        <a href="#why-aithoris" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.whyAithoris">Why AITHORIS</a>
+        <a href="#why-astra11" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.whyAstra11">Why ASTRA-11</a>
         <a href="/portfolio.html" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.portfolio">Portfolio</a>
         <a href="#contact" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
 
     <div class="mt-14 pt-8 border-t border-obsidian-60 flex flex-col sm:flex-row justify-between gap-4 text-body-sm text-obsidian-40">
-      <p data-i18n="footer.copyright">© 2026 AITHORIS. All rights reserved.</p>
-      <p class="font-mono text-label uppercase tracking-[0.08em]" data-i18n="footer.label">AI Engineering Company</p>
+      <p data-i18n="footer.copyright">© 2026 ASTRA-11. All rights reserved.</p>
+      <p class="font-mono text-label uppercase tracking-[0.08em]" data-i18n="footer.label">AI Engineering Agency</p>
     </div>
   </div>
 </footer>
 
+<script type="module" src="/js/hero-threads.js"></script>
 <script>
   // Mobile menu
   (function () {
@@ -789,7 +733,7 @@
       btn.disabled = true;
       btn.textContent = window.i18n ? window.i18n.t('contact.form.sending') : 'Sending…';
 
-      fetch('https://formsubmit.co/ajax/hello@aithoris.io', {
+      fetch('https://formsubmit.co/ajax/hello@astra-11.com', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: new FormData(form),
@@ -804,7 +748,7 @@
           btn.textContent = btnLabel;
           error.textContent = window.i18n
             ? window.i18n.t('contact.form.error')
-            : 'Something went wrong. Email us directly at hello@aithoris.io instead.';
+            : 'Something went wrong. Email us directly at hello@astra-11.com instead.';
           error.classList.remove('hidden');
         });
     });

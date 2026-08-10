@@ -2,7 +2,7 @@
 
 ## MARKETING / Competitive_Positioning.md
 
-> *AITHORIS occupies a specific position in the AI market. This document defines that position with precision and explains how to communicate it.*
+> *ASTRA-11 occupies a specific position in the AI market. This document defines that position with precision and explains how to communicate it.*
 
 ---
 
@@ -19,19 +19,19 @@ Accenture, Deloitte, McKinsey AI practices. They have enterprise relationships a
 **Tier 3: AI Development Agencies**
 Small to mid-size agencies that implement AI tools for clients. Variable quality. Often prototype-to-production gap. Limited governance and engineering depth.
 
-**AITHORIS's position:** Between Tier 2 and Tier 3 — with the engineering rigor that most agencies lack, at the speed and agility that large consulting firms cannot deliver.
+**ASTRA-11's position:** Between Tier 2 and Tier 3 — with the engineering rigor that most agencies lack, at the speed and agility that large consulting firms cannot deliver.
 
 ---
 
 ## Positioning Statement
 
-> AITHORIS is the AI engineering firm for organizations that need AI deployed with production-grade reliability, not consulting firm overhead or agency-level quality.
+> ASTRA-11 is the AI engineering firm for organizations that need AI deployed with production-grade reliability, not consulting firm overhead or agency-level quality.
 
 ---
 
 ## The Differentiated Claim
 
-| Dimension | AI Agencies | Large Consulting | **AITHORIS** |
+| Dimension | AI Agencies | Large Consulting | **ASTRA-11** |
 |---|---|---|---|
 | Engineering discipline | Variable | Bureaucratic | Rigorous, documented |
 | Speed to production | Fast, fragile | Slow, thorough | Fast, reliable |
@@ -45,7 +45,7 @@ Small to mid-size agencies that implement AI tools for clients. Variable quality
 
 ## Who We Compete Against
 
-**In practice, AITHORIS competes against:**
+**In practice, ASTRA-11 competes against:**
 - The client's internal team ("we can build this ourselves")
 - Mid-size AI development agencies
 - Freelance AI engineers / small teams
@@ -61,13 +61,13 @@ Small to mid-size agencies that implement AI tools for clients. Variable quality
 
 *"Why not just hire an AI engineer or use a cheaper agency?"*
 
-> "You can. The question is whether you want to manage the engineering, governance, and long-term maintenance of an AI system in addition to using it. AITHORIS delivers a complete system — designed, documented, tested, governed, and ready to hand off to your team. The alternative is not cheaper when you account for the full cost of ownership."
+> "You can. The question is whether you want to manage the engineering, governance, and long-term maintenance of an AI system in addition to using it. ASTRA-11 delivers a complete system — designed, documented, tested, governed, and ready to hand off to your team. The alternative is not cheaper when you account for the full cost of ownership."
 
 ---
 
 ## The Story We Tell
 
-The AITHORIS story is not about AI.
+The ASTRA-11 story is not about AI.
 
 It is about the gap between what AI promises and what organizations actually experience when they deploy it.
 
@@ -75,7 +75,7 @@ We tell the story of organizations that tried AI tools and got noise instead of 
 
 Then we explain what it looks like when AI is engineered properly.
 
-That is the AITHORIS story.
+That is the ASTRA-11 story.
 
 ---
 
@@ -83,4 +83,4 @@ That is the AITHORIS story.
 
 ---
 
-© AITHORIS Marketing — Competitive_Positioning.md v2.0
+© ASTRA-11 Marketing — Competitive_Positioning.md v2.0

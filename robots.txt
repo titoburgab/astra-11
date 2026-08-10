@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aithoris.com/sitemap.xml
+Sitemap: https://astra-11.com/sitemap.xml

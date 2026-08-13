@@ -30,7 +30,7 @@ window.i18nStrings.en = {
   hero: {
     eyebrow:    'Connecting Intelligence',
     headline:   'Most organizations don\'t have an <span class="font-bold text-signal">AI</span> problem.<br>They have a complexity problem.',
-    body:       'AI is how the problem gets solved and how that solution turns into revenue, engineered as agents, workflow automations, and intelligent systems built around how your organization actually works.',
+    body:       'AI is how we turn business problems into measurable results.',
     ctaPrimary:  'Book a Discovery Session',
     ctaSecondary:'See Our Work',
   },
@@ -49,7 +49,7 @@ window.i18nStrings.en = {
     heading: 'Purpose-built systems, not generic tools.',
     card1: {
       title: 'AI Agents',
-      body:  'Autonomous systems that execute complex, multi-step workflows: researching, analyzing, deciding, and acting within defined parameters and oversight frameworks.',
+      body:  'AI systems that handle complex tasks, make decisions, and execute workflows with minimal human intervention.',
     },
     card2: {
       title: 'Workflow Automation',
@@ -57,10 +57,10 @@ window.i18nStrings.en = {
     },
     card3: {
       title: 'Knowledge Systems',
-      body:  'Structured repositories that capture, organize, and surface organizational intelligence: making expertise accessible regardless of who is in the room.',
+      body:  'Turn your company\'s scattered information into an intelligent system your team can actually use.',
     },
     card4: {
-      title: 'AI Consulting',
+      title: 'AI Strategy & Architecture',
       body:  'Strategic guidance for organizations navigating AI adoption: covering architecture, governance, vendor selection, team readiness, and long-term planning.',
     },
     card5: {
@@ -72,6 +72,7 @@ window.i18nStrings.en = {
   howWeWork: {
     eyebrow: 'How We Work',
     heading: 'From problem to production.',
+    intro:   'We start with the business problem, not the technology.',
     step1: {
       title: 'Discover',
       body:  'Every engagement starts with the real business problem, not the technology. We map what\'s broken before we decide what to build.',
@@ -82,11 +83,11 @@ window.i18nStrings.en = {
     },
     step3: {
       title: 'Engineer',
-      body:  'Every system we ship is transparent in its operation, explainable in its decisions, and built to scale with modular, documented architecture.',
+      body:  'Every system is built for reliability, transparency, scalability, and human oversight.',
     },
     step4: {
       title: 'Refine',
-      body:  'Quality doesn\'t end at launch. We hold every system to the same standard of care after deployment as we did on day one.',
+      body:  'AI systems need continuous improvement. We monitor, evaluate, optimize, and adapt them as your business evolves.',
     },
   },
 
@@ -99,13 +100,13 @@ window.i18nStrings.en = {
 
   statement: {
     eyebrow: 'Engineered for Production',
-    body:    'Most AI pilots never reach production.<br><span class="font-medium">We start there.</span>',
+    body:    'We don\'t just build AI tools.<br><span class="font-medium">We engineer intelligent systems around the way your business actually works.</span>',
   },
 
   whyAstra11: {
     eyebrow: 'Why ASTRA-11',
     heading: 'Built for the gap others leave open.',
-    body:    'AI projects tend to fail in one of two ways: agencies move fast but leave fragile systems behind, or consultancies move carefully but never ship. Here\'s the standard we hold ourselves to instead: on every engagement, not just the pitch.',
+    body:    'Agencies move fast but leave fragile systems behind. Consultancies move carefully but never ship.<br><span class="font-medium text-ivory">ASTRA-11 — Fast enough to ship. Rigorous enough to trust.</span>',
     table: {
       col: {
         agencies:   'AI Agencies',
@@ -118,6 +119,15 @@ window.i18nStrings.en = {
       row5: { label: 'Design quality',         agencies: 'Generic',           consulting: 'Enterprise standard',astra11: 'Premium, branded'     },
     },
     footnote: 'Our own operating standard, not a scored audit of any specific firm.',
+  },
+
+  outcomes: {
+    eyebrow: 'Business Outcomes',
+    heading: 'What We Help Businesses Do',
+    item1: { title: 'Reduce operational costs', body: 'Automate repetitive work and eliminate unnecessary processes.' },
+    item2: { title: 'Increase capacity',        body: 'Get more done without continuously adding headcount.' },
+    item3: { title: 'Make better decisions',    body: 'Give your team faster access to the right information.' },
+    item4: { title: 'Scale operations',         body: 'Build systems that grow with your business.' },
   },
 
   contact: {

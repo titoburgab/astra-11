@@ -29,7 +29,7 @@ window.i18nStrings.es = {
   hero: {
     eyebrow:     'Inteligencia conectada',
     headline:    'La mayoría de las organizaciones no tienen un problema de <span class="font-bold text-signal">IA</span>. Tienen un problema de complejidad.',
-    body:        'La IA es cómo se resuelve el problema y cómo esa solución se convierte en ingresos, diseñada como agentes, automatizaciones de procesos y sistemas inteligentes construidos para la forma en que tu organización realmente opera.',
+    body:        'La IA es cómo convertimos los problemas de negocio en resultados medibles.',
     ctaPrimary:  'Agenda tu sesión inicial',
     ctaSecondary:'Ver nuestro trabajo',
   },
@@ -48,7 +48,7 @@ window.i18nStrings.es = {
     heading: 'Sistemas diseñados para cada problema, no herramientas genéricas.',
     card1: {
       title: 'Agentes de IA',
-      body:  'Sistemas autónomos que ejecutan flujos de trabajo complejos y de múltiples pasos: investigan, analizan, deciden y actúan dentro de parámetros y marcos de supervisión definidos.',
+      body:  'Sistemas de IA que manejan tareas complejas, toman decisiones y ejecutan flujos de trabajo con mínima intervención humana.',
     },
     card2: {
       title: 'Automatización de procesos',
@@ -56,10 +56,10 @@ window.i18nStrings.es = {
     },
     card3: {
       title: 'Sistemas de conocimiento',
-      body:  'Repositorios estructurados que capturan, organizan y ponen a disposición la inteligencia organizacional: haciendo accesible la experiencia sin importar quién esté presente.',
+      body:  'Convierte la información dispersa de tu empresa en un sistema inteligente que tu equipo realmente pueda usar.',
     },
     card4: {
-      title: 'Consultoría en IA',
+      title: 'Estrategia y Arquitectura de IA',
       body:  'Orientación estratégica para organizaciones que adoptan IA: arquitectura, gobernanza, selección de proveedores, preparación del equipo y planificación a largo plazo.',
     },
     card5: {
@@ -71,6 +71,7 @@ window.i18nStrings.es = {
   howWeWork: {
     eyebrow: 'Cómo trabajamos',
     heading: 'Del problema a la producción.',
+    intro:   'Empezamos con el problema de negocio, no con la tecnología.',
     step1: {
       title: 'Descubrir',
       body:  'Todo proyecto empieza con el problema de negocio real, no con la tecnología. Mapeamos lo que está fallando antes de decidir qué construir.',
@@ -81,11 +82,11 @@ window.i18nStrings.es = {
     },
     step3: {
       title: 'Construir',
-      body:  'Cada sistema que entregamos es transparente en su funcionamiento, explicable en sus decisiones y construido para escalar con una arquitectura modular y documentada.',
+      body:  'Cada sistema está construido para ser confiable, transparente, escalable y con supervisión humana.',
     },
     step4: {
       title: 'Refinar',
-      body:  'La calidad no termina en el lanzamiento. Mantenemos el mismo estándar de cuidado después del despliegue que el primer día.',
+      body:  'Los sistemas de IA necesitan mejora continua. Los monitoreamos, evaluamos, optimizamos y adaptamos a medida que tu negocio evoluciona.',
     },
   },
 
@@ -98,13 +99,13 @@ window.i18nStrings.es = {
 
   statement: {
     eyebrow: 'Construido para producción real',
-    body:    'La mayoría de los pilotos de IA nunca llegan a producción.<br><span class="font-medium">Nosotros empezamos ahí.</span>',
+    body:    'No solo construimos herramientas de IA.<br><span class="font-medium">Diseñamos sistemas inteligentes alrededor de cómo tu negocio realmente opera.</span>',
   },
 
   whyAstra11: {
     eyebrow: 'Por qué ASTRA-11',
     heading: 'Construidos para el vacío que otros dejan abierto.',
-    body:    'Los proyectos de IA suelen fracasar de dos maneras: las agencias avanzan rápido pero dejan sistemas frágiles, o las consultoras avanzan con cuidado pero nunca entregan. Este es el estándar con el que nos medimos en cada proyecto, no solo en la propuesta.',
+    body:    'Las agencias avanzan rápido pero dejan sistemas frágiles. Las consultoras avanzan con cuidado pero nunca entregan.<br><span class="font-medium text-ivory">ASTRA-11 — Suficientemente rápidos para entregar. Suficientemente rigurosos para confiar.</span>',
     table: {
       col: {
         agencies:   'Agencias de IA',
@@ -117,6 +118,15 @@ window.i18nStrings.es = {
       row5: { label: 'Calidad de diseño',        agencies: 'Genérica',             consulting: 'Estándar corporativo',  astra11: 'Premium, con identidad propia' },
     },
     footnote: 'Nuestro propio estándar operativo, no una auditoría de ninguna empresa en particular.',
+  },
+
+  outcomes: {
+    eyebrow: 'Resultados de Negocio',
+    heading: 'Cómo ayudamos a las empresas',
+    item1: { title: 'Reducir costos operativos', body: 'Automatiza el trabajo repetitivo y elimina procesos innecesarios.' },
+    item2: { title: 'Aumentar la capacidad',     body: 'Haz más sin necesidad de seguir sumando personal.' },
+    item3: { title: 'Tomar mejores decisiones',  body: 'Dale a tu equipo acceso más rápido a la información correcta.' },
+    item4: { title: 'Escalar operaciones',       body: 'Construye sistemas que crecen junto con tu negocio.' },
   },
 
   contact: {

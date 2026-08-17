@@ -228,6 +228,14 @@
           appendBubble(data.reply || t('chatbot.errorGeneric', 'Something went wrong. Try again, or email hello@astra-11.com.'), 'bot');
         }
         if (data.escalate) appendCta();
+        if (data.leadCaptured) {
+          leadOffered = true;
+          if (leadToggle) leadToggle.style.display = 'none';
+        } else if (data.showLeadForm && !leadOffered) {
+          leadOffered = true;
+          if (leadToggle) leadToggle.style.display = 'none';
+          showLeadForm();
+        }
       })
       .catch(function () {
         typingBubble.remove();
@@ -263,6 +271,7 @@
     leadToggle.addEventListener('click', function () {
       if (leadOffered) return;
       leadOffered = true;
+      leadToggle.style.display = 'none';
       showLeadForm();
     });
   }

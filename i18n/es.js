@@ -145,10 +145,27 @@ window.i18nStrings.es = {
     },
   },
 
+  chatbot: {
+    fabLabel:         'Chatea con ASTRA-11',
+    panelTitle:       'Asistente ASTRA-11',
+    greeting:         '¡Hola! ¿En qué puedo ayudarte?',
+    inputPlaceholder: 'Escribe tu mensaje…',
+    send:             'Enviar',
+    close:            'Cerrar chat',
+    errorGeneric:     'Algo salió mal. Intenta de nuevo, o escríbenos a hello@astra-11.com.',
+    bookSession:      'Agenda tu Sesión Inicial',
+    leadPrompt:       '¿Quieres que te contactemos? Comparte tus datos.',
+    leadName:         'Nombre',
+    leadEmail:        'Correo',
+    leadSubmit:       'Enviar',
+    leadSuccess:      'Gracias — nos pondremos en contacto.',
+  },
+
   footer: {
     tagline:   'Inteligencia conectada.',
     copyright: '© 2026 ASTRA-11. Todos los derechos reservados.',
     label:     'Ingeniería de IA',
+    privacy:   'Política de Privacidad',
   },
 
   about: {
@@ -376,6 +393,64 @@ window.i18nStrings.es = {
       heading: 'Si alguno de estos se parece a tu problema, hablemos de construir el tuyo.',
       body:    'Cada sistema en esta página empezó igual que empezaría esta conversación: un proceso específico que costaba tiempo o dinero. Cuéntanos qué es lento, manual o inconsistente en tu operación, y te diremos con honestidad si un sistema automatizado es la solución correcta.',
       button:  'Inicia una Conversación',
+    },
+  },
+
+  privacyPolicy: {
+    meta: {
+      title:       'ASTRA-11 | Política de Privacidad',
+      description: 'Cómo ASTRA-11 recopila, usa y protege la información enviada a través de astra-11.com, incluyendo el formulario de contacto y el asistente de chat.',
+    },
+    eyebrow:        'Legal',
+    heading:        'Política de Privacidad',
+    effectiveDate:  'Fecha de vigencia: 17 de agosto de 2026',
+    intro:          'ASTRA-11 ("nosotros") opera astra-11.com. Esta política explica qué información recopilamos cuando usas este sitio —incluyendo el formulario de contacto y el asistente de chat—, por qué la recopilamos y cómo puedes controlarla.',
+    collect: {
+      heading: 'Qué Recopilamos',
+      item1:   'Formulario de contacto: tu nombre, correo corporativo, empresa (opcional) y mensaje, enviados a través de nuestro proveedor de formularios, FormSubmit.co, cuando solicitas una Sesión Inicial.',
+      item2:   'Asistente de chat: el texto de tu conversación con el asistente del sitio y —solo si decides compartirlos— tu nombre y correo electrónico.',
+      item3:   'Preferencia de idioma: se guarda únicamente en el almacenamiento local de tu navegador, nunca se envía a un servidor.',
+      item4:   'ID de sesión de chat: un identificador aleatorio guardado únicamente en el almacenamiento de sesión de tu navegador, usado solo para darle al asistente memoria de corto plazo dentro de tu conversación actual. Se borra automáticamente al cerrar la pestaña.',
+    },
+    why: {
+      heading: 'Por Qué la Recopilamos',
+      item1:   'Para responder a las consultas enviadas a través del formulario de contacto.',
+      item2:   'Para responder preguntas sobre los servicios de ASTRA-11 a través del asistente de chat.',
+      item3:   'Para contactarte si nos lo pides, o si el asistente determina que una Sesión Inicial es el siguiente paso adecuado.',
+      item4:   'No usamos esta información para publicidad ni construimos perfiles de marketing a partir de ella.',
+    },
+    thirdParties: {
+      heading: 'Quién Procesa Esta Información',
+      item1:   '<strong>FormSubmit.co</strong> — entrega los envíos del formulario de contacto a nuestro correo. Consulta la <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener">política de privacidad de FormSubmit</a>.',
+      item2:   '<strong>Anthropic</strong> — las respuestas del asistente de chat se generan usando los modelos Claude de Anthropic; el texto de tu conversación se envía a Anthropic para producir una respuesta. Consulta la <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">política de privacidad de Anthropic</a>.',
+      item3:   'n8n — el flujo de automatización que conecta el asistente de chat con Claude y con Google Sheets se ejecuta en nuestra propia instancia autoalojada de n8n; no es un SaaS de terceros que lea tus datos más allá de lo descrito aquí.',
+      item4:   '<strong>Google Sheets</strong> — cuando tú (o el asistente, en tu nombre) compartes tu nombre o correo para un seguimiento, esa información se guarda en una hoja de cálculo de Google accesible solo para el equipo de ASTRA-11. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a>.',
+    },
+    retention: {
+      heading: 'Retención',
+      item1:   'Los registros de leads (nombre, correo y lo que te interesaba) se conservan hasta que nos pidas eliminarlos.',
+      item2:   'La memoria de conversación del chat es de corto plazo y se usa solo para mantener contexto dentro de una sesión; no se conserva como una transcripción permanente.',
+      item3:   'Los envíos del formulario de contacto se conservan en nuestro correo como parte de nuestros registros normales de negocio.',
+    },
+    rights: {
+      heading: 'Tus Derechos',
+      body:    'Puedes pedirnos acceder, corregir o eliminar cualquier información personal que tengamos sobre ti en cualquier momento, escribiendo a <a href="mailto:hello@astra-11.com">hello@astra-11.com</a>. Responderemos en un plazo razonable.',
+    },
+    noSale: {
+      heading: 'No Vendemos Tus Datos',
+      body:    'ASTRA-11 no vende, alquila ni comparte tu información personal con terceros.',
+    },
+    cookies: {
+      heading: 'Cookies y Almacenamiento Local',
+      body:    'Este sitio no usa cookies de publicidad ni de rastreo. Usa el almacenamiento local de tu navegador para recordar tu preferencia de idioma, y el almacenamiento de sesión para darle al asistente de chat memoria de corto plazo — ambos permanecen en tu dispositivo y nunca se usan para rastrearte en otros sitios.',
+    },
+    updates: {
+      heading: 'Cambios a Esta Política',
+      body:    'Podemos actualizar esta política a medida que el sitio evoluciona. Los cambios importantes se publicarán aquí con una nueva fecha de vigencia.',
+    },
+    contact: {
+      heading: 'Contacto',
+      body:    '¿Preguntas sobre esta política? Escríbenos a <a href="mailto:hello@astra-11.com">hello@astra-11.com</a>.',
     },
   },
 

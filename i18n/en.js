@@ -146,10 +146,27 @@ window.i18nStrings.en = {
     },
   },
 
+  chatbot: {
+    fabLabel:         'Chat with ASTRA-11',
+    panelTitle:       'ASTRA-11 Assistant',
+    greeting:         'Hi! How can I help you?',
+    inputPlaceholder: 'Type your message…',
+    send:             'Send',
+    close:            'Close chat',
+    errorGeneric:     'Something went wrong. Try again, or email hello@astra-11.com.',
+    bookSession:      'Book a Discovery Session',
+    leadPrompt:       'Want us to follow up? Share your details.',
+    leadName:         'Name',
+    leadEmail:        'Email',
+    leadSubmit:       'Send',
+    leadSuccess:      'Thanks — we\'ll be in touch.',
+  },
+
   footer: {
     tagline:   'Connecting Intelligence.',
     copyright: '© 2026 ASTRA-11. All rights reserved.',
     label:     'AI Engineering Agency',
+    privacy:   'Privacy Policy',
   },
 
   about: {
@@ -377,6 +394,64 @@ window.i18nStrings.en = {
       heading: 'If one of these looks like your problem, let\'s talk about building yours.',
       body:    'Every system on this page started the same way this conversation would: a specific process that was costing time or money. Tell us what\'s slow, manual, or inconsistent in your operation, and we\'ll tell you honestly whether an automated system is the right fix.',
       button:  'Start a Conversation',
+    },
+  },
+
+  privacyPolicy: {
+    meta: {
+      title:       'ASTRA-11 | Privacy Policy',
+      description: 'How ASTRA-11 collects, uses, and protects information submitted through astra-11.com, including the contact form and the chat assistant.',
+    },
+    eyebrow:        'Legal',
+    heading:        'Privacy Policy',
+    effectiveDate:  'Effective date: August 17, 2026',
+    intro:          'ASTRA-11 ("we", "us") operates astra-11.com. This policy explains what information we collect when you use this site — including the contact form and the on-site chat assistant — why we collect it, and how you can control it.',
+    collect: {
+      heading: 'What We Collect',
+      item1:   'Contact form: your name, work email, company (optional), and message — submitted via our form provider, FormSubmit.co, when you request a Discovery Session.',
+      item2:   'Chat assistant: the text of your conversation with the on-site assistant, and — only if you choose to share it — your name and email address.',
+      item3:   'Language preference: stored only in your browser\'s local storage, never sent to a server.',
+      item4:   'Chat session ID: a random identifier stored only in your browser\'s session storage, used solely to give the assistant short-term memory of your current conversation. It clears automatically when you close the tab.',
+    },
+    why: {
+      heading: 'Why We Collect It',
+      item1:   'To respond to inquiries submitted through the contact form.',
+      item2:   'To answer questions about ASTRA-11\'s services through the chat assistant.',
+      item3:   'To follow up with you if you ask us to, or if the assistant determines a Discovery Session would be the right next step.',
+      item4:   'We do not use this information for advertising, and we do not build marketing profiles from it.',
+    },
+    thirdParties: {
+      heading: 'Who Processes This Information',
+      item1:   '<strong>FormSubmit.co</strong> — delivers contact-form submissions to our inbox. See <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener">FormSubmit\'s privacy policy</a>.',
+      item2:   '<strong>Anthropic</strong> — the chat assistant\'s replies are generated using Anthropic\'s Claude models; your conversation text is sent to Anthropic to produce a response. See <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic\'s privacy policy</a>.',
+      item3:   'n8n — the automation workflow that connects the chat assistant to Claude and to Google Sheets runs on our own self-hosted n8n instance; it is not a third-party SaaS reading your data beyond what\'s described here.',
+      item4:   '<strong>Google Sheets</strong> — when you (or the assistant, on your behalf) share your name or email for a follow-up, that information is stored in a Google Sheet accessible only to the ASTRA-11 team. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google\'s privacy policy</a>.',
+    },
+    retention: {
+      heading: 'Retention',
+      item1:   'Lead records (name, email, and what you were interested in) are kept until you ask us to delete them.',
+      item2:   'Chat conversation memory is short-lived and used only to keep context within a single session; it is not retained as a permanent transcript.',
+      item3:   'Contact-form submissions are retained in our email inbox as part of our normal business records.',
+    },
+    rights: {
+      heading: 'Your Rights',
+      body:    'You can ask us to access, correct, or delete any personal information we hold about you at any time by writing to <a href="mailto:hello@astra-11.com">hello@astra-11.com</a>. We\'ll respond within a reasonable time.',
+    },
+    noSale: {
+      heading: 'We Don\'t Sell Your Data',
+      body:    'ASTRA-11 does not sell, rent, or trade your personal information to third parties.',
+    },
+    cookies: {
+      heading: 'Cookies & Local Storage',
+      body:    'This site does not use advertising or tracking cookies. It uses your browser\'s local storage to remember your language preference and session storage to give the chat assistant short-term memory — both stay on your device and are never used to track you across other sites.',
+    },
+    updates: {
+      heading: 'Changes to This Policy',
+      body:    'We may update this policy as the site evolves. Material changes will be posted here with a new effective date.',
+    },
+    contact: {
+      heading: 'Contact',
+      body:    'Questions about this policy? Write to <a href="mailto:hello@astra-11.com">hello@astra-11.com</a>.',
     },
   },
 

@@ -389,6 +389,26 @@ window.i18nStrings.en = {
         },
       },
     },
+    project6: {
+      title:       'Consultation Booking System',
+      painPoint:   'Scheduling client consultation calls by hand meant email back-and-forth, double-booking risk, and no-shows from calls nobody remembered to confirm.',
+      system:      'A self-serve booking system on n8n and Google Calendar that locks each slot the instant it\'s picked, so two people can never grab the same time.',
+      description: 'Clients book an open slot, get an instant confirmation and a 24-hour reminder, and can cancel or reschedule themselves, no back-and-forth required.',
+      modal: {
+        painPoint: {
+          headline: 'Every consultation started with friction, before the client had even become a client.',
+          body: '<p>Booking a call sounds simple until it has to happen by hand, over and over, for every new prospect. Someone proposes a few times, waits for a reply, adjusts around a conflict, and confirms, often across two or three emails before a time is actually locked in. Every one of those exchanges is a chance for the lead to lose momentum or go quiet.</p><p>Manual scheduling carries its own risks, too. Without a system checking for conflicts in real time, the same slot can get promised to two different people, and calls that never make it onto a calendar properly get forgotten, by the client, the business, or both. A missed consultation isn\'t just an empty half hour; it\'s a lead that walked away before the relationship even started.</p><p>None of this required bad intentions or bad service. It\'s just what happens when scheduling depends on someone remembering to check an inbox at the right moment.</p>',
+        },
+        system: {
+          headline: 'The Consultation Booking System closes the loop with zero manual intervention.',
+          body: '<p>Built on n8n and Google Calendar, the system gives clients a custom-branded booking form that only ever shows real, open availability. There\'s no proposing times or waiting on a reply: the client picks a slot and it\'s theirs.</p><p>The hard part was making that instant confirmation safe. Two people can try to claim the same slot at the exact same moment, so the system closes that race condition with a check-then-lock pattern: it reserves the slot in a lightweight data store the instant it\'s selected, before it ever touches the calendar, then double-checks against Calendar itself as a backstop. It was stress-tested with two real, simultaneous booking attempts on the same slot: exactly one succeeded, cleanly, with no double-booked call and no silent failure.</p><p>From there, the system runs itself: confirmations go out immediately, reminders fire automatically, and clients can manage their own booking without anyone on the business side lifting a finger.</p>',
+        },
+        description: {
+          headline: 'Book, remind, manage: the whole flow runs on its own.',
+          body: '<p><strong>Book</strong> — the client picks a date, sees only genuinely open slots, and confirms. Both the client and the business get an instant email the moment the booking is made.</p><p><strong>Remind</strong> — an automated check runs every 30 minutes and emails a reminder roughly 24 hours before each call, so no one shows up having forgotten it was on the calendar.</p><p><strong>Manage</strong> — a secure link in every email lets the client cancel or reschedule themselves, right up to 2 hours before the call, without a single message back to the business.</p><p>The result is a live, fully self-service scheduling flow that removed manual coordination entirely, verified end-to-end with real bookings, a real concurrency test, and full coverage of the business rules that matter: hours, lead time, blackout dates, and cancellation windows.</p>',
+        },
+      },
+    },
     cta: {
       eyebrow: 'Have a Similar Problem?',
       heading: 'If one of these looks like your problem, let\'s talk about building yours.',

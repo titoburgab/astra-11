@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ASTRA-11 | Portfolio</title>
-<meta name="description" content="Automation systems ASTRA-11 has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.">
+<meta name="description" content="Automation systems ASTRA-11 has built: lead qualification, quote and invoice generation, video production, script writing, LinkedIn publishing, and consultation booking, each built from a real, observed problem.">
 
 <!-- hreflang alternate links — hrefs populated at runtime by i18n.js -->
 <link rel="alternate" hreflang="en" href="">
@@ -183,6 +183,7 @@
   .service-card:nth-child(3) { transition-delay: 160ms; }
   .service-card:nth-child(4) { transition-delay: 240ms; }
   .service-card:nth-child(5) { transition-delay: 320ms; }
+  .service-card:nth-child(6) { transition-delay: 400ms; }
   @media (prefers-reduced-motion: reduce) {
     .service-card { transition-delay: 0ms; }
   }
@@ -539,45 +540,73 @@
           </div>
         </article>
 
-        <!-- 05 LinkedIn Post Generator (full-width closer) -->
-        <article class="reveal service-card relative lg:col-span-12 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+        <!-- 05 LinkedIn Post Generator -->
+        <article class="reveal service-card relative lg:col-span-6 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
           <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-5" data-modal-target="5"></button>
-          <div class="relative aspect-[21/9] bg-ivory-80" aria-hidden="true">
+          <div class="relative aspect-[16/10] overflow-hidden" style="background-color:#F4EFE6;" aria-hidden="true">
             <img src="/brand_assets/assets/linkedin-post-02.png" alt="" class="absolute inset-0 w-full h-full object-cover" style="object-position: center 10%;" loading="lazy">
             <div class="project-img-sheen absolute inset-0"></div>
           </div>
-          <div class="p-8 md:p-10 grid md:grid-cols-12 gap-8">
-            <div class="md:col-span-4">
-              <div class="flex items-center gap-4">
-                <svg class="service-icon w-8 h-8 text-ivory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="4" y="5" width="16" height="14" rx="1.5"/>
-                  <rect x="6.3" y="7.3" width="5" height="4" rx="0.6"/>
-                  <path d="M13.3 8.3h4.2M13.3 10.8h4.2"/>
-                  <path d="M6.3 14.5h11.4M6.3 16.5h7.2"/>
-                </svg>
-                <span class="font-mono text-label text-ivory-40">05</span>
-              </div>
-              <h3 id="card-title-5" class="service-title font-display text-heading-md font-medium text-ivory mt-4" data-i18n="portfolio.project5.title">LinkedIn Post Generator</h3>
-              <p class="service-title mt-4 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
-                <span data-i18n="portfolio.cardCta">View details</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </p>
+          <div class="p-8 md:p-10">
+            <div class="flex items-start justify-between mb-8">
+              <svg class="service-icon w-8 h-8 text-ivory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="14" rx="1.5"/>
+                <rect x="6.3" y="7.3" width="5" height="4" rx="0.6"/>
+                <path d="M13.3 8.3h4.2M13.3 10.8h4.2"/>
+                <path d="M6.3 14.5h11.4M6.3 16.5h7.2"/>
+              </svg>
+              <span class="font-mono text-label text-ivory-40">05</span>
             </div>
+            <h3 id="card-title-5" class="service-title font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.project5.title">LinkedIn Post Generator</h3>
 
-            <div class="md:col-span-8 grid sm:grid-cols-3 gap-6">
-              <div>
-                <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-1.5" data-i18n="portfolio.labels.painPoint">Pain Point</p>
-                <p class="text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project5.painPoint">Posting on LinkedIn every week takes research, writing, and finding or making an image, on top of whatever else is already on the schedule.</p>
-              </div>
-              <div>
-                <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-1.5" data-i18n="portfolio.labels.system">System</p>
-                <p class="text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project5.system">A pipeline that drafts an article and a header image for a topic someone selects, then holds it for review before anything goes out.</p>
-              </div>
-              <div>
-                <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-1.5" data-i18n="portfolio.labels.description">What It Does</p>
-                <p class="text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project5.description">Pick a topic and review the draft. Once approved, the workflow publishes the post to LinkedIn directly, no manual copy-pasting.</p>
-              </div>
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <p class="mt-1.5 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project5.painPoint">Posting on LinkedIn every week takes research, writing, and finding or making an image, on top of whatever else is already on the schedule.</p>
+
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mt-4" data-i18n="portfolio.labels.system">System</p>
+            <p class="mt-1.5 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project5.system">A pipeline that drafts an article and a header image for a topic someone selects, then holds it for review before anything goes out.</p>
+
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
+            <p class="mt-1.5 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project5.description">Pick a topic and review the draft. Once approved, the workflow publishes the post to LinkedIn directly, no manual copy-pasting.</p>
+
+            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
+              <span data-i18n="portfolio.cardCta">View details</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </p>
+          </div>
+        </article>
+
+        <!-- 06 Consultation Booking System -->
+        <article class="reveal service-card relative lg:col-span-6 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-6" data-modal-target="6"></button>
+          <div class="relative aspect-[16/10] overflow-hidden" style="background-color:#0A0F1C;" aria-hidden="true">
+            <img src="/brand_assets/assets/consultation-booking-01.png" alt="" class="absolute inset-0 w-full h-full object-cover" style="object-position: center 22%;" loading="lazy">
+            <div class="project-img-sheen absolute inset-0"></div>
+          </div>
+          <div class="p-8 md:p-10">
+            <div class="flex items-start justify-between mb-8">
+              <svg class="service-icon w-8 h-8 text-ivory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="5.5" width="16" height="15" rx="1.5"/>
+                <path d="M4 9.5h16"/>
+                <path d="M8 3.5v4M16 3.5v4"/>
+                <path d="M9 14l2 2 4-4"/>
+              </svg>
+              <span class="font-mono text-label text-ivory-40">06</span>
             </div>
+            <h3 id="card-title-6" class="service-title font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.project6.title">Consultation Booking System</h3>
+
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <p class="mt-1.5 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project6.painPoint">Scheduling client consultation calls by hand meant email back-and-forth, double-booking risk, and no-shows from calls nobody remembered to confirm.</p>
+
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mt-4" data-i18n="portfolio.labels.system">System</p>
+            <p class="mt-1.5 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project6.system">A self-serve booking system on n8n and Google Calendar that locks each slot the instant it's picked, so two people can never grab the same time.</p>
+
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
+            <p class="mt-1.5 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.project6.description">Clients book an open slot, get an instant confirmation and a 24-hour reminder, and can cancel or reschedule themselves, no back-and-forth required.</p>
+
+            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
+              <span data-i18n="portfolio.cardCta">View details</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </p>
           </div>
         </article>
 
@@ -792,6 +821,36 @@
             <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
             <h4 class="mt-2 font-display text-heading-sm font-medium text-ivory" data-i18n="portfolio.project5.modal.description.headline">The user simply signals what they want to post about, and the workflow takes it from there.</h4>
             <div class="mt-3 text-body-md space-y-3" style="color:#C3C8D1;" data-i18n-html="portfolio.project5.modal.description.body"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 Consultation Booking System -->
+      <div class="modal-project hidden" data-modal-project="6">
+        <div class="grid grid-cols-1 gap-px items-start rounded-t-lg overflow-hidden" style="background-color:#0A0F1C;" aria-hidden="true">
+          <img src="/brand_assets/assets/consultation-booking-01.png" alt="" class="block w-full h-auto">
+          <img src="/brand_assets/assets/consultation-booking-02.png" alt="" class="block w-full h-auto">
+        </div>
+        <div class="p-8 md:p-12">
+          <p class="font-mono text-label text-ivory-40">06</p>
+          <h3 id="modal-title-6" class="font-display font-light text-heading-lg text-ivory mt-2" data-i18n="portfolio.project6.title">Consultation Booking System</h3>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-ivory" data-i18n="portfolio.project6.modal.painPoint.headline">Every consultation started with friction, before the client had even become a client.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#C3C8D1;" data-i18n-html="portfolio.project6.modal.painPoint.body"></div>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.system">System</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-ivory" data-i18n="portfolio.project6.modal.system.headline">The Consultation Booking System closes the loop with zero manual intervention.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#C3C8D1;" data-i18n-html="portfolio.project6.modal.system.body"></div>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-ivory" data-i18n="portfolio.project6.modal.description.headline">Book, remind, manage: the whole flow runs on its own.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#C3C8D1;" data-i18n-html="portfolio.project6.modal.description.body"></div>
           </div>
         </div>
       </div>

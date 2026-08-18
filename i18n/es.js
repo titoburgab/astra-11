@@ -388,6 +388,26 @@ window.i18nStrings.es = {
         },
       },
     },
+    project6: {
+      title:       'Sistema de Reservas de Consultas',
+      painPoint:   'Agendar llamadas de consulta a mano implicaba correos de ida y vuelta, riesgo de reservas dobles, y ausencias por llamadas que nadie confirmó a tiempo.',
+      system:      'Un sistema de reservas autoservicio sobre n8n y Google Calendar que bloquea cada horario en el instante en que se elige, para que dos personas nunca puedan tomar el mismo horario.',
+      description: 'El cliente reserva un horario disponible, recibe confirmación instantánea y un recordatorio 24 horas antes, y puede cancelar o reprogramar por su cuenta, sin ida y vuelta.',
+      modal: {
+        painPoint: {
+          headline: 'Cada consulta empezaba con fricción, antes incluso de que el cliente se convirtiera en cliente.',
+          body: '<p>Agendar una llamada suena simple hasta que hay que hacerlo a mano, una y otra vez, con cada nuevo prospecto. Alguien propone un par de horarios, espera respuesta, ajusta por un conflicto y confirma, muchas veces después de dos o tres correos antes de que un horario quede realmente cerrado. Cada uno de esos intercambios es una oportunidad para que el lead pierda el interés o deje de responder.</p><p>Agendar a mano también trae sus propios riesgos. Sin un sistema que verifique conflictos en tiempo real, el mismo horario puede prometerse a dos personas distintas, y las llamadas que nunca quedan bien registradas en un calendario se olvidan, ya sea del lado del cliente, del negocio, o de ambos. Una consulta perdida no es solo media hora vacía; es un lead que se fue antes de que la relación siquiera empezara.</p><p>Nada de esto requería mala intención ni mal servicio. Es simplemente lo que pasa cuando agendar depende de que alguien recuerde revisar una bandeja de entrada en el momento justo.</p>',
+        },
+        system: {
+          headline: 'El Sistema de Reservas de Consultas cierra el ciclo sin intervención manual.',
+          body: '<p>Construido sobre n8n y Google Calendar, el sistema le da al cliente un formulario de reservas con la marca del negocio que solo muestra disponibilidad real y abierta. No hay que proponer horarios ni esperar respuesta: el cliente elige un horario y es suyo.</p><p>Lo difícil fue hacer que esa confirmación instantánea fuera segura. Dos personas pueden intentar reclamar el mismo horario en el mismo instante exacto, así que el sistema cierra esa condición de carrera con un patrón de verificar y bloquear: reserva el horario en un almacén de datos ligero en el instante en que se selecciona, antes de siquiera tocar el calendario, y luego lo vuelve a verificar contra Calendar como respaldo. Se puso a prueba con dos intentos de reserva reales y simultáneos sobre el mismo horario: exactamente uno tuvo éxito, de forma limpia, sin doble reserva y sin fallos silenciosos.</p><p>A partir de ahí, el sistema funciona solo: las confirmaciones salen de inmediato, los recordatorios se disparan automáticamente, y los clientes pueden gestionar su propia reserva sin que nadie del negocio mueva un dedo.</p>',
+        },
+        description: {
+          headline: 'Reservar, recordar, gestionar: todo el flujo funciona solo.',
+          body: '<p><strong>Reservar</strong> — el cliente elige una fecha, ve solo los horarios realmente disponibles, y confirma. Tanto el cliente como el negocio reciben un correo instantáneo en el momento de la reserva.</p><p><strong>Recordar</strong> — una verificación automática corre cada 30 minutos y envía un recordatorio aproximadamente 24 horas antes de cada llamada, para que nadie llegue habiendo olvidado que tenía algo en el calendario.</p><p><strong>Gestionar</strong> — un enlace seguro en cada correo le permite al cliente cancelar o reprogramar por su cuenta, hasta 2 horas antes de la llamada, sin enviar un solo mensaje al negocio.</p><p>El resultado es un flujo de reservas en vivo y completamente autoservicio que eliminó por completo la coordinación manual, verificado de principio a fin con reservas reales, una prueba real de concurrencia, y cobertura completa de las reglas del negocio que importan: horarios, tiempo de anticipación, fechas bloqueadas y ventanas de cancelación.</p>',
+        },
+      },
+    },
     cta: {
       eyebrow: '¿Tienes un Problema Similar?',
       heading: 'Si alguno de estos se parece a tu problema, hablemos de construir el tuyo.',

@@ -153,7 +153,7 @@ window.i18nStrings.en = {
     inputPlaceholder: 'Type your message…',
     send:             'Send',
     close:            'Close chat',
-    errorGeneric:     'Something went wrong. Try again, or email hello@astra-11.com.',
+    errorGeneric:     "I'm having a small connection issue on my end. Leave your email below and the ASTRA-11 team can follow up with you directly.",
     bookSession:      'Book a Discovery Session',
     leadPrompt:       'Want us to follow up? Share your details.',
     leadName:         'Name',

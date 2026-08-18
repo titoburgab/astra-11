@@ -239,7 +239,12 @@
       })
       .catch(function () {
         typingBubble.remove();
-        appendBubble(t('chatbot.errorGeneric', 'Something went wrong. Try again, or email hello@astra-11.com.'), 'bot');
+        appendBubble(t('chatbot.errorGeneric', "I'm having a small connection issue on my end. Leave your email below and the ASTRA-11 team can follow up with you directly."), 'bot');
+        if (!leadOffered) {
+          leadOffered = true;
+          if (leadToggle) leadToggle.style.display = 'none';
+          showLeadForm();
+        }
       });
   }
 

@@ -152,7 +152,7 @@ window.i18nStrings.es = {
     inputPlaceholder: 'Escribe tu mensaje…',
     send:             'Enviar',
     close:            'Cerrar chat',
-    errorGeneric:     'Algo salió mal. Intenta de nuevo, o escríbenos a hello@astra-11.com.',
+    errorGeneric:     'Estoy teniendo un pequeño problema de conexión en este momento. Déjame tu correo abajo y el equipo de ASTRA-11 podrá contactarte directamente.',
     bookSession:      'Agenda tu Sesión Inicial',
     leadPrompt:       '¿Quieres que te contactemos? Comparte tus datos.',
     leadName:         'Nombre',

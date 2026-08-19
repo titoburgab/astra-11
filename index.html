@@ -720,7 +720,7 @@
       </p>
 
       <div class="reveal mt-10 mx-auto max-w-[480px] text-left" style="transition-delay:200ms;">
-        <form id="contact-form" action="https://formsubmit.co/hello@astra-11.com" method="POST" novalidate>
+        <form id="contact-form" action="https://n8n-wl35.srv1826775.hstgr.cloud/webhook/astra11-contact" method="POST" novalidate>
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label for="cf-name" class="sr-only" data-i18n="contact.form.name">Name</label>
@@ -741,9 +741,6 @@
           </div>
 
           <input type="text" name="_honey" style="position:absolute; left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <input type="hidden" name="_subject" value="New Discovery Session Request | ASTRA-11 site">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
 
           <div class="mt-5 text-center">
             <button type="submit" class="btn btn-on-dark w-full sm:w-auto px-8 py-4 text-body-md" data-i18n="contact.form.submit">Book a Discovery Session</button>
@@ -855,8 +852,8 @@
     items.forEach(function (el) { io.observe(el); });
   })();
 
-  // Contact form — progressively enhanced. Without JS this still posts to
-  // FormSubmit's redirect endpoint and works; with JS it submits inline.
+  // Contact form — posts to the n8n webhook (astra11-contact), which stores
+  // the lead in a Data Table and emails hello@astra-11.com.
   (function () {
     var form = document.getElementById('contact-form');
     if (!form) return;
@@ -871,7 +868,7 @@
       btn.disabled = true;
       btn.textContent = window.i18n ? window.i18n.t('contact.form.sending') : 'Sending…';
 
-      fetch('https://formsubmit.co/ajax/hello@astra-11.com', {
+      fetch('https://n8n-wl35.srv1826775.hstgr.cloud/webhook/astra11-contact', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: new FormData(form),

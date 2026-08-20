@@ -868,10 +868,13 @@
       btn.disabled = true;
       btn.textContent = window.i18n ? window.i18n.t('contact.form.sending') : 'Sending…';
 
+      var formData = new FormData(form);
+      formData.append('lang', window.i18n ? window.i18n.lang() : 'en');
+
       fetch('https://n8n-wl35.srv1826775.hstgr.cloud/webhook/astra11-contact', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
-        body: new FormData(form),
+        body: formData,
       })
         .then(function (res) {
           if (!res.ok) throw new Error('Request failed');

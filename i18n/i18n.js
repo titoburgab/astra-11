@@ -36,6 +36,7 @@
   var SUPPORTED    = ['en', 'es'];
   var DEFAULT_LANG = 'en';
   var LS_KEY       = 'astra11_lang';
+  var BOOKING_URL  = 'https://n8n-wl35.srv1826775.hstgr.cloud/form/book-consultation';
 
   // ── Resolve initial language (priority: URL > localStorage > navigator) ──
   function detectLang() {
@@ -145,8 +146,18 @@
     // hreflang <link> elements
     updateHreflang(lang);
 
+    // booking form links (carry current language to the n8n form)
+    updateBookingLinks(lang);
+
     // toggle button visual state
     updateToggleUI(lang);
+  }
+
+  function updateBookingLinks(lang) {
+    var links = document.querySelectorAll('[data-booking-link]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].setAttribute('href', BOOKING_URL + '?lang=' + lang);
+    }
   }
 
   function updateHreflang(lang) {

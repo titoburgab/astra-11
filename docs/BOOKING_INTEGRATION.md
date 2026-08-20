@@ -18,13 +18,31 @@ https://n8n-wl35.srv1826775.hstgr.cloud/form/book-consultation
   book.astra-11.com (needs DNS work) — both optional upgrades later, not required now.
 
 ## Implementation
+Live as of 2026-08-20: the `nav.cta` "Book a Session" button (header + mobile menu, all 4
+pages) links to the form via `data-booking-link` in [i18n/i18n.js](../i18n/i18n.js), which sets
+the `href` on every language switch:
 ```html
-<a href="https://n8n-wl35.srv1826775.hstgr.cloud/form/book-consultation" class="cta-button">
+<a href="https://n8n-wl35.srv1826775.hstgr.cloud/form/book-consultation" data-booking-link class="btn btn-primary" data-i18n="nav.cta">
   Book a Session
 </a>
 ```
 - Open in the **same tab** (not a new tab) — it's a short form, not an external site visit.
-- No query params or tokens needed.
+- **`?lang=en` / `?lang=es` IS required** (supersedes the original "no query params needed"
+  call): the n8n form reads `$json.query.lang` to pick its title/labels and, more importantly,
+  to localize the client confirmation email's subject/body. `i18n.js` appends the site's
+  current language automatically — do not strip it.
+- Other CTAs on these pages ("Schedule a Discovery Call," "Talk to a Founder," "Start a
+  Conversation") still point at the on-page contact form (`#contact`) and were left as-is —
+  only the literal "Book a Session" CTA was in scope for this integration.
+
+## Spanish-speaker checkbox (decided 2026-08-19)
+Translating the confirmation email dynamically end-to-end was judged too complex, so instead:
+the n8n form has a `spanishRep` checkbox ("Idioma" / "Español"). When checked, the
+"Email Business Owner - New Booking" Gmail node appends "Español" to the internal notification
+sent to `hola.astra11@gmail.com`, so the team knows to handle that booking in Spanish — no
+email-template translation needed for that path. (The client-facing confirmation email is
+separately localized via `?lang=es`, covering the templated boilerplate; the checkbox exists
+for anything beyond that, e.g. needing a Spanish-speaking rep on the actual call.)
 
 ## Known future change (doesn't affect this link)
 The booking form will soon get 1-2 extra qualifying questions (e.g. "what are you looking to

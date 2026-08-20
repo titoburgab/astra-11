@@ -35,14 +35,36 @@ the `href` on every language switch:
   Conversation") still point at the on-page contact form (`#contact`) and were left as-is —
   only the literal "Book a Session" CTA was in scope for this integration.
 
-## Spanish-speaker checkbox (decided 2026-08-19)
-Translating the confirmation email dynamically end-to-end was judged too complex, so instead:
-the n8n form has a `spanishRep` checkbox ("Idioma" / "Español"). When checked, the
-"Email Business Owner - New Booking" Gmail node appends "Español" to the internal notification
-sent to `hola.astra11@gmail.com`, so the team knows to handle that booking in Spanish — no
-email-template translation needed for that path. (The client-facing confirmation email is
-separately localized via `?lang=es`, covering the templated boilerplate; the checkbox exists
-for anything beyond that, e.g. needing a Spanish-speaking rep on the actual call.)
+## Spanish-speaker checkbox — added 2026-08-19, removed 2026-08-20
+The `spanishRep` checkbox ("Idioma" / "Español") on the booking form was removed. It was
+originally added because a *separate* bug made the confirmation email always render in
+English regardless of language — the checkbox was a workaround so the business team could at
+least be told a booking needed Spanish handling. That underlying bug is now fixed (see below),
+so `lang` is a fully reliable, single-source-of-truth signal end-to-end, and a manual checkbox
+that could drift out of sync with it (checked on an English session, unchecked on a Spanish
+one) was judged redundant. "Email Business Owner - New Booking" now derives the "Language:
+Español" line automatically from `$('Booking Request').item.json.formQueryParameters?.lang`
+instead.
+
+## 2026-08-20 bug fix: language was silently defaulting to English almost everywhere
+Every downstream node's language ternary (confirmation email, "Choose a Time," booking
+confirmation, decline/expired/no-availability screens, `Lock Booking`'s stored `lang` column)
+referenced `$('Booking Request').item.json.query?.lang` — but the trigger's actual output field
+is `formQueryParameters`, not `query` (confirmed across multiple executions). `query` was
+always `undefined` there, so every one of those ternaries silently fell through to English,
+including the client confirmation email — the entire original reason the checkbox above was
+added. Fixed by correcting every reference to `formQueryParameters?.lang`. Verified end-to-end
+live (via the actual site CTA, both languages) after the fix: every screen — including
+"Choose a Time"/"Elige un horario," the confirmation email, and the whole cancel/reschedule
+flow — now stays consistently in one language throughout a session. The Manage Booking
+workflow's own screens were already written correctly (`$('Evaluate Booking').item.json.lang`);
+only `Evaluate Booking`'s own read of the trigger's query params had the same `query` vs
+`formQueryParameters` bug, now fixed.
+
+Also added: a self-healing check (`Verify Event Still Exists` → `Is Slot Taken?`) in both the
+booking and reschedule slot-taken checks, so a booking row whose Google Calendar event was
+deleted outside the app (e.g. manually, during testing) can no longer permanently block that
+time slot — it auto-corrects on the next lookup instead of requiring manual database cleanup.
 
 ## Known future change (doesn't affect this link)
 The booking form will soon get 1-2 extra qualifying questions (e.g. "what are you looking to

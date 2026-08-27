@@ -66,6 +66,23 @@ booking and reschedule slot-taken checks, so a booking row whose Google Calendar
 deleted outside the app (e.g. manually, during testing) can no longer permanently block that
 time slot — it auto-corrects on the next lookup instead of requiring manual database cleanup.
 
+## 2026-08-27 incident: infinite retry loop on bad test data
+`ASTRA-11 Contact Form - Booking Follow-up` (`hNuYbO89faxE7Ac3`) was emailing a "Workflow
+failed — No recipients defined" alert every 30 minutes (265 error executions total). Root
+cause: 3 leads from 2026-08-19/20 build-time testing (ids 14, 15, 16 — e.g. name "TOTO",
+email "BUBU") had non-email garbage in the `email` column of the `ASTRA-11 Contact Leads`
+data table. `Send Booking Follow-up Email` failed on every attempt, which meant
+`Mark Follow-up Sent` (the node that flips `booking_email_sent` to `true`) never ran — so the
+3 rows stayed "pending" and were picked up again by every 30-minute schedule trigger, forever.
+
+Fixed in two parts:
+- Cleaned up the 3 rows (marked `booking_email_sent: true` via a pinned test run so no real
+  email was sent, letting the real `Mark Follow-up Sent` Data Table write go through).
+- Added a permanent guard: `Filter Due Follow-ups` now computes an `emailValid` flag (regex
+  check), and a new `Email Valid?` IF node routes invalid-email leads straight to
+  `Mark Follow-up Sent` (skipping the send attempt) instead of letting a bad address retry
+  forever. A malformed email can no longer jam this queue.
+
 ## Known future change (doesn't affect this link)
 The booking form will soon get 1-2 extra qualifying questions (e.g. "what are you looking to
 build/solve?") added on the n8n side, plus the confirmation emails will switch from a Gmail

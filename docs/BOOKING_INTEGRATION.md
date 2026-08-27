@@ -83,6 +83,17 @@ Fixed in two parts:
   `Mark Follow-up Sent` (skipping the send attempt) instead of letting a bad address retry
   forever. A malformed email can no longer jam this queue.
 
+## 2026-08-27 fix: business notifications missing hello@astra-11.com
+Booking business-owner notification emails (`Email Business Owner - New Booking` in
+`Booking System - Consultation Booking`, and `Email Business - Cancelled` /
+`Email Business - Rescheduled` in `Booking System - Manage Booking`) had `sendTo` set to
+only `hola.astra11@gmail.com`. The regular contact form (`ASTRA-11-WEB — Contact Form
+Intake`) sends to `hello@astra-11.com` instead, so the two channels had drifted out of sync
+and the business inbox at `hello@astra-11.com` never learned about bookings. Fixed by
+setting `sendTo` on all three Gmail nodes to `hola.astra11@gmail.com, hello@astra-11.com`
+(Gmail node's `sendTo` supports comma-separated multiple recipients). Both workflows
+republished.
+
 ## Known future change (doesn't affect this link)
 The booking form will soon get 1-2 extra qualifying questions (e.g. "what are you looking to
 build/solve?") added on the n8n side, plus the confirmation emails will switch from a Gmail

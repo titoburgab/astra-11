@@ -94,6 +94,53 @@ setting `sendTo` on all three Gmail nodes to `hola.astra11@gmail.com, hello@astr
 (Gmail node's `sendTo` supports comma-separated multiple recipients). Both workflows
 republished.
 
+## 2026-09-11: killed the real 24-hour delays (contact form + chatbot), fixed 2 more expired credentials
+
+Live testing surfaced two genuine bugs — not the same "24-hour" thing, despite looking
+alike from the outside:
+
+**1. Contact form → booking-link email was really delayed ~24h.** The "Book a Discovery
+Session" CTA (hero/contact section — the general contact form, not the nav "Book a Session"
+slot-picker) correctly stored the lead and emailed `hello@astra-11.com` instantly. But the
+client-facing "here's your scheduling link" email was handled by a separate workflow,
+`ASTRA-11-WEB — Contact Form Booking Follow-up` (`hNuYbO89faxE7Ac3`), which only emailed
+leads whose submission was more than 24 hours old (`Filter Due Follow-ups`:
+`DateTime.utc().minus({hours: 24})`). Fixed by sending that same email immediately: added a
+parallel branch off `Store Lead` in `ASTRA-11-WEB — Contact Form Intake` (`MksC3vJlokfAGfPE`)
+— `Build Booking Link Email` (ports the existing template verbatim) → `Send Booking Link
+Email` — and disabled the 24h `Follow-up Schedule` trigger in the Follow-up workflow so it
+never fires again. The admin `Manual Follow-up Webhook` utility (see 2026-08-20 section
+above) was left active as a fallback.
+
+**2. Chatbot lead capture sent nothing at all — not a delay, a missing feature plus an
+expired credential.** `ASTRA-11-WEB — Chatbot` (`ooF769omDhj15LTP`) only ever logged leads
+to a Google Sheet, with no email step to anyone. On top of that, the Google Sheets OAuth
+credential had expired (`NodeApiError: The credential "Google Sheets account" needs to be
+reconnected` — same failure class as the Calendar outage below), so leads weren't even
+reaching the sheet. Fixed by adding a new branch off `Unwrap Output`: `Lead Info Given?`
+(checks the visitor's submitted name/email directly, **not** the AI agent's self-reported
+`leadCaptured` flag — that flag only turns true when the Sheets tool call succeeds, so
+gating on it would have silently reproduced the same failure) → `Email Business Owner - New
+Lead` + a client-facing `Send Booking Link Email` (same template as fix #1). While testing
+this, a *second*, separate expired Gmail credential ("Gmail account," distinct from the
+working "ASTRA-11 Gmail" every other node uses) was caught and repointed. The Google Sheets
+credential itself still needs a manual reconnect in the n8n UI — out of reach via
+automation, and doesn't block either email fix above.
+
+Both new alert emails go to `hello@astra-11.com` only (not `hola.astra11@gmail.com`) — a
+narrower, explicit choice for these two new alerts specifically. The three existing
+business-notification nodes from the 2026-08-27 fix above still correctly send to both
+addresses; the separate error-alert workflow still goes to `hola.astra11@gmail.com` only.
+Both fixes verified against production with real test bookings/chats and confirmed SMTP
+delivery, not just "no errors."
+
+**Also confirmed unfixable**: the browser tab reads "undefined" on the `Booking Confirmed`
+completion page. For `respondWith: showText` custom-HTML completion pages, n8n's tab-title
+mechanism only reads a "Completion Title" field that's schema-gated to a different response
+mode — the `<title>` tag inside the custom HTML is inert. No fix keeps the current branded
+card; switching to n8n's plain default screen would fix the tab title at the cost of the
+design. User chose to keep the design and leave the tab title as a cosmetic-only gap.
+
 ## Known future change (doesn't affect this link)
 The booking form will soon get 1-2 extra qualifying questions (e.g. "what are you looking to
 build/solve?") added on the n8n side, plus the confirmation emails will switch from a Gmail

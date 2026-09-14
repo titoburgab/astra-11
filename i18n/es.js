@@ -43,28 +43,76 @@ window.i18nStrings.es = {
     simplicity:   'Simplicidad',
   },
 
+  problem: {
+    eyebrow: 'El problema',
+    heading: 'En algún punto de tu operación, una persona es la integración.',
+    body:    'Tu CRM no se comunica con tu correo. Tus formularios no se comunican con tu calendario. Así que alguien vuelve a escribir el lead, persigue el seguimiento y revisa que nada se haya perdido, todos los días, a mano. Eso no es un problema de personal. Es un sistema que nunca se terminó.',
+    card1: { title: 'Horas, no minutos',            body: 'Los traspasos manuales entre herramientas no fallan de forma ruidosa. Cuestan silenciosamente algunas horas al día, todos los días, hasta convertirse en un trabajo de tiempo completo que nadie presupuestó.' },
+    card2: { title: 'Las cosas se escapan',          body: 'Los seguimientos se olvidan. Los registros quedan desactualizados. No por descuido de nadie, porque ningún proceso está vigilando cuando el equipo está ocupado.' },
+    card3: { title: 'Crecer significa contratar más', body: 'Si la única forma de manejar más volumen es contratar otro coordinador, el sistema es el cuello de botella, no el equipo.' },
+    closer:  'Ya sabes exactamente dónde está pasando esto en tu negocio.<br><span class="font-medium text-ivory">Lo que falta no es verlo, es tener el tiempo para diseñar la solución.</span>',
+  },
+
   services: {
     eyebrow: 'Lo que construimos',
     heading: 'Sistemas diseñados para cada problema, no herramientas genéricas.',
+    whatYouGetLabel: 'Qué incluye',
+    whoItsForLabel:  'Para quién es',
     card1: {
       title: 'Agentes de IA',
       body:  'Sistemas de IA que manejan tareas complejas, toman decisiones y ejecutan flujos de trabajo con mínima intervención humana.',
+      whatYouGet: {
+        item1: 'Un agente diseñado a la medida de un proceso específico de tu negocio',
+        item2: 'Lógica de decisión y salvaguardas documentadas antes de poner nada en marcha',
+        item3: 'Puntos de control humano donde realmente importa el criterio',
+        item4: 'Integración con las herramientas que ya usas — CRM, correo, calendario, sistemas internos',
+        item5: 'Monitoreo para que veas qué decidió el agente, y por qué',
+      },
+      whoItsFor: 'Equipos donde una persona es hoy el cuello de botella en una decisión repetible: calificar leads, priorizar solicitudes, asignar trabajo.',
     },
     card2: {
       title: 'Automatización de procesos',
       body:  'Automatización de extremo a extremo de procesos repetitivos basados en reglas: conectando fuentes de datos, aplicaciones y equipos en sistemas operativos coherentes.',
+      whatYouGet: {
+        item1: 'Tu CRM, correo, formularios y sistemas administrativos conectados y moviendo datos por sí solos',
+        item2: 'Manejo de errores y alertas, para que una falla silenciosa no te cueste una semana',
+        item3: 'Un mapa documentado de cada flujo de trabajo, para que no dependa de una sola persona',
+        item4: 'Capacitación para que tu equipo lo opere y ajuste sin necesitar llamarnos',
+      },
+      whoItsFor: 'Operaciones que ya superaron el copiar y pegar, pero no han cambiado de herramientas.',
     },
     card3: {
       title: 'Sistemas de conocimiento',
       body:  'Convierte la información dispersa de tu empresa en un sistema inteligente que tu equipo realmente pueda usar.',
+      whatYouGet: {
+        item1: 'Un sistema de búsqueda único que conecta documentos, wikis, tickets y conocimiento interno',
+        item2: 'Respuestas basadas en la información real de tu empresa, no en suposiciones genéricas de IA',
+        item3: 'Control de acceso, para que cada persona vea lo que le corresponde',
+        item4: 'Un sistema que tu equipo consulta directamente, en lugar de preguntar por ahí',
+      },
+      whoItsFor: 'Equipos donde se repiten las mismas preguntas porque la respuesta existe, solo que nadie la encuentra.',
     },
     card4: {
       title: 'Estrategia y Arquitectura de IA',
       body:  'Orientación estratégica para organizaciones que adoptan IA: arquitectura, gobernanza, selección de proveedores, preparación del equipo y planificación a largo plazo.',
+      whatYouGet: {
+        item1: 'Un diagnóstico honesto de dónde la IA ayudaría a tu operación y dónde no',
+        item2: 'Recomendaciones de arquitectura y gobernanza a la medida de tu tamaño, no teatro de nivel corporativo',
+        item3: 'Evaluación de proveedores y herramientas, para que no quedes atado a la plataforma equivocada',
+        item4: 'Una hoja de ruta priorizada que tu equipo, o el nuestro, pueda ejecutar',
+      },
+      whoItsFor: 'Dueños que sospechan que la IA podría ayudar, pero no quieren arriesgar un proyecto completo para averiguar dónde.',
     },
     card5: {
       title: 'Desarrollo de IA a medida',
       body:  'Integraciones de IA diseñadas para problemas de negocio específicos, no productos empaquetados adaptados a contextos para los que no fueron pensados.',
+      whatYouGet: {
+        item1: 'Integraciones diseñadas para tu flujo de trabajo específico, no un producto genérico forzado a encajar',
+        item2: 'Propiedad total de lo construido — sin depender de una suscripción ni quedar atado a un proveedor',
+        item3: 'Código y lógica que tu equipo puede inspeccionar, extender y mantener',
+        item4: 'Documentación entregada desde el día uno, no escrita después de que la pides',
+      },
+      whoItsFor: 'Negocios cuyo problema no encaja en ningún producto de IA listo para usar.',
     },
   },
 
@@ -143,6 +191,17 @@ window.i18nStrings.es = {
       error:    'Algo salió mal. Escríbenos directamente a hello@astra-11.com.',
       emailAlt: '¿Prefieres email? Escríbenos a <a href="mailto:hello@astra-11.com" class="underline hover:text-signal">hello@astra-11.com</a>',
     },
+  },
+
+  contactFaq: {
+    eyebrow: 'Antes de agendar',
+    heading: 'Preguntas que vale la pena hacer antes de la llamada.',
+    item1: { q: '¿Qué pasa en la sesión de diagnóstico?', a: 'Nos muestras cómo funciona realmente tu operación hoy. Identificamos dónde el trabajo manual te está costando más, y te decimos con claridad si vale la pena automatizarlo. Sin presentación de ventas, sin discurso comercial.' },
+    item2: { q: '¿Tendremos que cambiar nuestras herramientas?', a: 'No. Construimos dentro del CRM, calendario y sistemas que ya usas. Si algo realmente no se puede hacer con tu plataforma actual, te lo diremos antes de construir nada, no después.' },
+    item3: { q: '¿Cuánto tiempo toma tener algo funcionando?', a: 'Semanas, no trimestres. Entregamos un sistema a la vez, y cada uno funciona en producción antes de empezar el siguiente.' },
+    item4: { q: '¿Esto es solo un chatbot?', a: 'No. Un chatbot responde preguntas. Lo que construimos actúa: califica leads, actualiza registros, asigna trabajo, envía el seguimiento. El sistema hace la tarea, no solo conversa.' },
+    item5: { q: '¿Qué tan técnico debe ser nuestro equipo?', a: 'No mucho. Documentamos todo en lenguaje claro y capacitamos a tu equipo para operarlo. No deberías necesitar un ingeniero en plantilla para usar lo que te entregamos.' },
+    item6: { q: '¿Quién construye realmente nuestro sistema?', a: 'Ingenieros senior de IA y desarrollo full-stack, en cada proyecto, no una herramienta genérica. Tito y César se mantienen responsables del resultado desde el diagnóstico hasta la entrega.' },
   },
 
   chatbot: {

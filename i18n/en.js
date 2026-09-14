@@ -44,28 +44,76 @@ window.i18nStrings.en = {
     simplicity:   'Simplicity',
   },
 
+  problem: {
+    eyebrow: 'The Problem',
+    heading: 'Somewhere in your operation, a person is the integration.',
+    body:    'Your CRM doesn\'t talk to your inbox. Your forms don\'t talk to your calendar. So someone re-types the lead, chases the follow-up, and checks that nothing fell through, every day, by hand. That\'s not a staffing problem. It\'s a system that was never finished.',
+    card1: { title: 'Hours, not minutes',      body: 'Manual handoffs between tools don\'t fail loudly. They quietly cost a few hours a day, every day, until it\'s a full-time job nobody budgeted for.' },
+    card2: { title: 'Things slip through',      body: 'Follow-ups get missed. Records go stale. Not because anyone\'s careless, because no process is watching when people are busy.' },
+    card3: { title: 'Growth means headcount',   body: 'If the only way to handle more volume is to hire another coordinator, the system is the bottleneck, not the team.' },
+    closer:  'You already know where this is happening in your business.<br><span class="font-medium text-ivory">The gap isn\'t seeing it, it\'s having the time to engineer the fix.</span>',
+  },
+
   services: {
     eyebrow: 'What We Build',
     heading: 'Purpose-built systems, not generic tools.',
+    whatYouGetLabel: 'What You Get',
+    whoItsForLabel:  'Who It\'s For',
     card1: {
       title: 'AI Agents',
       body:  'AI systems that handle complex tasks, make decisions, and execute workflows with minimal human intervention.',
+      whatYouGet: {
+        item1: 'A custom-built agent scoped to a specific business process',
+        item2: 'Decision logic and guardrails documented before anything ships',
+        item3: 'Human-in-the-loop checkpoints wherever judgment calls actually matter',
+        item4: 'Integration into the tools you already run — CRM, inbox, calendar, internal systems',
+        item5: 'Monitoring so you can see what the agent decided, and why',
+      },
+      whoItsFor: 'Teams where a person is currently the bottleneck on a repeatable decision — qualifying leads, triaging requests, routing work.',
     },
     card2: {
       title: 'Workflow Automation',
       body:  'End-to-end automation of repetitive, rule-based processes: connecting data sources, applications, and teams into coherent operational systems.',
+      whatYouGet: {
+        item1: 'Your CRM, inbox, forms, and back-office tools connected and moving data on their own',
+        item2: 'Error handling and alerts, so a silent failure doesn\'t cost you a week',
+        item3: 'A documented map of every workflow, so it isn\'t locked in one person\'s head',
+        item4: 'Training so your team can run and adjust it without calling us',
+      },
+      whoItsFor: 'Operations that have outgrown copy-paste but haven\'t outgrown their tools.',
     },
     card3: {
       title: 'Knowledge Systems',
       body:  'Turn your company\'s scattered information into an intelligent system your team can actually use.',
+      whatYouGet: {
+        item1: 'One searchable system pulling from docs, wikis, tickets, and internal knowledge',
+        item2: 'Answers grounded in your actual company information, not general AI guesses',
+        item3: 'Access control, so the right people see the right information',
+        item4: 'A system your team queries directly, instead of asking around',
+      },
+      whoItsFor: 'Teams where the same questions get asked repeatedly because the answer exists, just not somewhere findable.',
     },
     card4: {
       title: 'AI Strategy & Architecture',
       body:  'Strategic guidance for organizations navigating AI adoption: covering architecture, governance, vendor selection, team readiness, and long-term planning.',
+      whatYouGet: {
+        item1: 'A clear-eyed audit of where AI would and wouldn\'t help your operation',
+        item2: 'Architecture and governance recommendations sized for your business, not enterprise theater',
+        item3: 'Vendor and tool evaluation, so you\'re not locked into the wrong platform',
+        item4: 'A prioritized roadmap your team, or ours, can execute against',
+      },
+      whoItsFor: 'Owners who suspect AI could help but don\'t want to gamble a full engagement finding out where.',
     },
     card5: {
       title: 'Custom AI Development',
       body:  'Purpose-built AI integrations designed around specific business problems, not pre-packaged products forced into contexts they were not designed for.',
+      whatYouGet: {
+        item1: 'Integrations designed for your specific workflow, not a generic product forced to fit',
+        item2: 'Full ownership of what\'s built — no dependency on a subscription or vendor lock-in',
+        item3: 'Code and logic your team can inspect, extend, and maintain',
+        item4: 'Documentation handed over at delivery, not written after you ask for it',
+      },
+      whoItsFor: 'Businesses whose problem doesn\'t fit any off-the-shelf AI product.',
     },
   },
 
@@ -144,6 +192,17 @@ window.i18nStrings.en = {
       error:    'Something went wrong. Email us directly at hello@astra-11.com instead.',
       emailAlt: 'Prefer email? Write to <a href="mailto:hello@astra-11.com" class="underline hover:text-signal">hello@astra-11.com</a>',
     },
+  },
+
+  contactFaq: {
+    eyebrow: 'Before You Book',
+    heading: 'Questions worth asking before the call.',
+    item1: { q: 'What happens on the discovery session?', a: 'You walk us through how your operation actually runs today. We identify where the manual work is costing you the most, and tell you plainly whether automating it is worth doing. No slide deck, no sales pitch.' },
+    item2: { q: 'Will we need to change our tools?',        a: 'No. We build inside the CRM, calendar, and systems you already run. If something genuinely can\'t be done with your current stack, we\'ll tell you before we build anything, not after.' },
+    item3: { q: 'How long before something is actually working?', a: 'Weeks, not quarters. We ship one system at a time, and each one runs in production before we start the next.' },
+    item4: { q: 'Is this just a chatbot?',                   a: 'No. A chatbot answers questions. What we build acts: qualifying leads, updating records, routing work, sending the follow-up. The system does the task, not just the talking.' },
+    item5: { q: 'How technical does our team need to be?',   a: 'Not very. We document everything in plain language and train your team to run it. You shouldn\'t need an engineer on staff to operate what we hand you.' },
+    item6: { q: 'Who actually builds our system?',           a: 'Senior AI and full-stack engineers, on every project, not a templated tool. Tito and César stay accountable for the outcome from discovery through delivery.' },
   },
 
   chatbot: {

@@ -220,6 +220,7 @@
     font-size: 14px;
     transition: border-color 200ms cubic-bezier(0.4,0,0.2,1), background-color 200ms cubic-bezier(0.4,0,0.2,1);
   }
+  #project-modal .modal-panel.is-wide { max-width: 1120px; }
   .contact-input::placeholder { color: rgba(255,255,255,0.45); }
   .contact-input:hover { border-color: rgba(255,255,255,0.32); }
   .contact-input:focus { outline: none; border-color: rgba(255,81,0,0.6); background: rgba(255,255,255,0.1); }
@@ -865,7 +866,7 @@
 
       <!-- 07 ASTRA-11 Dashboard -->
       <div class="modal-project hidden" data-modal-project="7">
-        <div class="p-8 md:p-12">
+        <div class="p-8 md:p-12 max-w-[720px]">
           <p class="font-mono text-label text-ivory-40">01</p>
           <h3 id="modal-title-7" class="font-display font-light text-heading-lg text-ivory mt-2" data-i18n="portfolio.project7.title">ASTRA-11 Dashboard</h3>
 
@@ -986,6 +987,7 @@
         el.classList.toggle('hidden', el.getAttribute('data-modal-project') !== id);
       });
       modal.setAttribute('aria-labelledby', 'modal-title-' + id);
+      panel.classList.toggle('is-wide', id === '7');
       lastFocused = document.activeElement;
       modal.classList.remove('hidden');
       document.body.style.overflow = 'hidden';

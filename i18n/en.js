@@ -468,6 +468,26 @@ window.i18nStrings.en = {
         },
       },
     },
+    project7: {
+      title:       'ASTRA-11 Dashboard',
+      painPoint:   'Client details, project status, invoices, and account logins are spread across separate tools, so no one place shows how the business is doing.',
+      system:      'A private control center that brings clients, projects, quotes and invoices, and subscriptions together, connected to QuickBooks and 1Password.',
+      description: 'One screen for the state of the whole business, with an AI assistant that answers from the live data and asks before it changes anything.',
+      modal: {
+        painPoint: {
+          headline: 'Running a business shouldn\'t mean checking ten different tools.',
+          body: '<p>Clients live in one place, project status in another, invoices in the accounting software, and subscriptions and logins somewhere else. Each tool works on its own, but nobody sees the whole business at once. A follow-up gets missed, a renewal charge comes as a surprise, or an unpaid invoice sits unnoticed.</p><p>The cost is attention, and it goes to keeping the tools in sync when it should go to the work.</p>',
+        },
+        system: {
+          headline: 'This is where the ASTRA-11 Dashboard changes the equation.',
+          body: '<p>It\'s the main control center ASTRA-11 runs on, built in-house. Clients, projects, quotes, invoices, and recurring subscriptions sit in one interface. It connects to QuickBooks for the financial side and to 1Password for credentials, so the numbers and the logins aren\'t copied by hand from system to system.</p>',
+        },
+        description: {
+          headline: 'One screen for the state of the whole business.',
+          body: '<p>The dashboard shows active projects, what\'s due this week, what\'s late, and which clients need a follow-up or have an outstanding balance. Quick actions add a client, create a project, add a task or expense, or create a quote or invoice.</p><p>Quotes and invoices come from QuickBooks, so the books stay the source of truth. A service registry lists every subscription with its owner, cost, and renewal date, and marks the ones coming up soon. Each service points to its credential in 1Password. The dashboard holds only a reference, never the secret, and the 1Password connection is read-only and limited to one vault.</p><p>There\'s also a built-in AI assistant. Ask it about clients, projects, or subscriptions and it answers from the live data. If you ask it to add a client or create a project, it proposes the change and waits for your confirmation before anything happens.</p>',
+        },
+      },
+    },
     cta: {
       eyebrow: 'Have a Similar Problem?',
       heading: 'If one of these looks like your problem, let\'s talk about building yours.',

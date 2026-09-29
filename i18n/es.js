@@ -467,6 +467,26 @@ window.i18nStrings.es = {
         },
       },
     },
+    project7: {
+      title:       'ASTRA-11 Dashboard',
+      painPoint:   'Los datos de clientes, el estado de los proyectos, las facturas y las credenciales de cuentas están repartidos en herramientas separadas, así que ningún lugar muestra cómo va el negocio.',
+      system:      'Un centro de control privado que reúne clientes, proyectos, cotizaciones y facturas, y suscripciones, conectado a QuickBooks y 1Password.',
+      description: 'Una sola pantalla con el estado de todo el negocio, con un asistente de IA que responde con los datos en vivo y pide confirmación antes de cambiar algo.',
+      modal: {
+        painPoint: {
+          headline: 'Dirigir un negocio no debería significar revisar diez herramientas distintas.',
+          body: '<p>Los clientes viven en un lugar, el estado de los proyectos en otro, las facturas en el software de contabilidad, y las suscripciones y accesos en otro más. Cada herramienta funciona por sí sola, pero nadie ve el negocio completo de una vez. Se olvida un seguimiento, un cobro de renovación llega de sorpresa, o una factura sin pagar pasa desapercibida.</p><p>El costo es atención, y se va en mantener las herramientas sincronizadas cuando debería ir al trabajo.</p>',
+        },
+        system: {
+          headline: 'Aquí es donde el ASTRA-11 Dashboard cambia la ecuación.',
+          body: '<p>Es el centro de control principal sobre el que opera ASTRA-11, construido internamente. Clientes, proyectos, cotizaciones, facturas y suscripciones recurrentes conviven en una sola interfaz. Se conecta a QuickBooks para la parte financiera y a 1Password para las credenciales, así que ni los números ni los accesos se copian a mano de un sistema a otro.</p>',
+        },
+        description: {
+          headline: 'Una sola pantalla con el estado de todo el negocio.',
+          body: '<p>El dashboard muestra los proyectos activos, lo que vence esta semana, lo que va atrasado, y qué clientes necesitan seguimiento o tienen saldo pendiente. Las acciones rápidas permiten agregar un cliente, crear un proyecto, agregar una tarea o un gasto, o crear una cotización o una factura.</p><p>Las cotizaciones y facturas vienen de QuickBooks, así que la contabilidad sigue siendo la fuente de verdad. Un registro de servicios enumera cada suscripción con su responsable, costo y fecha de renovación, y marca las que se acercan. Cada servicio apunta a su credencial en 1Password. El dashboard guarda solo una referencia, nunca el secreto, y la conexión con 1Password es de solo lectura y limitada a una bóveda.</p><p>También incluye un asistente de IA. Pregúntale por clientes, proyectos o suscripciones y responde con los datos en vivo. Si le pides agregar un cliente o crear un proyecto, propone el cambio y espera tu confirmación antes de hacer nada.</p>',
+        },
+      },
+    },
     cta: {
       eyebrow: '¿Tienes un Problema Similar?',
       heading: 'Si alguno de estos se parece a tu problema, hablemos de construir el tuyo.',

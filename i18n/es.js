@@ -19,6 +19,7 @@ window.i18nStrings.es = {
     services:  'Servicios',
     whyAstra11:  'Por qué ASTRA-11',
     portfolio: 'Portafolio',
+    clientLogin: 'Clientes',
     contact:   'Contacto',
     cta:       'Agendar sesión',
     menuOpen:  'Abrir menú',

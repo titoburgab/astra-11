@@ -691,7 +691,7 @@
   document.addEventListener('i18n:change', function () { render(); });
 
   /* ---------- Boot ---------- */
-  var m = /[#&]t=([A-Za-z0-9]+)/.exec(window.location.hash || '');
+  var m = /[#&]t=([A-Za-z0-9-]+)/.exec(window.location.hash || '');
   if (m) {
     token = m[1];
     store(token);

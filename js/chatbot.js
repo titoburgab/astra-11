@@ -38,7 +38,7 @@
   }
 
   function contactHref() {
-    return window.ASTRA11_PAGE ? '/index.html#contact' : '#contact';
+    return window.ASTRA11_PAGE ? '/HTML/index.html#contact' : '#contact';
   }
 
   function currentLang() {

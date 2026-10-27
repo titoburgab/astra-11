@@ -496,7 +496,7 @@
 
   /* Google-native files are exported by the download endpoint (Sheets to xlsx, the rest to pdf/png). */
   var NATIVE = {
-    'application/vnd.google-apps.spreadsheet': { label: 'SHEET', ext: 'xlsx' },
+    'application/vnd.google-apps.spreadsheet': { label: 'SHEET', ext: 'xlsx', preview: 'pdf' },
     'application/vnd.google-apps.document': { label: 'DOC', ext: 'pdf' },
     'application/vnd.google-apps.presentation': { label: 'SLIDES', ext: 'pdf' },
     'application/vnd.google-apps.drawing': { label: 'DRAW', ext: 'png' }
@@ -506,8 +506,9 @@
   function saveName(f) { return NATIVE[f.mime] ? f.name + '.' + NATIVE[f.mime].ext : f.name; }
   function previewType(f) {
     var n = NATIVE[f.mime];
-    return PREVIEW[(n ? n.ext : ext(f.name)).toLowerCase()] || null;
+    return PREVIEW[(n ? (n.preview || n.ext) : ext(f.name)).toLowerCase()] || null;
   }
+  function viewName(f) { var n = NATIVE[f.mime]; return n ? f.name + '.' + (n.preview || n.ext) : f.name; }
 
   /* ---------- API ---------- */
   function load() {
@@ -647,8 +648,8 @@
   }
 
   /* ---------- Download ---------- */
-  function fetchBlob(f) {
-    return fetch(API + 'download', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token, file_id: f.id }) })
+  function fetchBlob(f, preview) {
+    return fetch(API + 'download', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token, file_id: f.id, preview: !!preview }) })
       .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.blob(); });
   }
   function saveBlob(blob, name) {
@@ -680,7 +681,7 @@
   function view(f, btn) {
     var type = previewType(f), label = btn.textContent;
     btn.disabled = true; btn.textContent = t('portal.files.preparing');
-    fetchBlob(f)
+    fetchBlob(f, true)
       .then(function (blob) {
         var typed = new Blob([blob], { type: type });
         viewerUrl = URL.createObjectURL(typed);
@@ -693,7 +694,7 @@
         $('viewer-body').appendChild(node);
         $('viewer-title').textContent = f.name;
         $('viewer-dl').textContent = t('portal.files.download');
-        $('viewer-dl').onclick = function () { saveBlob(typed, saveName(f)); };
+        $('viewer-dl').onclick = function () { saveBlob(typed, viewName(f)); };
         $('viewer-close').textContent = t('portal.files.close');
         viewer.showModal();
       })

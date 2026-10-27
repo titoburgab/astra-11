@@ -53,3 +53,5 @@
 - Do not stop after one screenshot pass
 - Do not use `transition-all`
 - Do not use default Tailwind blue/indigo as primary color
+
+- Project state, changes, failures and lessons live in BLUEPRINT.md. Read it first.

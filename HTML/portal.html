@@ -295,6 +295,50 @@
   .viewer-body img, .viewer-body video { max-width: 100%; max-height: 100%; object-fit: contain; }
   @media (prefers-reduced-motion: reduce) { .viewer[open] { animation: none; } }
 
+  /* Reviews */
+  .review { padding: 24px; animation: rise 600ms var(--ease-out) both; }
+  .review + .review { margin-top: 20px; }
+  @media (min-width: 768px) { .review { padding: 32px 40px; } }
+  .review.is-pending {
+    box-shadow: 0 0 0 1px rgba(255, 122, 51, 0.38), 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 18px 40px -18px rgba(255, 81, 0, 0.3), 0 8px 20px -8px rgba(0, 0, 0, 0.55);
+  }
+  .rv-head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .rv-info { min-width: 0; flex: 1 1 280px; }
+  .rv-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .rv-status { color: var(--signal-bright); }
+  .is-approved .rv-status { color: var(--ok); }
+  .is-changes_requested .rv-status { color: var(--ink-soft); }
+  .rv-round { color: var(--ink-mute); }
+  .rv-title { font-family: "Sora", sans-serif; font-weight: 400; font-size: 22px; line-height: 1.25; letter-spacing: -0.02em; margin: 10px 0 4px; overflow-wrap: anywhere; }
+  .rv-meta { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ink-mute); }
+
+  .thread { list-style: none; margin: 24px 0 0; padding: 0; }
+  .tc { padding: 12px 0 12px 16px; border-left: 2px solid var(--navy-line); }
+  .tc.is-astra { border-left-color: var(--signal); }
+  .tc-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; }
+  .tc-name { font-weight: 500; color: #fff; font-size: 14px; }
+  .tc-kind { font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .tc-kind.is-approved { color: var(--ok); }
+  .tc-kind.is-changes_requested { color: var(--signal-bright); }
+  .tc-date { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ink-mute); }
+  .tc-text { margin: 6px 0 0; color: var(--ink-soft); white-space: pre-wrap; overflow-wrap: anywhere; }
+  .thread-empty { color: var(--ink-mute); font-size: 14px; padding: 4px 0; }
+
+  .rv-form { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--navy-line); display: grid; gap: 16px; }
+  .rv-field { display: grid; gap: 8px; }
+  .rv-field label { font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); }
+  .rv-form .input { font-family: "Inter", sans-serif; font-size: 15px; line-height: 1.6; }
+  .rv-form textarea.input { resize: vertical; min-height: 104px; }
+  @media (min-width: 640px) { .rv-field.is-name { max-width: 320px; } }
+  .rv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .rv-approve { margin-left: auto; }
+  @media (max-width: 520px) { .rv-actions .dl, .rv-approve { flex: 1 1 100%; margin-left: 0; text-align: center; } }
+  .rv-note { min-height: 20px; font-size: 14px; color: var(--ink-soft); }
+  .rv-note.is-error { color: #FFB48A; }
+  .rv-decided { margin-top: 20px; padding: 14px 16px; border-radius: 3px; background: rgba(255, 255, 255, 0.04); border-left: 2px solid var(--ink-mute); color: #fff; font-size: 15px; }
+  .is-approved .rv-decided { border-left-color: var(--ok); }
+  .is-changes_requested .rv-decided { border-left-color: var(--signal-bright); }
+
   /* Unavailable */
   .unavailable { padding: 64px 0 96px; }
   .unavailable .card { max-width: 560px; padding: 32px; }
@@ -396,6 +440,11 @@
     <section class="section" aria-labelledby="projects-h">
       <div class="sec-head"><h2 id="projects-h" data-i18n="portal.projects.heading">Projects</h2></div>
       <div id="projects"></div>
+    </section>
+
+    <section class="section" id="reviews-section" aria-labelledby="reviews-h" hidden>
+      <div class="sec-head"><h2 id="reviews-h" data-i18n="portal.reviews.heading">For your review</h2></div>
+      <div id="reviews"></div>
     </section>
 
     <section class="section" aria-labelledby="files-h">
@@ -524,6 +573,7 @@
         data = json;
         render();
         show('portal');
+        loadReviews();
       })
       .catch(function (err) {
         if (err && err.code === 401) {
@@ -542,6 +592,7 @@
     if (!data) return;
     $('welcome-heading').textContent = t('portal.welcome.heading', { name: data.client.name });
     renderProjects();
+    renderReviews();
     renderFiles();
   }
 
@@ -702,6 +753,165 @@
       .then(function () { btn.disabled = false; btn.textContent = label; });
   }
 
+  /* ---------- Reviews ---------- */
+  var reviews = null, drafts = {}, armed = null, armTimer = null;
+  var NAME_KEY = 'astra11_portal_name';
+  function recalledName() { try { return localStorage.getItem(NAME_KEY) || ''; } catch (e) { return ''; } }
+  function rememberName(v) { try { localStorage.setItem(NAME_KEY, v); } catch (e) {} }
+  function fileById(id) {
+    var all = data ? data.delivered.concat(data.uploads) : [];
+    for (var i = 0; i < all.length; i++) if (all[i].id === id) return all[i];
+    return null;
+  }
+
+  function loadReviews() {
+    return fetch(API + 'reviews', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token }) })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (json) { if (json && json.ok) { reviews = json.reviews; renderReviews(); } })
+      .catch(function () {});
+  }
+
+  function postReview(id, action, text, name) {
+    return fetch(API + 'review-action', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token, review_id: id, action: action, text: text, name: name }) })
+      .then(function (r) {
+        return r.json().catch(function () { return {}; }).then(function (j) {
+          if (!r.ok || !j.ok) { var e = new Error(j.error || 'http ' + r.status); e.code = j.error; throw e; }
+          return j;
+        });
+      });
+  }
+
+  function renderReviews() {
+    var sec = $('reviews-section'), root = $('reviews');
+    root.textContent = '';
+    if (!data || !reviews || !reviews.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    reviews.forEach(function (r) { root.appendChild(reviewCard(r)); });
+  }
+
+  function reviewCard(r) {
+    var pending = r.status === 'pending';
+    var title = pick(r, 'title');
+    var card = el('article', 'card review is-' + r.status);
+
+    var head = el('div', 'rv-head'), info = el('div', 'rv-info'), tags = el('div', 'rv-tags');
+    tags.appendChild(el('span', 'rv-status', t('portal.reviews.status.' + r.status)));
+    tags.appendChild(el('span', 'rv-round', t('portal.reviews.round', { n: r.round })));
+    info.appendChild(tags);
+    info.appendChild(el('h3', 'rv-title', title));
+    info.appendChild(el('span', 'rv-meta', t('portal.reviews.requested', { date: fmtDate(r.requested_at) })));
+    head.appendChild(info);
+
+    var f = fileById(r.file_id);
+    if (f) {
+      var act = el('div', 'fact');
+      if (previewType(f)) {
+        var v = el('button', 'dl', t('portal.files.view'));
+        v.type = 'button';
+        v.addEventListener('click', function () { view(f, v); });
+        act.appendChild(v);
+      }
+      var d = el('button', 'dl', t('portal.files.download'));
+      d.type = 'button';
+      d.addEventListener('click', function () { download(f, d); });
+      act.appendChild(d);
+      head.appendChild(act);
+    }
+    card.appendChild(head);
+
+    if (r.comments.length || pending) {
+      var thread = el('ol', 'thread');
+      if (!r.comments.length) thread.appendChild(el('li', 'thread-empty', t('portal.reviews.noComments')));
+      r.comments.forEach(function (c) {
+        var isAstra = c.author_type === 'astra';
+        var li = el('li', 'tc' + (isAstra ? ' is-astra' : '')), meta = el('div', 'tc-meta');
+        meta.appendChild(el('strong', 'tc-name', isAstra ? t('portal.reviews.astra') : c.author_name));
+        if (c.kind === 'approved' || c.kind === 'changes_requested') meta.appendChild(el('span', 'tc-kind is-' + c.kind, t('portal.reviews.kind.' + c.kind)));
+        meta.appendChild(el('span', 'tc-date', fmtDate(c.created_at)));
+        li.appendChild(meta);
+        if (c.text) li.appendChild(el('p', 'tc-text', c.text));
+        thread.appendChild(li);
+      });
+      card.appendChild(thread);
+    }
+
+    if (!pending) {
+      card.appendChild(el('p', 'rv-decided', t(r.status === 'approved' ? 'portal.reviews.decidedApproved' : 'portal.reviews.decidedChanges', { name: r.decided_by, date: fmtDate(r.decided_at) })));
+      return card;
+    }
+    card.appendChild(reviewForm(r, title));
+    return card;
+  }
+
+  function reviewForm(r, title) {
+    var form = el('form', 'rv-form');
+    form.noValidate = true;
+
+    var f1 = el('div', 'rv-field'), l1 = el('label', null, t('portal.reviews.commentLabel')), ta = el('textarea', 'input');
+    ta.id = 'rv-text-' + r.id; l1.htmlFor = ta.id;
+    ta.rows = 4; ta.maxLength = 2000;
+    ta.placeholder = t('portal.reviews.commentPlaceholder');
+    ta.value = drafts[r.id] || '';
+    ta.addEventListener('input', function () { drafts[r.id] = ta.value; });
+    f1.appendChild(l1); f1.appendChild(ta);
+
+    var f2 = el('div', 'rv-field is-name'), l2 = el('label', null, t('portal.reviews.nameLabel')), nm = el('input', 'input');
+    nm.id = 'rv-name-' + r.id; l2.htmlFor = nm.id;
+    nm.type = 'text'; nm.maxLength = 80; nm.autocomplete = 'name';
+    nm.placeholder = t('portal.reviews.namePlaceholder');
+    nm.value = drafts.name !== undefined ? drafts.name : recalledName();
+    nm.addEventListener('input', function () { drafts.name = nm.value; });
+    f2.appendChild(l2); f2.appendChild(nm);
+
+    var note = el('p', 'rv-note');
+    note.setAttribute('role', 'status');
+    var bar = el('div', 'rv-actions');
+    var send = el('button', 'dl', t('portal.reviews.send'));
+    var chg = el('button', 'dl', t('portal.reviews.requestChanges'));
+    var ok = el('button', 'btn btn-primary rv-approve', t('portal.reviews.approve'));
+    send.type = chg.type = ok.type = 'button';
+    bar.appendChild(send); bar.appendChild(chg); bar.appendChild(ok);
+
+    function say(msg, isError) { note.textContent = msg || ''; note.className = 'rv-note' + (isError ? ' is-error' : ''); }
+    function disarm() { armed = null; clearTimeout(armTimer); ok.textContent = t('portal.reviews.approve'); }
+    function lock(on) { [send, chg, ok, ta, nm].forEach(function (n) { n.disabled = on; }); }
+
+    function submit(action) {
+      var text = ta.value.trim(), name = nm.value.replace(/\s+/g, ' ').trim();
+      if (action !== 'approve') disarm();
+      if (!name) { say(t('portal.reviews.needName'), true); nm.focus(); return; }
+      if (action === 'comment' && !text) { say(t('portal.reviews.needComment'), true); ta.focus(); return; }
+      if (action === 'changes' && !text) { say(t('portal.reviews.needChanges'), true); ta.focus(); return; }
+      if (action === 'approve' && armed !== r.id) {
+        armed = r.id;
+        ok.textContent = t('portal.reviews.confirmApprove');
+        say(t('portal.reviews.approveHint', { title: title }));
+        armTimer = setTimeout(function () { if (armed === r.id) { disarm(); say(''); } }, 8000);
+        return;
+      }
+      disarm(); say(t('portal.reviews.sending')); lock(true); rememberName(name);
+      postReview(r.id, action, text, name)
+        .then(function () {
+          delete drafts[r.id];
+          toast(t(action === 'approve' ? 'portal.reviews.toastApproved' : action === 'changes' ? 'portal.reviews.toastChanges' : 'portal.reviews.toastComment'));
+          return loadReviews();
+        })
+        .catch(function (err) {
+          if (err && err.code === 'closed') { toast(t('portal.reviews.closed'), true); return loadReviews(); }
+          say(err && err.code === 'unauthorized' ? t('portal.errors.loadBody') : t('portal.reviews.failed'), true);
+        })
+        .then(function () { lock(false); });
+    }
+
+    send.addEventListener('click', function () { submit('comment'); });
+    chg.addEventListener('click', function () { submit('changes'); });
+    ok.addEventListener('click', function () { submit('approve'); });
+    form.addEventListener('submit', function (e) { e.preventDefault(); });
+
+    form.appendChild(f1); form.appendChild(f2); form.appendChild(bar); form.appendChild(note);
+    return form;
+  }
+
   /* ---------- Upload ---------- */
   var queue = [], busy = false;
   var MAX_BYTES = 150 * 1024 * 1024; // n8n accepted 120 MB in testing, failed at 300 MB
@@ -776,7 +986,7 @@
     load();
   });
   $('sign-out').addEventListener('click', function () {
-    store(''); token = ''; data = null; window.__gateTried = false;
+    store(''); token = ''; data = null; reviews = null; drafts = {}; window.__gateTried = false;
     $('gate-error').hidden = true;
     show('gate');
   });

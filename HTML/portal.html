@@ -227,6 +227,9 @@
   .ms-item.is-done .ms-state { color: var(--ok); }
   .ms-date { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ink-mute); margin-left: auto; }
   .ms-note { color: var(--ink-mute); font-size: 14px; margin-top: 2px; }
+  .ms-items { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+  .ms-items li { position: relative; padding-left: 16px; color: var(--ink-mute); font-size: 14px; line-height: 1.5; }
+  .ms-items li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 1px; background: var(--ink-mute); }
 
   .empty { padding: 28px 24px; color: var(--ink-mute); font-size: 15px; }
 
@@ -653,7 +656,14 @@
           if (m.due_date) top.appendChild(el('span', 'ms-date', fmtDate(m.due_date)));
           body.appendChild(top);
           var note = pick(m, 'note');
-          if (note) body.appendChild(el('p', 'ms-note', note));
+          if (note) {
+            var lines = note.split('\n').map(function (x) { return x.trim(); }).filter(Boolean);
+            if (lines.length > 1) {
+              var items = el('ul', 'ms-items');
+              lines.forEach(function (x) { items.appendChild(el('li', '', x)); });
+              body.appendChild(items);
+            } else body.appendChild(el('p', 'ms-note', note));
+          }
           li.appendChild(body);
           list.appendChild(li);
         });

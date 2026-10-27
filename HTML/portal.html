@@ -272,6 +272,28 @@
   .dl:hover { background: #fff; color: var(--navy); border-color: #fff; }
   .dl:active { transform: scale(0.96); }
   .dl[disabled] { opacity: 0.6; cursor: progress; }
+  .fact { flex: none; display: flex; gap: 8px; }
+  @media (max-width: 520px) {
+    .frow { flex-wrap: wrap; }
+    .fact { flex: 1 0 100%; padding-left: 54px; }
+  }
+
+  /* Viewer */
+  .viewer {
+    padding: 0; border: 1px solid var(--navy-line); border-radius: 6px; color: var(--ink);
+    width: min(1080px, calc(100vw - 24px)); height: min(86vh, 900px); max-width: none; max-height: none;
+    background: var(--navy-raised);
+    box-shadow: 0 2px 6px rgba(5, 8, 16, 0.5), 0 40px 80px -24px rgba(5, 8, 16, 0.85), 0 0 60px -30px rgba(255, 81, 0, 0.25);
+  }
+  .viewer[open] { display: flex; flex-direction: column; animation: viewer-in 260ms var(--ease-spring); }
+  .viewer::backdrop { background: rgba(5, 8, 16, 0.78); }
+  @keyframes viewer-in { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
+  .viewer-bar { display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1px solid var(--navy-line); background: var(--navy-float); }
+  .viewer-title { flex: 1; min-width: 0; font-size: 14px; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .viewer-body { flex: 1; min-height: 0; display: grid; place-items: center; background: var(--navy); }
+  .viewer-body iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+  .viewer-body img, .viewer-body video { max-width: 100%; max-height: 100%; object-fit: contain; }
+  @media (prefers-reduced-motion: reduce) { .viewer[open] { animation: none; } }
 
   /* Unavailable */
   .unavailable { padding: 64px 0 96px; }
@@ -406,6 +428,15 @@
   </div>
 </footer>
 
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+  <div class="viewer-bar">
+    <span class="viewer-title" id="viewer-title"></span>
+    <button class="dl" id="viewer-dl" type="button"></button>
+    <button class="dl" id="viewer-close" type="button"></button>
+  </div>
+  <div class="viewer-body" id="viewer-body"></div>
+</dialog>
+
 <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
 
 <script>
@@ -462,6 +493,21 @@
     return new Intl.DateTimeFormat(lang(), { month: 'short', day: 'numeric', year: 'numeric' }).format(dt);
   }
   function ext(name) { var m = /\.([a-z0-9]+)$/i.exec(name || ''); return m ? m[1].toUpperCase().slice(0, 4) : 'FILE'; }
+
+  /* Google-native files are exported by the download endpoint (Sheets to xlsx, the rest to pdf/png). */
+  var NATIVE = {
+    'application/vnd.google-apps.spreadsheet': { label: 'SHEET', ext: 'xlsx' },
+    'application/vnd.google-apps.document': { label: 'DOC', ext: 'pdf' },
+    'application/vnd.google-apps.presentation': { label: 'SLIDES', ext: 'pdf' },
+    'application/vnd.google-apps.drawing': { label: 'DRAW', ext: 'png' }
+  };
+  var PREVIEW = { pdf: 'application/pdf', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif', webp: 'image/webp', mp4: 'video/mp4' };
+  function badge(f) { return NATIVE[f.mime] ? NATIVE[f.mime].label : ext(f.name); }
+  function saveName(f) { return NATIVE[f.mime] ? f.name + '.' + NATIVE[f.mime].ext : f.name; }
+  function previewType(f) {
+    var n = NATIVE[f.mime];
+    return PREVIEW[(n ? n.ext : ext(f.name)).toLowerCase()] || null;
+  }
 
   /* ---------- API ---------- */
   function load() {
@@ -568,17 +614,25 @@
 
   function fileRow(f, withDownload) {
     var li = el('li', 'frow');
-    li.appendChild(el('span', 'ftype', ext(f.name)));
+    li.appendChild(el('span', 'ftype', badge(f)));
     var main = el('div', 'fmain');
     main.appendChild(el('span', 'fname', f.name));
     var bits = [fmtSize(f.size), fmtDate(f.modified)].filter(Boolean).join(' · ');
     main.appendChild(el('span', 'fmeta', bits));
     li.appendChild(main);
     if (withDownload) {
+      var act = el('div', 'fact');
+      if (previewType(f)) {
+        var v = el('button', 'dl', t('portal.files.view'));
+        v.type = 'button';
+        v.addEventListener('click', function () { view(f, v); });
+        act.appendChild(v);
+      }
       var b = el('button', 'dl', t('portal.files.download'));
       b.type = 'button';
       b.addEventListener('click', function () { download(f, b); });
-      li.appendChild(b);
+      act.appendChild(b);
+      li.appendChild(act);
     }
     return li;
   }
@@ -593,19 +647,57 @@
   }
 
   /* ---------- Download ---------- */
+  function fetchBlob(f) {
+    return fetch(API + 'download', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token, file_id: f.id }) })
+      .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.blob(); });
+  }
+  function saveBlob(blob, name) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+  }
   function download(f, btn) {
     var label = btn.textContent;
     btn.disabled = true; btn.textContent = t('portal.files.preparing');
-    fetch(API + 'download', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token, file_id: f.id }) })
-      .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.blob(); })
-      .then(function (blob) {
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        a.href = url; a.download = f.name;
-        document.body.appendChild(a); a.click(); a.remove();
-        setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
-      })
+    fetchBlob(f)
+      .then(function (blob) { saveBlob(blob, saveName(f)); })
       .catch(function () { toast(t('portal.errors.downloadFailed'), true); })
+      .then(function () { btn.disabled = false; btn.textContent = label; });
+  }
+
+  /* ---------- Viewer ---------- */
+  var viewer = $('viewer'), viewerUrl = null;
+  function closeViewer() { if (viewer.open) viewer.close(); }
+  viewer.addEventListener('close', function () {
+    $('viewer-body').textContent = '';
+    if (viewerUrl) { URL.revokeObjectURL(viewerUrl); viewerUrl = null; }
+  });
+  viewer.addEventListener('click', function (e) { if (e.target === viewer) closeViewer(); });
+  $('viewer-close').addEventListener('click', closeViewer);
+
+  function view(f, btn) {
+    var type = previewType(f), label = btn.textContent;
+    btn.disabled = true; btn.textContent = t('portal.files.preparing');
+    fetchBlob(f)
+      .then(function (blob) {
+        var typed = new Blob([blob], { type: type });
+        viewerUrl = URL.createObjectURL(typed);
+        var node;
+        if (type === 'application/pdf') { node = el('iframe'); node.title = f.name; }
+        else if (type.indexOf('video/') === 0) { node = el('video'); node.controls = true; node.playsInline = true; }
+        else { node = el('img'); node.alt = f.name; }
+        node.src = viewerUrl;
+        $('viewer-body').textContent = '';
+        $('viewer-body').appendChild(node);
+        $('viewer-title').textContent = f.name;
+        $('viewer-dl').textContent = t('portal.files.download');
+        $('viewer-dl').onclick = function () { saveBlob(typed, saveName(f)); };
+        $('viewer-close').textContent = t('portal.files.close');
+        viewer.showModal();
+      })
+      .catch(function () { toast(t('portal.errors.viewFailed'), true); })
       .then(function () { btn.disabled = false; btn.textContent = label; });
   }
 

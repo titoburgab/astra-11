@@ -116,6 +116,28 @@ window.i18nStrings.en = {
       },
       whoItsFor: 'Businesses whose problem doesn\'t fit any off-the-shelf AI product.',
     },
+    card6: {
+      title: 'UX/UI Design',
+      body:  'Interfaces people understand on the first try. We design the flows, screens, and systems behind your product so users get where they\'re going without instructions.',
+      whatYouGet: {
+        item1: 'User flows and wireframes, mapped before any screen is designed',
+        item2: 'High-fidelity screens and a clickable prototype you can test with real users',
+        item3: 'Figma files and a design system you own, so every new screen stays consistent',
+        item4: 'A usability review with prioritized fixes',
+      },
+      whoItsFor: 'Teams with a product, portal, or internal tool that users find confusing.',
+    },
+    card7: {
+      title: 'Web Design',
+      body:  'Websites that carry your brand and turn visitors into clients. We design and build fast, responsive sites with a clear message and the automation your business needs already connected.',
+      whatYouGet: {
+        item1: 'Site structure and copy direction built around one goal per page',
+        item2: 'Custom responsive design, previewed as an interactive prototype before it\'s built',
+        item3: 'Front-end build, bilingual (EN/ES) when you need it',
+        item4: 'Launch support with performance and accessibility checks',
+      },
+      whoItsFor: 'Businesses that need a new site, or a rebuild of one that no longer represents them.',
+    },
   },
 
   howWeWork: {

@@ -115,6 +115,28 @@ window.i18nStrings.es = {
       },
       whoItsFor: 'Negocios cuyo problema no encaja en ningún producto de IA listo para usar.',
     },
+    card6: {
+      title: 'Diseño UX/UI',
+      body:  'Interfaces que las personas entienden a la primera. Diseñamos los flujos, pantallas y sistemas de tu producto para que los usuarios lleguen a donde van sin necesitar instrucciones.',
+      whatYouGet: {
+        item1: 'Flujos de usuario y wireframes, definidos antes de diseñar cualquier pantalla',
+        item2: 'Pantallas en alta fidelidad y un prototipo interactivo que puedes probar con usuarios reales',
+        item3: 'Archivos de Figma y un sistema de diseño que son tuyos, para que cada pantalla nueva sea coherente',
+        item4: 'Una revisión de usabilidad con correcciones priorizadas',
+      },
+      whoItsFor: 'Equipos con un producto, portal o herramienta interna que los usuarios encuentran confuso.',
+    },
+    card7: {
+      title: 'Diseño web',
+      body:  'Sitios web que llevan tu marca y convierten visitantes en clientes. Diseñamos y construimos sitios rápidos y responsivos, con un mensaje claro y la automatización que tu negocio necesita ya conectada.',
+      whatYouGet: {
+        item1: 'Estructura del sitio y dirección de textos pensadas en torno a un objetivo por página',
+        item2: 'Diseño responsivo a medida, presentado como prototipo interactivo antes de construirlo',
+        item3: 'Desarrollo front-end, bilingüe (EN/ES) cuando lo necesites',
+        item4: 'Apoyo en el lanzamiento con revisiones de rendimiento y accesibilidad',
+      },
+      whoItsFor: 'Negocios que necesitan un sitio nuevo, o rehacer uno que ya no los representa.',
+    },
   },
 
   howWeWork: {

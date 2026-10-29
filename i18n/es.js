@@ -355,9 +355,9 @@ window.i18nStrings.es = {
       description: 'Sistemas de automatización que ASTRA-11 ha construido: calificación de leads, generación de cotizaciones y facturas, producción de video, redacción de guiones y publicación en LinkedIn, cada uno a partir de un problema real que observamos.',
     },
     hero: {
-      eyebrow:  'Sistemas que hemos construido',
+      eyebrow:  'Nuestro trabajo',
       headline: 'Cada proyecto empezó como el problema de alguien, no como un discurso de venta.',
-      body:     'Aquí conviven dos tipos de trabajo: sistemas de automatización que construimos a partir de problemas que vimos de cerca, y trabajo de marca y diseño que hemos entregado a clientes. Cada tarjeta de automatización muestra el problema, el sistema y qué hace. Cada tarjeta de diseño enlaza al diseño en vivo.',
+      body:     'Aquí conviven dos tipos de trabajo: lo que estamos construyendo ahora para clientes, y sistemas de automatización que construimos nosotros a partir de problemas que vimos de cerca.',
     },
     labels: {
       painPoint:   'Problema',
@@ -365,19 +365,38 @@ window.i18nStrings.es = {
       description: 'Qué hace',
     },
     cardCta: 'Ver detalles',
-    design: {
-      eyebrow: 'Trabajo de diseño',
-      heading: 'Marca, sistemas y sitios diseñados para clientes reales.',
-      body:    'Guías de estilo, sistemas de diseño y sitios web diseñados en Figma. Cada uno se abre como una página real e interactiva.',
-      cta:     'Ver diseño en vivo',
-      styleGuide:   'Guía de estilo',
-      designSystem: 'Sistema de diseño',
-      landingPage:  'Página de aterrizaje',
-      ggcStyleGuide:   'Las reglas visuales de la marca de Global Gate: colores, tipografía y uso del logo en un solo lugar, para que cada página y documento se vea como la misma empresa.',
-      ggcDesignSystem: 'Los componentes del sitio de Global Gate (botones, formularios, tarjetas, navegación y patrones de página), construidos una vez para que las páginas nuevas sigan siendo coherentes.',
-      cuatroStyleGuide: 'La base de marca de CUATRO: colores, tipografía y reglas de uso que mantienen coherente cada pieza de comunicación.',
-      designSystemBody: 'Un conjunto reutilizable de componentes y patrones de interfaz, diseñado en Figma para que las pantallas nuevas partan de una base probada.',
-      valentinaLanding: 'Una página de aterrizaje diseñada para dar al proyecto un mensaje claro y un siguiente paso para los visitantes.',
+    clients: {
+      eyebrow: 'Clientes actuales',
+      heading: 'Tres industrias. Un enfoque: diseño e ingeniería de IA juntos.',
+      body:    'Cada cliente recibe diseño de marca e interfaz, y sobre eso construimos el sitio web, las integraciones de IA y las automatizaciones. Estos proyectos están en desarrollo, y añadimos resultados con cada hito.',
+      jumpClients: 'Clientes actuales',
+      jumpSystems: 'Sistemas que hemos construido',
+      newTab:  'se abre en una pestaña nueva',
+      status: {
+        designDelivered: 'Diseño entregado',
+        inDevelopment:   'Sitio web e IA en desarrollo',
+      },
+      links: {
+        styleGuide:   'Guía de estilo',
+        designSystem: 'Sistema de diseño',
+        landingPage:  'Página de aterrizaje',
+      },
+      ggc: {
+        industry: 'Agencia de importación y exportación',
+        what:     'Marca, sistema de diseño, un nuevo sitio web y herramientas de IA para inteligencia comercial.',
+      },
+      cuatro: {
+        industry: 'Agencia de marketing',
+        what:     'Guía de estilo y sistema de diseño de marca, con un sitio web y automatizaciones de IA.',
+      },
+      valentina: {
+        industry: 'Chef repostera',
+        what:     'Sistema de diseño y página de aterrizaje, con el sitio web completo y automatizaciones de IA.',
+      },
+    },
+    systems: {
+      eyebrow: 'Sistemas que hemos construido',
+      heading: 'Construidos por nosotros, a partir de problemas que vimos.',
     },
     framing: {
       eyebrow: 'Cómo leer esto',

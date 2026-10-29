@@ -184,6 +184,7 @@
   .service-card:nth-child(4) { transition-delay: 240ms; }
   .service-card:nth-child(5) { transition-delay: 320ms; }
   .service-card:nth-child(6) { transition-delay: 400ms; }
+  .jump-link, .client-link { transition: color 200ms cubic-bezier(0.4,0,0.2,1), border-color 200ms cubic-bezier(0.4,0,0.2,1), transform 200ms cubic-bezier(0.4,0,0.2,1); }
   .design-img { transition: transform 600ms cubic-bezier(0.4,0,0.2,1); }
   .service-card:hover .design-img { transform: scale(1.03); }
   @media (prefers-reduced-motion: reduce) {
@@ -386,9 +387,105 @@
 
     <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20">
       <div class="reveal max-w-[720px]">
-        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.hero.eyebrow">Systems We've Built</span></p>
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-6 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.hero.eyebrow">Our work</span></p>
         <h1 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="portfolio.hero.headline">Every project started as someone's problem, not a pitch.</h1>
-        <p class="mt-5 max-w-[620px] text-body-lg text-ivory-40 leading-[1.7]" style="color:#C3C8D1;" data-i18n="portfolio.hero.body">Two kinds of work live here: automation systems we built from problems we saw directly, and brand and design work we've delivered for clients. Each automation card shows the problem, the system, and what it does. Each design card links to the live design.</p>
+        <p class="mt-5 max-w-[620px] text-body-lg text-ivory-40 leading-[1.7]" style="color:#C3C8D1;" data-i18n="portfolio.hero.body">Two kinds of work live here: what we're building for clients right now, and automation systems we built ourselves from problems we saw directly.</p>
+        <nav class="mt-8 flex flex-wrap gap-3" aria-label="Portfolio sections">
+          <a href="#clients" class="jump-link inline-flex items-center gap-2 rounded-full border border-obsidian-80 px-4 py-2 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" data-i18n="portfolio.clients.jumpClients">Current clients</a>
+          <a href="#systems" class="jump-link inline-flex items-center gap-2 rounded-full border border-obsidian-80 px-4 py-2 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" data-i18n="portfolio.clients.jumpSystems">Systems we've built</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CURRENT CLIENTS ============ -->
+  <section id="clients" class="relative overflow-hidden scroll-mt-24 py-16 md:py-20 lg:py-24">
+    <div class="relative mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal max-w-[720px]">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.clients.eyebrow">Current clients</span></p>
+        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="portfolio.clients.heading">Three industries. One approach: design and AI engineering together.</h2>
+        <p class="mt-5 text-body-md" style="color:#C3C8D1;" data-i18n="portfolio.clients.body">Each client gets brand and interface design, plus the website, AI integrations, and automations built on top of it. These projects are in development, and we add results as each milestone ships.</p>
+      </div>
+      <div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- Global Gate Consulting -->
+        <article class="reveal service-card lg:col-span-4 flex flex-col bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
+            <img src="/brand_assets/assets/design-ggc-style-guide.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
+            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
+          </div>
+          <div class="flex flex-1 flex-col p-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]" data-i18n="portfolio.clients.ggc.industry">Import & export brokerage</p>
+            <h3 class="mt-2 font-display text-heading-md font-medium text-ivory lg:min-h-[4rem]">Global Gate Consulting</h3>
+            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.clients.ggc.what">Brand, design system, a new website, and AI tools for trade intelligence.</p>
+            <ul class="mt-5 space-y-2 text-body-sm" style="color:#C3C8D1;">
+              <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.clients.status.designDelivered">Design delivered</span></li>
+              <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full border border-ivory-40" aria-hidden="true"></span><span data-i18n="portfolio.clients.status.inDevelopment">Website and AI in development</span></li>
+            </ul>
+            <!-- Testimonial: add a <blockquote> here once the client approves a quote. -->
+            <div class="mt-auto pt-6 flex flex-wrap gap-2">
+              <a href="https://alone-joy-90249148.figma.site" target="_blank" rel="noopener noreferrer" class="client-link inline-flex items-center gap-1.5 rounded-md border border-obsidian-80 px-3 py-1.5 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal"><span data-i18n="portfolio.clients.links.styleGuide">Style Guide</span> <span class="sr-only" data-i18n="portfolio.clients.newTab">opens in a new tab</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <a href="https://invite-clip-85563620.figma.site" target="_blank" rel="noopener noreferrer" class="client-link inline-flex items-center gap-1.5 rounded-md border border-obsidian-80 px-3 py-1.5 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal"><span data-i18n="portfolio.clients.links.designSystem">Design System</span> <span class="sr-only" data-i18n="portfolio.clients.newTab">opens in a new tab</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CUATRO -->
+        <article class="reveal service-card lg:col-span-4 flex flex-col bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
+            <img src="/brand_assets/assets/design-cuatro-design-system.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
+            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
+          </div>
+          <div class="flex flex-1 flex-col p-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]" data-i18n="portfolio.clients.cuatro.industry">Marketing agency</p>
+            <h3 class="mt-2 font-display text-heading-md font-medium text-ivory lg:min-h-[4rem]">CUATRO</h3>
+            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.clients.cuatro.what">Brand style guide and design system, with a website and AI automations.</p>
+            <ul class="mt-5 space-y-2 text-body-sm" style="color:#C3C8D1;">
+              <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.clients.status.designDelivered">Design delivered</span></li>
+              <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full border border-ivory-40" aria-hidden="true"></span><span data-i18n="portfolio.clients.status.inDevelopment">Website and AI in development</span></li>
+            </ul>
+            <!-- Testimonial: add a <blockquote> here once the client approves a quote. -->
+            <div class="mt-auto pt-6 flex flex-wrap gap-2">
+              <a href="https://badge-stylus-84709012.figma.site" target="_blank" rel="noopener noreferrer" class="client-link inline-flex items-center gap-1.5 rounded-md border border-obsidian-80 px-3 py-1.5 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal"><span data-i18n="portfolio.clients.links.styleGuide">Style Guide</span> <span class="sr-only" data-i18n="portfolio.clients.newTab">opens in a new tab</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <a href="https://gizmo-music-51218278.figma.site" target="_blank" rel="noopener noreferrer" class="client-link inline-flex items-center gap-1.5 rounded-md border border-obsidian-80 px-3 py-1.5 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal"><span data-i18n="portfolio.clients.links.designSystem">Design System</span> <span class="sr-only" data-i18n="portfolio.clients.newTab">opens in a new tab</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Las Recetas Mágicas de Valentina -->
+        <article class="reveal service-card lg:col-span-4 flex flex-col bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
+            <img src="/brand_assets/assets/design-valentina-landing.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
+            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
+          </div>
+          <div class="flex flex-1 flex-col p-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]" data-i18n="portfolio.clients.valentina.industry">Pastry chef</p>
+            <h3 class="mt-2 font-display text-heading-md font-medium text-ivory lg:min-h-[4rem]">Las Recetas Mágicas de Valentina</h3>
+            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.clients.valentina.what">Design system and landing page, with the full website and AI automations.</p>
+            <ul class="mt-5 space-y-2 text-body-sm" style="color:#C3C8D1;">
+              <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.clients.status.designDelivered">Design delivered</span></li>
+              <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full border border-ivory-40" aria-hidden="true"></span><span data-i18n="portfolio.clients.status.inDevelopment">Website and AI in development</span></li>
+            </ul>
+            <!-- Testimonial: add a <blockquote> here once the client approves a quote. -->
+            <div class="mt-auto pt-6 flex flex-wrap gap-2">
+              <a href="https://side-sixth-53330695.figma.site" target="_blank" rel="noopener noreferrer" class="client-link inline-flex items-center gap-1.5 rounded-md border border-obsidian-80 px-3 py-1.5 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal"><span data-i18n="portfolio.clients.links.designSystem">Design System</span> <span class="sr-only" data-i18n="portfolio.clients.newTab">opens in a new tab</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <a href="https://twice-donkey-90975153.figma.site" target="_blank" rel="noopener noreferrer" class="client-link inline-flex items-center gap-1.5 rounded-md border border-obsidian-80 px-3 py-1.5 text-body-sm font-medium text-ivory hover:border-signal hover:text-signal active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal"><span data-i18n="portfolio.clients.links.landingPage">Landing Page</span> <span class="sr-only" data-i18n="portfolio.clients.newTab">opens in a new tab</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SYSTEMS WE'VE BUILT (heading) ============ -->
+  <section id="systems" class="scroll-mt-24 pt-16 md:pt-20 lg:pt-24">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal max-w-[720px]">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.systems.eyebrow">Systems we've built</span></p>
+        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="portfolio.systems.heading">Built by us, from problems we saw.</h2>
       </div>
     </div>
   </section>
@@ -625,133 +722,6 @@
         </article>
 
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ DESIGN WORK ============ -->
-  <section id="design-work" class="relative overflow-hidden py-16 md:py-20 lg:py-24">
-    <div class="relative mx-auto max-w-content px-5 md:px-10 lg:px-20">
-      <div class="reveal max-w-[640px]">
-        <p class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.design.eyebrow">Design work</span></p>
-        <h2 class="font-display font-light text-heading-lg md:text-display-md text-ivory" data-i18n="portfolio.design.heading">Brand, systems, and sites designed for real clients.</h2>
-        <p class="mt-5 text-body-md" style="color:#C3C8D1;" data-i18n="portfolio.design.body">Style guides, design systems, and websites designed in Figma. Each one opens as a live, clickable page.</p>
-      </div>
-      <div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-6">
-
-        <!-- Global Gate Consulting — Style Guide -->
-        <article class="reveal service-card relative lg:col-span-4 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
-          <a href="https://alone-joy-90249148.figma.site" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" aria-labelledby="dc-client-ggc-style dc-title-ggc-style"></a>
-          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
-            <img src="/brand_assets/assets/design-ggc-style-guide.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
-            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-8">
-            <p id="dc-client-ggc-style" class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]">Global Gate Consulting</p>
-            <h3 id="dc-title-ggc-style" class="service-title mt-2 font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.design.styleGuide">Style Guide</h3>
-            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.design.ggcStyleGuide">The visual rules for Global Gate's brand: colors, typography, and logo usage in one place, so every page and document looks like the same company.</p>
-            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
-              <span data-i18n="portfolio.design.cta">View live design</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </p>
-          </div>
-        </article>
-
-        <!-- Global Gate Consulting — Design System -->
-        <article class="reveal service-card relative lg:col-span-4 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
-          <a href="https://invite-clip-85563620.figma.site" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" aria-labelledby="dc-client-ggc-system dc-title-ggc-system"></a>
-          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
-            <img src="/brand_assets/assets/design-ggc-design-system.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
-            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-8">
-            <p id="dc-client-ggc-system" class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]">Global Gate Consulting</p>
-            <h3 id="dc-title-ggc-system" class="service-title mt-2 font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.design.designSystem">Design System</h3>
-            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.design.ggcDesignSystem">The components behind Global Gate's website, including buttons, forms, cards, navigation, and page patterns, built once so new pages stay consistent.</p>
-            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
-              <span data-i18n="portfolio.design.cta">View live design</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </p>
-          </div>
-        </article>
-
-        <!-- CUATRO — Style Guide -->
-        <article class="reveal service-card relative lg:col-span-4 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
-          <a href="https://badge-stylus-84709012.figma.site" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" aria-labelledby="dc-client-cuatro-style dc-title-cuatro-style"></a>
-          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
-            <img src="/brand_assets/assets/design-cuatro-style-guide.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
-            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-8">
-            <p id="dc-client-cuatro-style" class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]">CUATRO</p>
-            <h3 id="dc-title-cuatro-style" class="service-title mt-2 font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.design.styleGuide">Style Guide</h3>
-            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.design.cuatroStyleGuide">The brand foundation for CUATRO: colors, typography, and usage rules that keep every piece of communication consistent.</p>
-            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
-              <span data-i18n="portfolio.design.cta">View live design</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </p>
-          </div>
-        </article>
-
-        <!-- CUATRO — Design System -->
-        <article class="reveal service-card relative lg:col-span-4 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
-          <a href="https://gizmo-music-51218278.figma.site" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" aria-labelledby="dc-client-cuatro-system dc-title-cuatro-system"></a>
-          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
-            <img src="/brand_assets/assets/design-cuatro-design-system.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
-            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-8">
-            <p id="dc-client-cuatro-system" class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]">CUATRO</p>
-            <h3 id="dc-title-cuatro-system" class="service-title mt-2 font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.design.designSystem">Design System</h3>
-            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.design.designSystemBody">A reusable set of interface components and patterns, designed in Figma so new screens start from a tested base.</p>
-            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
-              <span data-i18n="portfolio.design.cta">View live design</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </p>
-          </div>
-        </article>
-
-        <!-- Las Recetas Mágicas de Valentina — Design System -->
-        <article class="reveal service-card relative lg:col-span-4 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
-          <a href="https://side-sixth-53330695.figma.site" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" aria-labelledby="dc-client-val-system dc-title-val-system"></a>
-          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
-            <img src="/brand_assets/assets/design-valentina-design-system.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
-            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-8">
-            <p id="dc-client-val-system" class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]">Las Recetas Mágicas de Valentina</p>
-            <h3 id="dc-title-val-system" class="service-title mt-2 font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.design.designSystem">Design System</h3>
-            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.design.designSystemBody">A reusable set of interface components and patterns, designed in Figma so new screens start from a tested base.</p>
-            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
-              <span data-i18n="portfolio.design.cta">View live design</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </p>
-          </div>
-        </article>
-
-        <!-- Las Recetas Mágicas de Valentina — Landing Page -->
-        <article class="reveal service-card relative lg:col-span-4 bg-obsidian border border-obsidian-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
-          <a href="https://twice-donkey-90975153.figma.site" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-signal" aria-labelledby="dc-client-val-landing dc-title-val-landing"></a>
-          <div class="relative aspect-[16/10] overflow-hidden border-b border-obsidian-80">
-            <img src="/brand_assets/assets/design-valentina-landing.jpg" alt="" width="1280" height="800" loading="lazy" class="design-img block w-full h-full object-cover object-top">
-            <div aria-hidden="true" class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-8">
-            <p id="dc-client-val-landing" class="font-mono text-label uppercase tracking-[0.12em] text-ivory-40 lg:min-h-[2.6rem]">Las Recetas Mágicas de Valentina</p>
-            <h3 id="dc-title-val-landing" class="service-title mt-2 font-display text-heading-md font-medium text-ivory" data-i18n="portfolio.design.landingPage">Landing Page</h3>
-            <p class="mt-3 text-body-sm" style="color:#C3C8D1;" data-i18n="portfolio.design.valentinaLanding">A landing page designed to give the project a clear message and one next step for visitors.</p>
-            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-ivory" aria-hidden="true">
-              <span data-i18n="portfolio.design.cta">View live design</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
-            </p>
-          </div>
-        </article>
       </div>
     </div>
   </section>

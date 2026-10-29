@@ -356,9 +356,9 @@ window.i18nStrings.en = {
       description: 'Automation systems ASTRA-11 has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.',
     },
     hero: {
-      eyebrow:  'Systems We\'ve Built',
+      eyebrow:  'Our work',
       headline: 'Every project started as someone\'s problem, not a pitch.',
-      body:     'Two kinds of work live here: automation systems we built from problems we saw directly, and brand and design work we\'ve delivered for clients. Each automation card shows the problem, the system, and what it does. Each design card links to the live design.',
+      body:     'Two kinds of work live here: what we\'re building for clients right now, and automation systems we built ourselves from problems we saw directly.',
     },
     labels: {
       painPoint:   'Pain Point',
@@ -366,19 +366,38 @@ window.i18nStrings.en = {
       description: 'What It Does',
     },
     cardCta: 'View details',
-    design: {
-      eyebrow: 'Design work',
-      heading: 'Brand, systems, and sites designed for real clients.',
-      body:    'Style guides, design systems, and websites designed in Figma. Each one opens as a live, clickable page.',
-      cta:     'View live design',
-      styleGuide:   'Style Guide',
-      designSystem: 'Design System',
-      landingPage:  'Landing Page',
-      ggcStyleGuide:   'The visual rules for Global Gate\'s brand: colors, typography, and logo usage in one place, so every page and document looks like the same company.',
-      ggcDesignSystem: 'The components behind Global Gate\'s website, including buttons, forms, cards, navigation, and page patterns, built once so new pages stay consistent.',
-      cuatroStyleGuide: 'The brand foundation for CUATRO: colors, typography, and usage rules that keep every piece of communication consistent.',
-      designSystemBody: 'A reusable set of interface components and patterns, designed in Figma so new screens start from a tested base.',
-      valentinaLanding: 'A landing page designed to give the project a clear message and one next step for visitors.',
+    clients: {
+      eyebrow: 'Current clients',
+      heading: 'Three industries. One approach: design and AI engineering together.',
+      body:    'Each client gets brand and interface design, plus the website, AI integrations, and automations built on top of it. These projects are in development, and we add results as each milestone ships.',
+      jumpClients: 'Current clients',
+      jumpSystems: 'Systems we\'ve built',
+      newTab:  'opens in a new tab',
+      status: {
+        designDelivered: 'Design delivered',
+        inDevelopment:   'Website and AI in development',
+      },
+      links: {
+        styleGuide:   'Style Guide',
+        designSystem: 'Design System',
+        landingPage:  'Landing Page',
+      },
+      ggc: {
+        industry: 'Import & export brokerage',
+        what:     'Brand, design system, a new website, and AI tools for trade intelligence.',
+      },
+      cuatro: {
+        industry: 'Marketing agency',
+        what:     'Brand style guide and design system, with a website and AI automations.',
+      },
+      valentina: {
+        industry: 'Pastry chef',
+        what:     'Design system and landing page, with the full website and AI automations.',
+      },
+    },
+    systems: {
+      eyebrow: 'Systems we\'ve built',
+      heading: 'Built by us, from problems we saw.',
     },
     framing: {
       eyebrow: 'How to Read This',

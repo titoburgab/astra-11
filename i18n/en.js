@@ -358,7 +358,7 @@ window.i18nStrings.en = {
     hero: {
       eyebrow:  'Systems We\'ve Built',
       headline: 'Every project started as someone\'s problem, not a pitch.',
-      body:     'These aren\'t client case studies with a name attached to them. They\'re automation systems we built ourselves, from problems we saw or heard about directly: a lawyer buried in unqualified leads, a real estate agent stuck editing property videos, workflows we needed for our own operation. Each card below shows the problem, the system we built, and what it actually does.',
+      body:     'Two kinds of work live here: automation systems we built from problems we saw directly, and brand and design work we\'ve delivered for clients. Each automation card shows the problem, the system, and what it does. Each design card links to the live design.',
     },
     labels: {
       painPoint:   'Pain Point',
@@ -366,10 +366,24 @@ window.i18nStrings.en = {
       description: 'What It Does',
     },
     cardCta: 'View details',
+    design: {
+      eyebrow: 'Design work',
+      heading: 'Brand, systems, and sites designed for real clients.',
+      body:    'Style guides, design systems, and websites designed in Figma. Each one opens as a live, clickable page.',
+      cta:     'View live design',
+      styleGuide:   'Style Guide',
+      designSystem: 'Design System',
+      landingPage:  'Landing Page',
+      ggcStyleGuide:   'The visual rules for Global Gate\'s brand: colors, typography, and logo usage in one place, so every page and document looks like the same company.',
+      ggcDesignSystem: 'The components behind Global Gate\'s website, including buttons, forms, cards, navigation, and page patterns, built once so new pages stay consistent.',
+      cuatroStyleGuide: 'The brand foundation for CUATRO: colors, typography, and usage rules that keep every piece of communication consistent.',
+      designSystemBody: 'A reusable set of interface components and patterns, designed in Figma so new screens start from a tested base.',
+      valentinaLanding: 'A landing page designed to give the project a clear message and one next step for visitors.',
+    },
     framing: {
       eyebrow: 'How to Read This',
       heading: 'Pain point. System. What it does.',
-      body:    'Every project below follows the same structure: the problem we saw, the system we built to solve it, and what that system actually does once it\'s running.',
+      body:    'Every automation project below follows the same structure: the problem we saw, the system we built to solve it, and what that system actually does once it\'s running.',
     },
     project1: {
       title:       'Lead Qualifier',

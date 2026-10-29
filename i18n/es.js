@@ -357,7 +357,7 @@ window.i18nStrings.es = {
     hero: {
       eyebrow:  'Sistemas que hemos construido',
       headline: 'Cada proyecto empezó como el problema de alguien, no como un discurso de venta.',
-      body:     'Estos no son casos de estudio de un cliente con nombre y apellido. Son sistemas de automatización que construimos nosotros mismos, a partir de problemas que vimos u observamos de cerca: un abogado saturado de leads sin calificar, una agente inmobiliaria atrapada editando videos de propiedades, flujos que necesitábamos para nuestra propia operación. Cada tarjeta a continuación muestra el problema, el sistema que construimos y qué hace exactamente.',
+      body:     'Aquí conviven dos tipos de trabajo: sistemas de automatización que construimos a partir de problemas que vimos de cerca, y trabajo de marca y diseño que hemos entregado a clientes. Cada tarjeta de automatización muestra el problema, el sistema y qué hace. Cada tarjeta de diseño enlaza al diseño en vivo.',
     },
     labels: {
       painPoint:   'Problema',
@@ -365,10 +365,24 @@ window.i18nStrings.es = {
       description: 'Qué hace',
     },
     cardCta: 'Ver detalles',
+    design: {
+      eyebrow: 'Trabajo de diseño',
+      heading: 'Marca, sistemas y sitios diseñados para clientes reales.',
+      body:    'Guías de estilo, sistemas de diseño y sitios web diseñados en Figma. Cada uno se abre como una página real e interactiva.',
+      cta:     'Ver diseño en vivo',
+      styleGuide:   'Guía de estilo',
+      designSystem: 'Sistema de diseño',
+      landingPage:  'Página de aterrizaje',
+      ggcStyleGuide:   'Las reglas visuales de la marca de Global Gate: colores, tipografía y uso del logo en un solo lugar, para que cada página y documento se vea como la misma empresa.',
+      ggcDesignSystem: 'Los componentes del sitio de Global Gate (botones, formularios, tarjetas, navegación y patrones de página), construidos una vez para que las páginas nuevas sigan siendo coherentes.',
+      cuatroStyleGuide: 'La base de marca de CUATRO: colores, tipografía y reglas de uso que mantienen coherente cada pieza de comunicación.',
+      designSystemBody: 'Un conjunto reutilizable de componentes y patrones de interfaz, diseñado en Figma para que las pantallas nuevas partan de una base probada.',
+      valentinaLanding: 'Una página de aterrizaje diseñada para dar al proyecto un mensaje claro y un siguiente paso para los visitantes.',
+    },
     framing: {
       eyebrow: 'Cómo leer esto',
       heading: 'Problema. Sistema. Qué hace.',
-      body:    'Cada proyecto a continuación sigue la misma estructura: el problema que identificamos, el sistema que construimos para resolverlo, y qué hace ese sistema una vez en funcionamiento.',
+      body:    'Cada proyecto de automatización a continuación sigue la misma estructura: el problema que identificamos, el sistema que construimos para resolverlo, y qué hace ese sistema una vez en funcionamiento.',
     },
     project1: {
       title:       'Calificador de Leads',

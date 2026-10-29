@@ -8,8 +8,8 @@ window.i18nStrings = window.i18nStrings || {};
 window.i18nStrings.es = {
 
   meta: {
-    title: 'ASTRA-11 | Ingeniería de IA',
-    description: 'ASTRA-11 diseña agentes de IA, automatizaciones de procesos y sistemas inteligentes que ayudan a las organizaciones a simplificar la complejidad y tomar mejores decisiones.',
+    title: 'ASTRA-11 | Ingeniería de IA y Diseño',
+    description: 'ASTRA-11 diseña agentes de IA y automatizaciones, y también el UX/UI y los sitios web donde operan, para que las organizaciones simplifiquen la complejidad y decidan mejor.',
   },
 
   skip: { link: 'Ir al contenido' },
@@ -246,14 +246,14 @@ window.i18nStrings.es = {
   footer: {
     tagline:   'Inteligencia conectada.',
     copyright: '© 2026 ASTRA-11. Todos los derechos reservados.',
-    label:     'Ingeniería de IA',
+    label:     'Agencia de ingeniería de IA y diseño',
     privacy:   'Política de Privacidad',
   },
 
   about: {
     meta: {
       title:       'ASTRA-11 | Nosotros',
-      description: 'ASTRA-11 es un socio de ingeniería de IA y automatización inteligente enfocado en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
+      description: 'Socio de ingeniería de IA y diseño: automatización inteligente, UX/UI y diseño web que ayudan a las organizaciones a operar con eficiencia y crecer con confianza.',
     },
     hero: {
       eyebrow:  'Sobre ASTRA-11',
@@ -265,7 +265,7 @@ window.i18nStrings.es = {
     whoWeAre: {
       eyebrow: 'Quiénes Somos',
       heading: 'Tu socio de ingeniería en IA',
-      body1:   'ASTRA-11 es una empresa de ingeniería de IA y automatización inteligente enfocada en ayudar a las organizaciones a operar de forma más eficiente, tomar mejores decisiones y escalar con confianza.',
+      body1:   'ASTRA-11 es una empresa de ingeniería de IA y diseño enfocada en ayudar a las organizaciones a operar con más eficiencia, tomar mejores decisiones y crecer con confianza. Construimos los sistemas inteligentes y diseñamos las interfaces y los sitios web que las personas usan para llegar a ellos.',
       body2:   'Entendemos cómo funciona tu negocio, identificamos dónde la IA puede generar valor, y construimos sistemas alrededor de tus operaciones actuales.',
       closer:  'Porque la verdadera innovación no se trata de sumar más software.<br><span class="font-medium text-ivory">Se trata de hacer el trabajo más simple, más rápido y más valioso.</span>',
     },
@@ -352,7 +352,7 @@ window.i18nStrings.es = {
   portfolio: {
     meta: {
       title:       'ASTRA-11 | Portafolio',
-      description: 'Sistemas de automatización que ASTRA-11 ha construido: calificación de leads, generación de cotizaciones y facturas, producción de video, redacción de guiones y publicación en LinkedIn, cada uno a partir de un problema real que observamos.',
+      description: 'Proyectos actuales de clientes y sistemas de automatización de ASTRA-11: marcas y sistemas de diseño, sitios web, calificación de leads, cotizaciones y facturas, video, guiones y reservas.',
     },
     hero: {
       eyebrow:  'Nuestro trabajo',

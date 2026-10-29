@@ -9,8 +9,8 @@ window.i18nStrings = window.i18nStrings || {};
 window.i18nStrings.en = {
 
   meta: {
-    title: 'ASTRA-11 | AI Engineering Company',
-    description: 'ASTRA-11 engineers AI agents, workflow automations, and intelligent systems that help organizations simplify complexity and make better decisions.',
+    title: 'ASTRA-11 | AI Engineering and Design',
+    description: 'ASTRA-11 engineers AI agents and automations, and designs the UX/UI and websites they run on, so organizations simplify complexity and make better decisions.',
   },
 
   skip: { link: 'Skip to content' },
@@ -247,14 +247,14 @@ window.i18nStrings.en = {
   footer: {
     tagline:   'Connecting Intelligence.',
     copyright: '© 2026 ASTRA-11. All rights reserved.',
-    label:     'AI Engineering Agency',
+    label:     'AI Engineering & Design Agency',
     privacy:   'Privacy Policy',
   },
 
   about: {
     meta: {
       title:       'ASTRA-11 | About',
-      description: 'ASTRA-11 is an AI engineering and intelligent automation partner focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
+      description: 'An AI engineering and design partner: intelligent automation, UX/UI, and web design that help organizations operate efficiently and scale with confidence.',
     },
     hero: {
       eyebrow:  'About ASTRA-11',
@@ -266,7 +266,7 @@ window.i18nStrings.en = {
     whoWeAre: {
       eyebrow: 'Who We Are',
       heading: 'Your AI Engineering Partner',
-      body1:   'ASTRA-11 is an AI engineering and intelligent automation company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence.',
+      body1:   'ASTRA-11 is an AI engineering and design company focused on helping organizations operate more efficiently, make better decisions, and scale with confidence. We build the intelligent systems, and design the interfaces and websites people use to reach them.',
       body2:   'We understand how your business works, identify where AI can create value, and build systems around your existing operations.',
       closer:  'Because real innovation isn\'t about adding more software.<br><span class="font-medium text-ivory">It\'s about making work simpler, faster, and more valuable.</span>',
     },
@@ -353,7 +353,7 @@ window.i18nStrings.en = {
   portfolio: {
     meta: {
       title:       'ASTRA-11 | Portfolio',
-      description: 'Automation systems ASTRA-11 has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.',
+      description: 'Current client projects and automation systems from ASTRA-11: brand and design systems, websites, lead qualification, quote and invoice generation, video, scripts, and booking.',
     },
     hero: {
       eyebrow:  'Our work',

@@ -376,6 +376,8 @@ window.i18nStrings.es = {
         designDelivered: 'Diseño entregado',
         inDevelopment:   'Sitio web e IA en desarrollo',
         websiteLive:     'Sitio web en vivo',
+        aiDashboardDelivered: 'Panel con IA entregado',
+        websiteInDevelopment: 'Sitio web en desarrollo',
         aiDelivered:     'Trade Intelligence entregado',
       },
       links: {
@@ -391,7 +393,8 @@ window.i18nStrings.es = {
       },
       cuatro: {
         industry: 'Agencia de marketing',
-        what:     'Guía de estilo y sistema de diseño de marca, con un sitio web y automatizaciones de IA.',
+        what:     'Guía de estilo y sistema de diseño de marca, más un centro de control privado con asistente de IA: clientes, proyectos, cotizaciones y facturas, y suscripciones en un solo lugar.',
+        chips: ['Clientes y proyectos', 'Cotizaciones y facturas', 'Suscripciones', 'Asistente de IA'],
       },
       valentina: {
         industry: 'Chef repostera',

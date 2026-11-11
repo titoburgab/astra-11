@@ -140,6 +140,9 @@ Earlier context: building a private **client portal** for ASTRA-11's first clien
 - `CLAUDE.md`: pointer line committed (568b29c). `BLUEPRINT.md`: untracked, intentionally uncommitted.
 
 ## 4. Changes
+### 2026-11-11 (CUATRO card: AI dashboard)
+- Tito: the AI built for CUATRO is the same as the ASTRA-11 Dashboard (reference: `/Volumes/ASTRA11-v1/ASTRA-11/ASTRA-11 Dashboard`). Drafted EN/ES in chat, Tito: "It is good". Edited `HTML/portfolio.html` (CUATRO card: new description, statuses "AI dashboard delivered" + "Website in development", 4 chips: Clients and projects / Quotes and invoices / Subscriptions / AI assistant), `i18n/en.js`, `i18n/es.js` (`status.aiDashboardDelivered`, `status.websiteInDevelopment`, `cuatro.what`, `cuatro.chips[4]`). Checked locally (EN/ES desktop, ES mobile, no overflow, no script errors). UNCOMMITTED, untested live.
+- Assumptions Tito did not answer: AI dashboard counts as delivered; website still in development; QuickBooks/1Password NOT mentioned for CUATRO; chatbot prompt NOT updated for CUATRO (only Global Gate may be named). Throwaway `_c.mjs` is in the project root again (Tito to delete).
 ### 2026-11-11 (later: Global Gate on the public portfolio)
 - Tito: "Add the info below to the portfolio/global gate" (site live + Trade Intelligence feature list), then "you can say that the Trade Intelligence is done", then "Not changed: Yes, update it", then "commit and push", and finally (at checkpoint) "Do NOT commit or push".
 - Followed the draft-in-chat rule: showed EN/ES copy first. Tito's answer was a correction ("Trade Intelligence is done"), which I took as the go-ahead for the implementation.

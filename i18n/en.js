@@ -377,6 +377,8 @@ window.i18nStrings.en = {
         designDelivered: 'Design delivered',
         inDevelopment:   'Website and AI in development',
         websiteLive:     'Website live',
+        aiDashboardDelivered: 'AI dashboard delivered',
+        websiteInDevelopment: 'Website in development',
         aiDelivered:     'Trade Intelligence delivered',
       },
       links: {
@@ -392,7 +394,8 @@ window.i18nStrings.en = {
       },
       cuatro: {
         industry: 'Marketing agency',
-        what:     'Brand style guide and design system, with a website and AI automations.',
+        what:     'Brand style guide and design system, plus a private control center with an AI assistant: clients, projects, quotes and invoices, and subscriptions in one place.',
+        chips: ['Clients and projects', 'Quotes and invoices', 'Subscriptions', 'AI assistant'],
       },
       valentina: {
         industry: 'Pastry chef',

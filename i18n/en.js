@@ -353,7 +353,7 @@ window.i18nStrings.en = {
   portfolio: {
     meta: {
       title:       'ASTRA-11 | Portfolio',
-      description: 'Current client projects and automation systems from ASTRA-11: brand and design systems, websites, lead qualification, quote and invoice generation, video, scripts, and booking.',
+      description: 'Client projects and automation systems from ASTRA-11: the Global Gate Consulting website and Trade Intelligence AI platform, brand and design systems, lead qualification, quotes and invoices, video, scripts, and booking.',
     },
     hero: {
       eyebrow:  'Our work',
@@ -376,15 +376,19 @@ window.i18nStrings.en = {
       status: {
         designDelivered: 'Design delivered',
         inDevelopment:   'Website and AI in development',
+        websiteLive:     'Website live',
+        aiDelivered:     'Trade Intelligence delivered',
       },
       links: {
         styleGuide:   'Style Guide',
         designSystem: 'Design System',
         landingPage:  'Landing Page',
+        website:      'Website',
       },
       ggc: {
         industry: 'Import & export brokerage',
-        what:     'Brand, design system, a new website, and AI tools for trade intelligence.',
+        what:     'Brand, design system, a bilingual website, and Trade Intelligence, an AI-powered platform for importers: tariff calculator, AI document review, expert requests, and member accounts.',
+        chips: ['Member accounts', 'Card payments', 'Tariff Intelligence', 'Import Ready (AI document review)', 'Expert Connect', 'AI assistants', 'EN/ES chatbot'],
       },
       cuatro: {
         industry: 'Marketing agency',

@@ -1,9 +1,11 @@
 # BLUEPRINT: ASTRA-11 website + Client Portal
 
-_Last updated: 2026-11-11 (Global Gate portal: Website and Spanish website Done, Trade Intelligence In progress; before that, 2026-11-04: new "Spanish website" milestone and new Trade Intelligence list; before that, 2026-10-30: Setup and Brand marked Done, Website marked In progress; before that, 2026-10-29: UX/UI + Web Design services, Current clients portfolio section and SEO tags)_
+_Last updated: 2026-11-11 (later: Global Gate card on the public portfolio now shows Website live + Trade Intelligence delivered, chatbot prompt updated, portfolio meta description updated, all uncommitted; earlier same day: Global Gate portal Website and Spanish website Done, Trade Intelligence In progress; before that, 2026-11-04: new "Spanish website" milestone and new Trade Intelligence list; before that, 2026-10-30: Setup and Brand marked Done, Website marked In progress; before that, 2026-10-29: UX/UI + Web Design services, Current clients portfolio section and SEO tags)_
 
 ## 1. Working on
-**2026-11-11:** Global Gate portal progress updated. Tito asked to mark Website and Spanish website as done, then Trade Intelligence as in progress. Done in `portal_milestones` (no repo change, nothing to commit). Global Gate's 5 milestones are now: Setup `done`, Brand `done`, Website `done` (id 3), Spanish website `done` (id 5), Trade Intelligence `active` (id 4). Not viewed on the live portal.
+**2026-11-11 (later session):** Putting Global Gate's finished work on the public ASTRA-11 portfolio. Tito gave the live site (www.globalgateconsulting.com) and the Trade Intelligence feature list, then said Trade Intelligence "is done". The Global Gate card in "Current clients" now shows Design delivered, Website live, Trade Intelligence delivered, a Website link and feature chips (EN/ES). The chatbot now knows about Global Gate, and the portfolio meta description mentions it. Repo changes are NOT committed or pushed (Tito said at the end of the session he will decide himself).
+
+**2026-11-11 (earlier session):** Global Gate portal progress updated. Tito asked to mark Website and Spanish website as done, then Trade Intelligence as in progress. Done in `portal_milestones` (no repo change, nothing to commit). Global Gate's 5 milestones are now: Setup `done`, Brand `done`, Website `done` (id 3), Spanish website `done` (id 5), Trade Intelligence `active` (id 4). Not viewed on the live portal.
 
 **2026-11-04:** Global Gate portal scope changed. Tito pasted new items: a new milestone "Spanish website" (placed right below Website) and a rewritten Trade Intelligence list (adds Website chatbot EN/ES). Setup, Brand, Website unchanged. Data only in `portal_milestones` (no repo change). Global Gate now has 5 milestones: Setup `done`, Brand `done`, Website `active`, Spanish website `upcoming` (id 5, sort 4), Trade Intelligence `upcoming` (id 4, sort 5). Not viewed on the live portal.
 
@@ -16,6 +18,21 @@ _Last updated: 2026-11-11 (Global Gate portal: Website and Spanish website Done,
 Earlier context: building a private **client portal** for ASTRA-11's first clients (GLOBAL GATE CONSULTING and CUATRO): clients log in with a private access code/link, see project progress and milestones, download deliverables and upload files. Storage is Google Drive (hola.astra11@gmail.com), backend is n8n (no new infrastructure). This session focused on **Global Gate**: clients can view/download deliverables (including Google Sheets/Docs) and, new, **review and approve work in progress**: a "For your review" section where the client opens a file, comments, approves or requests changes, with a confirmation email to the client and an activity email to hello@astra-11.com. Latest: Global Gate's project scope list is now in the portal as 4 milestones with bullet items (pushed as 15cdf36). Next: create the first real review for Global Gate (their System design file) once Tito names the file, then attach deliverables/links to milestones (needs the brand guide's delivery format).
 
 ## 2. Where we are
+### Global Gate on the public portfolio (2026-11-11, later session)
+- Done:
+  - `HTML/portfolio.html` Global Gate card (inside `#clients`): description rewritten; status list is now Design delivered / Website live / Trade Intelligence delivered (three filled dots; the old "Website and AI in development" line was removed from this card only, CUATRO and Valentina keep it); 7 feature chips (`<ul>` of rounded pills, keys `portfolio.clients.ggc.chips.0..6`); new "Website" link button to https://www.globalgateconsulting.com placed before Style Guide / Design System. tested locally (puppeteer on `localhost:8011`, EN and ES at 1440, EN at 390: no script errors, no horizontal overflow, all text rendered). Looked at element screenshots only; they were cropped to a narrow width with the fixed header overlapping, so the layout at true desktop width was not inspected closely. untested live.
+  - `i18n/en.js`, `i18n/es.js`: new keys `portfolio.clients.status.websiteLive`, `status.aiDelivered`, `links.website`, `ggc.chips` (array of 7; `i18n.js` resolves array entries through `path.split('.')`, so `chips.0` works, confirmed in the render), rewritten `ggc.what`. Old key `status.inDevelopment` kept (used by the other two cards).
+  - Portfolio meta description (HTML `description`, `og:description`, `twitter:description`, plus `portfolio.meta.description` in EN and ES) now names Global Gate Consulting's website and Trade Intelligence AI platform. EN/ES edited with a script that reported 3 + 1 + 1 replacements. Not looked at in a browser. untested.
+  - Chatbot (n8n `ASTRA-11-WEB — Chatbot`, id `ooF769omDhj15LTP`, node `Concierge Agent`, `options.systemMessage`): added a "CLIENT WORK YOU MAY MENTION" section (Global Gate is the only client the bot may name, with the live URL and the Trade Intelligence feature list; others in development must not be named or described; never invent results) and changed the TONE rule to "the only client you may name is Global Gate Consulting". Published, active version `fffec2ec-c512-425f-a2b4-04d9032912bc` (previous `fb523ebd-5ed3-499e-adf1-08c0d893283e`). Live webhook tested EN ("Can you show me examples of what you have built?") and ES ("¿Han hecho alguna plataforma con IA para un cliente real?") with empty name/email: both answered with Global Gate, correct features, no lead logged. tested live.
+- Things to know / not done:
+  - Tito's wording: "bilingual website" was my inference (the portal already had a "Spanish website" milestone); Tito did not object. The card says "Trade Intelligence delivered" because Tito said it is done; the portal `portal_milestones` row for Trade Intelligence (id 4) is still `active` (In progress) and should probably be set to `done` to match. unfinished
+  - Chatbot nits seen in testing: replies run 4+ sentences (rule says 2-4), and the Spanish reply wrote "Our Work" instead of "Nuestro trabajo". Not fixed (would need resending the whole 57 KB prompt). unfinished
+  - Homepage JSON-LD, `index.html` and the About page do not mention Global Gate or Trade Intelligence; not changed. unfinished
+  - Global Gate portfolio screenshot (`design-ggc-style-guide.jpg`) still shows the style guide, not the live website. A screenshot of www.globalgateconsulting.com could replace it. Not offered to Tito yet. unfinished
+  - Commit/push: Tito first said "commit and push", then, when running this checkpoint, "Do NOT commit or push; I'll decide that myself". Final instruction wins: nothing committed. `git status` shows `HTML/portfolio.html`, `i18n/en.js`, `i18n/es.js` modified (28 insertions, 9 deletions) plus BLUEPRINT.md. unfinished
+  - A preview server (`python3 -m http.server 8011`, PID 1863) is still running. Port 3000 untouched.
+- Next step: Tito reviews the card at `http://localhost:8011/HTML/portfolio.html` (EN and ES), then says whether to commit and push the three repo files (add by name). Then optionally: set the Trade Intelligence portal milestone to `done`, add the live-site screenshot, and mention Global Gate in homepage/About copy.
+
 ### Website: services, clients, SEO (2026-10-29)
 - Done:
   - Services section (`HTML/index.html`, `i18n/en.js`, `i18n/es.js`): added card 06 UX/UI Design and card 07 Web Design (6+6 grid, row 3), keys `services.card6.*` / `services.card7.*`, stagger CSS for nth-child 6/7. Checked locally in puppeteer, EN/ES desktop + mobile (7 cards, no horizontal overflow). tested locally. Not looked at on the live page by me.
@@ -94,6 +111,9 @@ Earlier context: building a private **client portal** for ASTRA-11's first clien
   - Access codes were only shown in chat. They are not stored in plain text anywhere; if lost, reissue with the admin `resetToken` action (this replaces the old code).
 
 ## 3. Files in use
+- `HTML/portfolio.html` (changed 2026-11-11, uncommitted): Global Gate card now has Website link, three statuses, feature chips; meta/OG/Twitter descriptions mention Global Gate.
+- `i18n/en.js`, `i18n/es.js` (changed 2026-11-11, uncommitted): `portfolio.clients.status.websiteLive|aiDelivered`, `links.website`, `ggc.what`, `ggc.chips[7]`, `portfolio.meta.description`.
+- n8n workflow `ASTRA-11-WEB — Chatbot` (`ooF769omDhj15LTP`): prompt gained the "CLIENT WORK YOU MAY MENTION" section; active version `fffec2ec-c512-425f-a2b4-04d9032912bc` (changed 2026-11-11, live).
 - `HTML/index.html`: Services cards 06/07, title/meta, OG/Twitter/canonical tags, JSON-LD, footer label (changed 2026-10-29, pushed).
 - `HTML/portfolio.html`: Current clients section, systems heading, hero jump links, meta, tags (changed 2026-10-29, pushed). Also has the 7 automation project cards + modals (unchanged).
 - `HTML/about.html`, `HTML/privacy.html`: meta/intro/footer wording, tags on about (changed 2026-10-29, pushed).
@@ -120,6 +140,13 @@ Earlier context: building a private **client portal** for ASTRA-11's first clien
 - `CLAUDE.md`: pointer line committed (568b29c). `BLUEPRINT.md`: untracked, intentionally uncommitted.
 
 ## 4. Changes
+### 2026-11-11 (later: Global Gate on the public portfolio)
+- Tito: "Add the info below to the portfolio/global gate" (site live + Trade Intelligence feature list), then "you can say that the Trade Intelligence is done", then "Not changed: Yes, update it", then "commit and push", and finally (at checkpoint) "Do NOT commit or push".
+- Followed the draft-in-chat rule: showed EN/ES copy first. Tito's answer was a correction ("Trade Intelligence is done"), which I took as the go-ahead for the implementation.
+- Edited `HTML/portfolio.html`, `i18n/en.js`, `i18n/es.js` (Global Gate card, see section 2). Updated the portfolio meta description in the same three files.
+- n8n chatbot: added the Global Gate client section to the `Concierge Agent` system prompt with `update_workflow` `updateNodeParameters {options:{systemMessage}}` (whole prompt resent), `publish_workflow`, then tested the live webhook in EN and ES.
+- Temporary screenshot script `_c.mjs` (puppeteer, in the project root) was created for checking and deleted by Tito. Screenshots went to the scratchpad, not the repo.
+- Nothing committed or pushed.
 ### 2026-11-11 (Global Gate milestone states)
 - Two temp workflows (manual trigger + dataTable `update` by row `id`, then a `get` of all `ggc-web-development` rows; run with `test_workflow`): first set ids 3 and 5 to `done`, then id 4 to `active`. Final read-back showed exactly the states above; other rows and notes untouched. Both temp workflows (`KTeHeW6LNubmYI4k`, `VEz61ihGMoydi6IT`) archived. tested (data); untested live. Project stage/progress fields still not updated (see earlier open item).
 ### 2026-11-04 (Global Gate: Spanish website milestone + new Trade Intelligence list)
@@ -206,10 +233,23 @@ Earlier context: building a private **client portal** for ASTRA-11's first clien
 - [resolved] 2026-10-29: first link-preview image used `ASTRA-11_Logo_Full.svg`, which has the old tagline "AI ENGINEERING AGENCY" baked in. Re-rendered with `ASTRA-11_Logo.svg`.
 - [resolved] 2026-10-29: chatbot `Concierge Agent` node carried a stray duplicate prompt at `parameters.options.systemMessage`; cleared with `updateNodeParameters {parameters: null}`, published, re-tested live.
 - [resolved] 2026-10-30: `execute_workflow` on the temp milestone workflow: "has no published (active) version to execute"; `publish_workflow`: "no trigger node" (manual trigger does not count); `test_workflow` without `pinData`: "pinData Required". Fixed by `test_workflow` with `pinData {"Start":[{"json":{}}]}` (same as the 2026-10-27 lesson).
+- [resolved] 2026-11-11: Bash calls that created and then removed the throwaway `_c.mjs` (`rm _c.mjs` in the same command, and then even the same command without `rm`) were refused by Claude Code's safety check ("could not be checked for dangerous rm operations"); nothing ran. Fixed by creating the script with the Write tool and running only `node _c.mjs`. Tito deleted the file himself.
+- [open] 2026-11-11: chatbot replies about Global Gate run 4+ sentences and the ES reply says "Our Work" in English. Cosmetic, not fixed.
 - [open] 300 MB mp4 upload fails in n8n (HTTP 500 after ~10 s, "problem executing the workflow"). Mitigated by 150 MB cap, not fixed.
 - [open] Live deployment of 5d1a5c0 not yet verified.
 
 ## 6. Lessons
+### Throwaway scripts and the rm safety check (2026-11-11)
+- Tried: one Bash call that wrote `_c.mjs` with a heredoc, ran it, then `rm _c.mjs`; then the same call without the `rm`.
+- Error / symptom: "Permission ... denied by a built-in Claude Code safety check ... could not be checked for dangerous rm operations"; nothing ran, both times.
+- Cause: unknown (the second call had no `rm`); the check seems to have stayed tripped for that command shape.
+- Fix: create the script with the Write tool (path in the project root so `puppeteer-core` resolves) and run `node _c.mjs` alone; leave deletion to Tito or a plain literal-path call.
+- Next time: avoid combining heredoc-written scripts with `rm` in one command; tell Tito which leftover file to delete. Scripts must live in the project root (ESM import resolution), screenshots can go to the scratchpad.
+### Adding a client to the chatbot prompt (2026-11-11)
+- Tried: `update_workflow` `updateNodeParameters` with `{options:{systemMessage:"<full prompt>"}}` after `get_workflow_details` (the prompt was in the tool output, ~15 KB visible text); then `publish_workflow` and curl the production webhook (`astra11-chat`) in EN and ES with empty name/email.
+- Result: worked first time, no validation warnings; both replies were correct and logged no lead. Existing rules that forbid inventing client names had to be amended in two places (design-services paragraph is untouched; the TONE paragraph now names Global Gate as the only allowed client), otherwise the new section would contradict them.
+- Next time: when adding facts to the prompt, search the prompt for "never invent ... client names" style rules and reconcile them. Spanish replies copy English page names ("Our Work"); give the Spanish page name in the prompt if it matters.
+- Also: the card's feature chips are an i18n array; `i18n.js` resolves `data-i18n="a.b.chips.3"` via `path.split('.')`, so array indexes work without code changes.
 ### Changing a milestone state (2026-10-30)
 - Tried: `execute_workflow` / `publish_workflow` on a temp workflow with a manual trigger to update `portal_milestones`.
 - Error / symptom: "no published (active) version to execute"; "Workflow cannot be activated because it has no trigger node"; `test_workflow` alone: "pinData Required".

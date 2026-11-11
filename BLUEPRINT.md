@@ -1,8 +1,10 @@
 # BLUEPRINT: ASTRA-11 website + Client Portal
 
-_Last updated: 2026-11-04 (Global Gate portal: new "Spanish website" milestone and new Trade Intelligence list; before that, 2026-10-30: Setup and Brand marked Done, Website marked In progress; before that, 2026-10-29: UX/UI + Web Design services, Current clients portfolio section and SEO tags)_
+_Last updated: 2026-11-11 (Global Gate portal: Website and Spanish website Done, Trade Intelligence In progress; before that, 2026-11-04: new "Spanish website" milestone and new Trade Intelligence list; before that, 2026-10-30: Setup and Brand marked Done, Website marked In progress; before that, 2026-10-29: UX/UI + Web Design services, Current clients portfolio section and SEO tags)_
 
 ## 1. Working on
+**2026-11-11:** Global Gate portal progress updated. Tito asked to mark Website and Spanish website as done, then Trade Intelligence as in progress. Done in `portal_milestones` (no repo change, nothing to commit). Global Gate's 5 milestones are now: Setup `done`, Brand `done`, Website `done` (id 3), Spanish website `done` (id 5), Trade Intelligence `active` (id 4). Not viewed on the live portal.
+
 **2026-11-04:** Global Gate portal scope changed. Tito pasted new items: a new milestone "Spanish website" (placed right below Website) and a rewritten Trade Intelligence list (adds Website chatbot EN/ES). Setup, Brand, Website unchanged. Data only in `portal_milestones` (no repo change). Global Gate now has 5 milestones: Setup `done`, Brand `done`, Website `active`, Spanish website `upcoming` (id 5, sort 4), Trade Intelligence `upcoming` (id 4, sort 5). Not viewed on the live portal.
 
 **2026-10-30:** Keeping Global Gate's portal progress current. Tito asked to mark Setup and Brand as done and Website as in progress. Done in the `portal_milestones` data table (no repo change, nothing to commit). Global Gate's milestones are now: Setup `done`, Brand `done`, Website `active`, Trade Intelligence `upcoming`.
@@ -118,6 +120,8 @@ Earlier context: building a private **client portal** for ASTRA-11's first clien
 - `CLAUDE.md`: pointer line committed (568b29c). `BLUEPRINT.md`: untracked, intentionally uncommitted.
 
 ## 4. Changes
+### 2026-11-11 (Global Gate milestone states)
+- Two temp workflows (manual trigger + dataTable `update` by row `id`, then a `get` of all `ggc-web-development` rows; run with `test_workflow`): first set ids 3 and 5 to `done`, then id 4 to `active`. Final read-back showed exactly the states above; other rows and notes untouched. Both temp workflows (`KTeHeW6LNubmYI4k`, `VEz61ihGMoydi6IT`) archived. tested (data); untested live. Project stage/progress fields still not updated (see earlier open item).
 ### 2026-11-04 (Global Gate: Spanish website milestone + new Trade Intelligence list)
 - Tito pasted the new items; decided "Spanish website" is its own milestone below Website, and approved my Spanish draft in chat ("Yes"). Inserted the new row with `add_data_table_rows` (title_es "Sitio web en español", 3 bullets, EN/ES, `upcoming`, sort 4). Trade Intelligence row updated to `sort` 5 with the 10 new bullets (EN/ES) through a temp workflow (dataTable update, `test_workflow`); the same workflow read all 5 rows back and they were correct. Temp workflow `wp2eZerujS9Qg9TG` archived. No repo files changed, nothing to commit. tested (data); untested live.
 ### 2026-10-30 (Global Gate milestone states)

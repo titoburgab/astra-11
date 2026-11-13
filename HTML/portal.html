@@ -702,8 +702,12 @@
   function renderFiles() {
     var d = $('delivered'), u = $('uploads');
     d.textContent = ''; u.textContent = '';
-    if (!data.delivered.length) d.appendChild(el('li', 'empty', t('portal.files.deliveredEmpty')));
-    data.delivered.forEach(function (f) { d.appendChild(fileRow(f, true)); });
+    // A file waiting for the client's decision shows only under "For your review"; it joins Files once answered.
+    var inReview = {};
+    (reviews || []).forEach(function (r) { if (r.status === 'pending' && r.file_id) inReview[r.file_id] = true; });
+    var shown = data.delivered.filter(function (f) { return !inReview[f.id]; });
+    if (!shown.length) d.appendChild(el('li', 'empty', t('portal.files.deliveredEmpty')));
+    shown.forEach(function (f) { d.appendChild(fileRow(f, true)); });
     if (!data.uploads.length) u.appendChild(el('li', 'empty', t('portal.files.uploadsEmpty')));
     data.uploads.forEach(function (f) { u.appendChild(fileRow(f, true)); });
   }
@@ -777,7 +781,7 @@
   function loadReviews() {
     return fetch(API + 'reviews', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token }) })
       .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (json) { if (json && json.ok) { reviews = json.reviews; renderReviews(); } })
+      .then(function (json) { if (json && json.ok) { reviews = json.reviews; renderReviews(); if (data) renderFiles(); } })
       .catch(function () {});
   }
 

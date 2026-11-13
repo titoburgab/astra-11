@@ -671,6 +671,7 @@ window.i18nStrings.en = {
         changes_requested: 'Requested changes',
       },
       noComments:      'No comments yet.',
+      openLink:        'Open link',
       commentLabel:    'Your comment',
       commentPlaceholder: 'Add a comment, or describe the changes you need',
       nameLabel:       'Your name',

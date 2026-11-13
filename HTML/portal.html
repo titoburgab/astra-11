@@ -812,6 +812,14 @@
     info.appendChild(el('span', 'rv-meta', t('portal.reviews.requested', { date: fmtDate(r.requested_at) })));
     head.appendChild(info);
 
+    var linkUrl = (r.file_id && r.file_id.indexOf('link:') === 0) ? r.file_id.slice(5) : '';
+    if (/^https:\/\//i.test(linkUrl)) {
+      var lact = el('div', 'fact');
+      var a = el('a', 'btn btn-primary', t('portal.reviews.openLink'));
+      a.href = linkUrl; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      lact.appendChild(a);
+      head.appendChild(lact);
+    }
     var f = fileById(r.file_id);
     if (f) {
       var act = el('div', 'fact');

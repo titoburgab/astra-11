@@ -670,6 +670,7 @@ window.i18nStrings.es = {
         changes_requested: 'Solicitó cambios',
       },
       noComments:      'Aún no hay comentarios.',
+      openLink:        'Abrir enlace',
       commentLabel:    'Tu comentario',
       commentPlaceholder: 'Agrega un comentario o describe los cambios que necesitas',
       nameLabel:       'Tu nombre',
